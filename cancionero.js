@@ -62,11 +62,19 @@
   async function salmo(s, a) {
     const el = a.el, raiz = el('div', { class: 'cancionero' }, el('h1', { texto: s.titulo }));
     if (s.cuando) raiz.append(el('p', { texto: s.cuando }));
-    const h = himnoDelLibro(a.libro, s.himno);
+    // Los himnos del libro de los que sale el salmo (uno o varios), cada uno con su enlace
+    const hs = (s.himnos && s.himnos.length ? s.himnos : (s.himno ? [s.himno] : []))
+      .map(function (x) { return himnoDelLibro(a.libro, x); }).filter(Boolean);
     if (s.fuente) {
       const p = el('p', { texto: 'Escrito ' + s.fuente + '. ' });
-      if (h) p.append(el('a', { href: '#/leer/' + h.cap + '/' + h.a }, 'Leer el himno original en el libro: ' + h.t));
+      if (hs.length === 1) p.append(el('a', { href: '#/leer/' + hs[0].cap + '/' + hs[0].a }, 'Leer el himno original en el libro: ' + hs[0].t));
       raiz.append(p);
+      if (hs.length > 1) {
+        raiz.append(el('p', { texto: 'Leer los himnos originales en el libro:' }));
+        const ul = el('ul', { class: 'canc-fuentes' });
+        hs.forEach(function (h) { ul.append(el('li', {}, el('a', { href: '#/leer/' + h.cap + '/' + h.a }, h.t))); });
+        raiz.append(ul);
+      }
     }
     // Las grabaciones, cuando las haya (bloque «Cancionero» de los audios)
     if (window.JarisAudios) {

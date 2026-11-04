@@ -1,6 +1,6 @@
 {
  "intro": [
-  "Salmos para cantar o recitar con la lira, de Khaire Lyra.",
+  "Salmos para cantar o recitar, a capela o con el instrumento que cada uno tenga, de Khaire Lyra.",
   "Forma: salmo con antífona. La antífona se canta al principio, entre estrofa y estrofa, y al final.",
   "Las melodías se compondrán más adelante."
  ],
@@ -14,12 +14,30 @@
    "n": 1,
    "id": "salmo-1",
    "titulo": "Salmo a Atenea",
-   "fuente": "a partir del himno homérico 11",
+   "fuente": "a partir de los himnos homéricos 11 y 28, el himno órfico 32 y el himno de Proclo 7",
    "himno": {
     "tipo": "homérico",
     "n": 11
    },
-   "cuando": "Para el día 3 de cada mes, las fiestas de Atenea o cuando se necesite sabiduría y valor.",
+   "himnos": [
+    {
+     "tipo": "homérico",
+     "n": 11
+    },
+    {
+     "tipo": "homérico",
+     "n": 28
+    },
+    {
+     "tipo": "órfico",
+     "n": 32
+    },
+    {
+     "tipo": "de Proclo",
+     "n": 7
+    }
+   ],
+   "cuando": "Para el día 3 de cada mes, las fiestas de Atenea (como las Calquias, a final de Pyanepsion) o cuando se necesite sabiduría y valor.",
    "apartado": "Días del mes",
    "dias": [
     3
@@ -35,10 +53,10 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Guardiana de las ciudades, hija de Zeus,",
-      "a ti empiezo a cantar.",
-      "Temible es su lanza en la batalla,",
-      "firme su escudo junto a Ares."
+      "Empiezo a cantar a Palas Atenea,",
+      "la de ojos de lechuza, sabia y clara;",
+      "recibe mi canto con ánimo amable,",
+      "que el viento no se lleve mis palabras."
      ]
     },
     {
@@ -47,10 +65,10 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Entre el estruendo de la lucha,",
-      "ella no abandona a los suyos.",
-      "Cuando el pueblo parte, lo protege;",
-      "cuando vuelve, lo trae a salvo."
+      "Saltaste de la cabeza de Zeus",
+      "con armas de oro, agitando la lanza;",
+      "tembló el Olimpo, la tierra dio un grito,",
+      "y el Sol paró sus caballos en su marcha."
      ]
     },
     {
@@ -59,8 +77,44 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Salve, diosa, hija del gran Zeus,",
-      "danos buena suerte y alegría."
+      "Tú abriste las puertas de la sabiduría,",
+      "madre de las artes, de manos que trabajan;",
+      "pon en nuestras manos un arte que piensa",
+      "en todo lo que hacemos, en la vida diaria."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Hiciste brotar el olivo en la colina",
+      "y diste a tu ciudad nombre y templanza;",
+      "guardiana de las ciudades, guarda nuestra tierra",
+      "cuando salimos, cuando volvemos a casa."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Tú que haces brillar una luz pura,",
+      "da a nuestra mente claridad y calma;",
+      "líbranos de los males, danos la paz,",
+      "salud y abundancia en cada temporada."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, diosa, hija de Zeus el de la égida:",
+      "danos buena suerte y alegría en el alma."
      ]
     },
     {
@@ -73,10 +127,13 @@
      "Χαῖρε, Ἀθηνᾶ (jére, aziná): \"salve, Atenea\"."
     ],
     [
-     "Y, si se quiere, el último verso del himno en griego antiguo:",
+     "Y, si se quiere, el último verso del himno homérico 11 en griego antiguo:",
      "Χαῖρε, θεά, δὸς δ' ἄμμι τύχην εὐδαιμονίην τε.",
      "Se pronuncia más o menos: jére, zeá, dos d'ámmi tíjin evdemoníin te.",
      "Significa: \"Salve, diosa, danos buena suerte y felicidad.\""
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. La primera, del himno homérico 28 (versos 1 y 2) y del himno de Proclo 7 (versos 1 a 6). La segunda, el nacimiento de Atenea, del himno homérico 28 (versos 4 a 16). La tercera, del himno órfico 32 (versos 8 y 14) y del de Proclo 7 (versos 7, 19 y 20). La cuarta, el olivo, del himno de Proclo 7 (versos 21 a 26) y del homérico 11. La quinta, del de Proclo 7 (versos 31 a 34) y del órfico 32 (versos 13, 16 y 17). El saludo final, del homérico 11 y del homérico 28 (verso 17). \"La de ojos de lechuza\" traduce la palabra griega \"glaukopis\", que el libro también traduce como \"la de ojos brillantes\"."
     ]
    ],
    "vozGriega": "Χαίρε, θεά, δος δε άμμι τύχην ευδαιμονίην τε."
@@ -85,11 +142,25 @@
    "n": 2,
    "id": "salmo-2",
    "titulo": "Salmo a Hestia",
-   "fuente": "a partir del himno homérico 24",
+   "fuente": "a partir de los himnos homéricos 24 y 29 y el himno órfico 84",
    "himno": {
     "tipo": "homérico",
     "n": 24
    },
+   "himnos": [
+    {
+     "tipo": "homérico",
+     "n": 24
+    },
+    {
+     "tipo": "homérico",
+     "n": 29
+    },
+    {
+     "tipo": "órfico",
+     "n": 84
+    }
+   ],
    "cuando": "Para cualquier día, al empezar y al terminar una ofrenda, y para pedir calma y protección para el hogar.",
    "apartado": "Fiestas y ritos",
    "dias": [],
@@ -104,10 +175,10 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Hestia, hija mayor de Crono y Rea,",
-      "la primera y la última en cada ofrenda,",
-      "señora del fuego que nunca se apaga,",
-      "a ti te llamo, a ti te canto."
+      "Hestia, hija del poderoso Crono,",
+      "guardiana del centro, llama eterna;",
+      "en las casas de dioses y de humanos",
+      "tienes tu trono, señora y reina."
      ]
     },
     {
@@ -116,10 +187,10 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Tú que cuidas la casa sagrada,",
-      "el templo de Apolo en Delfos,",
-      "de tus cabellos gotea aceite suave,",
-      "siempre, como una ofrenda."
+      "Sin ti no se empieza ningún banquete:",
+      "a ti la primera y la última ofrenda.",
+      "Tú cuidas el fuego del templo de Delfos,",
+      "y de tu pelo el aceite gotea."
      ]
     },
     {
@@ -128,10 +199,10 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Ven a esta casa, entra en ella,",
-      "ven con ánimo benévolo.",
-      "Donde estemos, guarda nuestro hogar;",
-      "donde vayamos, enciende tu fuego."
+      "Hogar de los dioses, sostén de los mortales,",
+      "verde como un brote en primavera;",
+      "cuando todo pesa, respiro contigo:",
+      "estoy aquí, a salvo, y tú estás cerca."
      ]
     },
     {
@@ -140,10 +211,32 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Ven junto con Zeus, el de sabios consejos,",
-      "y da járis a nuestro canto.",
-      "Salve, Hestia, primera y última,",
-      "salve, fuego de nuestra casa."
+      "Ven con Zeus, el de los sabios consejos,",
+      "ven a esta casa con el alma serena;",
+      "que Hermes, el que guarda los caminos,",
+      "viva contigo en paz junto a la puerta."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Sonríe y recibe lo que te ofrecemos,",
+      "trae salud suave y una vida buena;",
+      "cuida a la gente que queremos",
+      "y da tu járis a esta canción nuestra."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, hija de Crono, la primera y la última,",
+      "salve, fuego que en casa nos espera."
      ]
     },
     {
@@ -156,20 +249,37 @@
      "Χαῖρε, Ἑστία (jére, estía): \"salve, Hestia\"."
     ],
     [
-     "Nota: en el himno griego, \"da járis a nuestro canto\" es \"χάριν δ' ἅμ' ὄπασσον ἀοιδῇ\": la palabra del título del libro está en el himno a Hestia."
+     "Nota: en el himno griego, \"da tu járis a esta canción nuestra\" es \"χάριν δ' ἅμ' ὄπασσον ἀοιδῇ\": la palabra del título del libro está en el himno a Hestia."
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. La primera, del himno órfico 84 (versos 1 y 2) y del homérico 29 (versos 1 a 3). La segunda, del homérico 29 (versos 4 a 6) y del homérico 24 (versos 1 a 3). La tercera, del órfico 84 (versos 5 y 6) y de la frase de bolsillo \"Hestia, calma. Estoy aquí. Estoy a salvo.\" La cuarta, del homérico 24 (versos 4 y 5) y del homérico 29 (versos 7 a 12), donde Hestia y Hermes cuidan juntos la casa. La quinta, del órfico 84 (versos 7 y 8) y del homérico 24 (verso 5). El saludo final, del homérico 29 (verso 13)."
     ]
    ],
-   "vozGriega": ""
+   "vozGriega": "Χαίρε, Εστία"
   },
   {
    "n": 3,
    "id": "salmo-3",
    "titulo": "Salmo a Apolo",
-   "fuente": "a partir del himno homérico 21",
+   "fuente": "a partir de los himnos homéricos 21 y 25 y el himno órfico 34",
    "himno": {
     "tipo": "homérico",
     "n": 21
    },
+   "himnos": [
+    {
+     "tipo": "homérico",
+     "n": 21
+    },
+    {
+     "tipo": "homérico",
+     "n": 25
+    },
+    {
+     "tipo": "órfico",
+     "n": 34
+    }
+   ],
    "cuando": "Para el día 7 de cada mes, las fiestas de Apolo y antes de hacer música o crear.",
    "apartado": "Días del mes",
    "dias": [
@@ -186,10 +296,10 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Febo Apolo, señor de la lira,",
-      "tú que guías a las Musas,",
-      "a ti te canta el cisne en el río,",
-      "a ti te cantamos nosotros."
+      "Febo Apolo, de cabellos de oro,",
+      "señor del arco y señor de la lira;",
+      "a ti te canta el cisne junto al río,",
+      "batiendo las alas, con voz clara y viva."
      ]
     },
     {
@@ -198,10 +308,10 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Pon armonía en nuestra vida,",
-      "como en las cuerdas de tu lira.",
-      "Tú eres el primero y el último",
-      "en cada canto que nace."
+      "Por ti y las Musas hay en la tierra",
+      "cantores, músicos y poesía;",
+      "y a ti el poeta te canta siempre",
+      "el primero y el último cada día."
      ]
     },
     {
@@ -210,8 +320,44 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Salve, señor, Febo brillante:",
-      "recibe con agrado nuestro canto."
+      "Tú ves el cielo sin fin desde lo alto,",
+      "la tierra feliz y la noche tranquila;",
+      "tienes el ojo que lo ve todo",
+      "y das tu luz a todo el que te mira."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Tú afinas el cielo como una cítara:",
+      "el invierno en la cuerda grave vibra,",
+      "el verano en la aguda, y en el modo dórico",
+      "la flor de la primavera tan querida."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Peán, sanador, que das la prosperidad,",
+      "escucha con bondad lo que te pida:",
+      "pon armonía en lo que creamos",
+      "y en el cuerpo, salud y alegría."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, señor: con mi canto te busco;",
+      "ven propicio, Febo, y sonríe a nuestra vida."
      ]
     },
     {
@@ -222,19 +368,40 @@
     [
      "Para cerrar, en griego:",
      "Χαῖρε, ἄναξ (jére, ánax): \"salve, señor\"."
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. La primera, del himno homérico 21 (versos 1 y 2) y del órfico 34 (versos 6 y 9). La segunda, del homérico 25 (versos 2 a 5) y del homérico 21 (versos 3 y 4): los cantores empezaban y terminaban con Apolo. La tercera, del órfico 34 (versos 8 y 11 a 15). La cuarta, del órfico 34 (versos 16 a 23): Apolo afina el universo como una lira, la \"música de las esferas\". La quinta, del órfico 34 (versos 1, 2 y 10); \"Peán\" es Apolo como sanador. El saludo final, del homérico 21 (verso 5)."
     ]
    ],
-   "vozGriega": ""
+   "vozGriega": "Χαίρε, άναξ"
   },
   {
    "n": 4,
    "id": "salmo-4",
    "titulo": "Salmo de la Noumenia",
-   "fuente": "a partir del himno homérico 32, a Selene",
+   "fuente": "a partir del himno homérico 32 y los himnos órficos 9, a Selene; 1, a Hécate; y 84, a Hestia",
    "himno": {
     "tipo": "homérico",
     "n": 32
    },
+   "himnos": [
+    {
+     "tipo": "homérico",
+     "n": 32
+    },
+    {
+     "tipo": "órfico",
+     "n": 9
+    },
+    {
+     "tipo": "órfico",
+     "n": 1
+    },
+    {
+     "tipo": "órfico",
+     "n": 84
+    }
+   ],
    "cuando": "Para el día 1 de cada mes. Con Selene, que abre el mes; Hécate, que lo cerró la noche antes (Deipnon); y Hestia, el fuego de la casa.",
    "apartado": "Días del mes",
    "dias": [
@@ -253,10 +420,10 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Selene de largas alas,",
-      "reina de hermosos cabellos,",
-      "hoy vuelves a nacer, hilo de plata,",
-      "y empieza la cuenta de los días."
+      "Selene de anchas alas, reina divina,",
+      "con cuernos de toro vuelve la luna;",
+      "de tu cabeza sale un resplandor",
+      "que envuelve la tierra y el aire alumbra."
      ]
     },
     {
@@ -265,10 +432,10 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Hécate, guardiana de la puerta,",
-      "tú que anoche cerraste el mes,",
-      "llévate lo malo que dejamos atrás,",
-      "guarda el umbral de nuestra casa."
+      "Tú creces y menguas, madre del tiempo,",
+      "señal que a los mortales los días anuncia;",
+      "traes los frutos, ayudas en los partos,",
+      "y hoy empieza la cuenta, una a una."
      ]
     },
     {
@@ -277,10 +444,10 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Hestia, fuego de nuestra casa,",
-      "la primera en cada ofrenda,",
-      "enciende de nuevo nuestro hogar,",
-      "que tu llama nos acompañe todo el mes."
+      "Hécate, guardiana de las llaves,",
+      "que anoche cerraste el mes sin luna;",
+      "llévate lo malo que dejamos atrás",
+      "y guarda el umbral: que la casa esté segura."
      ]
     },
     {
@@ -289,10 +456,10 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Gracias por el mes que termina,",
-      "por lo vivido y lo aprendido.",
-      "Danos fuerza para lo que empieza,",
-      "tú, señal del tiempo para los mortales."
+      "Hestia, la primera en cada ofrenda,",
+      "enciende de nuevo la llama que nos junta;",
+      "que tu fuego nos acompañe todo el mes",
+      "y tenga esta casa calor y dulzura."
      ]
     },
     {
@@ -301,8 +468,20 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Salve, Selene, la de brazos blancos,",
-      "salve, reina de la noche."
+      "Gracias por el mes que se termina,",
+      "por lo vivido, lo aprendido y la fortuna;",
+      "danos fuerza para el mes que empieza,",
+      "ven bondadosa, brillando, doncella pura."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, reina de blancos brazos, Selene divina,",
+      "benévola, de hermosas trenzas: salve, luna."
      ]
     },
     {
@@ -313,20 +492,37 @@
     [
      "Para cerrar, en griego:",
      "Χαῖρε, Σελήνη (jére, selíni): \"salve, Selene\"."
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. La primera, del himno homérico 32 (versos 1 a 6) y del órfico 9 (verso 2): los \"cuernos de toro\" son las dos puntas de la luna creciente. La segunda, del órfico 9 (versos 4 a 6) y del homérico 32 (verso 13), donde la luna es \"señal y aviso para los mortales\". La tercera, del órfico 1, a Hécate (versos 1, 5 y 7). La cuarta, del órfico 84 y del homérico 29, a Hestia. La quinta, del órfico 9 (versos 11 y 12). El saludo final, del homérico 32 (versos 17 y 18)."
     ]
    ],
-   "vozGriega": ""
+   "vozGriega": "Χαίρε, Σελήνη"
   },
   {
    "n": 5,
    "id": "salmo-5",
    "titulo": "Salmo a Hermes",
-   "fuente": "a partir del himno homérico 18; sobre todo Hermes Logios, el de la palabra",
+   "fuente": "a partir del himno homérico 18 y los himnos órficos 28 y 57",
    "himno": {
     "tipo": "homérico",
     "n": 18
    },
-   "cuando": "Para el día 4 de cada mes, antes de estudiar o hablar, al salir de casa o empezar un viaje, y por los difuntos.",
+   "himnos": [
+    {
+     "tipo": "homérico",
+     "n": 18
+    },
+    {
+     "tipo": "órfico",
+     "n": 28
+    },
+    {
+     "tipo": "órfico",
+     "n": 57
+    }
+   ],
+   "cuando": "Para el día 4 de cada mes, antes de hablar o de aprender algo, al salir de casa o empezar un viaje, y por los difuntos.",
    "apartado": "Días del mes",
    "dias": [
     4
@@ -342,10 +538,10 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Hermes Logios, señor de la palabra,",
-      "hijo de Zeus y de Maya,",
-      "Eriunio, que traes la buena suerte,",
-      "a ti te llamo, a ti te canto."
+      "Hermes, hijo de Zeus y de Maya,",
+      "mensajero de los dioses, nuestro amigo;",
+      "Eriunio, tú que traes la buena suerte,",
+      "a ti te llamo, a ti te bendigo."
      ]
     },
     {
@@ -354,10 +550,10 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Pon en nuestra boca la palabra justa",
-      "y en nuestra mente, claridad para aprender.",
-      "Tú que entiendes todas las lenguas,",
-      "ayúdanos a decir y a comprender."
+      "Logios, intérprete de la palabra,",
+      "pon en mi boca el decir preciso;",
+      "da a mi mente memoria para aprender,",
+      "gracia al hablar y a las preocupaciones, alivio."
      ]
     },
     {
@@ -366,10 +562,22 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Enodios, guarda nuestros caminos;",
-      "Propileo, guarda nuestra puerta.",
-      "Cuando salimos, ven con nosotros;",
-      "cuando volvemos, tráenos a salvo."
+      "Enodios, señor de los que viajan,",
+      "Propileo, que guardas la puerta y el camino;",
+      "cuando salimos, ven con nosotros,",
+      "y al volver, tráenos a casa tranquilos."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Tú llevas en la mano la vara de la paz,",
+      "ayudas en las tareas y en el oficio;",
+      "en los días difíciles, en las necesidades,",
+      "estás al lado de quien te ha pedido."
      ]
     },
     {
@@ -379,9 +587,9 @@
      "tipo": "estrofa",
      "versos": [
       "Y cuando llegue el último viaje,",
-      "llévanos de la mano, sin miedo,",
-      "tú que conoces todos los caminos,",
-      "Psicopompo, guía de las almas."
+      "llévanos sin miedo hacia el destino;",
+      "tú que conoces la casa de Perséfone,",
+      "Psicopompo, guía las almas que hemos querido."
      ]
     },
     {
@@ -390,8 +598,8 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Salve, hijo de Zeus y de Maya:",
-      "contigo empezamos y contigo seguimos."
+      "Salve, hijo de Zeus y de Maya, que das la gracia:",
+      "contigo empezamos y seguimos contigo."
      ]
     },
     {
@@ -406,19 +614,36 @@
     [
      "Para cerrar, en griego:",
      "Χαῖρε, Ἑρμῆ (jére, ermí): \"salve, Hermes\"."
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. La primera, del himno homérico 18 (versos 1 a 4 y 12) y del órfico 28 (versos 1 y 4). La segunda, del órfico 28 (versos 4, 6 y 10 a 12), que pide \"la gracia de la palabra y la memoria\": para antes de aprender algo o de hablar en público. La tercera, del órfico 28 (verso 5) y de los títulos Enodios y Propileo. La cuarta, del órfico 28 (versos 7 y 9): la \"vara de la paz\" es el caduceo. La quinta, del órfico 57, a Hermes que guía las almas. El saludo final, del homérico 18 (versos 10 a 12)."
     ]
    ],
-   "vozGriega": ""
+   "vozGriega": "Χαίρε, Ερμή"
   },
   {
    "n": 6,
    "id": "salmo-6",
    "titulo": "Salmo a Ártemis",
-   "fuente": "a partir del himno homérico 9, adaptado a hoy",
+   "fuente": "a partir de los himnos homéricos 9 y 27 y el himno órfico 36",
    "himno": {
     "tipo": "homérico",
     "n": 9
    },
+   "himnos": [
+    {
+     "tipo": "homérico",
+     "n": 9
+    },
+    {
+     "tipo": "homérico",
+     "n": 27
+    },
+    {
+     "tipo": "órfico",
+     "n": 36
+    }
+   ],
    "cuando": "Para el día 6 de cada mes, las fiestas de Ártemis, por los niños, los animales y la naturaleza.",
    "apartado": "Días del mes",
    "dias": [
@@ -436,9 +661,9 @@
      "tipo": "estrofa",
      "versos": [
       "Ártemis, hija de Zeus y de Leto,",
-      "hermana de Apolo, el del arco de plata,",
-      "Agrotera, señora de los animales,",
-      "a ti te llamo, a ti te canto."
+      "hermana de Apolo, la del grito en el monte;",
+      "la del huso de oro, la virgen arquera,",
+      "escúchame, reina de muchos nombres."
      ]
     },
     {
@@ -447,10 +672,10 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Tú que corres libre por los bosques,",
-      "enséñanos a cuidar la tierra,",
-      "los ríos, los montes y los animales:",
-      "que no se apague lo salvaje."
+      "Tú corres libre por cumbres y bosques,",
+      "cazadora de ciervos, que vagas de noche;",
+      "protectora de los perros, amiga del campo,",
+      "enséñanos a cuidar la tierra y sus flores."
      ]
     },
     {
@@ -459,10 +684,10 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Cuida de los niños y las niñas,",
-      "de las madres cuando dan a luz,",
-      "de los pequeños que no tienen voz,",
-      "tú que proteges a los que crecen."
+      "Protectora de los partos, ayuda a las madres,",
+      "tú que crías a los jóvenes hasta hacerlos mayores;",
+      "cuida de los niños y de las niñas,",
+      "de los pequeños, de los que no se oyen."
      ]
     },
     {
@@ -471,10 +696,22 @@
     {
      "tipo": "estrofa",
      "versos": [
-      "Danos fuerza para ser quienes somos,",
-      "libres como tú en nuestro camino;",
-      "que tu flecha nos señale la meta",
-      "y tu luz nos guíe en la noche."
+      "Cuando acaba la caza, cuelgas el arco",
+      "en Delfos, en la casa de Febo, y dispones",
+      "el baile de las Musas y de las Gracias:",
+      "enséñanos a descansar y a hacer canciones."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Ven, diosa salvadora, amiga de todos,",
+      "con los frutos de la tierra y sus dones;",
+      "danos paz y salud, y llévate las penas",
+      "y los dolores a lo alto de los montes."
      ]
     },
     {
@@ -498,9 +735,1081 @@
     ],
     [
      "Títulos: Agrotera, \"la cazadora\", la de los campos; señora de los animales (Pótnia therón)."
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. La primera, del himno homérico 27 (versos 1 a 3) y del órfico 36 (verso 1). La segunda, del homérico 27 (versos 4 a 9) y del órfico 36 (versos 6, 10 y 12). La tercera, del órfico 36 (versos 3, 4 y 8). La cuarta, del homérico 27 (versos 11 a 18): después de cazar, Ártemis dirige en Delfos el baile de las Musas y las Gracias. La quinta, del órfico 36 (versos 13 a 16), que manda las enfermedades y los dolores \"a las cumbres de los montes\". El saludo final, del homérico 9 (versos 7 y 8)."
+    ]
+   ],
+   "vozGriega": "Χαίρε, Άρτεμι"
+  },
+  {
+   "n": 7,
+   "id": "salmo-7",
+   "titulo": "Salmo al Agathos Daimon",
+   "fuente": "a partir del himno órfico 73 y del rito del día 2",
+   "himno": {
+    "tipo": "órfico",
+    "n": 73
+   },
+   "himnos": [
+    {
+     "tipo": "órfico",
+     "n": 73
+    }
+   ],
+   "cuando": "Para el día 2 de cada mes, con la libación al buen espíritu de la casa, y para dar gracias por la buena suerte.",
+   "apartado": "Días del mes",
+   "dias": [
+    2
+   ],
+   "dioses": [],
+   "antifona": [
+    "Jaris a ti, buen espíritu de la casa:",
+    "que no nos falte la buena fortuna."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Agathos Daimon, buen espíritu,",
+      "compañero de la Buena Fortuna, te llamo;",
+      "guía de esta casa, acércate:",
+      "te saludo con el vaso en la mano."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Vierto para ti lo mejor de mi mesa,",
+      "el primer sorbo, como en los banquetes de antaño;",
+      "tú que entras rebosante en una casa",
+      "y das la riqueza a quien vive a tu lado."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "En tus manos están las llaves",
+      "de la alegría y la pena, de todo lo humano;",
+      "aleja las penas que nos hacen llorar,",
+      "y lo que hace daño, que pase de largo."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Gracias por la suerte de este mes,",
+      "por cada sonrisa, por cada regalo;",
+      "que siga la buena fortuna con nosotros",
+      "en la salud, en la casa y en todo lo que hago."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Buen espíritu, quédate con nosotros,",
+      "guarda a la familia y a los que hemos amado;",
+      "y que el final de la vida, cuando llegue,",
+      "sea dulce y bueno, y sin sobresalto."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, buen espíritu, salve, Buena Fortuna:",
+      "que esta casa siga en tus manos."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Para cerrar, en griego:",
+     "Χαῖρε, Ἀγαθὲ Δαῖμον (jére, agazé démon): \"salve, buen espíritu\"."
+    ],
+    [
+     "Nota: \"Agathos Daimon\" se dice \"agazós démon\"; al hablarle directamente, en griego cambia a \"agazé démon\", como \"Ártemis\" pasa a \"Ártemi\"."
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. El salmo sigue el rito del día 2 (rito 6): la primera estrofa es la llamada (paso 3) con el verso 1 del himno órfico 73; la segunda, la libación (paso 5) con el verso 4 del órfico, \"das la riqueza cuando entras rebosante en una casa\"; la tercera, los versos 6 a 8 del órfico, \"en ti están las llaves de la pena y de la alegría\"; la cuarta, las gracias por la suerte del mes (paso 6); la quinta, el verso 9 del órfico; y el saludo final, el cierre del rito (paso 7). Se puede cantar mientras se hace el rito."
+    ]
+   ],
+   "vozGriega": "Χαίρε, Αγαθέ Δαίμον"
+  },
+  {
+   "n": 8,
+   "id": "salmo-8",
+   "titulo": "Salmo a Poseidón",
+   "fuente": "a partir del himno homérico 22 y el himno órfico 17",
+   "himno": {
+    "tipo": "homérico",
+    "n": 22
+   },
+   "himnos": [
+    {
+     "tipo": "homérico",
+     "n": 22
+    },
+    {
+     "tipo": "órfico",
+     "n": 17
+    }
+   ],
+   "cuando": "Para el día 8 de cada mes, antes de viajar, por quien está lejos o en el mar, y cuando tiembla la tierra.",
+   "apartado": "Días del mes",
+   "dias": [
+    8
+   ],
+   "dioses": [
+    "Poseidón"
+   ],
+   "antifona": [
+    "Jaris a ti, Poseidón de los mares:",
+    "guarda la tierra firme y nuestro rumbo."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Empiezo a cantar a Poseidón, el gran dios,",
+      "el de cabellos oscuros, señor de la ola;",
+      "tú que sacudes la tierra y el mar",
+      "con el tridente de bronce en la mano poderosa."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Los dioses te dieron un honor doble:",
+      "domar los caballos y salvar cada proa;",
+      "tu carro corre por encima del agua,",
+      "y a tu paso florece el mar y se adorna."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Habitas los cimientos del mar profundo,",
+      "tu voz es el ruido grave del agua que choca;",
+      "te alegras con los peces y los animales,",
+      "y con el viento salado que silba en la roca."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Ayuda a los que navegan, dios feliz,",
+      "a quien viaja lejos, a quien espera en la costa;",
+      "sostén los cimientos de la tierra firme:",
+      "que cuando tiemble, no se rompa."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Trae la paz, la salud y la prosperidad,",
+      "como el mar en calma cuando el sol se asoma;",
+      "y a quien tenga revuelto el corazón,",
+      "dale un mar tranquilo y una brisa que lo arropa."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, Poseidón, que sostienes la tierra:",
+      "salve, dios feliz, que tu bondad nos acoja."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Para cerrar, en griego:",
+     "Χαῖρε, Πόσειδον (jére, pósidon): \"salve, Poseidón\"."
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. La primera, del himno homérico 22 (versos 1 y 2) y del órfico 17 (versos 1 y 2). La segunda, del homérico 22 (versos 4 y 5), el \"honor doble\" de domar caballos y salvar barcos, y del órfico 17 (verso 5). La tercera, del órfico 17 (versos 3, 4 y 6 a 8). La cuarta, del homérico 22 (verso 7), \"ayuda a los que navegan\", y del órfico 17 (verso 9), \"protege los cimientos de la tierra\". La quinta, del órfico 17 (verso 10); la imagen del mar que se calma es nueva, para quien tiene el corazón revuelto. El saludo final, del homérico 22 (versos 6 y 7)."
+    ]
+   ],
+   "vozGriega": "Χαίρε, Πόσειδον"
+  },
+  {
+   "n": 9,
+   "id": "salmo-9",
+   "titulo": "Salmo a las Musas",
+   "fuente": "a partir del himno homérico 25, los himnos órficos 76 y 77 y el himno de Proclo 3",
+   "himno": {
+    "tipo": "homérico",
+    "n": 25
+   },
+   "himnos": [
+    {
+     "tipo": "homérico",
+     "n": 25
+    },
+    {
+     "tipo": "órfico",
+     "n": 76
+    },
+    {
+     "tipo": "órfico",
+     "n": 77
+    },
+    {
+     "tipo": "de Proclo",
+     "n": 3
+    }
+   ],
+   "cuando": "Para el día 9 de cada mes, antes de aprender, escribir o hacer música, y cuando se necesite memoria.",
+   "apartado": "Días del mes",
+   "dias": [
+    9
+   ],
+   "dioses": [
+    "Las Musas"
+   ],
+   "antifona": [
+    "Jaris a vosotras, Musas de Pieria:",
+    "dadnos memoria, palabra y canto."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Empiece yo por las Musas, por Apolo y por Zeus,",
+      "hijas de Mnemósine, la que guarda el recuerdo;",
+      "por vosotras hay en la tierra cantores,",
+      "y de su boca fluye un canto tierno."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Clío y Euterpe, Talía y Melpómene,",
+      "Terpsícore y Érato, que llenáis el silencio;",
+      "Polimnia, Urania y Calíope,",
+      "venid con Mnemósine, vuestra madre, a mi encuentro."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Nodrizas del alma, que dais el pensamiento recto,",
+      "maestras de lo que aprendo y lo que leo;",
+      "que la memoria me guarde lo aprendido",
+      "y el olvido no se lleve lo que tengo dentro."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Calmad mi corazón cuando tiene miedo,",
+      "llenadme de entusiasmo y de buen consejo;",
+      "cargadme con la miel de vuestros panales",
+      "y llevad mi alma errante a la luz de nuevo."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Venid, diosas, cuando aprendo y cuando escribo,",
+      "cuando toco música o cuando creo;",
+      "feliz aquel a quien vosotras amáis:",
+      "su voz es dulce y llega lejos."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, hijas de Zeus: honrad mi canto,",
+      "y yo os recordaré en cada verso."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Para cerrar, en griego:",
+     "Χαίρετε, Μοῦσαι (jérete, múse): \"salve, Musas\". Como son nueve, el saludo va en plural."
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. La primera, del himno homérico 25 (versos 1 a 5) y del órfico 76 (verso 1). La segunda, del órfico 76 (versos 8 a 10), con los nombres de las nueve Musas. La tercera, del órfico 76 (versos 4 a 6), \"nodrizas del alma, que dais el pensamiento recto\" (las que alimentan y crían el alma y enseñan a pensar bien), y del órfico 77, a Mnemósine, la Memoria (versos 3 a 7). La cuarta, del himno de Proclo 3 (versos 10, 11, 15 y 16). La quinta, del homérico 25 (versos 4 y 5), \"feliz aquel a quien las Musas aman\", y del órfico 76 (versos 11 y 12). El saludo final, del homérico 25 (versos 6 y 7)."
+    ]
+   ],
+   "vozGriega": "Χαίρετε, Μούσαι"
+  },
+  {
+   "n": 10,
+   "id": "salmo-10",
+   "titulo": "Salmo del Deipnon",
+   "fuente": "a partir del himno órfico 1, el himno de Proclo 6 y el rito del último día",
+   "himno": {
+    "tipo": "órfico",
+    "n": 1
+   },
+   "himnos": [
+    {
+     "tipo": "órfico",
+     "n": 1
+    },
+    {
+     "tipo": "de Proclo",
+     "n": 6
+    }
+   ],
+   "cuando": "Para el último día de cada mes, al atardecer, con la limpieza de la casa, la cena de Hécate y el recuerdo de los antepasados.",
+   "apartado": "Días del mes",
+   "dias": [
+    "ultimo"
+   ],
+   "dioses": [
+    "Hécate"
+   ],
+   "antifona": [
+    "Jaris a ti, Hécate de las encrucijadas:",
+    "llévate lo que pesa y guarda nuestra puerta."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Hécate de los caminos y las encrucijadas,",
+      "la que está ante la puerta y guarda la llave;",
+      "del cielo, de la tierra y del mar, señora,",
+      "hoy es tu día, al caer la tarde."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Hemos limpiado la casa y el altar,",
+      "hemos abierto las ventanas para que el aire pase;",
+      "con las manos limpias y el corazón tranquilo",
+      "te ponemos la mesa antes de que la luz se marche."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Recibe esta cena, señora de la noche,",
+      "y que después la comparta con quien tenga hambre;",
+      "llévate lo que sobra de este mes,",
+      "lo que pesa y no sirve, que no nos alcance."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Pongo un plato para los que se fueron",
+      "y digo sus nombres, para que no se apaguen;",
+      "tú que caminas entre las tumbas y las almas,",
+      "llévales nuestro cariño, que les llegue y los abrace."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Lo que salió mal este mes lo dejo aquí,",
+      "lo rompo como un papel: que se lo lleve el aire;",
+      "dame la mano y muéstrame la luz,",
+      "haz brillante el camino que ahora se abre."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, Hécate, la que está ante las puertas:",
+      "salve, la de gran poder: que tu luz nos acompañe."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Para cerrar, en griego:",
+     "Χαῖρε, Ἑκάτη (jére, ekáti): \"salve, Hécate\"."
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. El salmo sigue el rito del Deipnon (rito 8) y se puede cantar mientras se hace. La primera, la llamada a Hécate antes de la puesta de sol (paso 3), con el himno órfico 1 (versos 1 y 2) y el de Proclo 6 (verso 2, \"la que está ante las puertas\"). La segunda, la limpieza y la purificación (pasos 1 y 2). La tercera, la cena de Hécate, que después se comparte con quien la necesita (paso 4). La cuarta, los antepasados (paso 5), con el órfico 1 (verso 3). La quinta, dejar atrás lo malo del mes (paso 7), con el de Proclo 6 (versos 4 a 9): \"haced brillante el camino de mi vida\", \"dadme la mano y mostradme los caminos\". El saludo final, del de Proclo 6 (versos 2 y 14)."
+    ]
+   ],
+   "vozGriega": "Χαίρε, Εκάτη"
+  },
+  {
+   "n": 11,
+   "id": "salmo-11",
+   "titulo": "Salmo al despertar",
+   "fuente": "a partir de las oraciones \"Al empezar el día\" y \"Al saludar al sol\" y de la oración de Pletón para cada día",
+   "himno": null,
+   "himnos": [],
+   "cuando": "Para cada mañana, al levantarse.",
+   "apartado": "Momentos de la vida",
+   "dias": [],
+   "dioses": [],
+   "antifona": [
+    "Jaris a vosotros, dioses de esta casa:",
+    "que viva este día con buen corazón."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Hestia, guardiana de mi casa,",
+      "a ti te saludo primero, al encenderte;",
+      "dioses que me acompañáis cada mañana,",
+      "gracias por este día que amanece."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Helios, que todo lo ves desde lo alto,",
+      "gracias por la luz que otra vez me envuelve;",
+      "ilumina mi camino en este día",
+      "y sé testigo de que obro justamente."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Que nunca deje de daros las gracias",
+      "por todos los bienes, que de vosotros vienen;",
+      "que no descuide el bien de los míos",
+      "y lo haga de buena gana, con alma alegre."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Que nunca sea causa de mal para nadie",
+      "de cuantas personas hoy encuentre,",
+      "sino de bien, en todo lo que pueda,",
+      "y que, pareciéndome a vosotros, sea feliz para siempre."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Que viva este día con calma y con fuerza,",
+      "con buen corazón para mí y para la gente;",
+      "y si algo sale mal, que no me desespere:",
+      "mañana empieza otro día, que todo se renueve."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, dioses felices, salve, Hestia:",
+      "jére, que el día comience."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Para cerrar, en griego:",
+     "Χαίρετε, θεοί (jérete, zeí): \"salve, dioses\"."
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. La primera, de la oración \"Al empezar el día\" (capítulo 6); \"al encenderte\" es encender la lámpara de Hestia por la mañana, o tocar el altar. La segunda, de la oración \"Al saludar al sol\": Platón cuenta que Sócrates rezaba al sol al amanecer. La tercera y la cuarta, de la oración de Pletón para cada día, casi palabra por palabra. La quinta, de \"Al empezar el día\" y de \"Mañana empieza otro día\", de los ritos con niños. El saludo final, del \"Jére\" con que termina \"Al empezar el día\"."
     ]
    ],
    "vozGriega": ""
+  },
+  {
+   "n": 12,
+   "id": "salmo-12",
+   "titulo": "Salmo antes de dormir",
+   "fuente": "a partir de las oraciones \"Al terminar el día\", \"Antes de dormir\", \"Cuando no puedo dormir\" y \"Cuando me despierto de madrugada\", y del examen del día de los Versos de oro de Pitágoras",
+   "himno": null,
+   "himnos": [],
+   "cuando": "Para cada noche, al acostarse, y cuando cuesta dormir.",
+   "apartado": "Momentos de la vida",
+   "dias": [],
+   "dioses": [],
+   "antifona": [
+    "Jaris a vosotros, dioses de la noche:",
+    "dadme descanso y un sueño tranquilo."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Dioses que me habéis acompañado hoy,",
+      "gracias por el día, por lo mucho y lo poco;",
+      "Hestia, guarda mi casa mientras duermo,",
+      "que el descanso me devuelva las fuerzas y el gozo."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Antes de dormir repaso el día,",
+      "lo que hice bien y en lo que me equivoco;",
+      "sin castigarme, como quien aprende,",
+      "y lo que no salió, mañana lo retomo."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Hipnos, señor del descanso,",
+      "hermano dulce de la Noche, ven a mis ojos;",
+      "aleja de mi mente las preocupaciones del día",
+      "y dame un sueño profundo y reposo."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Nyx, madre antigua, cúbreme",
+      "con tu manto de estrellas: que nadie esté solo;",
+      "que la mente se calle y el cuerpo descanse,",
+      "que se apague el ruido de todo."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Y si me despierto de madrugada,",
+      "Eos, todavía no es tu hora: espera un poco;",
+      "y si el sueño no vuelve, no pasa nada:",
+      "no tengo que dormir, descansar ya es un logro."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Buenas noches, dioses; buenas noches, Hestia:",
+      "jére, y cierro los ojos."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Para cerrar, en griego:",
+     "Καληνύχτα (kaliníjta): \"buenas noches\", en griego de hoy."
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. La primera, de la oración \"Al terminar el día\" (capítulo 6). La segunda, del examen del día de los Versos de oro de Pitágoras (\"¿En qué me he equivocado? ¿Qué he hecho bien?\"), hecho con amabilidad. La tercera, de la oración \"Antes de dormir\", a Hipnos, el Sueño. La cuarta, de \"Cuando no puedo dormir\", a Nyx, la Noche. La quinta, de \"Cuando me despierto de madrugada\", a Eos, la Aurora: \"no tengo que dormir, solo descansar\"."
+    ]
+   ],
+   "vozGriega": ""
+  },
+  {
+   "n": 13,
+   "id": "salmo-13",
+   "titulo": "Salmo cuando tengo miedo",
+   "fuente": "a partir de las oraciones \"Cuando tengo miedo\", \"Cuando me invaden los nervios\", \"Cuando la ansiedad aprieta\", \"Cuando los pensamientos no paran\" y \"Cuando todo me agobia\", y de las frases de bolsillo",
+   "himno": null,
+   "himnos": [],
+   "cuando": "Para cuando hay miedo, nervios o ansiedad, o cuando todo agobia. Se canta despacio, respirando entre verso y verso; también se puede decir por dentro, entero o solo una estrofa.",
+   "apartado": "Momentos de la vida",
+   "dias": [],
+   "dioses": [],
+   "antifona": [
+    "Jaris a vosotros, dioses:",
+    "con vosotros no estoy a solas."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Respiro, y me pongo en vuestras manos,",
+      "vosotros sois más fuertes que lo que me espanta;",
+      "aunque tiemble, no estoy a solas,",
+      "y el miedo, como la noche, también se acaba."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Hestia, tú no te mueves, tú no tienes prisa,",
+      "fuego tranquilo en el centro de la casa;",
+      "préstame un poco de tu paz:",
+      "estoy aquí, a salvo, y el pecho se calma."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Atenea, señora de la mente clara,",
+      "estos pensamientos no son yo: son ruido que pasa;",
+      "no discuto con ellos: como nubes",
+      "en el cielo, dejo que se vayan."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Cuando hay demasiadas cosas a la vez,",
+      "ayúdame a hacer la siguiente, y luego la que falta;",
+      "paso a paso, sin correr:",
+      "lo demás puede esperar a mañana."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Atenea, dame valor; Hestia, cuida de mí;",
+      "aprieto en la mano algo pequeño, como un ancla;",
+      "es fuerte lo que siento, pero no es para siempre,",
+      "y vuelve la luz después de la madrugada."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Respiro. Estoy aquí. Estoy a salvo:",
+      "con vosotros, el alma descansa."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Para cerrar, en griego:",
+     "Χαίρετε, θεοί (jérete, zeí): \"salve, dioses\"."
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. La primera, de la oración \"Cuando tengo miedo\" y de \"Cuando la ansiedad aprieta\" (\"pasará, como pasa la noche\"). La segunda, de \"Cuando me invaden los nervios\", a Hestia. La tercera, de \"Cuando los pensamientos no paran\", a Atenea. La cuarta, de \"Cuando todo me agobia\". La quinta, de las frases de bolsillo (\"Atenea, dame valor\", \"Hestia, cuida de mí\") y de \"Un ancla para la mano\". El saludo final, de \"Cuando me invaden los nervios\" y \"Cuando la ansiedad aprieta\". El salmo acompaña, pero no sustituye la ayuda de los médicos y de los psicólogos cuando hace falta."
+    ]
+   ],
+   "vozGriega": ""
+  },
+  {
+   "n": 14,
+   "id": "salmo-14",
+   "titulo": "Salmo en una mala época",
+   "fuente": "a partir de las oraciones \"En una mala época\" y \"Cuando estoy triste\", de la frase de bolsillo \"Gracias, dioses\" y de la máxima délfica 62, \"Alaba la esperanza\"",
+   "himno": null,
+   "himnos": [],
+   "cuando": "Para una mala época, cuando se está triste o todo cuesta.",
+   "apartado": "Momentos de la vida",
+   "dias": [],
+   "dioses": [],
+   "antifona": [
+    "Jaris a ti, Perséfone de la primavera:",
+    "acompáñame hasta que vuelva la luz."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Perséfone, tú bajaste a la oscuridad",
+      "y cada año vuelves con la primavera;",
+      "tú sabes que lo oscuro no es para siempre,",
+      "que después del invierno florece la tierra."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Dioses que conocéis el dolor de los mortales,",
+      "hoy el corazón me pesa;",
+      "no os pido que la tristeza se vaya de golpe,",
+      "sino que no me dejéis a solas con ella."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Acompáñame mientras estoy aquí abajo,",
+      "en la sombra, donde todo cuesta;",
+      "ayúdame a encontrar el camino de vuelta,",
+      "paso a paso, aunque la subida sea lenta."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Cuando todo es gris, que sepa ver",
+      "cada día una cosa pequeña y buena:",
+      "un rayo de sol, una canción,",
+      "una voz amiga, una mano cerca."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Y si la tristeza dura mucho,",
+      "que me deje ayudar, sin vergüenza;",
+      "alabo la esperanza, como manda Delfos:",
+      "la primavera, aunque tarde, regresa."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, Perséfone, que vuelves cada año:",
+      "contigo, la oscuridad también se aleja."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Para cerrar, en griego:",
+     "Χαῖρε, Περσεφόνη (jére, persefóni): \"salve, Perséfone\"."
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. La primera y la tercera, de la oración \"En una mala época\", a Perséfone, que baja cada año a la oscuridad y vuelve con la primavera. La segunda, casi tal cual, de \"Cuando estoy triste\". La cuarta, de la costumbre de dar las gracias cada día por algo pequeño (\"Gracias, dioses\"). La quinta, de la nota de \"Cuando estoy triste\" y de la máxima délfica 62, \"Alaba la esperanza\"."
+    ]
+   ],
+   "vozGriega": "Χαίρε, Περσεφόνη"
+  },
+  {
+   "n": 15,
+   "id": "salmo-15",
+   "titulo": "Salmo por alguien enfermo",
+   "fuente": "a partir de los himnos órficos 67, a Asclepio, y 68, a Higía, del himno a Higía de Arifrón y de las oraciones \"Por una persona enferma\" y \"Antes de dormir, en la enfermedad\"",
+   "himno": {
+    "tipo": "órfico",
+    "n": 67
+   },
+   "himnos": [
+    {
+     "tipo": "órfico",
+     "n": 67
+    },
+    {
+     "tipo": "órfico",
+     "n": 68
+    }
+   ],
+   "cuando": "Para cuando alguien está enfermo. Si quien está enfermo es uno mismo, se canta cambiando \"le\" por \"me\".",
+   "apartado": "Momentos de la vida",
+   "dias": [],
+   "dioses": [],
+   "antifona": [
+    "Jaris a ti, Asclepio, y a ti, Higía:",
+    "devolvedle la salud a quien quiero."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Asclepio, sanador de todos, señor Peán,",
+      "tú que calmas los dolores del cuerpo;",
+      "Higía, que das la salud, venid a su lado,",
+      "junto a la cama de quien está enfermo."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Guiad las manos de quienes le cuidan,",
+      "que acierten con la medicina y el remedio;",
+      "y a quien está enfermo, devolvedle las fuerzas",
+      "poco a poco, a su ritmo, sin miedo."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Higía, deseable, amable, reina de todo,",
+      "por ti se apagan los males y vuelve el aliento;",
+      "por ti la casa florece llena de alegría,",
+      "y sin ti no es dulce la fiesta ni el dinero."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Asclepio, que curas mientras duermen los que sufren,",
+      "que esta noche le traigas un buen sueño;",
+      "que descanse el cuerpo, que se calme el dolor,",
+      "y que amanezca un poco más sereno."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Y a los que esperamos a su lado,",
+      "dadnos paciencia y un corazón entero;",
+      "y cuando vuelva la salud, que lo celebremos",
+      "con un \"¡Ié, Peán!\" de agradecimiento."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, Asclepio; salve, Higía:",
+      "que viva con vosotros todo el tiempo que tengo."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Para cerrar, en griego:",
+     "Ἰὴ Παιάν (ié, peán): el grito antiguo de alegría y de curación."
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. La primera, del himno órfico 67 (versos 1 a 3) y de la oración \"Por una persona enferma\". La segunda, de \"Por una persona enferma\" (\"guiad las manos de quienes le curan y devolvedle las fuerzas\"). La tercera, del órfico 68, a Higía (versos 1 a 9). La cuarta, de \"Antes de dormir, en la enfermedad\", inspirada en la incubación antigua: los enfermos dormían en el templo de Asclepio para curarse. La quinta, de la costumbre de dar las gracias al curarse con un \"¡Ié, Peán!\". El saludo final, del himno de Arifrón: \"que viva contigo lo que me queda de vida\"."
+    ]
+   ],
+   "vozGriega": "Ιή Παιάν"
+  },
+  {
+   "n": 16,
+   "id": "salmo-16",
+   "titulo": "Salmo para dar las gracias",
+   "fuente": "a partir del himno órfico 60, a las Kharites, de la oración \"Al recibir una buena noticia\" y de la frase de bolsillo \"Gracias, dioses\"",
+   "himno": {
+    "tipo": "órfico",
+    "n": 60
+   },
+   "himnos": [
+    {
+     "tipo": "órfico",
+     "n": 60
+    }
+   ],
+   "cuando": "Para cuando pasa algo bueno, cuando alguien nos hace un regalo o un favor, o para dar las gracias por lo de cada día.",
+   "apartado": "Momentos de la vida",
+   "dias": [],
+   "dioses": [],
+   "antifona": [
+    "Jaris a vosotros, dioses:",
+    "gracias por la alegría de este día."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Hoy algo ha salido bien, dioses,",
+      "ha llegado una buena noticia;",
+      "sé que vosotros también habéis estado aquí,",
+      "y lo celebro con vosotros, en compañía."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Aglaya, Talía y Eufrósine,",
+      "madres de la alegría, siempre floridas;",
+      "Kharites bondadosas, siempre puras,",
+      "venid a bailar en círculo, amables y divinas."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Porque ni la luz del sol ni la de la luna,",
+      "ni el saber, ni la juventud que brilla,",
+      "despiertan sin vosotras",
+      "las alegrías de la vida."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Gracias por lo grande y por lo pequeño,",
+      "por la mesa puesta y la gente querida,",
+      "por el pan, por la música, por el descanso,",
+      "por todo lo bueno que trae cada día."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Lo que me dais, os lo devuelvo",
+      "con un canto, una ofrenda y una sonrisa:",
+      "es la járis, la gracia que va y que vuelve,",
+      "como un regalo que no termina."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, dioses felices; salve, Kharites:",
+      "járis a vosotros por toda mi vida."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Para cerrar, en griego:",
+     "Χάριν ἔχω (járin éjo): \"doy las gracias\"."
+    ],
+    [
+     "Nota: de dónde sale cada estrofa, para quien quiera ir al original. La primera, de la oración \"Al recibir una buena noticia\". La segunda y la tercera, del himno órfico 60, a las Kharites (las Gracias): Aglaya (el esplendor), Talía (la fiesta) y Eufrósine (la alegría), que bailan en círculo. La cuarta, de la costumbre de dar las gracias cada día por algo pequeño (\"Gracias, dioses\"). La quinta, de la idea de la járis, la palabra que da título al libro: la gracia que va de los dioses a las personas y vuelve, y también entre las personas, cuando alguien nos hace un regalo o un favor. \"Járin éjo\" lleva dentro la misma palabra."
+    ]
+   ],
+   "vozGriega": "Χάριν έχω"
   }
  ],
  "sobreGriego": "Cada salmo se canta en español y se cierra con una frase corta en griego (\"Χαῖρε\" y el nombre), siempre con su pronunciación y su traducción, para que la pueda decir cualquier helenista. La \"z\" de la pronunciación es como la de \"zapato\" (la letra θ); la \"j\", como la de \"jarra\" (la letra χ)."

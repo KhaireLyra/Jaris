@@ -21,10 +21,10 @@
  ],
  "primero": "ch002",
  "indices": {
-  "oraciones": "ch058",
-  "himnos": "ch059",
-  "ritos": "ch060",
-  "general": "ch057"
+  "oraciones": "ch059",
+  "himnos": "ch060",
+  "ritos": "ch061",
+  "general": "ch058"
  },
  "arbol": [
   {
@@ -311,37 +311,42 @@
      "cap": "ch055",
      "titulo": "Apéndice A7. Bibliografía y créditos",
      "hijos": []
+    },
+    {
+     "cap": "ch056",
+     "titulo": "Apéndice A8. Cancionero",
+     "hijos": []
     }
    ]
   },
   {
-   "cap": "ch056",
+   "cap": "ch057",
    "titulo": "Índices",
    "hijos": [
     {
-     "cap": "ch057",
+     "cap": "ch058",
      "titulo": "Índice general",
      "hijos": []
     },
     {
-     "cap": "ch058",
+     "cap": "ch059",
      "titulo": "Índice de oraciones",
      "hijos": []
     },
     {
-     "cap": "ch059",
+     "cap": "ch060",
      "titulo": "Índice de himnos",
      "hijos": []
     },
     {
-     "cap": "ch060",
+     "cap": "ch061",
      "titulo": "Índice de ritos",
      "hijos": []
     }
    ]
   },
   {
-   "cap": "ch061",
+   "cap": "ch062",
    "titulo": "Sobre este libro",
    "hijos": []
   }
@@ -624,31 +629,36 @@
   },
   {
    "cap": "ch056",
+   "titulo": "Apéndice A8. Cancionero",
+   "parte": "Apéndices"
+  },
+  {
+   "cap": "ch057",
    "titulo": "Índices",
    "parte": null
   },
   {
-   "cap": "ch057",
+   "cap": "ch058",
    "titulo": "Índice general",
    "parte": "Índices"
   },
   {
-   "cap": "ch058",
+   "cap": "ch059",
    "titulo": "Índice de oraciones",
    "parte": "Índices"
   },
   {
-   "cap": "ch059",
+   "cap": "ch060",
    "titulo": "Índice de himnos",
    "parte": "Índices"
   },
   {
-   "cap": "ch060",
+   "cap": "ch061",
    "titulo": "Índice de ritos",
    "parte": "Índices"
   },
   {
-   "cap": "ch061",
+   "cap": "ch062",
    "titulo": "Sobre este libro",
    "parte": null
   }
@@ -980,9 +990,9 @@
    "a": "por-la-familia"
   },
   {
-   "t": "Por un amigo o una amiga",
+   "t": "Por una amistad",
    "cap": "ch010",
-   "a": "por-un-amigo-o-una-amiga"
+   "a": "por-una-amistad"
   },
   {
    "t": "La comida de la amistad",
@@ -1647,7 +1657,7 @@
    "a": "a-melínoe"
   },
   {
-   "t": "Himno órfico 72. A Tique (la Fortuna)",
+   "t": "Himno órfico 72. A Tique (la fortuna)",
    "cap": "ch023",
    "a": "a-tique-la-fortuna"
   },
@@ -1672,7 +1682,7 @@
    "a": "a-las-musas"
   },
   {
-   "t": "Himno órfico 77. A Mnemósine (la Memoria)",
+   "t": "Himno órfico 77. A Mnemósine (la memoria)",
    "cap": "ch023",
    "a": "a-mnemósine-la-memoria"
   },
@@ -1800,7 +1810,10 @@
     "Jaris ya está en internet: khairelyra.github.io/Jaris",
     "Diario: el cumpleaños se guarda con el botón \"Guardar el cumpleaños\", y debajo se ve lo que hay guardado.",
     "Presentación: si el móvil no deja sonar al abrir Jaris, sale el botón \"Empezar la presentación con sonido\".",
-    "El botón \"Ver otra vez la presentación\" está ahora en la portada, junto a \"Empezar a leer\"."
+    "El botón \"Ver otra vez la presentación\" está ahora en la portada, junto a \"Empezar a leer\".",
+    "Cancionero nuevo: 16 salmos hechos con lo mejor de los himnos y oraciones del libro. Los 6 de antes, rehechos; 4 nuevos para los días del mes (Agathos Daimon, Poseidón, las Musas y el Deipnon); y 6 para momentos de la vida (al despertar, antes de dormir, cuando hay miedo, en una mala época, por alguien enfermo y para dar las gracias). Cada salmo enlaza todos los himnos de los que sale.",
+    "El Cancionero está también en el libro, como apéndice A8, y en el libro de bolsillo. Desde \"Qué leer en cada momento\", los días del mes y las fichas de los dioses se llega a cada salmo.",
+    "El libro, más libre: vale cualquier bebida y cualquier vela, y ya no se repite a cada paso. La oración \"Por un amigo o una amiga\" se llama ahora \"Por una amistad\"."
    ]
   },
   {
@@ -1853,5 +1866,5 @@
   659.26
  ],
  "notasLira": [],
- "version": "1fb8bfe4afcc"
+ "version": "c26c4c019c33"
 }
