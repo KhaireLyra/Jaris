@@ -317,6 +317,10 @@ blockquote { margin: 1rem 0; padding: 0.25rem 1rem; border-left: 4px solid var(-
 .pres-palabra span { display: inline-block; opacity: 0; transform: translateY(-120vh); animation: pres-caer 0.9s cubic-bezier(.3, 1.4, .6, 1) forwards; }
 @keyframes pres-caer { 0% { opacity: 1; transform: translateY(-120vh); } 100% { opacity: 1; transform: translateY(0); } }
 .pres-saltar { margin-top: 1.5rem; }
+.pres-saltar + .pres-saltar { margin-top: 0.75rem; }
+/* Esperando a «Empezar la presentación con sonido» (iPhone, la primera vez): solo el templo. */
+.presentacion.esperando .pres-palabra, .presentacion.esperando .pres-sub, .presentacion.esperando .pres-firma { visibility: hidden; }
+.presentacion.esperando .pres-palabra span, .presentacion.esperando .pres-sub, .presentacion.esperando .pres-firma { animation-play-state: paused; }
 .presentacion { transition: opacity 0.5s ease; }
 .presentacion.saliendo { opacity: 0; }
 @media (prefers-reduced-motion: reduce) { .pres-palabra span, .pres-sub, .pres-firma { animation: none; opacity: 1; transform: none; } .presentacion { transition: none; } }

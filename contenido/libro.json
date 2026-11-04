@@ -1794,6 +1794,16 @@
  ],
  "novedades": [
   {
+   "fecha": "2026-11-04",
+   "fechaTexto": "4 de noviembre de 2026",
+   "cambios": [
+    "Jaris ya está en internet: khairelyra.github.io/Jaris",
+    "Diario: el cumpleaños se guarda con el botón \"Guardar el cumpleaños\", y debajo se ve lo que hay guardado.",
+    "Presentación: si el móvil no deja sonar al abrir Jaris, sale el botón \"Empezar la presentación con sonido\".",
+    "El botón \"Ver otra vez la presentación\" está ahora en la portada, junto a \"Empezar a leer\"."
+   ]
+  },
+  {
    "fecha": "2026-11-03",
    "fechaTexto": "3 de noviembre de 2026",
    "cambios": [
@@ -1843,5 +1853,5 @@
   659.26
  ],
  "notasLira": [],
- "version": "3f94d3c12e0f"
+ "version": "1fb8bfe4afcc"
 }

@@ -92,7 +92,14 @@
     saltar.type = 'button';
     saltar.className = 'pres-saltar';
     saltar.textContent = 'Saltar la presentación';
-    caja.append(titulo, desc, escena, saltar);
+    // Botón para empezar con sonido: solo sale si el navegador no deja sonar sin tocar antes la pantalla
+    // (el iPhone, la primera vez). Al pulsarlo, el navegador ya deja sonar.
+    const botonEmpezar = document.createElement('button');
+    botonEmpezar.type = 'button';
+    botonEmpezar.className = 'pres-saltar';
+    botonEmpezar.textContent = 'Empezar la presentación con sonido';
+    botonEmpezar.hidden = true;
+    caja.append(titulo, desc, escena, botonEmpezar, saltar);
     document.body.append(caja);
     saltar.focus();
 
@@ -102,13 +109,42 @@
     const n = (libro.titulo || 'Jaris').length;
     // Si están grabadas con la lira de la autora («Música\Notas de la lira para la presentación»), suenan esas; si no, las del navegador.
     const lira = Array.isArray(libro.notasLira) && libro.notasLira.length ? libro.notasLira.map(function (src) { const a = new Audio(src); a.preload = 'auto'; return a; }) : null;
-    for (let i = 0; i < n; i++) {
-      const cuando = quieto() ? 0.2 + i * 0.25 : 0.25 + i * 0.45 + 0.7;
-      if (lira) {
-        const sonido = lira[i % lira.length];
-        setTimeout(function () { try { const s = sonido.cloneNode(); s.volume = 0.8; const p = s.play(); if (p) p.catch(function () { /* sin permiso para sonar */ }); } catch (e) { /* nada */ } }, cuando * 1000);
-      } else nota(notas[i % notas.length], cuando);
+    let reloj = null;
+    function empezar() {
+      caja.classList.remove('esperando');
+      for (let i = 0; i < n; i++) {
+        const cuando = quieto() ? 0.2 + i * 0.25 : 0.25 + i * 0.45 + 0.7;
+        if (lira) {
+          const sonido = lira[i % lira.length];
+          setTimeout(function () { try { sonido.currentTime = 0; sonido.volume = 0.8; const p = sonido.play(); if (p) p.catch(function () { /* sin permiso para sonar */ }); } catch (e) { /* nada */ } }, cuando * 1000);
+        } else nota(notas[i % notas.length], cuando);
+      }
+      // Al final, se desvanece suavemente (medio segundo) y se cierra; con «reducir movimiento», sin desvanecer.
+      reloj = setTimeout(function () {
+        if (quieto()) { cerrar(); return; }
+        caja.classList.add('saliendo');
+        setTimeout(cerrar, 500);
+      }, quieto() ? 4000 : 5500);
     }
+    // ¿Deja sonar el navegador? Si el sonido está bloqueado, se espera al botón.
+    let bloqueado = false;
+    try {
+      ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
+      bloqueado = ctx.state !== 'running' && !(navigator.userActivation && navigator.userActivation.hasBeenActive);
+    } catch (e) { bloqueado = false; }
+    if (bloqueado) {
+      caja.classList.add('esperando');
+      botonEmpezar.hidden = false;
+      botonEmpezar.addEventListener('click', function () {
+        try { ctx.resume(); } catch (e) { /* nada */ }
+        // Desbloquear también las grabaciones de la lira, dentro del toque
+        if (lira) lira.forEach(function (a) { try { a.muted = true; const p = a.play(); if (p) p.then(function () { a.pause(); a.muted = false; }).catch(function () { a.muted = false; }); } catch (e) { /* nada */ } });
+        botonEmpezar.remove();
+        saltar.focus();
+        empezar();
+      });
+      botonEmpezar.focus();
+    } else empezar();
 
     let hecho = false;
     function cerrar() {
@@ -124,16 +160,14 @@
     }
     function tecla(e) {
       if (e.key === 'Escape') { e.preventDefault(); cerrar(); }
-      else if (e.key === 'Tab') { e.preventDefault(); saltar.focus(); }   // el foco no sale del diálogo
+      else if (e.key === 'Tab') {   // el foco no sale del diálogo (pasa entre sus botones)
+        e.preventDefault();
+        const hay = caja.contains(botonEmpezar) && !botonEmpezar.hidden;
+        (hay && document.activeElement === saltar ? botonEmpezar : saltar).focus();
+      }
     }
     document.addEventListener('keydown', tecla, true);
     saltar.addEventListener('click', cerrar);
-    // Al final, se desvanece suavemente (medio segundo) y se cierra; con «reducir movimiento», sin desvanecer.
-    const reloj = setTimeout(function () {
-      if (quieto()) { cerrar(); return; }
-      caja.classList.add('saliendo');
-      setTimeout(cerrar, 500);
-    }, quieto() ? 4000 : 5500);
   }
 
   window.JarisPresentacion = {

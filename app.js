@@ -109,11 +109,12 @@
         lista(libro.arbol.map(function (n) { return { cap: n.cap, titulo: n.titulo, hijos: [] }; }))),
       instalar, sobre);
     if (window.JarisPresentacion) {
-      const ver = el('button', { type: 'button', class: 'secundario', texto: 'Ver otra vez la presentación' });
+      // Junto a «Empezar a leer» (antes estaba al final de la portada y costaba encontrarlo; 4 de noviembre)
+      const ver = el('button', { type: 'button', class: 'boton secundario', texto: 'Ver otra vez la presentación' });
       ver.addEventListener('click', function () {
         window.JarisPresentacion.mostrar({ libro: libro, alTerminar: function () { ver.focus(); } });
       });
-      pantalla.append(el('p', {}, ver));
+      botones.append(el('li', {}, ver));
     }
     main.replaceChildren(pantalla);
     ponerTitulo('');

@@ -172,17 +172,29 @@
     selMes.append(el('option', { value: '', texto: 'Sin poner' }));
     MESES.forEach(function (m, i) { selMes.append(el('option', { value: String(i + 1), texto: m })); });
     if (d.cumple) { selDia.value = String(d.cumple.d); selMes.value = String(d.cumple.m); }
-    const guardarCumple = function () {
+    // Se guarda con un botón (4 de noviembre): en el iPhone, al elegir en las listas no se oía si se había
+    // guardado. Debajo, una línea fija dice siempre lo que hay guardado.
+    const estadoCumple = el('p', { id: 'cumple-estado' });   // sin aria-live: el aviso ya lo dice (no repetirlo)
+    const decirCumple = function (c) {
+      estadoCumple.textContent = c ? 'Guardado: ' + c.d + ' de ' + MESES[c.m - 1] + '.' : 'Ahora no hay cumpleaños guardado.';
+    };
+    decirCumple(d.cumple);
+    const botonCumple = el('button', { type: 'button', texto: 'Guardar el cumpleaños' });
+    botonCumple.addEventListener('click', function () {
+      if (!!selDia.value !== !!selMes.value) {
+        estadoCumple.textContent = 'Falta ' + (selDia.value ? 'el mes' : 'el día') + '. Elige los dos (o "Sin poner" en los dos para quitarlo).';
+        a.avisar(estadoCumple.textContent);
+        return;
+      }
       const x = leer();
       x.cumple = selDia.value && selMes.value ? { d: +selDia.value, m: +selMes.value } : null;
       escribir(x);
-      if (x.cumple) a.avisar('Cumpleaños guardado: ' + x.cumple.d + ' de ' + MESES[x.cumple.m - 1] + '.');
-      else if (!selDia.value && !selMes.value) a.avisar('Cumpleaños quitado.');
-    };
-    selDia.addEventListener('change', guardarCumple);
-    selMes.addEventListener('change', guardarCumple);
+      decirCumple(x.cumple);
+      a.avisar(x.cumple ? 'Cumpleaños guardado: ' + x.cumple.d + ' de ' + MESES[x.cumple.m - 1] + '.' : 'Cumpleaños quitado.');
+    });
     cumple.append(el('label', { for: 'cumple-dia', class: 'buz-etiqueta', texto: 'Día' }), selDia,
-      el('label', { for: 'cumple-mes', class: 'buz-etiqueta', texto: 'Mes' }), selMes);
+      el('label', { for: 'cumple-mes', class: 'buz-etiqueta', texto: 'Mes' }), selMes,
+      el('p', {}, botonCumple), estadoCumple);
     ajustes.append(cumple);
     raiz.append(ajustes);
 
