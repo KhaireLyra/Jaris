@@ -1,0 +1,1204 @@
+{
+ "alfabeto": {
+  "letras": [
+   {
+    "letra": "Α",
+    "nombre": "Alfa",
+    "griego": "Ἅπαντα πράξεις εὐτυχῶς, θεὸς λέγει.",
+    "texto": "Todo lo harás con buena fortuna, dice el dios.",
+    "nota": "",
+    "numero": 1,
+    "dados": 30,
+    "tabas": 30
+   },
+   {
+    "letra": "Β",
+    "nombre": "Beta",
+    "griego": "Βοηθὸν ἕξεις μετὰ Τύχης τὸν Πύθιον.",
+    "texto": "Tendrás como ayuda, junto a la Fortuna, al Pitio (Apolo).",
+    "nota": "",
+    "numero": 2,
+    "dados": 29,
+    "tabas": 28
+   },
+   {
+    "letra": "Γ",
+    "nombre": "Gamma",
+    "griego": "Γῆ σοι τέλειον καρπὸν ἀποδώσει πόνων.",
+    "texto": "La Tierra te dará el fruto completo de tus trabajos.",
+    "nota": "",
+    "numero": 3,
+    "dados": 28,
+    "tabas": 27
+   },
+   {
+    "letra": "Δ",
+    "nombre": "Delta",
+    "griego": "Δύναμις ἄκαιρος ἐν νόμοισιν ἀσθενής.",
+    "texto": "La fuerza a destiempo es débil ante las leyes.",
+    "nota": "La palabra \"nómoisin\" también puede entenderse como \"en los pastos\". El sentido es el mismo: la fuerza usada en mal momento no sirve.",
+    "numero": 4,
+    "dados": 27,
+    "tabas": 26
+   },
+   {
+    "letra": "Ε",
+    "nombre": "Épsilon",
+    "griego": "Ἐρᾷς δικαίων ἐγ γάμων ἰδεῖν σποράν.",
+    "texto": "Deseas ver la descendencia de un matrimonio justo.",
+    "nota": "",
+    "numero": 5,
+    "dados": 26,
+    "tabas": 25
+   },
+   {
+    "letra": "Ζ",
+    "nombre": "Dseta",
+    "griego": "Ζάλην μεγίστην φεῦγε, μή τι καὶ β[λ]αβῇς.",
+    "texto": "Huye de la gran tormenta, no vayas a sufrir algún daño.",
+    "nota": "",
+    "numero": 6,
+    "dados": 24,
+    "tabas": 24
+   },
+   {
+    "letra": "Η",
+    "nombre": "Eta",
+    "griego": "Ἥλιος ὁρᾷ σε λαμπρός, ὃς τὰ πάντα ὁρᾷ.",
+    "texto": "Te mira el brillante Helios, que todo lo ve.",
+    "nota": "",
+    "numero": 7,
+    "dados": 23,
+    "tabas": 23
+   },
+   {
+    "letra": "Θ",
+    "nombre": "Theta",
+    "griego": "Θεοὺς ἀρωγοὺς τῆς ὁδοῦ ταύτης ἔχεις.",
+    "texto": "Tienes a los dioses como ayuda en este camino.",
+    "nota": "",
+    "numero": 8,
+    "dados": 22,
+    "tabas": 22
+   },
+   {
+    "letra": "Ι",
+    "nombre": "Iota",
+    "griego": "Ἱδρῶτές εἰσιν, πλὴν ἁπάντων [π]εριέσῃ.",
+    "texto": "Habrá sudores (esfuerzos), pero lo superarás todo.",
+    "nota": "",
+    "numero": 9,
+    "dados": 21,
+    "tabas": 21
+   },
+   {
+    "letra": "Κ",
+    "nombre": "Kappa",
+    "griego": "Κύμασι μάχεσθαι χαλεπόν· ἀνάμειν[ον], φίλε.",
+    "texto": "Es difícil luchar contra las olas: espera, amigo.",
+    "nota": "",
+    "numero": 10,
+    "dados": 20,
+    "tabas": 20
+   },
+   {
+    "letra": "Λ",
+    "nombre": "Lambda",
+    "griego": "Λαιὸς διελθὼν πάντα σημαίνει καλῶς.",
+    "texto": "Un ave que pasa por la izquierda lo anuncia todo bien.",
+    "nota": "Verso dudoso: \"laiós\" puede ser \"el de la izquierda\" o el nombre de un pájaro, el roquero solitario. Para los griegos, las aves eran mensajeras de los dioses.",
+    "numero": 11,
+    "dados": 19,
+    "tabas": 19
+   },
+   {
+    "letra": "Μ",
+    "nombre": "Mi",
+    "griego": "Μοχθεῖν ἀνάγκη· μετα[β]ολὴ δ' ἔσται καλή.",
+    "texto": "Es necesario esforzarse, pero el cambio será bueno.",
+    "nota": "",
+    "numero": 12,
+    "dados": 18,
+    "tabas": 18
+   },
+   {
+    "letra": "Ν",
+    "nombre": "Ni",
+    "griego": "Νεικηφόρον δώρημα τὸν χρησμὸν τε[λεῖ].",
+    "texto": "Un regalo que trae la victoria cumplirá el oráculo.",
+    "nota": "",
+    "numero": 13,
+    "dados": 17,
+    "tabas": 17
+   },
+   {
+    "letra": "Ξ",
+    "nombre": "Xi",
+    "griego": "Ξηρῶν ἀπὸ κλάδων καρπὸν οὐκ ἔσται λα[βεῖν].",
+    "texto": "De las ramas secas no se podrá coger fruto.",
+    "nota": "",
+    "numero": 14,
+    "dados": 16,
+    "tabas": 16
+   },
+   {
+    "letra": "Ο",
+    "nombre": "Ómicron",
+    "griego": "Οὐκ ἔστι μ[ὴ] σπείραντα θερίσαι κάρπιμα.",
+    "texto": "No es posible cosechar frutos sin haber sembrado.",
+    "nota": "",
+    "numero": 15,
+    "dados": 15,
+    "tabas": 15
+   },
+   {
+    "letra": "Π",
+    "nombre": "Pi",
+    "griego": "Πολλοὺς ἀ[γ]ῶνα[ς] διανύσας λήψῃ στέφος.",
+    "texto": "Después de terminar muchas luchas, recibirás la corona.",
+    "nota": "",
+    "numero": 16,
+    "dados": 14,
+    "tabas": 14
+   },
+   {
+    "letra": "Ρ",
+    "nombre": "Rho",
+    "griego": "Ῥᾷον διάξεις ἔτι βραχὺν μείνας χ[ρ]όνο[ν].",
+    "texto": "Te irá más fácil si esperas todavía un poco de tiempo.",
+    "nota": "",
+    "numero": 17,
+    "dados": 12,
+    "tabas": 13
+   },
+   {
+    "letra": "Σ",
+    "nombre": "Sigma",
+    "griego": "[Σ]αφῶς ὁ Φοῖβος ἐννέπει· \"μεῖνον, φίλε.\"",
+    "texto": "Febo lo dice claramente: 'Espera, amigo'.",
+    "nota": "",
+    "numero": 18,
+    "dados": 11,
+    "tabas": 12
+   },
+   {
+    "letra": "Τ",
+    "nombre": "Tau",
+    "griego": "Τῶν νῦν παρουσῶν συμφορῶν ἕξεις [λύ]σιν.",
+    "texto": "Encontrarás solución a las desgracias que tienes ahora.",
+    "nota": "",
+    "numero": 19,
+    "dados": 10,
+    "tabas": 11
+   },
+   {
+    "letra": "Υ",
+    "nombre": "Ípsilon",
+    "griego": "Ὑπόσχεσιν τὸ [π]ρᾶγμα γενναίαν ἔχει.",
+    "texto": "El asunto trae consigo una promesa noble.",
+    "nota": "",
+    "numero": 20,
+    "dados": 9,
+    "tabas": 10
+   },
+   {
+    "letra": "Φ",
+    "nombre": "Fi",
+    "griego": "Φαύλως τι πράξας μετὰ χρόνον [μ]έμψῃ θ[ε]οῖς.",
+    "texto": "Si haces algo con descuido, con el tiempo culparás a los dioses.",
+    "nota": "Es decir: si sale mal por tu descuido, no será culpa de los dioses.",
+    "numero": 21,
+    "dados": 8,
+    "tabas": 9
+   },
+   {
+    "letra": "Χ",
+    "nombre": "Ji",
+    "griego": "Χρυσοῦν ποιήσεις χρησμὸν ἐπιτυχών, φίλε.",
+    "texto": "Si aciertas, amigo, harás de oro este oráculo.",
+    "nota": "",
+    "numero": 22,
+    "dados": 7,
+    "tabas": 8
+   },
+   {
+    "letra": "Ψ",
+    "nombre": "Psi",
+    "griego": "Ψῆφον δικαίαν τήνδε παρὰ θεῶν ἔχεις.",
+    "texto": "Este es el veredicto justo que recibes de los dioses.",
+    "nota": "",
+    "numero": 23,
+    "dados": 6,
+    "tabas": 7
+   },
+   {
+    "letra": "Ω",
+    "nombre": "Omega",
+    "griego": "Ὠμὴν ὀπώραν [ἣν] λάβῃς, οὐ χρήσιμον.",
+    "texto": "La fruta que cojas verde no te servirá.",
+    "nota": "Es decir: no lo fuerces antes de tiempo.",
+    "numero": 24,
+    "dados": 5,
+    "tabas": 5
+   }
+  ],
+  "repetirDados": [
+   25,
+   13
+  ],
+  "pasos": [
+   "Lavarse las manos y saludar a Hestia.",
+   "Invocar a Hermes o a Apolo y pedir una respuesta clara.",
+   "Hacer una sola pregunta, concreta.",
+   "Sacar una ficha con una letra, sin mirar, de una bolsa con las 24 letras.",
+   "Leer el verso de esa letra y pensar en cómo se aplica a la pregunta.",
+   "Dar las gracias."
+  ],
+  "invocacion": "Apolo, señor, y Hermes, guiadme. Que la suerte hable con verdad."
+ },
+ "tabas": {
+  "respuestas": [
+   {
+    "romano": "I",
+    "n": 1,
+    "tirada": [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "suma": 5,
+    "dios": "Zeus Olímpico",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Todas iguales: escucha la voz de Febo. Zeus salvador dará a tu mente un buen consejo; te dará alegría y te dará todo lo que pidas. Pero hazte propicia a Afrodita y al hijo de Maya, Hermes."
+   },
+   {
+    "romano": "II",
+    "n": 2,
+    "tirada": [
+     1,
+     1,
+     1,
+     1,
+     3
+    ],
+    "suma": 7,
+    "dios": "Atenea Areia, la guerrera",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Si salen cuatro unos y un tres, esto te dice: huyendo de la enemistad y del mal llegarás un día a tus premios. Te salvará la diosa de ojos brillantes, Atenea, y el plan que emprendas saldrá como deseas."
+   },
+   {
+    "romano": "III",
+    "n": 3,
+    "tirada": [
+     1,
+     1,
+     1,
+     1,
+     4
+    ],
+    "suma": 8,
+    "dios": "Las Moiras",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Cuatro unos y un cuatro. No hagas lo que vas a hacer: no es lo mejor. En esa tarea habrá dificultades y no encontrarás salida. Conviene esperar: con el tiempo no habrá mal."
+   },
+   {
+    "romano": "IV",
+    "n": 4,
+    "tirada": [
+     1,
+     1,
+     1,
+     3,
+     3
+    ],
+    "suma": 9,
+    "dios": "El águila de Zeus",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Si caen dos treses y tres unos, el águila que vuela alto, a la derecha, es la guía de tu camino. Te da una profecía favorable, con Zeus el más grande: conseguirás aquello a lo que te lanzas. No temas nada."
+   },
+   {
+    "romano": "V",
+    "n": 5,
+    "tirada": [
+     1,
+     1,
+     1,
+     1,
+     6
+    ],
+    "suma": 10,
+    "dios": "El Gran Daimon",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Si sale un seis y cuatro unos: cumple al dios la promesa que le hiciste y te irá mejor, si haces con buen juicio lo que te preocupa. Deméter y Zeus serán tus salvadores."
+   },
+   {
+    "romano": "VI",
+    "n": 6,
+    "tirada": [
+     1,
+     1,
+     1,
+     3,
+     4
+    ],
+    "suma": 10,
+    "dios": "La Buena Fortuna",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Si caen tres unos, un cuatro y un tres, no hagas el asunto que ahora emprendes. Aunque estés enfermo, los dioses te protegen: te librarán del sufrimiento y no habrá ningún mal."
+   },
+   {
+    "romano": "VII",
+    "n": 7,
+    "tirada": [
+     1,
+     1,
+     3,
+     3,
+     3
+    ],
+    "suma": 11,
+    "dios": "Nike, la Victoria",
+    "diosPerdido": false,
+    "etiqueta": "completada",
+    "texto": "Si caen tres treses y los otros dos unos, [deja a un lado el miedo y sigue adelante]: serás honrado, vencerás a todos, y el plan que emprendas saldrá como deseas."
+   },
+   {
+    "romano": "VIII",
+    "n": 8,
+    "tirada": [
+     1,
+     1,
+     1,
+     4,
+     4
+    ],
+    "suma": 11,
+    "dios": "Hermes, el de los caminos",
+    "diosPerdido": false,
+    "etiqueta": "compuesta",
+    "texto": "Tres unos y dos cuatros: el camino está abierto, pero no corras. Hermes va a tu lado y te enseña la senda; pregunta, escucha y avanza paso a paso, y llegarás a donde quieres."
+   },
+   {
+    "romano": "IX",
+    "n": 9,
+    "tirada": [
+     1,
+     1,
+     1,
+     3,
+     6
+    ],
+    "suma": 12,
+    "dios": "Deméter",
+    "diosPerdido": false,
+    "etiqueta": "compuesta",
+    "texto": "Tres unos, un tres y un seis: lo que siembras todavía duerme bajo la tierra. Riégalo con paciencia y no lo arranques para ver si crece; Deméter te dará la cosecha a su tiempo."
+   },
+   {
+    "romano": "X",
+    "n": 10,
+    "tirada": [
+     1,
+     1,
+     3,
+     3,
+     4
+    ],
+    "suma": 12,
+    "dios": "Apolo",
+    "diosPerdido": false,
+    "etiqueta": "compuesta",
+    "texto": "Dos unos, dos treses y un cuatro: tu duda es más grande que el peligro. Apolo te da claridad: mira las cosas tal como son, decide con calma y lo que emprendas tendrá buen fin."
+   },
+   {
+    "romano": "XI",
+    "n": 11,
+    "tirada": [
+     1,
+     1,
+     1,
+     4,
+     6
+    ],
+    "suma": 13,
+    "dios": "Afrodita",
+    "diosPerdido": false,
+    "etiqueta": "compuesta",
+    "texto": "Tres unos, un cuatro y un seis: busca la paz con quien te ha herido o a quien has herido. Afrodita une lo que estaba separado; con palabras amables encontrarás alegría."
+   },
+   {
+    "romano": "XII",
+    "n": 12,
+    "tirada": [
+     1,
+     1,
+     3,
+     4,
+     4
+    ],
+    "suma": 13,
+    "dios": "Hestia",
+    "diosPerdido": false,
+    "etiqueta": "compuesta",
+    "texto": "Dos unos, un tres y dos cuatros: vuelve a tu casa y a lo que te sostiene. Hestia guarda el fuego del hogar; desde ahí, con calma y en buena compañía, todo te saldrá mejor."
+   },
+   {
+    "romano": "XIII",
+    "n": 13,
+    "tirada": [
+     1,
+     3,
+     3,
+     3,
+     3
+    ],
+    "suma": 13,
+    "dios": "",
+    "diosPerdido": true,
+    "etiqueta": "antigua",
+    "texto": "Un uno y cuatro treses. ... y sin salida ... El asunto que haces no lo permite el dios: espera. Es terrible meterse en peleas, en pleitos y en juicios."
+   },
+   {
+    "romano": "XIV",
+    "n": 14,
+    "tirada": [
+     1,
+     3,
+     3,
+     3,
+     4
+    ],
+    "suma": 14,
+    "dios": "",
+    "diosPerdido": true,
+    "etiqueta": "antigua",
+    "texto": "Un uno, tres treses y un cuatro: das coces contra el aguijón, luchas contra las olas, buscas peces en alta mar. No te apresures a actuar: no te conviene forzar a los dioses fuera de tiempo."
+   },
+   {
+    "romano": "XV",
+    "n": 15,
+    "tirada": [
+     1,
+     1,
+     3,
+     3,
+     6
+    ],
+    "suma": 14,
+    "dios": "",
+    "diosPerdido": true,
+    "etiqueta": "antigua",
+    "texto": "Un seis, dos unos y dos treses: no pienses cosas espantosas ni vayas contra el dios con pensamientos terribles. Nada útil saldrá de ahí, ni sacarás ganancia del camino que emprendes."
+   },
+   {
+    "romano": "XVI",
+    "n": 16,
+    "tirada": [
+     1,
+     1,
+     4,
+     4,
+     4
+    ],
+    "suma": 14,
+    "dios": "El Buen Daimon (Agathos Daimon (se dice \"agazós démon\"))",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Si caen tres cuatros y dos unos, el dios te guiará en el camino que emprendes. La sonriente Afrodita te llevará a algo bueno: caminarás con muchos frutos y con un destino sin daño."
+   },
+   {
+    "romano": "XVII",
+    "n": 17,
+    "tirada": [
+     1,
+     3,
+     3,
+     4,
+     4
+    ],
+    "suma": 15,
+    "dios": "Zeus Salvador",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Un uno, dos treses y dos cuatros: lo que ahora emprendes, hazlo con confianza. ¡Manos a la obra! Los dioses te han dado buenas señales. No te angusties: nada malo te pasará."
+   },
+   {
+    "romano": "XVIII",
+    "n": 18,
+    "tirada": [
+     1,
+     1,
+     1,
+     6,
+     6
+    ],
+    "suma": 15,
+    "dios": "Zeus Amón",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Tres unos y dos seises: el camino que piensas en tu mente, síguelo con confianza. El dios te lo dará todo: harás lo que tu corazón desea, y Zeus, que truena en lo alto, será tu salvador."
+   },
+   {
+    "romano": "XIX",
+    "n": 19,
+    "tirada": [
+     3,
+     3,
+     3,
+     3,
+     3
+    ],
+    "suma": 15,
+    "dios": "La Buena Fortuna",
+    "diosPerdido": false,
+    "etiqueta": "completada",
+    "texto": "Todos treses: escucha la voz de Febo. [Como la madre que da a luz y alimenta a su hijo, lo que esperas crecerá con cuidado y con tiempo], y algún día tendrás todo bien en lo que me preguntas."
+   },
+   {
+    "romano": "XX",
+    "n": 20,
+    "tirada": [
+     1,
+     1,
+     3,
+     4,
+     6
+    ],
+    "suma": 15,
+    "dios": "Zeus Xenios, protector de los forasteros",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Un cuatro, un tres, un seis y dos unos: el asunto que vas a emprender, no lo apresures, aún no es el momento. Aunque estés enfermo, los dioses te salvarán fácilmente, y al que está en otra tierra el dios le pondrá fin al viaje."
+   },
+   {
+    "romano": "XXI",
+    "n": 21,
+    "tirada": [
+     1,
+     3,
+     3,
+     3,
+     6
+    ],
+    "suma": 16,
+    "dios": "Heracles",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Un seis, tres treses y un uno: aún no es el momento. Tienes demasiada prisa; no hagas cosas en vano, como la leona que por las prisas pare cachorros ciegos. Piénsalo con calma y el dios te guiará."
+   },
+   {
+    "romano": "XXII",
+    "n": 22,
+    "tirada": [
+     1,
+     1,
+     4,
+     4,
+     6
+    ],
+    "suma": 16,
+    "dios": "",
+    "diosPerdido": true,
+    "etiqueta": "completada",
+    "texto": "Un seis, dos cuatros y dos unos: [el viento todavía no es favorable. Prepara bien tu barca y espera; cuando llegue el momento, navegarás seguro]."
+   },
+   {
+    "romano": "XXIII",
+    "n": 23,
+    "tirada": [
+     1,
+     3,
+     4,
+     4,
+     4
+    ],
+    "suma": 16,
+    "dios": "Asclepio",
+    "diosPerdido": false,
+    "etiqueta": "compuesta",
+    "texto": "Un uno, un tres y tres cuatros: cuida primero de tu cuerpo y de tu descanso. Asclepio y Higía están contigo: lo que hoy pesa, mañana será más ligero."
+   },
+   {
+    "romano": "XXIV",
+    "n": 24,
+    "tirada": [
+     3,
+     3,
+     3,
+     3,
+     4
+    ],
+    "suma": 16,
+    "dios": "Hermes",
+    "diosPerdido": false,
+    "etiqueta": "compuesta",
+    "texto": "Cuatro treses y un cuatro: escucha antes de hablar. Hermes te trae una noticia; recíbela con calma y responde con palabras justas, y sacarás provecho."
+   },
+   {
+    "romano": "XXV",
+    "n": 25,
+    "tirada": [
+     3,
+     3,
+     3,
+     4,
+     4
+    ],
+    "suma": 17,
+    "dios": "Hera",
+    "diosPerdido": false,
+    "etiqueta": "compuesta",
+    "texto": "Tres treses y dos cuatros: cumple lo que prometiste y guarda la fidelidad. Hera protege los lazos verdaderos; lo que se une con respeto se mantendrá firme."
+   },
+   {
+    "romano": "XXVI",
+    "n": 26,
+    "tirada": [
+     1,
+     3,
+     3,
+     4,
+     6
+    ],
+    "suma": 17,
+    "dios": "Ártemis",
+    "diosPerdido": false,
+    "etiqueta": "compuesta",
+    "texto": "Un uno, dos treses, un cuatro y un seis: sal al campo, al aire libre, y aclara tu mente. Ártemis te enseña a esperar en silencio, como quien caza: el momento justo llegará."
+   },
+   {
+    "romano": "XXVII",
+    "n": 27,
+    "tirada": [
+     1,
+     1,
+     3,
+     6,
+     6
+    ],
+    "suma": 17,
+    "dios": "Dioniso",
+    "diosPerdido": false,
+    "etiqueta": "compuesta",
+    "texto": "Dos unos, un tres y dos seises: no lo tomes todo tan en serio. Dioniso te invita a soltar la carga: comparte la mesa con los tuyos y la alegría te mostrará el camino."
+   },
+   {
+    "romano": "XXVIII",
+    "n": 28,
+    "tirada": [
+     1,
+     4,
+     4,
+     4,
+     4
+    ],
+    "suma": 17,
+    "dios": "",
+    "diosPerdido": true,
+    "etiqueta": "antigua",
+    "texto": "Un uno y cuatro cuatros: ahora el dios te lo cumple todo y te guía por el camino recto. Harás todo según tu deseo; no te atormentes más: conseguirás sin reproche lo que deseas."
+   },
+   {
+    "romano": "XXIX",
+    "n": 29,
+    "tirada": [
+     1,
+     1,
+     4,
+     6,
+     6
+    ],
+    "suma": 18,
+    "dios": "Adrastea",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Dos seises, dos unos y el quinto un cuatro: harás bien este asunto, y llegará el momento oportuno. Estarás a salvo y el peligro pasará de largo; y en lo demás, las profecías te son favorables."
+   },
+   {
+    "romano": "XXX",
+    "n": 30,
+    "tirada": [
+     1,
+     3,
+     4,
+     4,
+     6
+    ],
+    "suma": 18,
+    "dios": "Zeus Keraunios, el del rayo",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Un uno, un seis, dos cuatros y un tres: no saldrá según tu idea lo que te preocupa. No te conviene irte de viaje, ni sacarás provecho comprando."
+   },
+   {
+    "romano": "XXXI",
+    "n": 31,
+    "tirada": [
+     3,
+     3,
+     4,
+     4,
+     4
+    ],
+    "suma": 18,
+    "dios": "El Daimon Hikesios, protector de los que piden ayuda",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Tres cuatros y dos treses: no veo seguro este plan; espera. Te irá bien y lo conseguirás después; pero ahora quédate tranquilo, obedece a los dioses y vive con esperanza."
+   },
+   {
+    "romano": "XXXII",
+    "n": 32,
+    "tirada": [
+     3,
+     3,
+     3,
+     3,
+     6
+    ],
+    "suma": 18,
+    "dios": "El Buen Tiempo (o el buen Crono)",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Un seis y cuatro treses, este oráculo dice: no te apresures, el dios se opone; espera. No seas como la leona que pare cachorros ciegos. Piénsalo con calma y se te cumplirán cosas agradables."
+   },
+   {
+    "romano": "XXXIII",
+    "n": 33,
+    "tirada": [
+     1,
+     3,
+     3,
+     6,
+     6
+    ],
+    "suma": 19,
+    "dios": "La Buena Esperanza (Elpis)",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Dos seises, dos treses y un uno, esto dice: todo te va bien y es seguro en lo que me preguntas. No temas: el dios te guiará en todo, te librará de la pena difícil y disipará la sospecha."
+   },
+   {
+    "romano": "XXXIV",
+    "n": 34,
+    "tirada": [
+     1,
+     4,
+     4,
+     4,
+     6
+    ],
+    "suma": 19,
+    "dios": "Zeus Ktesios, el de la casa",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Tres cuatros, un seis y un uno: ponte a ello con confianza; el oráculo es de esperanza. Anuncia que el enfermo se salvará; y si preguntas por una deuda, recuperarás lo que se te debe."
+   },
+   {
+    "romano": "XXXV",
+    "n": 35,
+    "tirada": [
+     3,
+     4,
+     4,
+     4,
+     4
+    ],
+    "suma": 19,
+    "dios": "Hermes Kerdempóros, el de las ganancias",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Un tres y cuatro cuatros: Hermes dará a tu mente un buen consejo para tu provecho. Todo saldrá bien: conseguirás lo que quieres, encontrarás lo que buscas y no habrá ningún mal."
+   },
+   {
+    "romano": "XXXVI",
+    "n": 36,
+    "tirada": [
+     3,
+     3,
+     3,
+     4,
+     6
+    ],
+    "suma": 19,
+    "dios": "Nike, la Victoria",
+    "diosPerdido": false,
+    "etiqueta": "completada",
+    "texto": "Un seis, tres treses y un cuatro: [una buena profecía, forastero: el camino que temes está despejado. Avanza con valor, y la victoria irá contigo]."
+   },
+   {
+    "romano": "XXXVII",
+    "n": 37,
+    "tirada": [
+     1,
+     1,
+     6,
+     6,
+     6
+    ],
+    "suma": 20,
+    "dios": "La Buena Fortuna",
+    "diosPerdido": false,
+    "etiqueta": "compuesta",
+    "texto": "Tres seises y dos unos: [la rueda de la fortuna gira a tu favor. No la fuerces ni la detengas; aprovecha lo que te trae y comparte lo que recibas]."
+   },
+   {
+    "romano": "XXXVIII",
+    "n": 38,
+    "tirada": [
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "suma": 20,
+    "dios": "Las Moiras",
+    "diosPerdido": false,
+    "etiqueta": "completada",
+    "texto": "Si caen todas iguales, cuatro: [espera antes de ponerte en camino]. Veo una pena vergonzosa en lo que me preguntas; [no sigas por ahí: cumple lo que debes a los dioses] y cumple tu promesa."
+   },
+   {
+    "romano": "XXXIX",
+    "n": 39,
+    "tirada": [
+     1,
+     3,
+     4,
+     6,
+     6
+    ],
+    "suma": 20,
+    "dios": "Némesis",
+    "diosPerdido": false,
+    "etiqueta": "completada",
+    "texto": "Un cuatro, un tres, dos seises y un uno: [no te pongas por encima de nadie]. Lo bueno vendrá; al enfermo, dice el dios, le llegará la salud. Consulta en calma: nada malo te pasará."
+   },
+   {
+    "romano": "XL",
+    "n": 40,
+    "tirada": [
+     3,
+     3,
+     4,
+     4,
+     6
+    ],
+    "suma": 20,
+    "dios": "Zeus de los difuntos, el que cuida",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Un seis, dos treses y dos cuatros: con prisas no se consigue lo que trae el buen momento. Tienes ganancia; el dios te librará de toda desgracia. Fácil es la empresa, pero guárdate de todo lo malo."
+   },
+   {
+    "romano": "XLI",
+    "n": 41,
+    "tirada": [
+     1,
+     4,
+     4,
+     6,
+     6
+    ],
+    "suma": 21,
+    "dios": "Deméter",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Dos seises, dos cuatros y un uno: todo te va bien y es seguro en lo que me preguntas. No temas: el dios te guiará en todo, te librará de la pena difícil y disipará la sospecha."
+   },
+   {
+    "romano": "XLII",
+    "n": 42,
+    "tirada": [
+     3,
+     4,
+     4,
+     4,
+     6
+    ],
+    "suma": 21,
+    "dios": "Helios Phosphoros, el que trae la luz",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Tres cuatros, un seis y un tres: todo lo que quieres hacer y lo que te preocupa, lo encontrarás. Ponte a ello, forastero, con confianza: todo está preparado. Lo verás claro: te sale al encuentro un día de salvación."
+   },
+   {
+    "romano": "XLIII",
+    "n": 43,
+    "tirada": [
+     3,
+     3,
+     3,
+     6,
+     6
+    ],
+    "suma": 21,
+    "dios": "La Fortuna que lleva adelante",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Tres treses y dos seises, esto dice: tienes buenas obras; el oráculo te dice que te apresures. Escaparás de la enfermedad difícil y vencerás a todos; y al que anda errante en tierra extranjera, dice el dios, volverá."
+   },
+   {
+    "romano": "XLIV",
+    "n": 44,
+    "tirada": [
+     1,
+     3,
+     6,
+     6,
+     6
+    ],
+    "suma": 22,
+    "dios": "Las Moiras, que se manifiestan",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Un uno, tres seises y un tres: no metas la mano en la boca del lobo, no sea que te pase algo. Es un asunto difícil, del que nada sabes ni es de fiar; mejor quédate tranquilo y deja el viaje y la compra."
+   },
+   {
+    "romano": "XLV",
+    "n": 45,
+    "tirada": [
+     4,
+     4,
+     4,
+     4,
+     6
+    ],
+    "suma": 22,
+    "dios": "Poseidón",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Un seis y cuatro cuatros seguidos: no siembres en el mar ni escribas en el agua: las dos cosas son esfuerzo vano y trabajo sin fruto. No fuerces al dios siendo mortal, no sea que te haga daño."
+   },
+   {
+    "romano": "XLVI",
+    "n": 46,
+    "tirada": [
+     3,
+     3,
+     4,
+     6,
+     6
+    ],
+    "suma": 22,
+    "dios": "Ares Thourios, el impetuoso",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Dos seises, un cuatro y dos treses: no vayas por el camino que piensas, forastero; un gran león feroz lo ha ocupado: guárdate de él. Terrible es el oráculo, sin salida: quédate tranquilo y espera."
+   },
+   {
+    "romano": "XLVII",
+    "n": 47,
+    "tirada": [
+     1,
+     4,
+     6,
+     6,
+     6
+    ],
+    "suma": 23,
+    "dios": "Atenea",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Un uno, tres seises y un cuatro: honra a Palas Atenea y todo será como quieres; se te cumplirá todo lo decidido. Te librará de las cadenas y salvará al enfermo."
+   },
+   {
+    "romano": "XLVIII",
+    "n": 48,
+    "tirada": [
+     3,
+     4,
+     4,
+     6,
+     6
+    ],
+    "suma": 23,
+    "dios": "Euphrosyne, la Alegría",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Dos seises, dos cuatros y un tres: ve a donde te lleve tu ánimo, pues volverás a casa habiendo encontrado y hecho lo que pensabas, y vencerás a todos. Tendrás alegría en todo: no temas."
+   },
+   {
+    "romano": "XLIX",
+    "n": 49,
+    "tirada": [
+     3,
+     3,
+     6,
+     6,
+     6
+    ],
+    "suma": 24,
+    "dios": "Apolo Pitio",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Tres seises juntos y dos treses: aprende a escuchar. Espera, no actúes; obedece a los oráculos de Febo. Con el tiempo, aguarda el buen momento; ahora quédate tranquilo. Esperando un poco, cumplirás todo lo que te preocupa."
+   },
+   {
+    "romano": "L",
+    "n": 50,
+    "tirada": [
+     4,
+     4,
+     4,
+     6,
+     6
+    ],
+    "suma": 24,
+    "dios": "Crono, que devora a sus hijos",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Tres cuatros y dos seises, esto te dice el dios: quédate en tu casa, tranquilo, y no vayas a otro sitio, no sea que te alcance la fiera destructora. No veo este asunto seguro ni firme."
+   },
+   {
+    "romano": "LI",
+    "n": 51,
+    "tirada": [
+     3,
+     4,
+     6,
+     6,
+     6
+    ],
+    "suma": 25,
+    "dios": "Men Phosphoros, el dios Luna que trae la luz",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Un cuatro, tres seises y un tres: ten confianza, tienes el buen momento; harás lo que quieres y lo conseguirás. Ponte en camino: el esfuerzo da fruto. Emprende la tarea: es buena, y también el pleito y el juicio."
+   },
+   {
+    "romano": "LII",
+    "n": 52,
+    "tirada": [
+     1,
+     6,
+     6,
+     6,
+     6
+    ],
+    "suma": 25,
+    "dios": "La Madre de los dioses",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Cuatro seises y un uno, esto dice: como los lobos fuertes atrapan a los corderos y los leones a los bueyes, así tú vencerás a todos; y tendrás todo lo que preguntas, con Zeus y con Hermes."
+   },
+   {
+    "romano": "LIII",
+    "n": 53,
+    "tirada": [
+     4,
+     4,
+     6,
+     6,
+     6
+    ],
+    "suma": 26,
+    "dios": "Zeus Katachthonios, el de debajo de la tierra",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Tres seises juntos y dos cuatros, el oráculo dice: el asunto tiene obstáculos; no te apresures, espera. Doloroso es el camino, sin salida y difícil de recorrer; comprar es difícil y vender traerá daño."
+   },
+   {
+    "romano": "LIV",
+    "n": 54,
+    "tirada": [
+     3,
+     6,
+     6,
+     6,
+     6
+    ],
+    "suma": 27,
+    "dios": "Afrodita Urania, la celeste",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Cuatro seises y un tres, esto te dice: Afrodita, hija del cielo, señora de los Amores, te envía una buena profecía; te abrirá el camino, y escaparás de la enfermedad y de la preocupación dolorosa."
+   },
+   {
+    "romano": "LV",
+    "n": 55,
+    "tirada": [
+     4,
+     6,
+     6,
+     6,
+     6
+    ],
+    "suma": 28,
+    "dios": "Blabe, el Daño",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Cuatro seises y un cuatro, esto dice: no es tiempo de actuar; ¿por qué te apresuras en vano? Espera, no sea que por las prisas te venga algún daño. No es bueno ponerse en camino ni comprar."
+   },
+   {
+    "romano": "LVI",
+    "n": 56,
+    "tirada": [
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "suma": 30,
+    "dios": "Hermes Tetragonos, el de cuatro esquinas",
+    "diosPerdido": false,
+    "etiqueta": "antigua",
+    "texto": "Si caen todas iguales, seises: no vayas por el camino que piensas; quedarte te irá mejor. Veo una pena vergonzosa en lo que me preguntas; mejor quédate tranquilo y deja el viaje y la compra."
+   }
+  ],
+  "inscripcion": "La inscripción empieza así: \"Estos son los oráculos de Apolo Pitio con cinco tabas: hay que escuchar siempre su voz\".",
+  "pasos": [
+   "Lávate las manos y saluda a Hestia (rito 1).",
+   "Pide a Apolo y a Hermes que guíen la suerte (oración \"Antes de consultar un oráculo\"): \"Apolo, señor, y Hermes, guiadme. Que la suerte hable con verdad.\"",
+   "Piensa con claridad una sola pregunta.",
+   "Tira las cinco tabas (o una taba cinco veces) y apunta lo que sale en cada una.",
+   "Ordena los números de menor a mayor y busca la respuesta en la lista.",
+   "Da las gracias. Y recuerda los consejos del principio de este capítulo: con calma, sin consultar una y otra vez la misma pregunta, y sin tomar decisiones importantes solo por un oráculo."
+  ],
+  "caras": [
+   "Una taba tiene cuatro caras en las que puede quedar: la estrecha y plana vale 1; la ancha y cóncava, 3; la ancha y convexa, 4; y la estrecha y sinuosa, 6 (los 2 y los 5 no existen). Las caras de 3 y 4 salen mucho más a menudo que las de 1 y 6. Si no tienes tabas: tira un dado normal y, si sale 2 o 5, vuelve a tirar. No da exactamente la misma suerte que una taba, pero sirve. La aplicación de la antología simulará tabas de verdad."
+  ],
+  "probabilidades": {
+   "1": 0.1,
+   "3": 0.4,
+   "4": 0.4,
+   "6": 0.1
+  },
+  "sabias": "¿Sabías que...? En casi la mitad de las respuestas el dios aconseja esperar, no tener prisa o quedarse en casa. Las ciudades que ponían este oráculo en sus plazas eran ciudades de comerciantes y viajeros: muchas preguntas eran \"¿hago este viaje?\" o \"¿compro esto?\". Y la respuesta más repetida de los dioses era: con calma.",
+  "fuente": "Fuente: K. Heinevetter, \"Würfel- und Buchstabenorakel in Griechenland und Kleinasien\" (Breslau, 1912), págs. 4-26 (archive.org). Para estudiarlo más: Fritz Graf, \"Rolling the Dice for an Answer\" (2005), y Johannes Nollé, \"Kleinasiatische Losorakel\" (2007)."
+ },
+ "consejos": [
+  "Usar la adivinación pocas veces y para cosas importantes.",
+  "No preguntar varias veces lo mismo hasta que salga la respuesta que se quiere.",
+  "No usarla para calmar la ansiedad: puede volverse compulsiva. Los propios griegos criticaban ese exceso, al que llamaban deisidaimonia (superstición).",
+  "Recordar que, ya en la Antigüedad, los oráculos se consideraban difíciles de interpretar y no siempre fiables. Las respuestas son orientaciones, no órdenes."
+ ],
+ "leer": [
+  "Una señal no es un destino: los griegos sabían que un presagio se podía interpretar mal. En la Odisea, Penélope dice que hay sueños que se cumplen y sueños que engañan (Odisea 19.560-567). Y la pregunta importa: Jenofonte preguntó en Delfos a qué dios debía rezar para que su viaje saliera bien, y Sócrates le regañó porque no había preguntado si debía ir (Anábasis 3.1.5-7). Un oráculo o una señal se tomaban como un consejo; la decisión seguía siendo de cada uno.",
+  "Para no ver solo lo que quieres ver (según Sarah Kate Istra Winter): en vez de repetir la consulta, espera a ver si aparece después una señal que la confirme.",
+  "No usarla para calmar la ansiedad: puede volverse compulsiva. Los propios griegos criticaban ese exceso, al que llamaban deisidaimonia (superstición)."
+ ],
+ "libro": {
+  "cap": "ch038",
+  "alfabeto": "el-oráculo-del-alfabeto",
+  "versos": "los-24-versos-del-oráculo",
+  "tabas": "el-oráculo-de-las-tabas-o-los-dados",
+  "caras": "las-caras-de-la-taba",
+  "respuestas": "las-56-respuestas",
+  "consejos": "consejos-de-la-comunidad",
+  "oracion": {
+   "cap": "ch010",
+   "ancla": "antes-de-consultar-un-oráculo-dados-o-tabas",
+   "t": "Antes de consultar un oráculo (dados o tabas)"
+  }
+ }
+}

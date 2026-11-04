@@ -1,0 +1,762 @@
+{
+ "fiestas": [
+  {
+   "clave": "noumenia",
+   "enCasa": [
+    "limpiar un poco el altar, renovar el agua, ofrecer incienso (sin llama) o una torta de miel y pedir un buen mes."
+   ],
+   "rito": {
+    "numero": "5",
+    "cap": "ch016",
+    "ancla": "rito-5.-la-noumenia-día-1-luna-nueva-visible"
+   }
+  },
+  {
+   "clave": "agathos daimon",
+   "enCasa": [
+    "una libación de vino o de zumo de uva, antes de cenar. Se le honra como guardián de la casa, compañero de la Buena Fortuna (Agathe Tyche) y de Zeus Ktesios. Oración: \"Al Agathos Daimon (se dice \"agazós démon\")\" (capítulo 6). Rito: 6."
+   ],
+   "rito": {
+    "numero": "6",
+    "cap": "ch016",
+    "ancla": "rito-6.-el-agathos-daimon-día-2",
+    "corto": "un chorrito de zumo y \"Agathos Daimon, gracias por la buena suerte\"."
+   }
+  },
+  {
+   "clave": "dias sagrados del mes",
+   "enCasa": [
+    "Basta un saludo y una pequeña ofrenda."
+   ]
+  },
+  {
+   "clave": "deipnon de hecate",
+   "enCasa": [
+    "limpiar la casa, sacar la basura y dejar comida en un cruce de caminos o junto a la puerta para Hécate y para los espíritus sin hogar. Hoy muchos la donan a un banco de alimentos o la dejan en un lugar donde la coman los animales. Es también un buen día para pensar en lo que salió mal en el mes y dejarlo atrás."
+   ],
+   "rito": {
+    "numero": "8",
+    "cap": "ch016",
+    "ancla": "rito-8.-el-deipnon-de-hécate-último-día-del-mes",
+    "corto": "tirar la basura, lavarse las manos, \"Hécate, llévate lo que sobra de este mes. Gracias\", y separar algo de la cena para donar."
+   }
+  },
+  {
+   "clave": "ano nuevo",
+   "enCasa": [
+    "limpieza del altar y de la casa, propósitos para el año, ofrendas a todos los dioses."
+   ],
+   "rito": {
+    "numero": "9",
+    "cap": "ch016",
+    "ancla": "rito-9.-año-nuevo-noumenia-de-hekatombaion-hacia-julio",
+    "corto": "limpiar el altar, una libación a todos los dioses y un propósito."
+   }
+  },
+  {
+   "clave": "hekatombaia",
+   "enCasa": [
+    "el rito de llevar el laurel del día 7 (rito 7b, capítulo 11) y el himno a Apolo (propuesta de esta antología)."
+   ]
+  },
+  {
+   "clave": "kronia",
+   "enCasa": [
+    "una comida en la que se rompen las jerarquías (los que siempre sirven son servidos), y la lectura del mito de la edad de oro (Hesíodo, Trabajos y días)."
+   ],
+   "rito": {
+    "numero": "10",
+    "cap": "ch016",
+    "ancla": "rito-10.-kronia-12-de-hekatombaion"
+   }
+  },
+  {
+   "clave": "synoikia",
+   "enCasa": [
+    "honrar a Atenea y a Zeus, y dar las gracias por la comunidad a la que perteneces: tu pueblo, tu familia, tus amigos."
+   ],
+   "rito": {
+    "numero": "24",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Zeus Phratrios, Atenea Phratria, protectores de las familias y de las comunidades.\" Himnos órficos 15 y 32. Da las gracias por tu comunidad (familia, amigos, pueblo, grupo) y haz algo por ella."
+   }
+  },
+  {
+   "clave": "panateneas",
+   "enCasa": [
+    "el himno a Atenea (homérico 11 y 28; órfico 32), una ofrenda de aceite de oliva o de aceitunas, un trabajo bien hecho, algo que se haya aprendido o tejido, en su honor. Y dos ideas antiguas: encender una vela nueva para Atenea y pedirle salud, y leer o escuchar un fragmento de Homero (propuesta de esta antología)."
+   ],
+   "rito": {
+    "numero": "11",
+    "cap": "ch016",
+    "ancla": "rito-11.-panateneas-hacia-el-28-de-hekatombaion",
+    "corto": "himno homérico 11, unas gotas de aceite y \"feliz día, Atenea\"."
+   }
+  },
+  {
+   "clave": "metageitnia",
+   "enCasa": [
+    "hacer algo bueno por un vecino."
+   ],
+   "rito": {
+    "numero": "25",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Apolo, protector de los vecinos.\" Himno homérico 21. Haz algo bueno por un vecino: un saludo, un favor, un detalle."
+   }
+  },
+  {
+   "clave": "eleusinias",
+   "enCasa": [
+    "ofrecer pan o cereales a Deméter y Perséfone, y hacer algún ejercicio o paseo en su honor (propuesta de esta antología)."
+   ],
+   "rito": {
+    "numero": "26",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Deméter y Perséfone, madre e hija.\" Himno homérico 13. Pan o cereales en el altar, y un paseo o ejercicio en su honor."
+   }
+  },
+  {
+   "clave": "genesia",
+   "enCasa": [
+    "recordar a los familiares que han muerto, decir sus nombres, ofrecerles agua, leche y miel."
+   ],
+   "rito": {
+    "numero": "12",
+    "cap": "ch016",
+    "ancla": "rito-12.-genesia-5-de-boedromion",
+    "corto": "los nombres y un poco de agua en la tierra."
+   }
+  },
+  {
+   "clave": "artemis agrotera",
+   "enCasa": [
+    "el himno a Ártemis y dar las gracias por la libertad, o por una \"batalla\" personal que hayas ganado."
+   ],
+   "rito": {
+    "numero": "27",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Ártemis cazadora, la de los campos.\" Himno homérico 9 o órfico 36. Da las gracias por la libertad, o por una \"batalla\" personal ganada."
+   }
+  },
+  {
+   "clave": "boedromia",
+   "enCasa": [
+    "dar las gracias a Apolo por la ayuda recibida, o pedírsela para algo que te preocupe."
+   ],
+   "rito": {
+    "numero": "28",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Apolo Boedromios, el que acude al grito de auxilio.\" Himno órfico 34. Agradece la ayuda recibida o pide ayuda para algo que te preocupe."
+   }
+  },
+  {
+   "clave": "misterios de eleusis",
+   "rito": {
+    "numero": "13",
+    "cap": "ch016",
+    "ancla": "rito-13.-misterios-de-eleusis-en-casa-15-a-23-de-boedromion",
+    "corto": "leer el himno homérico 2 en tres o cuatro días y una noche con granada y silencio."
+   }
+  },
+  {
+   "clave": "proerosia",
+   "enCasa": [
+    "plantar unas semillas en una maceta y pedir a Deméter un buen año."
+   ],
+   "rito": {
+    "numero": "29",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Deméter, antes de la siembra te pido un buen año.\" Himno órfico 40. Planta unas semillas en una maceta. Si quieres, la oración de Hesíodo al empezar a arar (capítulo 10)."
+   }
+  },
+  {
+   "clave": "pyanepsia",
+   "enCasa": [
+    "cocinar un guiso de legumbres (lentejas, garbanzos, judías...) y ofrecer el primer plato a Apolo. Colgar en la puerta una rama decorada para todo el año. Llevar al altar una rama de laurel cantando un himno a Apolo (rito 7b) (propuesta de esta antología, basada en costumbres antiguas)."
+   ],
+   "rito": {
+    "numero": "14",
+    "cap": "ch016",
+    "ancla": "rito-14.-pyanepsia-7-de-pyanepsion",
+    "corto": "un plato de lentejas dedicado a Apolo y una ramita en la puerta."
+   }
+  },
+  {
+   "clave": "oschophoria",
+   "enCasa": [
+    "ofrecer uvas."
+   ],
+   "rito": {
+    "numero": "30",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Dioniso y Atenea, señores de la vid y del olivo.\" Ofrece un racimo de uvas, que luego se comparte."
+   }
+  },
+  {
+   "clave": "theseia",
+   "enCasa": [
+    "leer el mito de Teseo."
+   ],
+   "rito": {
+    "numero": "31",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Teseo, héroe de Atenas.\" Lee el mito de Teseo (capítulo 22); recuerda que Cimón trajo sus huesos a Atenas desde la isla de Esciros hacia el 475 antes de Cristo, y desde entonces se le honraba en el Teseion. Prepara una \"mesa\" para el héroe: un plato de comida que después te comes (capítulo 8, los calendarios de piedra)."
+   }
+  },
+  {
+   "clave": "stenia",
+   "enCasa": [
+    "honrar a Deméter y regalarle un rato de risa: contar chistes, ver algo divertido. La risa también es una ofrenda (propuesta de esta antología)."
+   ],
+   "rito": {
+    "numero": "32",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Deméter y Perséfone, os regalo la risa.\" Cuenta chistes o mira algo divertido, en recuerdo de Yambe."
+   }
+  },
+  {
+   "clave": "tesmoforias",
+   "rito": {
+    "numero": "15",
+    "cap": "ch016",
+    "ancla": "rito-15.-tesmoforias-11-a-13-de-pyanepsion",
+    "corto": "semillas en una maceta y el himno homérico 13."
+   }
+  },
+  {
+   "clave": "apaturia",
+   "enCasa": [
+    "honrar a Zeus Fratrios y a Atenea Fratria, y dar gracias por la familia."
+   ],
+   "rito": {
+    "numero": "33",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Zeus Phratrios y Atenea Phratria, gracias por mi familia.\" Presenta a los dioses a cualquier miembro nuevo de la familia (un bebé, una pareja, una mascota) y di los nombres de los tuyos."
+   }
+  },
+  {
+   "clave": "calquias",
+   "enCasa": [
+    "dedicar a los dioses un trabajo hecho con las manos, una obra o algo que se haya creado (un texto, una canción, una pieza de lira, un programa...)."
+   ],
+   "rito": {
+    "numero": "16",
+    "cap": "ch016",
+    "ancla": "rito-16.-calquias-último-día-de-pyanepsion",
+    "corto": "\"Hefesto, Atenea, este trabajo es para vosotros.\""
+   }
+  },
+  {
+   "clave": "maimakteria",
+   "enCasa": [
+    "pedir a Zeus un invierno suave."
+   ],
+   "rito": {
+    "numero": "34",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Zeus Maimaktes, el de las tormentas, que el invierno sea suave.\" Himno órfico 19. Libación de agua."
+   }
+  },
+  {
+   "clave": "pompaia",
+   "enCasa": [
+    "una limpieza a fondo de la casa y una purificación con agua lustral (khernips)."
+   ],
+   "rito": {
+    "numero": "35",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Zeus Meilichios, aleja los males antes del invierno.\" Limpieza de la casa y purificación con agua (khernips) en cada habitación."
+   }
+  },
+  {
+   "clave": "poseideia",
+   "enCasa": [
+    "el himno a Poseidón (homérico 22; órfico 17) y una libación de agua; si vives cerca del mar, un paseo por la costa. Se le puede pedir por quienes viajan o trabajan en el mar."
+   ],
+   "rito": {
+    "numero": "36",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Poseidón, señor del mar y de los terremotos.\" Himno homérico 22 o órfico 17. Libación de agua (o de agua con sal); pide por los que viajan o trabajan en el mar."
+   }
+  },
+  {
+   "clave": "haloa",
+   "enCasa": [
+    "ofrecer pan y frutas, y pedir por las cosechas que todavía duermen bajo la tierra."
+   ],
+   "rito": {
+    "numero": "38",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Deméter, Perséfone y Dioniso, cuidad de las semillas que duermen bajo la tierra.\" Pan, frutas y una libación."
+   }
+  },
+  {
+   "clave": "dionisias rurales",
+   "enCasa": [
+    "ofrecer vino o zumo de uva, poner música, leer un fragmento de una comedia griega."
+   ],
+   "rito": {
+    "numero": "37",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Dioniso, alegría de los campos.\" Himno homérico 7 o órfico 53. Música, vino o zumo, y si puedes una comedia o una fiesta con amigos."
+   }
+  },
+  {
+   "clave": "leneas",
+   "enCasa": [
+    "escuchar o leer una comedia o una tragedia."
+   ],
+   "rito": {
+    "numero": "20",
+    "cap": "ch016",
+    "ancla": "rito-20.-grandes-dionisias-10-a-17-de-elaphebolion-y-leneas-12-a-15-de-gamelion",
+    "corto": "escuchar una escena y una libación a Dioniso."
+   }
+  },
+  {
+   "clave": "theogamia",
+   "enCasa": [
+    "honrar a Zeus y a Hera, y dar gracias por el amor y por las parejas. Es un día muy elegido para casarse o renovar el compromiso."
+   ],
+   "rito": {
+    "numero": "17",
+    "cap": "ch016",
+    "ancla": "rito-17.-theogamia-27-de-gamelion",
+    "corto": "dos flores juntas en el altar y \"felicidades, Zeus y Hera\"."
+   }
+  },
+  {
+   "clave": "antesterias",
+   "enCasa": [
+    "ofrecer vino o zumo nuevo a Dioniso, recordar a los difuntos el último día y despedirlos con esa frase. El día 12, si quieres, cubre con una tela el altar de los demás dioses y deja solo a Dioniso y a Hermes; y quien haya perdido un bebé puede dejarle una jarrita pequeña en su recuerdo (propuesta de esta antología, basada en costumbres antiguas)."
+   ],
+   "rito": {
+    "numero": "18",
+    "cap": "ch016",
+    "ancla": "rito-18.-antesterias-11-a-13-de-anthesterion",
+    "corto": "zumo nuevo para Dioniso el primer día y la frase de despedida el último."
+   }
+  },
+  {
+   "clave": "diasia",
+   "enCasa": [
+    "hacer galletas o pasteles con forma de animal y ofrecérselas a Zeus."
+   ],
+   "rito": {
+    "numero": "19",
+    "cap": "ch016",
+    "ancla": "rito-19.-diasia-23-de-anthesterion",
+    "corto": "una galleta con forma de animal y \"Zeus amable, cuida de mi familia\"."
+   }
+  },
+  {
+   "clave": "misterios menores",
+   "enCasa": [
+    "purificación y lectura del mito de Perséfone."
+   ],
+   "rito": {
+    "numero": "40",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Perséfone, reina que vuelves cada primavera.\" Himno órfico 29. Purificación cuidadosa y lectura del mito de Perséfone (himno homérico 2, el rapto)."
+   }
+  },
+  {
+   "clave": "elaphebolia",
+   "enCasa": [
+    "galletas o pasteles con forma de ciervo y el himno a Ártemis."
+   ],
+   "rito": {
+    "numero": "41",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Ártemis Elaphebolos, la que caza ciervos.\" Himno homérico 27. Galletas o pasteles con forma de ciervo, que después se comparten."
+   }
+  },
+  {
+   "clave": "asklepieia",
+   "enCasa": [
+    "el himno a Asclepio (homérico 16; órfico 67) y dar gracias por la salud, propia y de los tuyos (rito 42b) (propuesta de esta antología)."
+   ],
+   "rito": {
+    "numero": "42b",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Asclepio, que curas; Higía, la Salud.\" Himno homérico 16 o órfico 67, y Arifrón a Higía (capítulo 6). Da las gracias por la salud o pide por alguien enfermo; ofrece una flor o una fruta (rito 61). (la fiesta es antigua; celebrarla así en casa es una propuesta de esta antología)"
+   }
+  },
+  {
+   "clave": "grandes dionisias",
+   "enCasa": [
+    "leer o escuchar una tragedia, ir al teatro, ofrecer vino y hiedra a Dioniso."
+   ],
+   "rito": {
+    "numero": "20",
+    "cap": "ch016",
+    "ancla": "rito-20.-grandes-dionisias-10-a-17-de-elaphebolion-y-leneas-12-a-15-de-gamelion",
+    "corto": "escuchar una escena y una libación a Dioniso."
+   }
+  },
+  {
+   "clave": "pandia",
+   "enCasa": [
+    "el himno a Zeus y una libación."
+   ],
+   "rito": {
+    "numero": "42",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Zeus, padre de todos.\" Himno homérico 23. Libación."
+   }
+  },
+  {
+   "clave": "delphinia",
+   "enCasa": [
+    "poner en el altar una rama de olivo con un hilo de lana blanca, y pedir a Apolo protección para un viaje o un proyecto."
+   ],
+   "rito": {
+    "numero": "43",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Apolo Delfinio, protector de los que viajan y empiezan.\" Una rama de olivo con un hilo de lana blanca en el altar; pide protección para un viaje o un proyecto."
+   }
+  },
+  {
+   "clave": "mounichia",
+   "enCasa": [
+    "una torta redonda con luces eléctricas pequeñas alrededor, como una luna llena, y el himno a Ártemis."
+   ],
+   "rito": {
+    "numero": "21",
+    "cap": "ch016",
+    "ancla": "rito-21.-mounichia-16-de-mounichion",
+    "corto": "una galleta redonda con una luz al lado y \"Ártemis, gracias por tu luz\"."
+   }
+  },
+  {
+   "clave": "olympieia",
+   "enCasa": [
+    "el himno a Zeus (homérico 23; órfico 15) y una libación."
+   ],
+   "rito": {
+    "numero": "44",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Zeus Olímpico.\" Himno órfico 15 o homérico 23. Libación."
+   }
+  },
+  {
+   "clave": "thargelia",
+   "enCasa": [
+    "ofrecer las primeras frutas de la temporada y celebrar el cumpleaños de los gemelos con el Himno homérico a Apolo (3)."
+   ],
+   "rito": {
+    "numero": "22",
+    "cap": "ch016",
+    "ancla": "rito-22.-thargelia-6-y-7-de-thargelion",
+    "corto": "una fruta de temporada y \"feliz cumpleaños, Apolo y Ártemis\"."
+   }
+  },
+  {
+   "clave": "bendideia",
+   "rito": {
+    "numero": "45",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Bendis, diosa tracia, cazadora de la luna.\" Poco celebrada hoy; si quieres, una luz y una libación."
+   }
+  },
+  {
+   "clave": "plynteria",
+   "enCasa": [
+    "limpiar a fondo el altar y las imágenes de los dioses, tapando las imágenes con un paño mientras se limpia, y ofrecer un higo. Un día tranquilo, sin grandes planes (costumbre de hoy; los gestos son antiguos)."
+   ],
+   "rito": {
+    "numero": "23",
+    "cap": "ch016",
+    "ancla": "rito-23.-plynteria-hacia-el-25-de-thargelion",
+    "corto": "limpiar el altar dedicándoselo a Atenea."
+   }
+  },
+  {
+   "clave": "kallynteria",
+   "enCasa": [
+    "se puede unir a la Plynteria (propuesta de esta antología)."
+   ]
+  },
+  {
+   "clave": "arreforia",
+   "rito": {
+    "numero": "46",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Atenea y las Kharites.\" Himno órfico 60. Un pequeño regalo hecho a mano, en secreto, para alguien."
+   }
+  },
+  {
+   "clave": "skira",
+   "enCasa": [
+    "también: una reunión entre amigas (propuesta de esta antología).",
+    "honrar a Deméter con cereales antes de la cosecha."
+   ],
+   "rito": {
+    "numero": "47",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Deméter, Perséfone, Atenea y Poseidón.\" Cereales antes de la cosecha."
+   }
+  },
+  {
+   "clave": "dipolieia",
+   "enCasa": [
+    "honrar a Zeus como protector de la comunidad."
+   ],
+   "rito": {
+    "numero": "48",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Zeus Polieus, protector de la ciudad.\" Pide por tu pueblo o tu ciudad (oración \"Por la ciudad y por la paz\")."
+   }
+  },
+  {
+   "clave": "thalysia",
+   "enCasa": [
+    "al final del verano, o cuando termines tu propia \"cosecha\" (un curso, un trabajo), una comida especial con una primera porción para Deméter y Dioniso (propuesta de esta antología)."
+   ]
+  },
+  {
+   "clave": "prometheia",
+   "enCasa": [
+    "dar las gracias por el fuego y los oficios, con una luz eléctrica; se puede leer el mito de Prometeo (propuesta de esta antología)."
+   ]
+  },
+  {
+   "clave": "hefestia",
+   "enCasa": [
+    "dedicar a Hefesto un trabajo hecho con las manos, y encender una luz eléctrica en su honor. Se puede unir a las Calquias (propuesta de esta antología)."
+   ],
+   "rito": {
+    "numero": "49",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "con las Calquias (rito 16), o cuando termines un trabajo hecho con las manos."
+   }
+  },
+  {
+   "clave": "adonia",
+   "enCasa": [
+    "sembrar en una maceta semillas que broten rápido (trigo, lentejas, berros), y cuando se marchiten devolverlas a la tierra. Es una forma bonita de pensar en lo breve y valioso de la vida."
+   ],
+   "rito": {
+    "numero": "50",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Afrodita y Adonis.\" Himnos órficos 55 y 56. Siembra un \"jardín de Adonis\" (semillas que brotan rápido en una maceta); cuando se marchiten, devuélvelas a la tierra."
+   }
+  },
+  {
+   "clave": "rito basico",
+   "rito": {
+    "numero": "1",
+    "cap": "ch016",
+    "ancla": "rito-1.-el-rito-básico-para-cualquier-día-y-cualquier-dios"
+   }
+  },
+  {
+   "clave": "saludo de la manana",
+   "rito": {
+    "numero": "2",
+    "cap": "ch016",
+    "ancla": "rito-2.-el-saludo-de-la-mañana",
+    "corto": "\"Hestia, buenos días.\""
+   }
+  },
+  {
+   "clave": "antes de comer",
+   "rito": {
+    "numero": "3",
+    "cap": "ch016",
+    "ancla": "rito-3.-antes-de-comer"
+   }
+  },
+  {
+   "clave": "al terminar el dia",
+   "rito": {
+    "numero": "4",
+    "cap": "ch016",
+    "ancla": "rito-4.-al-terminar-el-día",
+    "corto": "\"Gracias, dioses. Hestia, guarda mi casa.\""
+   }
+  },
+  {
+   "clave": "dia de un dios",
+   "rito": {
+    "numero": "7",
+    "cap": "ch016",
+    "ancla": "rito-7.-el-día-de-un-dios-días-3-4-6-7-8-y-los-demás-días-sagrados",
+    "corto": "el nombre del dios, una libación y \"hoy es tu día, gracias\"."
+   }
+  },
+  {
+   "clave": "llevar el laurel",
+   "rito": {
+    "numero": "7b",
+    "cap": "ch016",
+    "ancla": "rito-7b.-llevar-el-laurel-día-7-y-en-la-pyanepsia-y-la-thargelia",
+    "corto": "una hoja de laurel en el altar y \"Apolo, hoy es tu día\"."
+   }
+  },
+  {
+   "clave": "heliogenna",
+   "rito": {
+    "numero": "39",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "\"Helios, que vuelves a crecer.\" Himno órfico 8 o homérico 31. Una luz eléctrica encendida toda la noche más larga del año."
+   }
+  },
+  {
+   "clave": "fiestas de tu tierra y tu calendario propio",
+   "rito": {
+    "numero": "51",
+    "cap": "ch016",
+    "ancla": "las-fiestas-menores-tercera-parte-del-libro-de-ritos",
+    "corto": "usa el rito 7 con el dios o el héroe que corresponda (capítulo 10, \"Tu propio calendario\")."
+   }
+  },
+  {
+   "clave": "nacimiento",
+   "rito": {
+    "numero": "52",
+    "cap": "ch016",
+    "ancla": "rito-52.-el-nacimiento-amphidromia"
+   }
+  },
+  {
+   "clave": "cumpleanos",
+   "rito": {
+    "numero": "53",
+    "cap": "ch016",
+    "ancla": "rito-53.-el-cumpleaños"
+   }
+  },
+  {
+   "clave": "crecer el paso a la edad adulta",
+   "rito": {
+    "numero": "54",
+    "cap": "ch016",
+    "ancla": "rito-54.-crecer-el-paso-a-la-edad-adulta"
+   }
+  },
+  {
+   "clave": "boda o la union de pareja",
+   "rito": {
+    "numero": "55",
+    "cap": "ch016",
+    "ancla": "rito-55.-la-boda-o-la-unión-de-pareja"
+   }
+  },
+  {
+   "clave": "despedida de un ser querido",
+   "rito": {
+    "numero": "56",
+    "cap": "ch016",
+    "ancla": "rito-56.-la-despedida-de-un-ser-querido"
+   }
+  },
+  {
+   "clave": "cuando muere un animal querido",
+   "rito": {
+    "numero": "57",
+    "cap": "ch016",
+    "ancla": "rito-57.-cuando-muere-un-animal-querido"
+   }
+  },
+  {
+   "clave": "entrar en una casa nueva",
+   "rito": {
+    "numero": "58",
+    "cap": "ch016",
+    "ancla": "rito-58.-entrar-en-una-casa-nueva-y-dejar-la-antigua"
+   }
+  },
+  {
+   "clave": "estrenar un altar o un objeto sagrado",
+   "rito": {
+    "numero": "59",
+    "cap": "ch016",
+    "ancla": "rito-59.-estrenar-un-altar-o-un-objeto-sagrado"
+   }
+  },
+  {
+   "clave": "una promesa a un dios",
+   "rito": {
+    "numero": "60",
+    "cap": "ch016",
+    "ancla": "rito-60.-una-promesa-a-un-dios-eukhé-y-su-cumplimiento"
+   }
+  },
+  {
+   "clave": "su cumplimiento",
+   "rito": {
+    "numero": "60",
+    "cap": "ch016",
+    "ancla": "rito-60.-una-promesa-a-un-dios-eukhé-y-su-cumplimiento"
+   }
+  },
+  {
+   "clave": "dar las gracias por la salud",
+   "rito": {
+    "numero": "61",
+    "cap": "ch016",
+    "ancla": "rito-61.-dar-las-gracias-por-la-salud-después-de-una-enfermedad-o-una-operación"
+   }
+  }
+ ],
+ "esquema": {
+  "cap": "ch015",
+  "ancla": "esquema-de-cualquier-fiesta"
+ },
+ "ritosDelMes": {
+  "5": {
+   "numero": "5",
+   "cap": "ch016",
+   "ancla": "rito-5.-la-noumenia-día-1-luna-nueva-visible"
+  },
+  "6": {
+   "numero": "6",
+   "cap": "ch016",
+   "ancla": "rito-6.-el-agathos-daimon-día-2"
+  },
+  "7": {
+   "numero": "7",
+   "cap": "ch016",
+   "ancla": "rito-7.-el-día-de-un-dios-días-3-4-6-7-8-y-los-demás-días-sagrados"
+  },
+  "7b": {
+   "numero": "7b",
+   "cap": "ch016",
+   "ancla": "rito-7b.-llevar-el-laurel-día-7-y-en-la-pyanepsia-y-la-thargelia"
+  },
+  "8": {
+   "numero": "8",
+   "cap": "ch016",
+   "ancla": "rito-8.-el-deipnon-de-hécate-último-día-del-mes"
+  }
+ }
+}

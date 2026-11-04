@@ -1,0 +1,507 @@
+{
+ "intro": [
+  "Salmos para cantar o recitar con la lira, de Khaire Lyra.",
+  "Forma: salmo con antífona. La antífona se canta al principio, entre estrofa y estrofa, y al final.",
+  "Las melodías se compondrán más adelante."
+ ],
+ "apartados": [
+  "Fiestas y ritos",
+  "Días del mes",
+  "Momentos de la vida"
+ ],
+ "salmos": [
+  {
+   "n": 1,
+   "id": "salmo-1",
+   "titulo": "Salmo a Atenea",
+   "fuente": "a partir del himno homérico 11",
+   "himno": {
+    "tipo": "homérico",
+    "n": 11
+   },
+   "cuando": "Para el día 3 de cada mes, las fiestas de Atenea o cuando se necesite sabiduría y valor.",
+   "apartado": "Días del mes",
+   "dias": [
+    3
+   ],
+   "dioses": [
+    "Atenea"
+   ],
+   "antifona": [
+    "Jaris a ti, Palas Atenea:",
+    "danos sabiduría y valor."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Guardiana de las ciudades, hija de Zeus,",
+      "a ti empiezo a cantar.",
+      "Temible es su lanza en la batalla,",
+      "firme su escudo junto a Ares."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Entre el estruendo de la lucha,",
+      "ella no abandona a los suyos.",
+      "Cuando el pueblo parte, lo protege;",
+      "cuando vuelve, lo trae a salvo."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, diosa, hija del gran Zeus,",
+      "danos buena suerte y alegría."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Para cerrar, la forma corta, igual en todos los salmos:",
+     "Χαῖρε, Ἀθηνᾶ (jére, aziná): \"salve, Atenea\"."
+    ],
+    [
+     "Y, si se quiere, el último verso del himno en griego antiguo:",
+     "Χαῖρε, θεά, δὸς δ' ἄμμι τύχην εὐδαιμονίην τε.",
+     "Se pronuncia más o menos: jére, zeá, dos d'ámmi tíjin evdemoníin te.",
+     "Significa: \"Salve, diosa, danos buena suerte y felicidad.\""
+    ]
+   ],
+   "vozGriega": "Χαίρε, θεά, δος δε άμμι τύχην ευδαιμονίην τε."
+  },
+  {
+   "n": 2,
+   "id": "salmo-2",
+   "titulo": "Salmo a Hestia",
+   "fuente": "a partir del himno homérico 24",
+   "himno": {
+    "tipo": "homérico",
+    "n": 24
+   },
+   "cuando": "Para cualquier día, al empezar y al terminar una ofrenda, y para pedir calma y protección para el hogar.",
+   "apartado": "Fiestas y ritos",
+   "dias": [],
+   "dioses": [
+    "Hestia"
+   ],
+   "antifona": [
+    "Jaris a ti, Hestia del hogar:",
+    "danos calma y cuida de nosotros."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Hestia, hija mayor de Crono y Rea,",
+      "la primera y la última en cada ofrenda,",
+      "señora del fuego que nunca se apaga,",
+      "a ti te llamo, a ti te canto."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Tú que cuidas la casa sagrada,",
+      "el templo de Apolo en Delfos,",
+      "de tus cabellos gotea aceite suave,",
+      "siempre, como una ofrenda."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Ven a esta casa, entra en ella,",
+      "ven con ánimo benévolo.",
+      "Donde estemos, guarda nuestro hogar;",
+      "donde vayamos, enciende tu fuego."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Ven junto con Zeus, el de sabios consejos,",
+      "y da járis a nuestro canto.",
+      "Salve, Hestia, primera y última,",
+      "salve, fuego de nuestra casa."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Para cerrar, en griego:",
+     "Χαῖρε, Ἑστία (jére, estía): \"salve, Hestia\"."
+    ],
+    [
+     "Nota: en el himno griego, \"da járis a nuestro canto\" es \"χάριν δ' ἅμ' ὄπασσον ἀοιδῇ\": la palabra del título del libro está en el himno a Hestia."
+    ]
+   ],
+   "vozGriega": ""
+  },
+  {
+   "n": 3,
+   "id": "salmo-3",
+   "titulo": "Salmo a Apolo",
+   "fuente": "a partir del himno homérico 21",
+   "himno": {
+    "tipo": "homérico",
+    "n": 21
+   },
+   "cuando": "Para el día 7 de cada mes, las fiestas de Apolo y antes de hacer música o crear.",
+   "apartado": "Días del mes",
+   "dias": [
+    7
+   ],
+   "dioses": [
+    "Apolo"
+   ],
+   "antifona": [
+    "Jaris a ti, Febo Apolo:",
+    "danos luz, salud e inspiración."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Febo Apolo, señor de la lira,",
+      "tú que guías a las Musas,",
+      "a ti te canta el cisne en el río,",
+      "a ti te cantamos nosotros."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Pon armonía en nuestra vida,",
+      "como en las cuerdas de tu lira.",
+      "Tú eres el primero y el último",
+      "en cada canto que nace."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, señor, Febo brillante:",
+      "recibe con agrado nuestro canto."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Para cerrar, en griego:",
+     "Χαῖρε, ἄναξ (jére, ánax): \"salve, señor\"."
+    ]
+   ],
+   "vozGriega": ""
+  },
+  {
+   "n": 4,
+   "id": "salmo-4",
+   "titulo": "Salmo de la Noumenia",
+   "fuente": "a partir del himno homérico 32, a Selene",
+   "himno": {
+    "tipo": "homérico",
+    "n": 32
+   },
+   "cuando": "Para el día 1 de cada mes. Con Selene, que abre el mes; Hécate, que lo cerró la noche antes (Deipnon); y Hestia, el fuego de la casa.",
+   "apartado": "Días del mes",
+   "dias": [
+    1
+   ],
+   "dioses": [
+    "Hestia",
+    "Hécate",
+    "Selene"
+   ],
+   "antifona": [
+    "Jaris a ti, Selene brillante:",
+    "que el mes nuevo nazca con tu luz."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Selene de largas alas,",
+      "reina de hermosos cabellos,",
+      "hoy vuelves a nacer, hilo de plata,",
+      "y empieza la cuenta de los días."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Hécate, guardiana de la puerta,",
+      "tú que anoche cerraste el mes,",
+      "llévate lo malo que dejamos atrás,",
+      "guarda el umbral de nuestra casa."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Hestia, fuego de nuestra casa,",
+      "la primera en cada ofrenda,",
+      "enciende de nuevo nuestro hogar,",
+      "que tu llama nos acompañe todo el mes."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Gracias por el mes que termina,",
+      "por lo vivido y lo aprendido.",
+      "Danos fuerza para lo que empieza,",
+      "tú, señal del tiempo para los mortales."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, Selene, la de brazos blancos,",
+      "salve, reina de la noche."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Para cerrar, en griego:",
+     "Χαῖρε, Σελήνη (jére, selíni): \"salve, Selene\"."
+    ]
+   ],
+   "vozGriega": ""
+  },
+  {
+   "n": 5,
+   "id": "salmo-5",
+   "titulo": "Salmo a Hermes",
+   "fuente": "a partir del himno homérico 18; sobre todo Hermes Logios, el de la palabra",
+   "himno": {
+    "tipo": "homérico",
+    "n": 18
+   },
+   "cuando": "Para el día 4 de cada mes, antes de estudiar o hablar, al salir de casa o empezar un viaje, y por los difuntos.",
+   "apartado": "Días del mes",
+   "dias": [
+    4
+   ],
+   "dioses": [
+    "Hermes"
+   ],
+   "antifona": [
+    "Jaris a ti, Hermes que guardas los caminos:",
+    "acompáñanos en esta vida y en la otra."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Hermes Logios, señor de la palabra,",
+      "hijo de Zeus y de Maya,",
+      "Eriunio, que traes la buena suerte,",
+      "a ti te llamo, a ti te canto."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Pon en nuestra boca la palabra justa",
+      "y en nuestra mente, claridad para aprender.",
+      "Tú que entiendes todas las lenguas,",
+      "ayúdanos a decir y a comprender."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Enodios, guarda nuestros caminos;",
+      "Propileo, guarda nuestra puerta.",
+      "Cuando salimos, ven con nosotros;",
+      "cuando volvemos, tráenos a salvo."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Y cuando llegue el último viaje,",
+      "llévanos de la mano, sin miedo,",
+      "tú que conoces todos los caminos,",
+      "Psicopompo, guía de las almas."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, hijo de Zeus y de Maya:",
+      "contigo empezamos y contigo seguimos."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Títulos: Logios, \"el de la palabra\"; Eriunio, \"el que trae beneficios\"; Enodios, \"el de los caminos\";",
+     "Propileo, \"el de la entrada\"; Psicopompo, \"el que guía las almas\"."
+    ],
+    [
+     "Para cerrar, en griego:",
+     "Χαῖρε, Ἑρμῆ (jére, ermí): \"salve, Hermes\"."
+    ]
+   ],
+   "vozGriega": ""
+  },
+  {
+   "n": 6,
+   "id": "salmo-6",
+   "titulo": "Salmo a Ártemis",
+   "fuente": "a partir del himno homérico 9, adaptado a hoy",
+   "himno": {
+    "tipo": "homérico",
+    "n": 9
+   },
+   "cuando": "Para el día 6 de cada mes, las fiestas de Ártemis, por los niños, los animales y la naturaleza.",
+   "apartado": "Días del mes",
+   "dias": [
+    6
+   ],
+   "dioses": [
+    "Ártemis"
+   ],
+   "antifona": [
+    "Jaris a ti, Ártemis cazadora:",
+    "danos fuerza y cuida de los más pequeños."
+   ],
+   "partes": [
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Ártemis, hija de Zeus y de Leto,",
+      "hermana de Apolo, el del arco de plata,",
+      "Agrotera, señora de los animales,",
+      "a ti te llamo, a ti te canto."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Tú que corres libre por los bosques,",
+      "enséñanos a cuidar la tierra,",
+      "los ríos, los montes y los animales:",
+      "que no se apague lo salvaje."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Cuida de los niños y las niñas,",
+      "de las madres cuando dan a luz,",
+      "de los pequeños que no tienen voz,",
+      "tú que proteges a los que crecen."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Danos fuerza para ser quienes somos,",
+      "libres como tú en nuestro camino;",
+      "que tu flecha nos señale la meta",
+      "y tu luz nos guíe en la noche."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    },
+    {
+     "tipo": "estrofa",
+     "versos": [
+      "Salve, Ártemis, a ti te canto la primera,",
+      "y contigo saludo a todas las diosas."
+     ]
+    },
+    {
+     "tipo": "antifona"
+    }
+   ],
+   "final": [
+    [
+     "Para cerrar, en griego:",
+     "Χαῖρε, Ἄρτεμι (jére, ártemi): \"salve, Ártemis\"."
+    ],
+    [
+     "Títulos: Agrotera, \"la cazadora\", la de los campos; señora de los animales (Pótnia therón)."
+    ]
+   ],
+   "vozGriega": ""
+  }
+ ],
+ "sobreGriego": "Cada salmo se canta en español y se cierra con una frase corta en griego (\"Χαῖρε\" y el nombre), siempre con su pronunciación y su traducción, para que la pueda decir cualquier helenista. La \"z\" de la pronunciación es como la de \"zapato\" (la letra θ); la \"j\", como la de \"jarra\" (la letra χ)."
+}

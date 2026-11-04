@@ -1,0 +1,1847 @@
+{
+ "titulo": "Jaris",
+ "subtitulo": "Antología del helenismo",
+ "autora": "Khaire Lyra",
+ "edicion": "Primera edición, 2026",
+ "fecha": "2026-11-04",
+ "fechaTexto": "4 de noviembre de 2026",
+ "portada": {
+  "imagen": "img/file177.jpg",
+  "descripcion": "Portada del libro «Jaris. Antología del helenismo», de Khaire Lyra: el título, en letras grandes de color terracota con un filo dorado y una greca griega debajo. Ilustración de un templo griego de columnas sobre un promontorio junto al mar, con un olivo delante. Al fondo, el sol sale sobre el mar en calma, bajo un cielo claro y despejado.",
+  "ancho": 848,
+  "alto": 1264,
+  "presentacion": "img/presentacion.jpg"
+ },
+ "sinopsis": [
+  "«¿Existe todavía esta religión?»",
+  "Khaire Lyra no llegó al helenismo buscando una fe. Llegó por la mitología griega, de historia en historia y de mito en mito, hasta hacerse esa pregunta. La respuesta la sorprendió: sí, en todo el mundo hay personas que siguen honrando a los dioses griegos. Pero en español casi no había nada.",
+  "Jaris es el libro que le habría gustado encontrar cuando empezó. Oraciones, ritos para hacer en casa, el calendario de fiestas, los dioses, los himnos y los mitos traducidos del griego: todo en un mismo lugar, con honestidad sobre lo que sabemos y lo que no. Y accesible desde el primer día, para cualquier persona, lea como lea.",
+  "Para quien acaba de descubrir el helenismo y para quien lleva años practicándolo. Porque no hace falta hacerlo todo perfecto, ni saberlo todo, ni parecerse a nadie.",
+  "«No escribo esta antología porque haya una gran comunidad hispanohablante. La escribo porque todavía no la hay.»"
+ ],
+ "primero": "ch002",
+ "indices": {
+  "oraciones": "ch058",
+  "himnos": "ch059",
+  "ritos": "ch060",
+  "general": "ch057"
+ },
+ "arbol": [
+  {
+   "cap": "ch001",
+   "titulo": "Parte 0. Antes de empezar",
+   "hijos": [
+    {
+     "cap": "ch002",
+     "titulo": "Bienvenida",
+     "hijos": []
+    },
+    {
+     "cap": "ch003",
+     "titulo": "Capítulo 1. Qué leer en cada momento",
+     "hijos": []
+    },
+    {
+     "cap": "ch004",
+     "titulo": "Capítulo 2. Tus primeras cuatro semanas",
+     "hijos": []
+    }
+   ]
+  },
+  {
+   "cap": "ch005",
+   "titulo": "Parte 1. Empezar",
+   "hijos": [
+    {
+     "cap": "ch006",
+     "titulo": "Capítulo 3. Práctica básica en casa",
+     "hijos": []
+    },
+    {
+     "cap": "ch007",
+     "titulo": "Capítulo 4. Preguntas frecuentes de principiantes en el helenismo",
+     "hijos": []
+    },
+    {
+     "cap": "ch008",
+     "titulo": "Capítulo 5. Experiencias de helenistas de hoy",
+     "hijos": []
+    }
+   ]
+  },
+  {
+   "cap": "ch009",
+   "titulo": "Parte 2. Rezar",
+   "hijos": [
+    {
+     "cap": "ch010",
+     "titulo": "Capítulo 6. Oraciones para cada momento",
+     "hijos": []
+    },
+    {
+     "cap": "ch011",
+     "titulo": "Capítulo 7. Frases en griego para rezar",
+     "hijos": []
+    }
+   ]
+  },
+  {
+   "cap": "ch012",
+   "titulo": "Parte 3. El año sagrado y los ritos",
+   "hijos": [
+    {
+     "cap": "ch013",
+     "titulo": "Capítulo 8. Calendario ático y fiestas",
+     "hijos": []
+    },
+    {
+     "cap": "ch014",
+     "titulo": "Capítulo 9. Lecturas del año",
+     "hijos": []
+    },
+    {
+     "cap": "ch015",
+     "titulo": "Capítulo 10. Las fiestas en casa",
+     "hijos": []
+    },
+    {
+     "cap": "ch016",
+     "titulo": "Capítulo 11. El libro de ritos",
+     "hijos": []
+    },
+    {
+     "cap": "ch017",
+     "titulo": "Capítulo 12. El helenismo en familia y con niños",
+     "hijos": []
+    }
+   ]
+  },
+  {
+   "cap": "ch018",
+   "titulo": "Parte 4. Los dioses",
+   "hijos": [
+    {
+     "cap": "ch019",
+     "titulo": "Capítulo 13. Fichas de los dioses",
+     "hijos": []
+    },
+    {
+     "cap": "ch020",
+     "titulo": "Capítulo 14. Por dios",
+     "hijos": []
+    }
+   ]
+  },
+  {
+   "cap": "ch021",
+   "titulo": "Parte 5. Textos sagrados",
+   "hijos": [
+    {
+     "cap": "ch022",
+     "titulo": "Capítulo 15. Himnos homéricos",
+     "hijos": []
+    },
+    {
+     "cap": "ch023",
+     "titulo": "Capítulo 16. Himnos órficos",
+     "hijos": []
+    },
+    {
+     "cap": "ch024",
+     "titulo": "Capítulo 17. Himnos de Calímaco",
+     "hijos": []
+    },
+    {
+     "cap": "ch025",
+     "titulo": "Capítulo 18. Himnos de Proclo",
+     "hijos": []
+    },
+    {
+     "cap": "ch026",
+     "titulo": "Capítulo 19. Teogonía",
+     "hijos": []
+    },
+    {
+     "cap": "ch027",
+     "titulo": "Capítulo 20. Mitos (primera parte)",
+     "hijos": []
+    },
+    {
+     "cap": "ch028",
+     "titulo": "Capítulo 21. Mitos (segunda parte)",
+     "hijos": []
+    },
+    {
+     "cap": "ch029",
+     "titulo": "Capítulo 22. Mitos (tercera parte)",
+     "hijos": []
+    }
+   ]
+  },
+  {
+   "cap": "ch030",
+   "titulo": "Parte 6. Sabiduría",
+   "hijos": [
+    {
+     "cap": "ch031",
+     "titulo": "Capítulo 23. Máximas délficas",
+     "hijos": []
+    },
+    {
+     "cap": "ch032",
+     "titulo": "Capítulo 24. Los versos de oro de Pitágoras",
+     "hijos": []
+    },
+    {
+     "cap": "ch033",
+     "titulo": "Capítulo 25. Trabajos y días (selección)",
+     "hijos": []
+    },
+    {
+     "cap": "ch034",
+     "titulo": "Capítulo 26. Salustio, sobre los dioses y el mundo",
+     "hijos": []
+    }
+   ]
+  },
+  {
+   "cap": "ch035",
+   "titulo": "Parte 7. El alma, los misterios y la adivinación",
+   "hijos": [
+    {
+     "cap": "ch036",
+     "titulo": "Capítulo 27. Orfismo",
+     "hijos": []
+    },
+    {
+     "cap": "ch037",
+     "titulo": "Capítulo 28. Eleusis y el mito de Er",
+     "hijos": []
+    },
+    {
+     "cap": "ch038",
+     "titulo": "Capítulo 29. La adivinación",
+     "hijos": []
+    }
+   ]
+  },
+  {
+   "cap": "ch039",
+   "titulo": "Parte 8. Música",
+   "hijos": [
+    {
+     "cap": "ch040",
+     "titulo": "Capítulo 30. La música en el helenismo",
+     "hijos": []
+    },
+    {
+     "cap": "ch041",
+     "titulo": "Capítulo 31. Cómo recitar y cantar los himnos",
+     "hijos": []
+    },
+    {
+     "cap": "ch042",
+     "titulo": "Capítulo 32. Si tocas un instrumento: la lira y otros",
+     "hijos": []
+    }
+   ]
+  },
+  {
+   "cap": "ch043",
+   "titulo": "Parte 9. El helenismo hoy",
+   "hijos": [
+    {
+     "cap": "ch044",
+     "titulo": "Capítulo 33. El helenismo hoy en el mundo",
+     "hijos": []
+    },
+    {
+     "cap": "ch045",
+     "titulo": "Capítulo 34. Lo que dicen las comunidades",
+     "hijos": []
+    }
+   ]
+  },
+  {
+   "cap": "ch046",
+   "titulo": "Parte 10. Despedida",
+   "hijos": [
+    {
+     "cap": "ch047",
+     "titulo": "Capítulo 35. Nota de la autora",
+     "hijos": []
+    }
+   ]
+  },
+  {
+   "cap": "ch048",
+   "titulo": "Apéndices",
+   "hijos": [
+    {
+     "cap": "ch049",
+     "titulo": "Apéndice A1. Tu diario helénico",
+     "hijos": []
+    },
+    {
+     "cap": "ch050",
+     "titulo": "Apéndice A2. Lo que ha compuesto esta antología",
+     "hijos": []
+    },
+    {
+     "cap": "ch051",
+     "titulo": "Apéndice A3. Para saber más",
+     "hijos": []
+    },
+    {
+     "cap": "ch052",
+     "titulo": "Apéndice A4. Libro de bolsillo",
+     "hijos": []
+    },
+    {
+     "cap": "ch053",
+     "titulo": "Apéndice A5. Los textos en griego",
+     "hijos": []
+    },
+    {
+     "cap": "ch054",
+     "titulo": "Apéndice A6. Glosario y pronunciación",
+     "hijos": []
+    },
+    {
+     "cap": "ch055",
+     "titulo": "Apéndice A7. Bibliografía y créditos",
+     "hijos": []
+    }
+   ]
+  },
+  {
+   "cap": "ch056",
+   "titulo": "Índices",
+   "hijos": [
+    {
+     "cap": "ch057",
+     "titulo": "Índice general",
+     "hijos": []
+    },
+    {
+     "cap": "ch058",
+     "titulo": "Índice de oraciones",
+     "hijos": []
+    },
+    {
+     "cap": "ch059",
+     "titulo": "Índice de himnos",
+     "hijos": []
+    },
+    {
+     "cap": "ch060",
+     "titulo": "Índice de ritos",
+     "hijos": []
+    }
+   ]
+  },
+  {
+   "cap": "ch061",
+   "titulo": "Sobre este libro",
+   "hijos": []
+  }
+ ],
+ "capitulos": [
+  {
+   "cap": "ch001",
+   "titulo": "Parte 0. Antes de empezar",
+   "parte": null
+  },
+  {
+   "cap": "ch002",
+   "titulo": "Bienvenida",
+   "parte": "Parte 0. Antes de empezar"
+  },
+  {
+   "cap": "ch003",
+   "titulo": "Capítulo 1. Qué leer en cada momento",
+   "parte": "Parte 0. Antes de empezar"
+  },
+  {
+   "cap": "ch004",
+   "titulo": "Capítulo 2. Tus primeras cuatro semanas",
+   "parte": "Parte 0. Antes de empezar"
+  },
+  {
+   "cap": "ch005",
+   "titulo": "Parte 1. Empezar",
+   "parte": null
+  },
+  {
+   "cap": "ch006",
+   "titulo": "Capítulo 3. Práctica básica en casa",
+   "parte": "Parte 1. Empezar"
+  },
+  {
+   "cap": "ch007",
+   "titulo": "Capítulo 4. Preguntas frecuentes de principiantes en el helenismo",
+   "parte": "Parte 1. Empezar"
+  },
+  {
+   "cap": "ch008",
+   "titulo": "Capítulo 5. Experiencias de helenistas de hoy",
+   "parte": "Parte 1. Empezar"
+  },
+  {
+   "cap": "ch009",
+   "titulo": "Parte 2. Rezar",
+   "parte": null
+  },
+  {
+   "cap": "ch010",
+   "titulo": "Capítulo 6. Oraciones para cada momento",
+   "parte": "Parte 2. Rezar"
+  },
+  {
+   "cap": "ch011",
+   "titulo": "Capítulo 7. Frases en griego para rezar",
+   "parte": "Parte 2. Rezar"
+  },
+  {
+   "cap": "ch012",
+   "titulo": "Parte 3. El año sagrado y los ritos",
+   "parte": null
+  },
+  {
+   "cap": "ch013",
+   "titulo": "Capítulo 8. Calendario ático y fiestas",
+   "parte": "Parte 3. El año sagrado y los ritos"
+  },
+  {
+   "cap": "ch014",
+   "titulo": "Capítulo 9. Lecturas del año",
+   "parte": "Parte 3. El año sagrado y los ritos"
+  },
+  {
+   "cap": "ch015",
+   "titulo": "Capítulo 10. Las fiestas en casa",
+   "parte": "Parte 3. El año sagrado y los ritos"
+  },
+  {
+   "cap": "ch016",
+   "titulo": "Capítulo 11. El libro de ritos",
+   "parte": "Parte 3. El año sagrado y los ritos"
+  },
+  {
+   "cap": "ch017",
+   "titulo": "Capítulo 12. El helenismo en familia y con niños",
+   "parte": "Parte 3. El año sagrado y los ritos"
+  },
+  {
+   "cap": "ch018",
+   "titulo": "Parte 4. Los dioses",
+   "parte": null
+  },
+  {
+   "cap": "ch019",
+   "titulo": "Capítulo 13. Fichas de los dioses",
+   "parte": "Parte 4. Los dioses"
+  },
+  {
+   "cap": "ch020",
+   "titulo": "Capítulo 14. Por dios",
+   "parte": "Parte 4. Los dioses"
+  },
+  {
+   "cap": "ch021",
+   "titulo": "Parte 5. Textos sagrados",
+   "parte": null
+  },
+  {
+   "cap": "ch022",
+   "titulo": "Capítulo 15. Himnos homéricos",
+   "parte": "Parte 5. Textos sagrados"
+  },
+  {
+   "cap": "ch023",
+   "titulo": "Capítulo 16. Himnos órficos",
+   "parte": "Parte 5. Textos sagrados"
+  },
+  {
+   "cap": "ch024",
+   "titulo": "Capítulo 17. Himnos de Calímaco",
+   "parte": "Parte 5. Textos sagrados"
+  },
+  {
+   "cap": "ch025",
+   "titulo": "Capítulo 18. Himnos de Proclo",
+   "parte": "Parte 5. Textos sagrados"
+  },
+  {
+   "cap": "ch026",
+   "titulo": "Capítulo 19. Teogonía",
+   "parte": "Parte 5. Textos sagrados"
+  },
+  {
+   "cap": "ch027",
+   "titulo": "Capítulo 20. Mitos (primera parte)",
+   "parte": "Parte 5. Textos sagrados"
+  },
+  {
+   "cap": "ch028",
+   "titulo": "Capítulo 21. Mitos (segunda parte)",
+   "parte": "Parte 5. Textos sagrados"
+  },
+  {
+   "cap": "ch029",
+   "titulo": "Capítulo 22. Mitos (tercera parte)",
+   "parte": "Parte 5. Textos sagrados"
+  },
+  {
+   "cap": "ch030",
+   "titulo": "Parte 6. Sabiduría",
+   "parte": null
+  },
+  {
+   "cap": "ch031",
+   "titulo": "Capítulo 23. Máximas délficas",
+   "parte": "Parte 6. Sabiduría"
+  },
+  {
+   "cap": "ch032",
+   "titulo": "Capítulo 24. Los versos de oro de Pitágoras",
+   "parte": "Parte 6. Sabiduría"
+  },
+  {
+   "cap": "ch033",
+   "titulo": "Capítulo 25. Trabajos y días (selección)",
+   "parte": "Parte 6. Sabiduría"
+  },
+  {
+   "cap": "ch034",
+   "titulo": "Capítulo 26. Salustio, sobre los dioses y el mundo",
+   "parte": "Parte 6. Sabiduría"
+  },
+  {
+   "cap": "ch035",
+   "titulo": "Parte 7. El alma, los misterios y la adivinación",
+   "parte": null
+  },
+  {
+   "cap": "ch036",
+   "titulo": "Capítulo 27. Orfismo",
+   "parte": "Parte 7. El alma, los misterios y la adivinación"
+  },
+  {
+   "cap": "ch037",
+   "titulo": "Capítulo 28. Eleusis y el mito de Er",
+   "parte": "Parte 7. El alma, los misterios y la adivinación"
+  },
+  {
+   "cap": "ch038",
+   "titulo": "Capítulo 29. La adivinación",
+   "parte": "Parte 7. El alma, los misterios y la adivinación"
+  },
+  {
+   "cap": "ch039",
+   "titulo": "Parte 8. Música",
+   "parte": null
+  },
+  {
+   "cap": "ch040",
+   "titulo": "Capítulo 30. La música en el helenismo",
+   "parte": "Parte 8. Música"
+  },
+  {
+   "cap": "ch041",
+   "titulo": "Capítulo 31. Cómo recitar y cantar los himnos",
+   "parte": "Parte 8. Música"
+  },
+  {
+   "cap": "ch042",
+   "titulo": "Capítulo 32. Si tocas un instrumento: la lira y otros",
+   "parte": "Parte 8. Música"
+  },
+  {
+   "cap": "ch043",
+   "titulo": "Parte 9. El helenismo hoy",
+   "parte": null
+  },
+  {
+   "cap": "ch044",
+   "titulo": "Capítulo 33. El helenismo hoy en el mundo",
+   "parte": "Parte 9. El helenismo hoy"
+  },
+  {
+   "cap": "ch045",
+   "titulo": "Capítulo 34. Lo que dicen las comunidades",
+   "parte": "Parte 9. El helenismo hoy"
+  },
+  {
+   "cap": "ch046",
+   "titulo": "Parte 10. Despedida",
+   "parte": null
+  },
+  {
+   "cap": "ch047",
+   "titulo": "Capítulo 35. Nota de la autora",
+   "parte": "Parte 10. Despedida"
+  },
+  {
+   "cap": "ch048",
+   "titulo": "Apéndices",
+   "parte": null
+  },
+  {
+   "cap": "ch049",
+   "titulo": "Apéndice A1. Tu diario helénico",
+   "parte": "Apéndices"
+  },
+  {
+   "cap": "ch050",
+   "titulo": "Apéndice A2. Lo que ha compuesto esta antología",
+   "parte": "Apéndices"
+  },
+  {
+   "cap": "ch051",
+   "titulo": "Apéndice A3. Para saber más",
+   "parte": "Apéndices"
+  },
+  {
+   "cap": "ch052",
+   "titulo": "Apéndice A4. Libro de bolsillo",
+   "parte": "Apéndices"
+  },
+  {
+   "cap": "ch053",
+   "titulo": "Apéndice A5. Los textos en griego",
+   "parte": "Apéndices"
+  },
+  {
+   "cap": "ch054",
+   "titulo": "Apéndice A6. Glosario y pronunciación",
+   "parte": "Apéndices"
+  },
+  {
+   "cap": "ch055",
+   "titulo": "Apéndice A7. Bibliografía y créditos",
+   "parte": "Apéndices"
+  },
+  {
+   "cap": "ch056",
+   "titulo": "Índices",
+   "parte": null
+  },
+  {
+   "cap": "ch057",
+   "titulo": "Índice general",
+   "parte": "Índices"
+  },
+  {
+   "cap": "ch058",
+   "titulo": "Índice de oraciones",
+   "parte": "Índices"
+  },
+  {
+   "cap": "ch059",
+   "titulo": "Índice de himnos",
+   "parte": "Índices"
+  },
+  {
+   "cap": "ch060",
+   "titulo": "Índice de ritos",
+   "parte": "Índices"
+  },
+  {
+   "cap": "ch061",
+   "titulo": "Sobre este libro",
+   "parte": null
+  }
+ ],
+ "oraciones": [
+  {
+   "t": "Al lavarse las manos antes de rezar",
+   "cap": "ch010",
+   "a": "al-lavarse-las-manos-antes-de-rezar"
+  },
+  {
+   "t": "La oración de Sócrates (para cualquier día)",
+   "cap": "ch010",
+   "a": "la-oración-de-sócrates-para-cualquier-día"
+  },
+  {
+   "t": "La oración de Pletón (para cada día)",
+   "cap": "ch010",
+   "a": "la-oración-de-pletón-para-cada-día"
+  },
+  {
+   "t": "Al empezar el día",
+   "cap": "ch010",
+   "a": "al-empezar-el-día"
+  },
+  {
+   "t": "Al saludar al Sol",
+   "cap": "ch010",
+   "a": "al-saludar-al-sol"
+  },
+  {
+   "t": "Antes de comer",
+   "cap": "ch010",
+   "a": "antes-de-comer"
+  },
+  {
+   "t": "Al hacer una libación",
+   "cap": "ch010",
+   "a": "al-hacer-una-libación"
+  },
+  {
+   "t": "Al salir de casa o empezar un viaje",
+   "cap": "ch010",
+   "a": "al-salir-de-casa-o-empezar-un-viaje"
+  },
+  {
+   "t": "Al caminar sin compañía, con miedo a perderme",
+   "cap": "ch010",
+   "a": "al-caminar-sin-compañía-con-miedo-a-perderme"
+  },
+  {
+   "t": "Al terminar el día",
+   "cap": "ch010",
+   "a": "al-terminar-el-día"
+  },
+  {
+   "t": "Antes de dormir",
+   "cap": "ch010",
+   "a": "antes-de-dormir"
+  },
+  {
+   "t": "Cuando me invaden los nervios",
+   "cap": "ch010",
+   "a": "cuando-me-invaden-los-nervios"
+  },
+  {
+   "t": "En una mala época",
+   "cap": "ch010",
+   "a": "en-una-mala-época"
+  },
+  {
+   "t": "Ante un reto o un obstáculo",
+   "cap": "ch010",
+   "a": "ante-un-reto-o-un-obstáculo"
+  },
+  {
+   "t": "Ante una injusticia",
+   "cap": "ch010",
+   "a": "ante-una-injusticia"
+  },
+  {
+   "t": "Por una persona enferma",
+   "cap": "ch010",
+   "a": "por-una-persona-enferma"
+  },
+  {
+   "t": "Por los difuntos",
+   "cap": "ch010",
+   "a": "por-los-difuntos"
+  },
+  {
+   "t": "Palabras de consuelo ante la muerte",
+   "cap": "ch010",
+   "a": "palabras-de-consuelo-ante-la-muerte"
+  },
+  {
+   "t": "Antes de estudiar o de un examen",
+   "cap": "ch010",
+   "a": "antes-de-estudiar-o-de-un-examen-1"
+  },
+  {
+   "t": "Antes de hacer música o crear",
+   "cap": "ch010",
+   "a": "antes-de-hacer-música-o-crear"
+  },
+  {
+   "t": "Para expresar lo que cuesta decir",
+   "cap": "ch010",
+   "a": "para-expresar-lo-que-cuesta-decir"
+  },
+  {
+   "t": "Al terminar un trabajo",
+   "cap": "ch010",
+   "a": "al-terminar-un-trabajo"
+  },
+  {
+   "t": "Con nervios",
+   "cap": "ch010",
+   "a": "con-nervios"
+  },
+  {
+   "t": "Al bloquearse",
+   "cap": "ch010",
+   "a": "al-bloquearse"
+  },
+  {
+   "t": "Al no saber cómo hacer algo",
+   "cap": "ch010",
+   "a": "al-no-saber-cómo-hacer-algo"
+  },
+  {
+   "t": "Antes de hablar en público",
+   "cap": "ch010",
+   "a": "antes-de-hablar-en-público"
+  },
+  {
+   "t": "Antes de un examen",
+   "cap": "ch010",
+   "a": "antes-de-un-examen"
+  },
+  {
+   "t": "Al terminar, pase lo que pase",
+   "cap": "ch010",
+   "a": "al-terminar-pase-lo-que-pase"
+  },
+  {
+   "t": "Antes de cocinar",
+   "cap": "ch010",
+   "a": "antes-de-cocinar"
+  },
+  {
+   "t": "Después de comer",
+   "cap": "ch010",
+   "a": "después-de-comer"
+  },
+  {
+   "t": "Al limpiar la casa",
+   "cap": "ch010",
+   "a": "al-limpiar-la-casa"
+  },
+  {
+   "t": "Al entrar en una casa nueva",
+   "cap": "ch010",
+   "a": "al-entrar-en-una-casa-nueva"
+  },
+  {
+   "t": "Al dejar una casa (mudanza)",
+   "cap": "ch010",
+   "a": "al-dejar-una-casa-mudanza"
+  },
+  {
+   "t": "Al abrir la puerta por la mañana",
+   "cap": "ch010",
+   "a": "al-abrir-la-puerta-por-la-mañana"
+  },
+  {
+   "t": "Al Agathos Daimon, el buen espíritu de la casa",
+   "cap": "ch010",
+   "a": "al-agathos-daimon-el-buen-espíritu-de-la-casa"
+  },
+  {
+   "t": "Antes de una cita médica o una prueba",
+   "cap": "ch010",
+   "a": "antes-de-una-cita-médica-o-una-prueba"
+  },
+  {
+   "t": "Antes de dormir, en la enfermedad",
+   "cap": "ch010",
+   "a": "antes-de-dormir-en-la-enfermedad"
+  },
+  {
+   "t": "En la enfermedad",
+   "cap": "ch010",
+   "a": "en-la-enfermedad"
+  },
+  {
+   "t": "Himno a Higía, la salud (Arifrón)",
+   "cap": "ch010",
+   "a": "himno-a-higía-la-salud-arifrón"
+  },
+  {
+   "t": "Himno de la mañana a Asclepio (Atenas)",
+   "cap": "ch010",
+   "a": "himno-de-la-mañana-a-asclepio-atenas"
+  },
+  {
+   "t": "Himno a Telesforo, el que trae el buen final (Atenas)",
+   "cap": "ch010",
+   "a": "himno-a-telesforo-el-que-trae-el-buen-final-atenas"
+  },
+  {
+   "t": "Al tomar una medicina",
+   "cap": "ch010",
+   "a": "al-tomar-una-medicina"
+  },
+  {
+   "t": "Al hacer ejercicio o deporte",
+   "cap": "ch010",
+   "a": "al-hacer-ejercicio-o-deporte"
+  },
+  {
+   "t": "Cuando tengo miedo",
+   "cap": "ch010",
+   "a": "cuando-tengo-miedo"
+  },
+  {
+   "t": "Cuando todo me agobia",
+   "cap": "ch010",
+   "a": "cuando-todo-me-agobia"
+  },
+  {
+   "t": "Cuando la ansiedad aprieta",
+   "cap": "ch010",
+   "a": "cuando-la-ansiedad-aprieta"
+  },
+  {
+   "t": "Cuando los pensamientos no paran",
+   "cap": "ch010",
+   "a": "cuando-los-pensamientos-no-paran"
+  },
+  {
+   "t": "Cuando me frustro porque algo no me sale",
+   "cap": "ch010",
+   "a": "cuando-me-frustro-porque-algo-no-me-sale"
+  },
+  {
+   "t": "Cuando dudo de mí",
+   "cap": "ch010",
+   "a": "cuando-dudo-de-mí"
+  },
+  {
+   "t": "Ante una decisión difícil",
+   "cap": "ch010",
+   "a": "ante-una-decisión-difícil"
+  },
+  {
+   "t": "Antes de consultar un oráculo (dados o tabas)",
+   "cap": "ch010",
+   "a": "antes-de-consultar-un-oráculo-dados-o-tabas"
+  },
+  {
+   "t": "Al percibir una señal",
+   "cap": "ch010",
+   "a": "al-percibir-una-señal"
+  },
+  {
+   "t": "Al hacer una promesa",
+   "cap": "ch010",
+   "a": "al-hacer-una-promesa"
+  },
+  {
+   "t": "Por los antepasados",
+   "cap": "ch010",
+   "a": "por-los-antepasados"
+  },
+  {
+   "t": "Al esperar un resultado",
+   "cap": "ch010",
+   "a": "al-esperar-un-resultado-1"
+  },
+  {
+   "t": "Al recibir una buena noticia",
+   "cap": "ch010",
+   "a": "al-recibir-una-buena-noticia"
+  },
+  {
+   "t": "Cuando estoy triste",
+   "cap": "ch010",
+   "a": "cuando-estoy-triste"
+  },
+  {
+   "t": "Cuando no puedo dormir",
+   "cap": "ch010",
+   "a": "cuando-no-puedo-dormir"
+  },
+  {
+   "t": "Cuando me despierto de madrugada y no puedo volver a dormir",
+   "cap": "ch010",
+   "a": "cuando-me-despierto-de-madrugada-y-no-puedo-volver-a-dormir"
+  },
+  {
+   "t": "Después de un mal sueño",
+   "cap": "ch010",
+   "a": "después-de-un-mal-sueño"
+  },
+  {
+   "t": "Después de un buen sueño",
+   "cap": "ch010",
+   "a": "después-de-un-buen-sueño"
+  },
+  {
+   "t": "Para limpiarse después de algo malo",
+   "cap": "ch010",
+   "a": "para-limpiarse-después-de-algo-malo"
+  },
+  {
+   "t": "Para pedir perdón",
+   "cap": "ch010",
+   "a": "para-pedir-perdón"
+  },
+  {
+   "t": "Para dar las gracias por un regalo",
+   "cap": "ch010",
+   "a": "para-dar-las-gracias-por-un-regalo"
+  },
+  {
+   "t": "Por la familia",
+   "cap": "ch010",
+   "a": "por-la-familia"
+  },
+  {
+   "t": "Por un amigo o una amiga",
+   "cap": "ch010",
+   "a": "por-un-amigo-o-una-amiga"
+  },
+  {
+   "t": "La comida de la amistad",
+   "cap": "ch010",
+   "a": "la-comida-de-la-amistad"
+  },
+  {
+   "t": "Las tres libaciones de la comida",
+   "cap": "ch010",
+   "a": "las-tres-libaciones-de-la-comida"
+  },
+  {
+   "t": "Por el amor",
+   "cap": "ch010",
+   "a": "por-el-amor"
+  },
+  {
+   "t": "Ante una discusión o un enfado",
+   "cap": "ch010",
+   "a": "ante-una-discusión-o-un-enfado"
+  },
+  {
+   "t": "Por una boda",
+   "cap": "ch010",
+   "a": "por-una-boda"
+  },
+  {
+   "t": "Por un nacimiento",
+   "cap": "ch010",
+   "a": "por-un-nacimiento"
+  },
+  {
+   "t": "En un cumpleaños",
+   "cap": "ch010",
+   "a": "en-un-cumpleaños"
+  },
+  {
+   "t": "Por los animales y las mascotas",
+   "cap": "ch010",
+   "a": "por-los-animales-y-las-mascotas"
+  },
+  {
+   "t": "Cuando muere un animal querido",
+   "cap": "ch010",
+   "a": "cuando-muere-un-animal-querido-1"
+  },
+  {
+   "t": "Ante una tragedia (un accidente, una catástrofe)",
+   "cap": "ch010",
+   "a": "ante-una-tragedia-un-accidente-una-catástrofe-1"
+  },
+  {
+   "t": "Por los compañeros de clase o de trabajo",
+   "cap": "ch010",
+   "a": "por-los-compañeros-de-clase-o-de-trabajo"
+  },
+  {
+   "t": "Antes de una entrevista o una prueba importante",
+   "cap": "ch010",
+   "a": "antes-de-una-entrevista-o-una-prueba-importante"
+  },
+  {
+   "t": "Antes de trabajar con el ordenador o con herramientas",
+   "cap": "ch010",
+   "a": "antes-de-trabajar-con-el-ordenador-o-con-herramientas"
+  },
+  {
+   "t": "Al empezar un curso o una etapa nueva",
+   "cap": "ch010",
+   "a": "al-empezar-un-curso-o-una-etapa-nueva"
+  },
+  {
+   "t": "Al volver de un viaje",
+   "cap": "ch010",
+   "a": "al-volver-de-un-viaje"
+  },
+  {
+   "t": "Ante una tormenta o un temporal",
+   "cap": "ch010",
+   "a": "ante-una-tormenta-o-un-temporal"
+  },
+  {
+   "t": "Para pedir lluvia",
+   "cap": "ch010",
+   "a": "para-pedir-lluvia"
+  },
+  {
+   "t": "El canto de Dodona",
+   "cap": "ch010",
+   "a": "el-canto-de-dodona"
+  },
+  {
+   "t": "Por el mundo y la naturaleza",
+   "cap": "ch010",
+   "a": "por-el-mundo-y-la-naturaleza"
+  },
+  {
+   "t": "Para la suerte y el dinero",
+   "cap": "ch010",
+   "a": "para-la-suerte-y-el-dinero"
+  },
+  {
+   "t": "Por la ciudad y por la paz",
+   "cap": "ch010",
+   "a": "por-la-ciudad-y-por-la-paz"
+  },
+  {
+   "t": "En la Noumenia (luna nueva, primer día del mes)",
+   "cap": "ch010",
+   "a": "en-la-noumenia-luna-nueva-primer-día-del-mes"
+  },
+  {
+   "t": "Para abrir un rito",
+   "cap": "ch010",
+   "a": "para-abrir-un-rito"
+  },
+  {
+   "t": "Para cerrar un rito",
+   "cap": "ch010",
+   "a": "para-cerrar-un-rito"
+  },
+  {
+   "t": "Las primeras frutas de la temporada",
+   "cap": "ch010",
+   "a": "las-primeras-frutas-de-la-temporada"
+  },
+  {
+   "t": "En el Deipnon de Hécate (último día del mes)",
+   "cap": "ch010",
+   "a": "en-el-deipnon-de-hécate-último-día-del-mes"
+  },
+  {
+   "t": "Al empezar una fiesta",
+   "cap": "ch010",
+   "a": "al-empezar-una-fiesta"
+  },
+  {
+   "t": "En año nuevo (Noumenia de Hekatombaion)",
+   "cap": "ch010",
+   "a": "en-año-nuevo-noumenia-de-hekatombaion"
+  }
+ ],
+ "himnos": [
+  {
+   "t": "Himno homérico 1. A Dioniso",
+   "cap": "ch022",
+   "a": "himno-1.-a-dioniso"
+  },
+  {
+   "t": "Himno homérico 2. A Deméter",
+   "cap": "ch022",
+   "a": "himno-2.-a-deméter"
+  },
+  {
+   "t": "Himno homérico 3. A Apolo",
+   "cap": "ch022",
+   "a": "himno-3.-a-apolo"
+  },
+  {
+   "t": "Himno homérico 4. A Hermes",
+   "cap": "ch022",
+   "a": "himno-4.-a-hermes"
+  },
+  {
+   "t": "Himno homérico 5. A Afrodita",
+   "cap": "ch022",
+   "a": "himno-5.-a-afrodita"
+  },
+  {
+   "t": "Himno homérico 6. A Afrodita",
+   "cap": "ch022",
+   "a": "himno-6.-a-afrodita"
+  },
+  {
+   "t": "Himno homérico 7. A Dioniso (Dioniso y los piratas)",
+   "cap": "ch022",
+   "a": "himno-7.-a-dioniso-dioniso-y-los-piratas"
+  },
+  {
+   "t": "Himno homérico 8. A Ares",
+   "cap": "ch022",
+   "a": "himno-8.-a-ares"
+  },
+  {
+   "t": "Himno homérico 9. A Ártemis",
+   "cap": "ch022",
+   "a": "himno-9.-a-ártemis"
+  },
+  {
+   "t": "Himno homérico 10. A Afrodita",
+   "cap": "ch022",
+   "a": "himno-10.-a-afrodita"
+  },
+  {
+   "t": "Himno homérico 11. A Atenea",
+   "cap": "ch022",
+   "a": "himno-11.-a-atenea"
+  },
+  {
+   "t": "Himno homérico 12. A Hera",
+   "cap": "ch022",
+   "a": "himno-12.-a-hera"
+  },
+  {
+   "t": "Himno homérico 13. A Deméter",
+   "cap": "ch022",
+   "a": "himno-13.-a-deméter"
+  },
+  {
+   "t": "Himno homérico 14. A la madre de los dioses",
+   "cap": "ch022",
+   "a": "himno-14.-a-la-madre-de-los-dioses"
+  },
+  {
+   "t": "Himno homérico 15. A Heracles, el de corazón de león",
+   "cap": "ch022",
+   "a": "himno-15.-a-heracles-el-de-corazón-de-león"
+  },
+  {
+   "t": "Himno homérico 16. A Asclepio",
+   "cap": "ch022",
+   "a": "himno-16.-a-asclepio"
+  },
+  {
+   "t": "Himno homérico 17. A los Dioscuros",
+   "cap": "ch022",
+   "a": "himno-17.-a-los-dioscuros"
+  },
+  {
+   "t": "Himno homérico 18. A Hermes",
+   "cap": "ch022",
+   "a": "himno-18.-a-hermes"
+  },
+  {
+   "t": "Himno homérico 19. A Pan",
+   "cap": "ch022",
+   "a": "himno-19.-a-pan"
+  },
+  {
+   "t": "Himno homérico 20. A Hefesto",
+   "cap": "ch022",
+   "a": "himno-20.-a-hefesto"
+  },
+  {
+   "t": "Himno homérico 21. A Apolo",
+   "cap": "ch022",
+   "a": "himno-21.-a-apolo"
+  },
+  {
+   "t": "Himno homérico 22. A Poseidón",
+   "cap": "ch022",
+   "a": "himno-22.-a-poseidón"
+  },
+  {
+   "t": "Himno homérico 23. Al hijo de Crono, el altísimo",
+   "cap": "ch022",
+   "a": "himno-23.-al-hijo-de-crono-el-altísimo"
+  },
+  {
+   "t": "Himno homérico 24. A Hestia",
+   "cap": "ch022",
+   "a": "himno-24.-a-hestia"
+  },
+  {
+   "t": "Himno homérico 25. A las Musas y a Apolo",
+   "cap": "ch022",
+   "a": "himno-25.-a-las-musas-y-a-apolo"
+  },
+  {
+   "t": "Himno homérico 26. A Dioniso",
+   "cap": "ch022",
+   "a": "himno-26.-a-dioniso"
+  },
+  {
+   "t": "Himno homérico 27. A Ártemis",
+   "cap": "ch022",
+   "a": "himno-27.-a-ártemis"
+  },
+  {
+   "t": "Himno homérico 28. A Atenea",
+   "cap": "ch022",
+   "a": "himno-28.-a-atenea"
+  },
+  {
+   "t": "Himno homérico 29. A Hestia (y a Hermes)",
+   "cap": "ch022",
+   "a": "himno-29.-a-hestia-y-a-hermes"
+  },
+  {
+   "t": "Himno homérico 30. A la tierra, madre de todos",
+   "cap": "ch022",
+   "a": "himno-30.-a-la-tierra-madre-de-todos"
+  },
+  {
+   "t": "Himno homérico 31. A Helios",
+   "cap": "ch022",
+   "a": "himno-31.-a-helios"
+  },
+  {
+   "t": "Himno homérico 32. A Selene",
+   "cap": "ch022",
+   "a": "himno-32.-a-selene"
+  },
+  {
+   "t": "Himno homérico 33. A los Dioscuros",
+   "cap": "ch022",
+   "a": "himno-33.-a-los-dioscuros"
+  },
+  {
+   "t": "Himno órfico 1. A Hécate",
+   "cap": "ch023",
+   "a": "a-hécate"
+  },
+  {
+   "t": "Himno órfico 2. A Protirea (Ártemis Ilitia, la del umbral)",
+   "cap": "ch023",
+   "a": "a-protirea-ártemis-ilitia-la-del-umbral"
+  },
+  {
+   "t": "Himno órfico 3. A la noche (Nyx)",
+   "cap": "ch023",
+   "a": "a-la-noche-nyx"
+  },
+  {
+   "t": "Himno órfico 4. A Urano (el cielo)",
+   "cap": "ch023",
+   "a": "a-urano-el-cielo"
+  },
+  {
+   "t": "Himno órfico 5. Al éter",
+   "cap": "ch023",
+   "a": "al-éter"
+  },
+  {
+   "t": "Himno órfico 6. A Protógono (el primer nacido)",
+   "cap": "ch023",
+   "a": "a-protógono-el-primer-nacido"
+  },
+  {
+   "t": "Himno órfico 7. A las estrellas",
+   "cap": "ch023",
+   "a": "a-las-estrellas"
+  },
+  {
+   "t": "Himno órfico 8. A Helios (el Sol)",
+   "cap": "ch023",
+   "a": "a-helios-el-sol"
+  },
+  {
+   "t": "Himno órfico 9. A Selene (la luna)",
+   "cap": "ch023",
+   "a": "a-selene-la-luna"
+  },
+  {
+   "t": "Himno órfico 10. A fisis (la naturaleza)",
+   "cap": "ch023",
+   "a": "a-fisis-la-naturaleza"
+  },
+  {
+   "t": "Himno órfico 11. A Pan",
+   "cap": "ch023",
+   "a": "a-pan"
+  },
+  {
+   "t": "Himno órfico 12. A Heracles",
+   "cap": "ch023",
+   "a": "a-heracles"
+  },
+  {
+   "t": "Himno órfico 13. A Crono",
+   "cap": "ch023",
+   "a": "a-crono"
+  },
+  {
+   "t": "Himno órfico 14. A Rea",
+   "cap": "ch023",
+   "a": "a-rea"
+  },
+  {
+   "t": "Himno órfico 15. A Zeus",
+   "cap": "ch023",
+   "a": "a-zeus"
+  },
+  {
+   "t": "Himno órfico 16. A Hera",
+   "cap": "ch023",
+   "a": "a-hera"
+  },
+  {
+   "t": "Himno órfico 17. A Poseidón",
+   "cap": "ch023",
+   "a": "a-poseidón"
+  },
+  {
+   "t": "Himno órfico 18. A Plutón (Hades)",
+   "cap": "ch023",
+   "a": "a-plutón-hades"
+  },
+  {
+   "t": "Himno órfico 19. A Zeus del rayo",
+   "cap": "ch023",
+   "a": "a-zeus-del-rayo"
+  },
+  {
+   "t": "Himno órfico 20. A Zeus del relámpago",
+   "cap": "ch023",
+   "a": "a-zeus-del-relámpago"
+  },
+  {
+   "t": "Himno órfico 21. A las nubes",
+   "cap": "ch023",
+   "a": "a-las-nubes"
+  },
+  {
+   "t": "Himno órfico 22. Al mar (Tetis)",
+   "cap": "ch023",
+   "a": "al-mar-tetis"
+  },
+  {
+   "t": "Himno órfico 23. A Nereo",
+   "cap": "ch023",
+   "a": "a-nereo"
+  },
+  {
+   "t": "Himno órfico 24. A las nereidas",
+   "cap": "ch023",
+   "a": "a-las-nereidas"
+  },
+  {
+   "t": "Himno órfico 25. A Proteo",
+   "cap": "ch023",
+   "a": "a-proteo"
+  },
+  {
+   "t": "Himno órfico 26. A Gea (la tierra)",
+   "cap": "ch023",
+   "a": "a-gea-la-tierra"
+  },
+  {
+   "t": "Himno órfico 27. A la madre de los dioses",
+   "cap": "ch023",
+   "a": "a-la-madre-de-los-dioses"
+  },
+  {
+   "t": "Himno órfico 28. A Hermes",
+   "cap": "ch023",
+   "a": "a-hermes"
+  },
+  {
+   "t": "Himno órfico 29. A Perséfone",
+   "cap": "ch023",
+   "a": "a-perséfone"
+  },
+  {
+   "t": "Himno órfico 30. A Dioniso",
+   "cap": "ch023",
+   "a": "a-dioniso"
+  },
+  {
+   "t": "Himno órfico 31. A los Curetes",
+   "cap": "ch023",
+   "a": "a-los-curetes"
+  },
+  {
+   "t": "Himno órfico 32. A Atenea",
+   "cap": "ch023",
+   "a": "a-atenea"
+  },
+  {
+   "t": "Himno órfico 33. A Nike (la victoria)",
+   "cap": "ch023",
+   "a": "a-nike-la-victoria"
+  },
+  {
+   "t": "Himno órfico 34. A Apolo",
+   "cap": "ch023",
+   "a": "a-apolo"
+  },
+  {
+   "t": "Himno órfico 35. A Leto",
+   "cap": "ch023",
+   "a": "a-leto"
+  },
+  {
+   "t": "Himno órfico 36. A Ártemis",
+   "cap": "ch023",
+   "a": "a-ártemis"
+  },
+  {
+   "t": "Himno órfico 37. A los Titanes",
+   "cap": "ch023",
+   "a": "a-los-titanes"
+  },
+  {
+   "t": "Himno órfico 38. A los Curetes",
+   "cap": "ch023",
+   "a": "a-los-curetes-1"
+  },
+  {
+   "t": "Himno órfico 39. A Coribante",
+   "cap": "ch023",
+   "a": "a-coribante"
+  },
+  {
+   "t": "Himno órfico 40. A Deméter de Eleusis",
+   "cap": "ch023",
+   "a": "a-deméter-de-eleusis"
+  },
+  {
+   "t": "Himno órfico 41. A la madre antea",
+   "cap": "ch023",
+   "a": "a-la-madre-antea"
+  },
+  {
+   "t": "Himno órfico 42. A Mise",
+   "cap": "ch023",
+   "a": "a-mise"
+  },
+  {
+   "t": "Himno órfico 43. A las Horas",
+   "cap": "ch023",
+   "a": "a-las-horas"
+  },
+  {
+   "t": "Himno órfico 44. A Sémele",
+   "cap": "ch023",
+   "a": "a-sémele"
+  },
+  {
+   "t": "Himno órfico 45. A Dioniso basareo, el de las fiestas cada tres años",
+   "cap": "ch023",
+   "a": "a-dioniso-basareo-el-de-las-fiestas-cada-tres-años"
+  },
+  {
+   "t": "Himno órfico 46. A Dioniso Licnites (el de la cuna)",
+   "cap": "ch023",
+   "a": "a-dioniso-licnites-el-de-la-cuna"
+  },
+  {
+   "t": "Himno órfico 47. A Dioniso pericionio (el de alrededor de la columna)",
+   "cap": "ch023",
+   "a": "a-dioniso-pericionio-el-de-alrededor-de-la-columna"
+  },
+  {
+   "t": "Himno órfico 48. A Sabacio",
+   "cap": "ch023",
+   "a": "a-sabacio"
+  },
+  {
+   "t": "Himno órfico 49. A Hipta",
+   "cap": "ch023",
+   "a": "a-hipta"
+  },
+  {
+   "t": "Himno órfico 50. A Dioniso lisio Leneo (el que libera, el del lagar)",
+   "cap": "ch023",
+   "a": "a-dioniso-lisio-leneo-el-que-libera-el-del-lagar"
+  },
+  {
+   "t": "Himno órfico 51. A las ninfas",
+   "cap": "ch023",
+   "a": "a-las-ninfas"
+  },
+  {
+   "t": "Himno órfico 52. A Dioniso trietérico (el de las fiestas cada tres años)",
+   "cap": "ch023",
+   "a": "a-dioniso-trietérico-el-de-las-fiestas-cada-tres-años"
+  },
+  {
+   "t": "Himno órfico 53. A Dioniso Anfietes (el que vuelve cada año)",
+   "cap": "ch023",
+   "a": "a-dioniso-anfietes-el-que-vuelve-cada-año"
+  },
+  {
+   "t": "Himno órfico 54. A sileno, a los sátiros y a las bacantes",
+   "cap": "ch023",
+   "a": "a-sileno-a-los-sátiros-y-a-las-bacantes"
+  },
+  {
+   "t": "Himno órfico 55. A Afrodita",
+   "cap": "ch023",
+   "a": "a-afrodita"
+  },
+  {
+   "t": "Himno órfico 56. A Adonis",
+   "cap": "ch023",
+   "a": "a-adonis"
+  },
+  {
+   "t": "Himno órfico 57. A Hermes de debajo de la tierra",
+   "cap": "ch023",
+   "a": "a-hermes-de-debajo-de-la-tierra"
+  },
+  {
+   "t": "Himno órfico 58. A Eros",
+   "cap": "ch023",
+   "a": "a-eros"
+  },
+  {
+   "t": "Himno órfico 59. A las Moiras",
+   "cap": "ch023",
+   "a": "a-las-moiras"
+  },
+  {
+   "t": "Himno órfico 60. A las Kharites (las gracias)",
+   "cap": "ch023",
+   "a": "a-las-kharites-las-gracias"
+  },
+  {
+   "t": "Himno órfico 61. A Némesis",
+   "cap": "ch023",
+   "a": "a-némesis"
+  },
+  {
+   "t": "Himno órfico 62. A Dike (la justicia)",
+   "cap": "ch023",
+   "a": "a-dike-la-justicia"
+  },
+  {
+   "t": "Himno órfico 63. A dikaiosyne (la rectitud)",
+   "cap": "ch023",
+   "a": "a-dikaiosyne-la-rectitud"
+  },
+  {
+   "t": "Himno órfico 64. A nomos (la ley)",
+   "cap": "ch023",
+   "a": "a-nomos-la-ley"
+  },
+  {
+   "t": "Himno órfico 65. A Ares",
+   "cap": "ch023",
+   "a": "a-ares"
+  },
+  {
+   "t": "Himno órfico 66. A Hefesto",
+   "cap": "ch023",
+   "a": "a-hefesto"
+  },
+  {
+   "t": "Himno órfico 67. A Asclepio",
+   "cap": "ch023",
+   "a": "a-asclepio"
+  },
+  {
+   "t": "Himno órfico 68. A Higía (la salud)",
+   "cap": "ch023",
+   "a": "a-higía-la-salud"
+  },
+  {
+   "t": "Himno órfico 69. A las Erinias",
+   "cap": "ch023",
+   "a": "a-las-erinias"
+  },
+  {
+   "t": "Himno órfico 70. A las Euménides (las benévolas)",
+   "cap": "ch023",
+   "a": "a-las-euménides-las-benévolas"
+  },
+  {
+   "t": "Himno órfico 71. A Melínoe",
+   "cap": "ch023",
+   "a": "a-melínoe"
+  },
+  {
+   "t": "Himno órfico 72. A Tique (la Fortuna)",
+   "cap": "ch023",
+   "a": "a-tique-la-fortuna"
+  },
+  {
+   "t": "Himno órfico 73. Al Daimon (el buen espíritu)",
+   "cap": "ch023",
+   "a": "al-daimon-el-buen-espíritu"
+  },
+  {
+   "t": "Himno órfico 74. A Leucótea",
+   "cap": "ch023",
+   "a": "a-leucótea"
+  },
+  {
+   "t": "Himno órfico 75. A Palemón",
+   "cap": "ch023",
+   "a": "a-palemón"
+  },
+  {
+   "t": "Himno órfico 76. A las Musas",
+   "cap": "ch023",
+   "a": "a-las-musas"
+  },
+  {
+   "t": "Himno órfico 77. A Mnemósine (la Memoria)",
+   "cap": "ch023",
+   "a": "a-mnemósine-la-memoria"
+  },
+  {
+   "t": "Himno órfico 78. A Eos (la aurora)",
+   "cap": "ch023",
+   "a": "a-eos-la-aurora"
+  },
+  {
+   "t": "Himno órfico 79. A Themis",
+   "cap": "ch023",
+   "a": "a-themis"
+  },
+  {
+   "t": "Himno órfico 80. A Bóreas (el viento del norte)",
+   "cap": "ch023",
+   "a": "a-bóreas-el-viento-del-norte"
+  },
+  {
+   "t": "Himno órfico 81. A Céfiro (el viento del oeste)",
+   "cap": "ch023",
+   "a": "a-céfiro-el-viento-del-oeste"
+  },
+  {
+   "t": "Himno órfico 82. A Noto (el viento del sur)",
+   "cap": "ch023",
+   "a": "a-noto-el-viento-del-sur"
+  },
+  {
+   "t": "Himno órfico 83. A Océano",
+   "cap": "ch023",
+   "a": "a-océano"
+  },
+  {
+   "t": "Himno órfico 84. A Hestia",
+   "cap": "ch023",
+   "a": "a-hestia"
+  },
+  {
+   "t": "Himno órfico 85. A Hipnos (el sueño)",
+   "cap": "ch023",
+   "a": "a-hipnos-el-sueño"
+  },
+  {
+   "t": "Himno órfico 86. A Oneiro (el sueño que se sueña)",
+   "cap": "ch023",
+   "a": "a-oneiro-el-sueño-que-se-sueña"
+  },
+  {
+   "t": "Himno órfico 87. A Tánatos (la muerte)",
+   "cap": "ch023",
+   "a": "a-tánatos-la-muerte"
+  },
+  {
+   "t": "Himno 1. A Zeus",
+   "cap": "ch024",
+   "a": "himno-1.-a-zeus"
+  },
+  {
+   "t": "Himno 2. A Apolo",
+   "cap": "ch024",
+   "a": "himno-2.-a-apolo"
+  },
+  {
+   "t": "Himno 3. A Ártemis",
+   "cap": "ch024",
+   "a": "himno-3.-a-ártemis"
+  },
+  {
+   "t": "Himno 4. A Delos",
+   "cap": "ch024",
+   "a": "himno-4.-a-delos"
+  },
+  {
+   "t": "Himno 5. El baño de Palas (a Atenea)",
+   "cap": "ch024",
+   "a": "himno-5.-el-baño-de-palas-a-atenea"
+  },
+  {
+   "t": "Himno 6. A Deméter",
+   "cap": "ch024",
+   "a": "himno-6.-a-deméter"
+  },
+  {
+   "t": "Himno de Proclo 1. Al Sol",
+   "cap": "ch025",
+   "a": "himno-1.-al-sol"
+  },
+  {
+   "t": "Himno de Proclo 2. A Afrodita",
+   "cap": "ch025",
+   "a": "himno-2.-a-afrodita"
+  },
+  {
+   "t": "Himno de Proclo 3. A las Musas",
+   "cap": "ch025",
+   "a": "himno-3.-a-las-musas"
+  },
+  {
+   "t": "Himno de Proclo 4. Himno común a los dioses",
+   "cap": "ch025",
+   "a": "himno-4.-himno-común-a-los-dioses"
+  },
+  {
+   "t": "Himno de Proclo 5. Himno común a Afrodita de Licia",
+   "cap": "ch025",
+   "a": "himno-5.-himno-común-a-afrodita-de-licia"
+  },
+  {
+   "t": "Himno de Proclo 6. Himno común a Hécate y a Jano",
+   "cap": "ch025",
+   "a": "himno-6.-himno-común-a-hécate-y-a-jano"
+  },
+  {
+   "t": "Himno de Proclo 7. A Atenea de muchos consejos",
+   "cap": "ch025",
+   "a": "himno-7.-a-atenea-de-muchos-consejos"
+  }
+ ],
+ "novedades": [
+  {
+   "fecha": "2026-11-03",
+   "fechaTexto": "3 de noviembre de 2026",
+   "cambios": [
+    "Primera edición de Jaris, con todo el libro dentro: funciona sin internet y se puede instalar.",
+    "Hoy: el día del mes griego, lo que se celebra, qué se hace y un texto para leer cada día.",
+    "Calendario ático calculado para tu ciudad, también en el hemisferio sur, con cada día y sus ritos.",
+    "Audios de los himnos, oraciones, frases en griego y música, para escucharlos o descargarlos por bloques.",
+    "Buscador en todo el libro y por dios.",
+    "Favoritos con listas propias, y el modo \"Aprender de memoria\".",
+    "Oráculo del alfabeto y oráculo de las tabas.",
+    "Jaris avisa siempre que hay una edición nueva, y esta pantalla cuenta qué ha cambiado.",
+    "Buzón de sugerencias y erratas, al final de cada capítulo y de cada página.",
+    "Mi diario helénico: escribe tu práctica de cada día con las preguntas del libro, y reléelo por meses, busca en él o mira lo que escribiste tal día como hoy. Se guarda solo en tu dispositivo.",
+    "El rincón de la noche: una oración para cada noche, un repaso amable del día que puedes guardar en tu diario, los himnos de la noche y un temporizador para que el audio se pare solo.",
+    "Cancionero: salmos para cantar o recitar, con la antífona marcada y un modo para cantarlos verso a verso con letra grande. Salen también en el día que les toca y al buscar por dios.",
+    "Al abrir Jaris por primera vez, una presentación corta: las letras de Jaris caen sobre el templo, cada una con una nota de lira. Se puede saltar y volver a ver desde la portada.",
+    "Esta pantalla de novedades tiene un botón para cerrarla (también con Escape) y volver a donde estabas.",
+    "Audios: botón para descargarlos todos de una vez, y cada bloque dice si ya está descargado (sin botón de descargar cuando está entero).",
+    "El oráculo se llama ahora «Tu pequeño Delfos», con la ilustración de Apolo. Y un fondo con greca y ramas de olivo.",
+    "Jaris solo avisa de una edición nueva cuando trae novedades; los arreglos pequeños se ponen solos, sin avisos.",
+    "En «Tu pequeño Delfos», también la Pitia, la sacerdotisa de Delfos, sentada en su trípode."
+   ]
+  }
+ ],
+ "oraculoImagenes": [
+  {
+   "src": "img/oraculo-apolo.jpg",
+   "alt": "Apolo, joven imberbe con corona de laurel, sostiene una lira griega; a su espalda lleva arco y aljaba, con un gran sol radiante al fondo.",
+   "pie": "Apolo, el dios del oráculo de Delfos.",
+   "ancho": 604,
+   "alto": 900
+  },
+  {
+   "src": "img/oraculo-pitia.jpg",
+   "alt": "La Pitia, sacerdotisa de Delfos, sentada en lo alto de un trípode de bronce con una rama de laurel en una mano y un cuenco en la otra.",
+   "pie": "La Pitia, la sacerdotisa que daba las respuestas de Apolo.",
+   "ancho": 604,
+   "alto": 900
+  }
+ ],
+ "correo": "khairelyra@gmail.com",
+ "notasPresentacion": [
+  329.63,
+  392.0,
+  440.0,
+  493.88,
+  659.26
+ ],
+ "notasLira": [],
+ "version": "3f94d3c12e0f"
+}

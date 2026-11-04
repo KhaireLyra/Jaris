@@ -1,0 +1,4385 @@
+{
+ "bloques": [
+  {
+   "id": "himnos-homericos",
+   "titulo": "Himnos homéricos",
+   "cap": "ch022",
+   "capTitulo": "Capítulo 15. Himnos homéricos",
+   "audios": [
+    "himnos-homericos/h06",
+    "himnos-homericos/h08",
+    "himnos-homericos/h09",
+    "himnos-homericos/h10",
+    "himnos-homericos/h11",
+    "himnos-homericos/h12",
+    "himnos-homericos/h13",
+    "himnos-homericos/h14",
+    "himnos-homericos/h15",
+    "himnos-homericos/h16",
+    "himnos-homericos/h17",
+    "himnos-homericos/h18",
+    "himnos-homericos/h19",
+    "himnos-homericos/h20",
+    "himnos-homericos/h21",
+    "himnos-homericos/h22",
+    "himnos-homericos/h23",
+    "himnos-homericos/h24",
+    "himnos-homericos/h25",
+    "himnos-homericos/h26",
+    "himnos-homericos/h27",
+    "himnos-homericos/h28",
+    "himnos-homericos/h29",
+    "himnos-homericos/h30",
+    "himnos-homericos/h31",
+    "himnos-homericos/h32",
+    "himnos-homericos/h33"
+   ],
+   "bytes": 52282622
+  },
+  {
+   "id": "himnos-orficos",
+   "titulo": "Himnos órficos",
+   "cap": "ch023",
+   "capTitulo": "Capítulo 16. Himnos órficos",
+   "audios": [
+    "himnos-orficos/o00",
+    "himnos-orficos/o01",
+    "himnos-orficos/o02",
+    "himnos-orficos/o03",
+    "himnos-orficos/o04",
+    "himnos-orficos/o05",
+    "himnos-orficos/o06",
+    "himnos-orficos/o07",
+    "himnos-orficos/o08",
+    "himnos-orficos/o09",
+    "himnos-orficos/o10",
+    "himnos-orficos/o11",
+    "himnos-orficos/o12",
+    "himnos-orficos/o13",
+    "himnos-orficos/o14",
+    "himnos-orficos/o15",
+    "himnos-orficos/o16",
+    "himnos-orficos/o17",
+    "himnos-orficos/o18",
+    "himnos-orficos/o19",
+    "himnos-orficos/o20",
+    "himnos-orficos/o21",
+    "himnos-orficos/o22",
+    "himnos-orficos/o23",
+    "himnos-orficos/o24",
+    "himnos-orficos/o25",
+    "himnos-orficos/o26",
+    "himnos-orficos/o27",
+    "himnos-orficos/o28",
+    "himnos-orficos/o29",
+    "himnos-orficos/o30",
+    "himnos-orficos/o31",
+    "himnos-orficos/o32",
+    "himnos-orficos/o33",
+    "himnos-orficos/o34",
+    "himnos-orficos/o35",
+    "himnos-orficos/o36",
+    "himnos-orficos/o37",
+    "himnos-orficos/o38",
+    "himnos-orficos/o39",
+    "himnos-orficos/o40",
+    "himnos-orficos/o41",
+    "himnos-orficos/o42",
+    "himnos-orficos/o43",
+    "himnos-orficos/o44",
+    "himnos-orficos/o45",
+    "himnos-orficos/o46",
+    "himnos-orficos/o47",
+    "himnos-orficos/o48",
+    "himnos-orficos/o49",
+    "himnos-orficos/o50",
+    "himnos-orficos/o51",
+    "himnos-orficos/o52",
+    "himnos-orficos/o53",
+    "himnos-orficos/o54",
+    "himnos-orficos/o55",
+    "himnos-orficos/o56",
+    "himnos-orficos/o57",
+    "himnos-orficos/o58",
+    "himnos-orficos/o59",
+    "himnos-orficos/o60",
+    "himnos-orficos/o61",
+    "himnos-orficos/o62",
+    "himnos-orficos/o63",
+    "himnos-orficos/o64",
+    "himnos-orficos/o65",
+    "himnos-orficos/o66",
+    "himnos-orficos/o67",
+    "himnos-orficos/o68",
+    "himnos-orficos/o69",
+    "himnos-orficos/o70",
+    "himnos-orficos/o71",
+    "himnos-orficos/o72",
+    "himnos-orficos/o73",
+    "himnos-orficos/o74",
+    "himnos-orficos/o75",
+    "himnos-orficos/o76",
+    "himnos-orficos/o77",
+    "himnos-orficos/o78",
+    "himnos-orficos/o79",
+    "himnos-orficos/o80",
+    "himnos-orficos/o81",
+    "himnos-orficos/o82",
+    "himnos-orficos/o83",
+    "himnos-orficos/o84",
+    "himnos-orficos/o85",
+    "himnos-orficos/o86",
+    "himnos-orficos/o87"
+   ],
+   "bytes": 178079446
+  },
+  {
+   "id": "himnos-de-proclo",
+   "titulo": "Himnos de Proclo",
+   "cap": "ch025",
+   "capTitulo": "Capítulo 18. Himnos de Proclo",
+   "audios": [
+    "himnos-de-proclo/p1",
+    "himnos-de-proclo/p2",
+    "himnos-de-proclo/p3",
+    "himnos-de-proclo/p4",
+    "himnos-de-proclo/p5",
+    "himnos-de-proclo/p6",
+    "himnos-de-proclo/p7"
+   ],
+   "bytes": 28347335
+  },
+  {
+   "id": "oraciones",
+   "titulo": "Oraciones",
+   "cap": "ch010",
+   "capTitulo": "Capítulo 6. Oraciones para cada momento",
+   "audios": [
+    "oraciones/r01",
+    "oraciones/r02",
+    "oraciones/r03",
+    "oraciones/r04",
+    "oraciones/r05",
+    "oraciones/r06",
+    "oraciones/r07",
+    "oraciones/r08",
+    "oraciones/r09",
+    "oraciones/r10",
+    "oraciones/r11",
+    "oraciones/r12",
+    "oraciones/r13",
+    "oraciones/r14",
+    "oraciones/r15",
+    "oraciones/r16",
+    "oraciones/r17",
+    "oraciones/r18",
+    "oraciones/r19",
+    "oraciones/r20",
+    "oraciones/r21",
+    "oraciones/r22",
+    "oraciones/r23",
+    "oraciones/r24",
+    "oraciones/r25",
+    "oraciones/r26",
+    "oraciones/r27",
+    "oraciones/r28",
+    "oraciones/r29",
+    "oraciones/r30",
+    "oraciones/r31",
+    "oraciones/r32",
+    "oraciones/r33",
+    "oraciones/r34",
+    "oraciones/r35",
+    "oraciones/r36",
+    "oraciones/r37",
+    "oraciones/r38",
+    "oraciones/r39",
+    "oraciones/r40",
+    "oraciones/r41",
+    "oraciones/r42",
+    "oraciones/r43",
+    "oraciones/r44",
+    "oraciones/r45",
+    "oraciones/r46",
+    "oraciones/r47",
+    "oraciones/r48",
+    "oraciones/r49",
+    "oraciones/r50",
+    "oraciones/r51",
+    "oraciones/r52",
+    "oraciones/r53",
+    "oraciones/r54",
+    "oraciones/r55",
+    "oraciones/r56",
+    "oraciones/r57",
+    "oraciones/r58",
+    "oraciones/r59",
+    "oraciones/r60",
+    "oraciones/r61",
+    "oraciones/r62",
+    "oraciones/r63",
+    "oraciones/r64",
+    "oraciones/r65",
+    "oraciones/r66",
+    "oraciones/r67",
+    "oraciones/r68",
+    "oraciones/r69",
+    "oraciones/r70",
+    "oraciones/r71",
+    "oraciones/r72",
+    "oraciones/r73",
+    "oraciones/r74",
+    "oraciones/r75",
+    "oraciones/r76",
+    "oraciones/r77",
+    "oraciones/r78",
+    "oraciones/r79",
+    "oraciones/r80",
+    "oraciones/r81",
+    "oraciones/r82",
+    "oraciones/r83",
+    "oraciones/r84",
+    "oraciones/r85",
+    "oraciones/r86",
+    "oraciones/r87",
+    "oraciones/r88",
+    "oraciones/r89",
+    "oraciones/r90",
+    "oraciones/r91",
+    "oraciones/r92"
+   ],
+   "bytes": 37581595
+  },
+  {
+   "id": "oraciones-de-bolsillo",
+   "titulo": "Oraciones de bolsillo",
+   "cap": "ch052",
+   "capTitulo": "Apéndice A4. Libro de bolsillo",
+   "audios": [
+    "oraciones-de-bolsillo/b01",
+    "oraciones-de-bolsillo/b02",
+    "oraciones-de-bolsillo/b03",
+    "oraciones-de-bolsillo/b04",
+    "oraciones-de-bolsillo/b05",
+    "oraciones-de-bolsillo/b06",
+    "oraciones-de-bolsillo/b07",
+    "oraciones-de-bolsillo/b08",
+    "oraciones-de-bolsillo/b09",
+    "oraciones-de-bolsillo/b10",
+    "oraciones-de-bolsillo/b11",
+    "oraciones-de-bolsillo/b12",
+    "oraciones-de-bolsillo/b13",
+    "oraciones-de-bolsillo/b14",
+    "oraciones-de-bolsillo/b15",
+    "oraciones-de-bolsillo/b16"
+   ],
+   "bytes": 2452014
+  },
+  {
+   "id": "frases-en-griego",
+   "titulo": "Frases en griego",
+   "cap": "ch011",
+   "capTitulo": "Capítulo 7. Frases en griego para rezar",
+   "audios": [
+    "frases-en-griego/g00",
+    "frases-en-griego/g01",
+    "frases-en-griego/g02",
+    "frases-en-griego/g03",
+    "frases-en-griego/g04",
+    "frases-en-griego/g05",
+    "frases-en-griego/g06",
+    "frases-en-griego/g07",
+    "frases-en-griego/g08",
+    "frases-en-griego/g09",
+    "frases-en-griego/g10",
+    "frases-en-griego/g11",
+    "frases-en-griego/g12",
+    "frases-en-griego/g13",
+    "frases-en-griego/g14",
+    "frases-en-griego/g15",
+    "frases-en-griego/g16",
+    "frases-en-griego/g17",
+    "frases-en-griego/g18",
+    "frases-en-griego/g19",
+    "frases-en-griego/g20",
+    "frases-en-griego/g21",
+    "frases-en-griego/g22",
+    "frases-en-griego/g23",
+    "frases-en-griego/g24",
+    "frases-en-griego/g25",
+    "frases-en-griego/g26",
+    "frases-en-griego/g27",
+    "frases-en-griego/g28",
+    "frases-en-griego/g29",
+    "frases-en-griego/g30",
+    "frases-en-griego/g31",
+    "frases-en-griego/g32",
+    "frases-en-griego/g33",
+    "frases-en-griego/g34",
+    "frases-en-griego/g35",
+    "frases-en-griego/g36",
+    "frases-en-griego/g37",
+    "frases-en-griego/g38",
+    "frases-en-griego/g39",
+    "frases-en-griego/g40",
+    "frases-en-griego/g41"
+   ],
+   "bytes": 2255963
+  },
+  {
+   "id": "musica-antigua",
+   "titulo": "Música antigua",
+   "cap": "ch040",
+   "capTitulo": "Capítulo 30. La música en el helenismo",
+   "audios": [
+    "musica-antigua/himno-a-helios-mesomedes-lento",
+    "musica-antigua/himno-a-helios-mesomedes-normal",
+    "musica-antigua/himno-a-helios-mesomedes-practica-verso-a-verso",
+    "musica-antigua/himno-a-nemesis-mesomedes-lento",
+    "musica-antigua/himno-a-nemesis-mesomedes-normal",
+    "musica-antigua/himno-a-nemesis-mesomedes-practica-verso-a-verso",
+    "musica-antigua/himno-de-ateneo-primer-himno-delfico-lento",
+    "musica-antigua/himno-de-ateneo-primer-himno-delfico-normal",
+    "musica-antigua/himno-de-ateneo-primer-himno-delfico-practica-verso-a-verso",
+    "musica-antigua/himno-de-ateneo-introduccion-para-lira-composicion-de-esta-antologia",
+    "musica-antigua/himno-de-ateneo-version-completa-con-introduccion-y-final-compuestos",
+    "musica-antigua/himno-de-limenio-segundo-himno-delfico-lento",
+    "musica-antigua/himno-de-limenio-segundo-himno-delfico-normal",
+    "musica-antigua/himno-de-limenio-segundo-himno-delfico-practica-verso-a-verso",
+    "musica-antigua/himno-de-limenio-version-completa-con-las-secciones-8-y-9-compuestas",
+    "musica-antigua/seikilos-lento",
+    "musica-antigua/seikilos-normal",
+    "musica-antigua/seikilos-practica-por-frases",
+    "musica-antigua/seikilos-practica-verso-a-verso"
+   ],
+   "bytes": 73790850
+  },
+  {
+   "id": "como-recitar-y-cantar-los-himnos",
+   "titulo": "Cómo recitar y cantar los himnos",
+   "cap": "ch041",
+   "capTitulo": "Capítulo 31. Cómo recitar y cantar los himnos",
+   "audios": [
+    "como-recitar-y-cantar-los-himnos/formula-de-recitacion-1-solemne",
+    "como-recitar-y-cantar-los-himnos/formula-de-recitacion-2-luminosa",
+    "como-recitar-y-cantar-los-himnos/formula-de-recitacion-3-suave",
+    "como-recitar-y-cantar-los-himnos/himno-a-hestia-voz-sintetica-recitando-con-bordon",
+    "como-recitar-y-cantar-los-himnos/himno-a-hestia-completo-formula-suave"
+   ],
+   "bytes": 3484396
+  }
+ ],
+ "audios": [
+  {
+   "id": "himnos-homericos/h06",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h06.mp3",
+   "titulo": "Himno homérico 6. A Afrodita",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-6.-a-afrodita",
+   "dioses": [
+    "Afrodita"
+   ],
+   "bytes": 3088761,
+   "huella": "642921c2bb"
+  },
+  {
+   "id": "himnos-homericos/h08",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h08.mp3",
+   "titulo": "Himno homérico 8. A Ares",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-8.-a-ares",
+   "dioses": [
+    "Ares"
+   ],
+   "bytes": 2757528,
+   "huella": "d09b7f1206"
+  },
+  {
+   "id": "himnos-homericos/h09",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h09.mp3",
+   "titulo": "Himno homérico 9. A Ártemis",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-9.-a-ártemis",
+   "dioses": [
+    "Ártemis"
+   ],
+   "bytes": 1374084,
+   "huella": "01795961d4"
+  },
+  {
+   "id": "himnos-homericos/h10",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h10.mp3",
+   "titulo": "Himno homérico 10. A Afrodita",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-10.-a-afrodita",
+   "dioses": [
+    "Afrodita"
+   ],
+   "bytes": 909104,
+   "huella": "a37bba6415"
+  },
+  {
+   "id": "himnos-homericos/h11",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h11.mp3",
+   "titulo": "Himno homérico 11. A Atenea",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-11.-a-atenea",
+   "dioses": [
+    "Atenea"
+   ],
+   "bytes": 773267,
+   "huella": "fd1c8b5bbb"
+  },
+  {
+   "id": "himnos-homericos/h12",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h12.mp3",
+   "titulo": "Himno homérico 12. A Hera",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-12.-a-hera",
+   "dioses": [
+    "Hera"
+   ],
+   "bytes": 766998,
+   "huella": "0bb83feb80"
+  },
+  {
+   "id": "himnos-homericos/h13",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h13.mp3",
+   "titulo": "Himno homérico 13. A Deméter",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-13.-a-deméter",
+   "dioses": [
+    "Deméter"
+   ],
+   "bytes": 496369,
+   "huella": "07919dfdd1"
+  },
+  {
+   "id": "himnos-homericos/h14",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h14.mp3",
+   "titulo": "Himno homérico 14. A la madre de los dioses",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-14.-a-la-madre-de-los-dioses",
+   "dioses": [],
+   "bytes": 948810,
+   "huella": "740fbe55ac"
+  },
+  {
+   "id": "himnos-homericos/h15",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h15.mp3",
+   "titulo": "Himno homérico 15. A Heracles, el de corazón de león",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-15.-a-heracles-el-de-corazón-de-león",
+   "dioses": [
+    "Heracles"
+   ],
+   "bytes": 1428418,
+   "huella": "e2079a6a3a"
+  },
+  {
+   "id": "himnos-homericos/h16",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h16.mp3",
+   "titulo": "Himno homérico 16. A Asclepio",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-16.-a-asclepio",
+   "dioses": [
+    "Asclepio"
+   ],
+   "bytes": 758639,
+   "huella": "dd09703806"
+  },
+  {
+   "id": "himnos-homericos/h17",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h17.mp3",
+   "titulo": "Himno homérico 17. A los Dioscuros",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-17.-a-los-dioscuros",
+   "dioses": [
+    "Los Dioscuros"
+   ],
+   "bytes": 751324,
+   "huella": "d8c919a5c8"
+  },
+  {
+   "id": "himnos-homericos/h18",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h18.mp3",
+   "titulo": "Himno homérico 18. A Hermes",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-18.-a-hermes",
+   "dioses": [
+    "Hermes"
+   ],
+   "bytes": 1902802,
+   "huella": "fe438dc139"
+  },
+  {
+   "id": "himnos-homericos/h19",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h19.mp3",
+   "titulo": "Himno homérico 19. A Pan",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-19.-a-pan",
+   "dioses": [
+    "Pan"
+   ],
+   "bytes": 7640337,
+   "huella": "0b3892cbfb"
+  },
+  {
+   "id": "himnos-homericos/h20",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h20.mp3",
+   "titulo": "Himno homérico 20. A Hefesto",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-20.-a-hefesto",
+   "dioses": [
+    "Hefesto"
+   ],
+   "bytes": 1217349,
+   "huella": "8afb9d6fa5"
+  },
+  {
+   "id": "himnos-homericos/h21",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h21.mp3",
+   "titulo": "Himno homérico 21. A Apolo",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-21.-a-apolo",
+   "dioses": [
+    "Apolo"
+   ],
+   "bytes": 788941,
+   "huella": "8b86f7da13"
+  },
+  {
+   "id": "himnos-homericos/h22",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h22.mp3",
+   "titulo": "Himno homérico 22. A Poseidón",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-22.-a-poseidón",
+   "dioses": [
+    "Poseidón"
+   ],
+   "bytes": 1048075,
+   "huella": "c205592a5c"
+  },
+  {
+   "id": "himnos-homericos/h23",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h23.mp3",
+   "titulo": "Himno homérico 23. Al hijo de Crono, el altísimo",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-23.-al-hijo-de-crono-el-altísimo",
+   "dioses": [
+    "Crono"
+   ],
+   "bytes": 756549,
+   "huella": "24e987d5a6"
+  },
+  {
+   "id": "himnos-homericos/h24",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h24.mp3",
+   "titulo": "Himno homérico 24. A Hestia",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-24.-a-hestia",
+   "dioses": [
+    "Hestia"
+   ],
+   "bytes": 725202,
+   "huella": "ffea9b8f1d"
+  },
+  {
+   "id": "himnos-homericos/h25",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h25.mp3",
+   "titulo": "Himno homérico 25. A las Musas y a Apolo",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-25.-a-las-musas-y-a-apolo",
+   "dioses": [
+    "Apolo",
+    "Las Musas"
+   ],
+   "bytes": 971798,
+   "huella": "3edcf9d333"
+  },
+  {
+   "id": "himnos-homericos/h26",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h26.mp3",
+   "titulo": "Himno homérico 26. A Dioniso",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-26.-a-dioniso",
+   "dioses": [
+    "Dioniso"
+   ],
+   "bytes": 2015651,
+   "huella": "64a3c2fc53"
+  },
+  {
+   "id": "himnos-homericos/h27",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h27.mp3",
+   "titulo": "Himno homérico 27. A Ártemis",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-27.-a-ártemis",
+   "dioses": [
+    "Ártemis"
+   ],
+   "bytes": 3323863,
+   "huella": "a52954bb3d"
+  },
+  {
+   "id": "himnos-homericos/h28",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h28.mp3",
+   "titulo": "Himno homérico 28. A Atenea",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-28.-a-atenea",
+   "dioses": [
+    "Atenea"
+   ],
+   "bytes": 2985316,
+   "huella": "297f3b8089"
+  },
+  {
+   "id": "himnos-homericos/h29",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h29.mp3",
+   "titulo": "Himno homérico 29. A Hestia (y a Hermes)",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-29.-a-hestia-y-a-hermes",
+   "dioses": [
+    "Hermes",
+    "Hestia"
+   ],
+   "bytes": 2275830,
+   "huella": "e450a80fa5"
+  },
+  {
+   "id": "himnos-homericos/h30",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h30.mp3",
+   "titulo": "Himno homérico 30. A la tierra, madre de todos",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-30.-a-la-tierra-madre-de-todos",
+   "dioses": [],
+   "bytes": 3014573,
+   "huella": "ba9837feac"
+  },
+  {
+   "id": "himnos-homericos/h31",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h31.mp3",
+   "titulo": "Himno homérico 31. A Helios",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-31.-a-helios",
+   "dioses": [
+    "Helios"
+   ],
+   "bytes": 3362524,
+   "huella": "3ebef8ad80"
+  },
+  {
+   "id": "himnos-homericos/h32",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h32.mp3",
+   "titulo": "Himno homérico 32. A Selene",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-32.-a-selene",
+   "dioses": [
+    "Selene"
+   ],
+   "bytes": 3286247,
+   "huella": "dd4964385c"
+  },
+  {
+   "id": "himnos-homericos/h33",
+   "bloque": "himnos-homericos",
+   "archivo": "audios/himnos-homericos/h33.mp3",
+   "titulo": "Himno homérico 33. A los Dioscuros",
+   "version": "",
+   "cap": "ch022",
+   "a": "himno-33.-a-los-dioscuros",
+   "dioses": [
+    "Los Dioscuros"
+   ],
+   "bytes": 2914263,
+   "huella": "f1f9f3a5c2"
+  },
+  {
+   "id": "himnos-orficos/o00",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o00.mp3",
+   "titulo": "Oración a Museo (introducción)",
+   "version": "",
+   "cap": "ch023",
+   "a": "oración-a-museo-introducción",
+   "dioses": [
+    "Las Musas"
+   ],
+   "bytes": 7025937,
+   "huella": "c3944e51d1"
+  },
+  {
+   "id": "himnos-orficos/o01",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o01.mp3",
+   "titulo": "Himno órfico 1. A Hécate",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-hécate",
+   "dioses": [
+    "Hécate"
+   ],
+   "bytes": 1749202,
+   "huella": "bae6ef8bd3"
+  },
+  {
+   "id": "himnos-orficos/o02",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o02.mp3",
+   "titulo": "Himno órfico 2. A Protirea (Ártemis Ilitia, la del umbral)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-protirea-ártemis-ilitia-la-del-umbral",
+   "dioses": [
+    "Ártemis"
+   ],
+   "bytes": 2320761,
+   "huella": "837b69b0ce"
+  },
+  {
+   "id": "himnos-orficos/o03",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o03.mp3",
+   "titulo": "Himno órfico 3. A la noche (Nyx)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-la-noche-nyx",
+   "dioses": [
+    "Nyx"
+   ],
+   "bytes": 2283145,
+   "huella": "f3da276bd9"
+  },
+  {
+   "id": "himnos-orficos/o04",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o04.mp3",
+   "titulo": "Himno órfico 4. A Urano (el cielo)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-urano-el-cielo",
+   "dioses": [
+    "Urano"
+   ],
+   "bytes": 1516190,
+   "huella": "234ba9944d"
+  },
+  {
+   "id": "himnos-orficos/o05",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o05.mp3",
+   "titulo": "Himno órfico 5. Al éter",
+   "version": "",
+   "cap": "ch023",
+   "a": "al-éter",
+   "dioses": [],
+   "bytes": 940451,
+   "huella": "a8845d8d05"
+  },
+  {
+   "id": "himnos-orficos/o06",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o06.mp3",
+   "titulo": "Himno órfico 6. A Protógono (el primer nacido)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-protógono-el-primer-nacido",
+   "dioses": [],
+   "bytes": 1905937,
+   "huella": "ce34778e31"
+  },
+  {
+   "id": "himnos-orficos/o07",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o07.mp3",
+   "titulo": "Himno órfico 7. A las estrellas",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-las-estrellas",
+   "dioses": [],
+   "bytes": 1961316,
+   "huella": "1cbbf9ac0b"
+  },
+  {
+   "id": "himnos-orficos/o08",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o08.mp3",
+   "titulo": "Himno órfico 8. A Helios (el Sol)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-helios-el-sol",
+   "dioses": [
+    "Helios"
+   ],
+   "bytes": 3442981,
+   "huella": "e3ea9f2bf3"
+  },
+  {
+   "id": "himnos-orficos/o09",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o09.mp3",
+   "titulo": "Himno órfico 9. A Selene (la luna)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-selene-la-luna",
+   "dioses": [
+    "Selene"
+   ],
+   "bytes": 2217316,
+   "huella": "304a65086c"
+  },
+  {
+   "id": "himnos-orficos/o10",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o10.mp3",
+   "titulo": "Himno órfico 10. A fisis (la naturaleza)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-fisis-la-naturaleza",
+   "dioses": [],
+   "bytes": 5175422,
+   "huella": "369cb18cd9"
+  },
+  {
+   "id": "himnos-orficos/o11",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o11.mp3",
+   "titulo": "Himno órfico 11. A Pan",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-pan",
+   "dioses": [
+    "Pan"
+   ],
+   "bytes": 3956026,
+   "huella": "99e786a7c8"
+  },
+  {
+   "id": "himnos-orficos/o12",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o12.mp3",
+   "titulo": "Himno órfico 12. A Heracles",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-heracles",
+   "dioses": [
+    "Heracles"
+   ],
+   "bytes": 2719912,
+   "huella": "a117aa6f2a"
+  },
+  {
+   "id": "himnos-orficos/o13",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o13.mp3",
+   "titulo": "Himno órfico 13. A Crono",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-crono",
+   "dioses": [
+    "Crono"
+   ],
+   "bytes": 1583063,
+   "huella": "6d7795846e"
+  },
+  {
+   "id": "himnos-orficos/o14",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o14.mp3",
+   "titulo": "Himno órfico 14. A Rea",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-rea",
+   "dioses": [
+    "Rea"
+   ],
+   "bytes": 2222541,
+   "huella": "8136748f29"
+  },
+  {
+   "id": "himnos-orficos/o15",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o15.mp3",
+   "titulo": "Himno órfico 15. A Zeus",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-zeus",
+   "dioses": [
+    "Zeus"
+   ],
+   "bytes": 1917430,
+   "huella": "7ce8fdbebe"
+  },
+  {
+   "id": "himnos-orficos/o16",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o16.mp3",
+   "titulo": "Himno órfico 16. A Hera",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-hera",
+   "dioses": [
+    "Hera"
+   ],
+   "bytes": 1453496,
+   "huella": "eb1139da53"
+  },
+  {
+   "id": "himnos-orficos/o17",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o17.mp3",
+   "titulo": "Himno órfico 17. A Poseidón",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-poseidón",
+   "dioses": [
+    "Poseidón"
+   ],
+   "bytes": 1708451,
+   "huella": "f1d66b12c5"
+  },
+  {
+   "id": "himnos-orficos/o18",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o18.mp3",
+   "titulo": "Himno órfico 18. A Plutón (Hades)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-plutón-hades",
+   "dioses": [
+    "Hades"
+   ],
+   "bytes": 3090851,
+   "huella": "eb73454d89"
+  },
+  {
+   "id": "himnos-orficos/o19",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o19.mp3",
+   "titulo": "Himno órfico 19. A Zeus del rayo",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-zeus-del-rayo",
+   "dioses": [
+    "Zeus"
+   ],
+   "bytes": 3649871,
+   "huella": "ec6b9f3c4f"
+  },
+  {
+   "id": "himnos-orficos/o20",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o20.mp3",
+   "titulo": "Himno órfico 20. A Zeus del relámpago",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-zeus-del-relámpago",
+   "dioses": [
+    "Zeus"
+   ],
+   "bytes": 998965,
+   "huella": "8b843a7baa"
+  },
+  {
+   "id": "himnos-orficos/o21",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o21.mp3",
+   "titulo": "Himno órfico 21. A las nubes",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-las-nubes",
+   "dioses": [],
+   "bytes": 1166149,
+   "huella": "eeecd9627b"
+  },
+  {
+   "id": "himnos-orficos/o22",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o22.mp3",
+   "titulo": "Himno órfico 22. Al mar (Tetis)",
+   "version": "",
+   "cap": "ch023",
+   "a": "al-mar-tetis",
+   "dioses": [],
+   "bytes": 1492157,
+   "huella": "b42a7ab2a5"
+  },
+  {
+   "id": "himnos-orficos/o23",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o23.mp3",
+   "titulo": "Himno órfico 23. A Nereo",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-nereo",
+   "dioses": [],
+   "bytes": 1208990,
+   "huella": "930fad4706"
+  },
+  {
+   "id": "himnos-orficos/o24",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o24.mp3",
+   "titulo": "Himno órfico 24. A las nereidas",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-las-nereidas",
+   "dioses": [],
+   "bytes": 1940418,
+   "huella": "6f475dcd90"
+  },
+  {
+   "id": "himnos-orficos/o25",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o25.mp3",
+   "titulo": "Himno órfico 25. A Proteo",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-proteo",
+   "dioses": [],
+   "bytes": 1605006,
+   "huella": "97862b5dae"
+  },
+  {
+   "id": "himnos-orficos/o26",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o26.mp3",
+   "titulo": "Himno órfico 26. A Gea (la tierra)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-gea-la-tierra",
+   "dioses": [
+    "Gea"
+   ],
+   "bytes": 1863096,
+   "huella": "17a18251ea"
+  },
+  {
+   "id": "himnos-orficos/o27",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o27.mp3",
+   "titulo": "Himno órfico 27. A la madre de los dioses",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-la-madre-de-los-dioses",
+   "dioses": [],
+   "bytes": 2223586,
+   "huella": "3a9b109624"
+  },
+  {
+   "id": "himnos-orficos/o28",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o28.mp3",
+   "titulo": "Himno órfico 28. A Hermes",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-hermes",
+   "dioses": [
+    "Hermes"
+   ],
+   "bytes": 2196418,
+   "huella": "efde17308a"
+  },
+  {
+   "id": "himnos-orficos/o29",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o29.mp3",
+   "titulo": "Himno órfico 29. A Perséfone",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-perséfone",
+   "dioses": [
+    "Perséfone"
+   ],
+   "bytes": 3122198,
+   "huella": "f53c94723f"
+  },
+  {
+   "id": "himnos-orficos/o30",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o30.mp3",
+   "titulo": "Himno órfico 30. A Dioniso",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-dioniso",
+   "dioses": [
+    "Dioniso"
+   ],
+   "bytes": 1708451,
+   "huella": "d8f3f414e9"
+  },
+  {
+   "id": "himnos-orficos/o31",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o31.mp3",
+   "titulo": "Himno órfico 31. A los Curetes",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-los-curetes",
+   "dioses": [],
+   "bytes": 1214214,
+   "huella": "e02b6a76ed"
+  },
+  {
+   "id": "himnos-orficos/o32",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o32.mp3",
+   "titulo": "Himno órfico 32. A Atenea",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-atenea",
+   "dioses": [
+    "Atenea"
+   ],
+   "bytes": 2901724,
+   "huella": "76c94aa900"
+  },
+  {
+   "id": "himnos-orficos/o33",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o33.mp3",
+   "titulo": "Himno órfico 33. A Nike (la victoria)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-nike-la-victoria",
+   "dioses": [
+    "Nike"
+   ],
+   "bytes": 1274818,
+   "huella": "dc6204171d"
+  },
+  {
+   "id": "himnos-orficos/o34",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o34.mp3",
+   "titulo": "Himno órfico 34. A Apolo",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-apolo",
+   "dioses": [
+    "Apolo"
+   ],
+   "bytes": 4469071,
+   "huella": "3c534cbaff"
+  },
+  {
+   "id": "himnos-orficos/o35",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o35.mp3",
+   "titulo": "Himno órfico 35. A Leto",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-leto",
+   "dioses": [
+    "Leto"
+   ],
+   "bytes": 1061659,
+   "huella": "6fff4f42fd"
+  },
+  {
+   "id": "himnos-orficos/o36",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o36.mp3",
+   "titulo": "Himno órfico 36. A Ártemis",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-ártemis",
+   "dioses": [
+    "Ártemis"
+   ],
+   "bytes": 2846345,
+   "huella": "838c934990"
+  },
+  {
+   "id": "himnos-orficos/o37",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o37.mp3",
+   "titulo": "Himno órfico 37. A los Titanes",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-los-titanes",
+   "dioses": [],
+   "bytes": 1129577,
+   "huella": "edfaf7e101"
+  },
+  {
+   "id": "himnos-orficos/o38",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o38.mp3",
+   "titulo": "Himno órfico 38. A los Curetes",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-los-curetes-1",
+   "dioses": [],
+   "bytes": 3728239,
+   "huella": "415d2b1a4c"
+  },
+  {
+   "id": "himnos-orficos/o39",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o39.mp3",
+   "titulo": "Himno órfico 39. A Coribante",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-coribante",
+   "dioses": [],
+   "bytes": 1508875,
+   "huella": "e239b90520"
+  },
+  {
+   "id": "himnos-orficos/o40",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o40.mp3",
+   "titulo": "Himno órfico 40. A Deméter de Eleusis",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-deméter-de-eleusis",
+   "dioses": [
+    "Deméter"
+   ],
+   "bytes": 3391781,
+   "huella": "cb6e72e049"
+  },
+  {
+   "id": "himnos-orficos/o41",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o41.mp3",
+   "titulo": "Himno órfico 41. A la madre antea",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-la-madre-antea",
+   "dioses": [],
+   "bytes": 1388712,
+   "huella": "945ea3b614"
+  },
+  {
+   "id": "himnos-orficos/o42",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o42.mp3",
+   "titulo": "Himno órfico 42. A Mise",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-mise",
+   "dioses": [],
+   "bytes": 1580973,
+   "huella": "72c62d3888"
+  },
+  {
+   "id": "himnos-orficos/o43",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o43.mp3",
+   "titulo": "Himno órfico 43. A las Horas",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-las-horas",
+   "dioses": [
+    "Las Horas"
+   ],
+   "bytes": 1706361,
+   "huella": "4ff7661a7a"
+  },
+  {
+   "id": "himnos-orficos/o44",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o44.mp3",
+   "titulo": "Himno órfico 44. A Sémele",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-sémele",
+   "dioses": [],
+   "bytes": 1554851,
+   "huella": "1c0b3e84e9"
+  },
+  {
+   "id": "himnos-orficos/o45",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o45.mp3",
+   "titulo": "Himno órfico 45. A Dioniso basareo, el de las fiestas cada tres años",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-dioniso-basareo-el-de-las-fiestas-cada-tres-años",
+   "dioses": [
+    "Dioniso"
+   ],
+   "bytes": 1175553,
+   "huella": "018e050ee4"
+  },
+  {
+   "id": "himnos-orficos/o46",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o46.mp3",
+   "titulo": "Himno órfico 46. A Dioniso Licnites (el de la cuna)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-dioniso-licnites-el-de-la-cuna",
+   "dioses": [
+    "Dioniso"
+   ],
+   "bytes": 1247651,
+   "huella": "1540db1fb3"
+  },
+  {
+   "id": "himnos-orficos/o47",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o47.mp3",
+   "titulo": "Himno órfico 47. A Dioniso pericionio (el de alrededor de la columna)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-dioniso-pericionio-el-de-alrededor-de-la-columna",
+   "dioses": [
+    "Dioniso"
+   ],
+   "bytes": 967618,
+   "huella": "403b2dfae9"
+  },
+  {
+   "id": "himnos-orficos/o48",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o48.mp3",
+   "titulo": "Himno órfico 48. A Sabacio",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-sabacio",
+   "dioses": [],
+   "bytes": 919553,
+   "huella": "49eb351117"
+  },
+  {
+   "id": "himnos-orficos/o49",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o49.mp3",
+   "titulo": "Himno órfico 49. A Hipta",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-hipta",
+   "dioses": [],
+   "bytes": 1048075,
+   "huella": "eea29c367a"
+  },
+  {
+   "id": "himnos-orficos/o50",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o50.mp3",
+   "titulo": "Himno órfico 50. A Dioniso lisio Leneo (el que libera, el del lagar)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-dioniso-lisio-leneo-el-que-libera-el-del-lagar",
+   "dioses": [
+    "Dioniso"
+   ],
+   "bytes": 1949822,
+   "huella": "54cf871004"
+  },
+  {
+   "id": "himnos-orficos/o51",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o51.mp3",
+   "titulo": "Himno órfico 51. A las ninfas",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-las-ninfas",
+   "dioses": [
+    "Las ninfas"
+   ],
+   "bytes": 3226688,
+   "huella": "625f37be67"
+  },
+  {
+   "id": "himnos-orficos/o52",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o52.mp3",
+   "titulo": "Himno órfico 52. A Dioniso trietérico (el de las fiestas cada tres años)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-dioniso-trietérico-el-de-las-fiestas-cada-tres-años",
+   "dioses": [
+    "Dioniso"
+   ],
+   "bytes": 2506753,
+   "huella": "58bc9009ce"
+  },
+  {
+   "id": "himnos-orficos/o53",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o53.mp3",
+   "titulo": "Himno órfico 53. A Dioniso Anfietes (el que vuelve cada año)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-dioniso-anfietes-el-que-vuelve-cada-año",
+   "dioses": [
+    "Dioniso"
+   ],
+   "bytes": 1474394,
+   "huella": "e34214819e"
+  },
+  {
+   "id": "himnos-orficos/o54",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o54.mp3",
+   "titulo": "Himno órfico 54. A sileno, a los sátiros y a las bacantes",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-sileno-a-los-sátiros-y-a-las-bacantes",
+   "dioses": [],
+   "bytes": 1776369,
+   "huella": "0a3cf34e5d"
+  },
+  {
+   "id": "himnos-orficos/o55",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o55.mp3",
+   "titulo": "Himno órfico 55. A Afrodita",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-afrodita",
+   "dioses": [
+    "Afrodita"
+   ],
+   "bytes": 4483700,
+   "huella": "39929cf2d6"
+  },
+  {
+   "id": "himnos-orficos/o56",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o56.mp3",
+   "titulo": "Himno órfico 56. A Adonis",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-adonis",
+   "dioses": [],
+   "bytes": 2067896,
+   "huella": "d3d85dc99f"
+  },
+  {
+   "id": "himnos-orficos/o57",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o57.mp3",
+   "titulo": "Himno órfico 57. A Hermes de debajo de la tierra",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-hermes-de-debajo-de-la-tierra",
+   "dioses": [
+    "Hermes"
+   ],
+   "bytes": 1757561,
+   "huella": "1f3c719380"
+  },
+  {
+   "id": "himnos-orficos/o58",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o58.mp3",
+   "titulo": "Himno órfico 58. A Eros",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-eros",
+   "dioses": [
+    "Eros"
+   ],
+   "bytes": 1590377,
+   "huella": "6cb25287ad"
+  },
+  {
+   "id": "himnos-orficos/o59",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o59.mp3",
+   "titulo": "Himno órfico 59. A las Moiras",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-las-moiras",
+   "dioses": [
+    "Las Moiras"
+   ],
+   "bytes": 3222508,
+   "huella": "3845c8ef65"
+  },
+  {
+   "id": "himnos-orficos/o60",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o60.mp3",
+   "titulo": "Himno órfico 60. A las Kharites (las gracias)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-las-kharites-las-gracias",
+   "dioses": [],
+   "bytes": 1779504,
+   "huella": "15a91ddb83"
+  },
+  {
+   "id": "himnos-orficos/o61",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o61.mp3",
+   "titulo": "Himno órfico 61. A Némesis",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-némesis",
+   "dioses": [
+    "Némesis"
+   ],
+   "bytes": 1952957,
+   "huella": "d5a8c3ecde"
+  },
+  {
+   "id": "himnos-orficos/o62",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o62.mp3",
+   "titulo": "Himno órfico 62. A Dike (la justicia)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-dike-la-justicia",
+   "dioses": [],
+   "bytes": 1764875,
+   "huella": "9672ec2bdc"
+  },
+  {
+   "id": "himnos-orficos/o63",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o63.mp3",
+   "titulo": "Himno órfico 63. A dikaiosyne (la rectitud)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-dikaiosyne-la-rectitud",
+   "dioses": [],
+   "bytes": 2440924,
+   "huella": "be63606abf"
+  },
+  {
+   "id": "himnos-orficos/o64",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o64.mp3",
+   "titulo": "Himno órfico 64. A nomos (la ley)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-nomos-la-ley",
+   "dioses": [],
+   "bytes": 2027145,
+   "huella": "fc2654bf88"
+  },
+  {
+   "id": "himnos-orficos/o65",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o65.mp3",
+   "titulo": "Himno órfico 65. A Ares",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-ares",
+   "dioses": [
+    "Ares"
+   ],
+   "bytes": 1485888,
+   "huella": "a77470f3ca"
+  },
+  {
+   "id": "himnos-orficos/o66",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o66.mp3",
+   "titulo": "Himno órfico 66. A Hefesto",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-hefesto",
+   "dioses": [
+    "Hefesto"
+   ],
+   "bytes": 2088794,
+   "huella": "3f326f1fa2"
+  },
+  {
+   "id": "himnos-orficos/o67",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o67.mp3",
+   "titulo": "Himno órfico 67. A Asclepio",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-asclepio",
+   "dioses": [
+    "Asclepio"
+   ],
+   "bytes": 1261235,
+   "huella": "193b9c8f35"
+  },
+  {
+   "id": "himnos-orficos/o68",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o68.mp3",
+   "titulo": "Himno órfico 68. A Higía (la salud)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-higía-la-salud",
+   "dioses": [],
+   "bytes": 2005202,
+   "huella": "ef84e7d12d"
+  },
+  {
+   "id": "himnos-orficos/o69",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o69.mp3",
+   "titulo": "Himno órfico 69. A las Erinias",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-las-erinias",
+   "dioses": [],
+   "bytes": 2183879,
+   "huella": "aa0f8720bf"
+  },
+  {
+   "id": "himnos-orficos/o70",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o70.mp3",
+   "titulo": "Himno órfico 70. A las Euménides (las benévolas)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-las-euménides-las-benévolas",
+   "dioses": [],
+   "bytes": 1743977,
+   "huella": "0a11da4141"
+  },
+  {
+   "id": "himnos-orficos/o71",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o71.mp3",
+   "titulo": "Himno órfico 71. A Melínoe",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-melínoe",
+   "dioses": [],
+   "bytes": 1870410,
+   "huella": "52e64ededc"
+  },
+  {
+   "id": "himnos-orficos/o72",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o72.mp3",
+   "titulo": "Himno órfico 72. A Tique (la Fortuna)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-tique-la-fortuna",
+   "dioses": [
+    "Tique"
+   ],
+   "bytes": 1500516,
+   "huella": "f84bfbd99b"
+  },
+  {
+   "id": "himnos-orficos/o73",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o73.mp3",
+   "titulo": "Himno órfico 73. Al Daimon (el buen espíritu)",
+   "version": "",
+   "cap": "ch023",
+   "a": "al-daimon-el-buen-espíritu",
+   "dioses": [],
+   "bytes": 1451406,
+   "huella": "38e059427a"
+  },
+  {
+   "id": "himnos-orficos/o74",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o74.mp3",
+   "titulo": "Himno órfico 74. A Leucótea",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-leucótea",
+   "dioses": [],
+   "bytes": 1547537,
+   "huella": "765126244f"
+  },
+  {
+   "id": "himnos-orficos/o75",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o75.mp3",
+   "titulo": "Himno órfico 75. A Palemón",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-palemón",
+   "dioses": [],
+   "bytes": 1252875,
+   "huella": "6e35bbf063"
+  },
+  {
+   "id": "himnos-orficos/o76",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o76.mp3",
+   "titulo": "Himno órfico 76. A las Musas",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-las-musas",
+   "dioses": [
+    "Las Musas"
+   ],
+   "bytes": 1807716,
+   "huella": "52f03caf91"
+  },
+  {
+   "id": "himnos-orficos/o77",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o77.mp3",
+   "titulo": "Himno órfico 77. A Mnemósine (la Memoria)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-mnemósine-la-memoria",
+   "dioses": [
+    "Mnemósine"
+   ],
+   "bytes": 1502606,
+   "huella": "1370367d33"
+  },
+  {
+   "id": "himnos-orficos/o78",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o78.mp3",
+   "titulo": "Himno órfico 78. A Eos (la aurora)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-eos-la-aurora",
+   "dioses": [
+    "Eos"
+   ],
+   "bytes": 1937284,
+   "huella": "61194ccd59"
+  },
+  {
+   "id": "himnos-orficos/o79",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o79.mp3",
+   "titulo": "Himno órfico 79. A Themis",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-themis",
+   "dioses": [],
+   "bytes": 1742932,
+   "huella": "fa1e1bfeee"
+  },
+  {
+   "id": "himnos-orficos/o80",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o80.mp3",
+   "titulo": "Himno órfico 80. A Bóreas (el viento del norte)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-bóreas-el-viento-del-norte",
+   "dioses": [],
+   "bytes": 845365,
+   "huella": "ac2bb7af7e"
+  },
+  {
+   "id": "himnos-orficos/o81",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o81.mp3",
+   "titulo": "Himno órfico 81. A Céfiro (el viento del oeste)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-céfiro-el-viento-del-oeste",
+   "dioses": [],
+   "bytes": 961349,
+   "huella": "ff82460079"
+  },
+  {
+   "id": "himnos-orficos/o82",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o82.mp3",
+   "titulo": "Himno órfico 82. A Noto (el viento del sur)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-noto-el-viento-del-sur",
+   "dioses": [],
+   "bytes": 943586,
+   "huella": "a4b6466ce7"
+  },
+  {
+   "id": "himnos-orficos/o83",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o83.mp3",
+   "titulo": "Himno órfico 83. A Océano",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-océano",
+   "dioses": [],
+   "bytes": 1213169,
+   "huella": "299ef2a891"
+  },
+  {
+   "id": "himnos-orficos/o84",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o84.mp3",
+   "titulo": "Himno órfico 84. A Hestia",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-hestia",
+   "dioses": [
+    "Hestia"
+   ],
+   "bytes": 1276908,
+   "huella": "9b9b3a8678"
+  },
+  {
+   "id": "himnos-orficos/o85",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o85.mp3",
+   "titulo": "Himno órfico 85. A Hipnos (el sueño)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-hipnos-el-sueño",
+   "dioses": [
+    "Hipnos"
+   ],
+   "bytes": 1507830,
+   "huella": "5c74dc739d"
+  },
+  {
+   "id": "himnos-orficos/o86",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o86.mp3",
+   "titulo": "Himno órfico 86. A Oneiro (el sueño que se sueña)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-oneiro-el-sueño-que-se-sueña",
+   "dioses": [],
+   "bytes": 2767977,
+   "huella": "076b63d401"
+  },
+  {
+   "id": "himnos-orficos/o87",
+   "bloque": "himnos-orficos",
+   "archivo": "audios/himnos-orficos/o87.mp3",
+   "titulo": "Himno órfico 87. A Tánatos (la muerte)",
+   "version": "",
+   "cap": "ch023",
+   "a": "a-tánatos-la-muerte",
+   "dioses": [
+    "Tánatos"
+   ],
+   "bytes": 1678149,
+   "huella": "05b5b9a23c"
+  },
+  {
+   "id": "himnos-de-proclo/p1",
+   "bloque": "himnos-de-proclo",
+   "archivo": "audios/himnos-de-proclo/p1.mp3",
+   "titulo": "Himno de Proclo 1. Al Sol",
+   "version": "",
+   "cap": "ch025",
+   "a": "himno-1.-al-sol",
+   "dioses": [
+    "Helios"
+   ],
+   "bytes": 7395830,
+   "huella": "a325c1c7d1"
+  },
+  {
+   "id": "himnos-de-proclo/p2",
+   "bloque": "himnos-de-proclo",
+   "archivo": "audios/himnos-de-proclo/p2.mp3",
+   "titulo": "Himno de Proclo 2. A Afrodita",
+   "version": "",
+   "cap": "ch025",
+   "a": "himno-2.-a-afrodita",
+   "dioses": [
+    "Afrodita"
+   ],
+   "bytes": 3099210,
+   "huella": "484f1a826a"
+  },
+  {
+   "id": "himnos-de-proclo/p3",
+   "bloque": "himnos-de-proclo",
+   "archivo": "audios/himnos-de-proclo/p3.mp3",
+   "titulo": "Himno de Proclo 3. A las Musas",
+   "version": "",
+   "cap": "ch025",
+   "a": "himno-3.-a-las-musas",
+   "dioses": [
+    "Las Musas"
+   ],
+   "bytes": 2702149,
+   "huella": "156c51e454"
+  },
+  {
+   "id": "himnos-de-proclo/p4",
+   "bloque": "himnos-de-proclo",
+   "archivo": "audios/himnos-de-proclo/p4.mp3",
+   "titulo": "Himno de Proclo 4. Himno común a los dioses",
+   "version": "",
+   "cap": "ch025",
+   "a": "himno-4.-himno-común-a-los-dioses",
+   "dioses": [],
+   "bytes": 2259112,
+   "huella": "089a677864"
+  },
+  {
+   "id": "himnos-de-proclo/p5",
+   "bloque": "himnos-de-proclo",
+   "archivo": "audios/himnos-de-proclo/p5.mp3",
+   "titulo": "Himno de Proclo 5. Himno común a Afrodita de Licia",
+   "version": "",
+   "cap": "ch025",
+   "a": "himno-5.-himno-común-a-afrodita-de-licia",
+   "dioses": [
+    "Afrodita"
+   ],
+   "bytes": 2319716,
+   "huella": "8df027c36a"
+  },
+  {
+   "id": "himnos-de-proclo/p6",
+   "bloque": "himnos-de-proclo",
+   "archivo": "audios/himnos-de-proclo/p6.mp3",
+   "titulo": "Himno de Proclo 6. Himno común a Hécate y a Jano",
+   "version": "",
+   "cap": "ch025",
+   "a": "himno-6.-himno-común-a-hécate-y-a-jano",
+   "dioses": [
+    "Hécate"
+   ],
+   "bytes": 2684386,
+   "huella": "2056866337"
+  },
+  {
+   "id": "himnos-de-proclo/p7",
+   "bloque": "himnos-de-proclo",
+   "archivo": "audios/himnos-de-proclo/p7.mp3",
+   "titulo": "Himno de Proclo 7. A Atenea de muchos consejos",
+   "version": "",
+   "cap": "ch025",
+   "a": "himno-7.-a-atenea-de-muchos-consejos",
+   "dioses": [
+    "Atenea"
+   ],
+   "bytes": 7886932,
+   "huella": "e3595826f0"
+  },
+  {
+   "id": "oraciones/r01",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r01.mp3",
+   "titulo": "Al lavarse las manos antes de rezar",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-lavarse-las-manos-antes-de-rezar",
+   "dioses": [],
+   "bytes": 309332,
+   "huella": "bd2b03def1"
+  },
+  {
+   "id": "oraciones/r02",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r02.mp3",
+   "titulo": "La oración de Sócrates (para cualquier día)",
+   "version": "",
+   "cap": "ch010",
+   "a": "la-oración-de-sócrates-para-cualquier-día",
+   "dioses": [],
+   "bytes": 686541,
+   "huella": "3a37bc26be"
+  },
+  {
+   "id": "oraciones/r03",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r03.mp3",
+   "titulo": "La oración de Pletón (para cada día)",
+   "version": "",
+   "cap": "ch010",
+   "a": "la-oración-de-pletón-para-cada-día",
+   "dioses": [],
+   "bytes": 1307210,
+   "huella": "789ed35019"
+  },
+  {
+   "id": "oraciones/r04",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r04.mp3",
+   "titulo": "Al empezar el día",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-empezar-el-día",
+   "dioses": [],
+   "bytes": 475471,
+   "huella": "332f7a25a8"
+  },
+  {
+   "id": "oraciones/r05",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r05.mp3",
+   "titulo": "Al saludar al Sol",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-saludar-al-sol",
+   "dioses": [
+    "Helios"
+   ],
+   "bytes": 294704,
+   "huella": "c52d616cab"
+  },
+  {
+   "id": "oraciones/r06",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r06.mp3",
+   "titulo": "Antes de comer",
+   "version": "",
+   "cap": "ch010",
+   "a": "antes-de-comer",
+   "dioses": [],
+   "bytes": 303063,
+   "huella": "043fe4c09d"
+  },
+  {
+   "id": "oraciones/r07",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r07.mp3",
+   "titulo": "Al hacer una libación",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-hacer-una-libación",
+   "dioses": [],
+   "bytes": 302018,
+   "huella": "360502ade8"
+  },
+  {
+   "id": "oraciones/r08",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r08.mp3",
+   "titulo": "Al salir de casa o empezar un viaje",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-salir-de-casa-o-empezar-un-viaje",
+   "dioses": [],
+   "bytes": 344859,
+   "huella": "27c4a010fb"
+  },
+  {
+   "id": "oraciones/r09",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r09.mp3",
+   "titulo": "Al caminar sin compañía, con miedo a perderme",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-caminar-sin-compañía-con-miedo-a-perderme",
+   "dioses": [],
+   "bytes": 293659,
+   "huella": "ed682875e7"
+  },
+  {
+   "id": "oraciones/r10",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r10.mp3",
+   "titulo": "Al terminar el día",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-terminar-el-día",
+   "dioses": [],
+   "bytes": 378296,
+   "huella": "7d78ae3dd6"
+  },
+  {
+   "id": "oraciones/r11",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r11.mp3",
+   "titulo": "Antes de dormir",
+   "version": "",
+   "cap": "ch010",
+   "a": "antes-de-dormir",
+   "dioses": [],
+   "bytes": 485920,
+   "huella": "6c286afeca"
+  },
+  {
+   "id": "oraciones/r12",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r12.mp3",
+   "titulo": "Cuando me invaden los nervios",
+   "version": "",
+   "cap": "ch010",
+   "a": "cuando-me-invaden-los-nervios",
+   "dioses": [],
+   "bytes": 543390,
+   "huella": "cdc3b5f17c"
+  },
+  {
+   "id": "oraciones/r13",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r13.mp3",
+   "titulo": "En una mala época",
+   "version": "",
+   "cap": "ch010",
+   "a": "en-una-mala-época",
+   "dioses": [],
+   "bytes": 545479,
+   "huella": "3c581a80fc"
+  },
+  {
+   "id": "oraciones/r14",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r14.mp3",
+   "titulo": "Ante un reto o un obstáculo",
+   "version": "",
+   "cap": "ch010",
+   "a": "ante-un-reto-o-un-obstáculo",
+   "dioses": [],
+   "bytes": 558018,
+   "huella": "224911a9de"
+  },
+  {
+   "id": "oraciones/r15",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r15.mp3",
+   "titulo": "Ante una injusticia",
+   "version": "",
+   "cap": "ch010",
+   "a": "ante-una-injusticia",
+   "dioses": [],
+   "bytes": 545479,
+   "huella": "a53e873759"
+  },
+  {
+   "id": "oraciones/r16",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r16.mp3",
+   "titulo": "Por una persona enferma",
+   "version": "",
+   "cap": "ch010",
+   "a": "por-una-persona-enferma",
+   "dioses": [],
+   "bytes": 409643,
+   "huella": "05c338271c"
+  },
+  {
+   "id": "oraciones/r17",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r17.mp3",
+   "titulo": "Por los difuntos",
+   "version": "",
+   "cap": "ch010",
+   "a": "por-los-difuntos",
+   "dioses": [],
+   "bytes": 408598,
+   "huella": "4647d1742d"
+  },
+  {
+   "id": "oraciones/r18",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r18.mp3",
+   "titulo": "Antes de estudiar o de un examen",
+   "version": "",
+   "cap": "ch010",
+   "a": "antes-de-estudiar-o-de-un-examen-1",
+   "dioses": [],
+   "bytes": 572647,
+   "huella": "e6ae319593"
+  },
+  {
+   "id": "oraciones/r19",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r19.mp3",
+   "titulo": "Antes de hacer música o crear",
+   "version": "",
+   "cap": "ch010",
+   "a": "antes-de-hacer-música-o-crear",
+   "dioses": [],
+   "bytes": 465022,
+   "huella": "ebf33852fe"
+  },
+  {
+   "id": "oraciones/r20",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r20.mp3",
+   "titulo": "Para expresar lo que cuesta decir",
+   "version": "",
+   "cap": "ch010",
+   "a": "para-expresar-lo-que-cuesta-decir",
+   "dioses": [],
+   "bytes": 359488,
+   "huella": "9de90d2a48"
+  },
+  {
+   "id": "oraciones/r21",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r21.mp3",
+   "titulo": "Al terminar un trabajo",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-terminar-un-trabajo",
+   "dioses": [],
+   "bytes": 392924,
+   "huella": "c03a1bbaa6"
+  },
+  {
+   "id": "oraciones/r22",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r22.mp3",
+   "titulo": "Con nervios",
+   "version": "",
+   "cap": "ch010",
+   "a": "con-nervios",
+   "dioses": [],
+   "bytes": 172451,
+   "huella": "43cd0d412e"
+  },
+  {
+   "id": "oraciones/r23",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r23.mp3",
+   "titulo": "Al bloquearse",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-bloquearse",
+   "dioses": [],
+   "bytes": 141104,
+   "huella": "41bdec6ad1"
+  },
+  {
+   "id": "oraciones/r24",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r24.mp3",
+   "titulo": "Al no saber cómo hacer algo",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-no-saber-cómo-hacer-algo",
+   "dioses": [],
+   "bytes": 219471,
+   "huella": "b521de679b"
+  },
+  {
+   "id": "oraciones/r25",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r25.mp3",
+   "titulo": "Antes de hablar en público",
+   "version": "",
+   "cap": "ch010",
+   "a": "antes-de-hablar-en-público",
+   "dioses": [],
+   "bytes": 83635,
+   "huella": "ffa8dfe94b"
+  },
+  {
+   "id": "oraciones/r26",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r26.mp3",
+   "titulo": "Antes de un examen",
+   "version": "",
+   "cap": "ch010",
+   "a": "antes-de-un-examen",
+   "dioses": [],
+   "bytes": 174541,
+   "huella": "8d36daa6f6"
+  },
+  {
+   "id": "oraciones/r27",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r27.mp3",
+   "titulo": "Al terminar, pase lo que pase",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-terminar-pase-lo-que-pase",
+   "dioses": [],
+   "bytes": 126475,
+   "huella": "a15e0624f2"
+  },
+  {
+   "id": "oraciones/r28",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r28.mp3",
+   "titulo": "6. Dar las gracias",
+   "version": "",
+   "cap": "ch010",
+   "a": "dar-las-gracias",
+   "dioses": [],
+   "bytes": 257088,
+   "huella": "d55fe2a989"
+  },
+  {
+   "id": "oraciones/r29",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r29.mp3",
+   "titulo": "Antes de cocinar",
+   "version": "",
+   "cap": "ch010",
+   "a": "antes-de-cocinar",
+   "dioses": [],
+   "bytes": 313512,
+   "huella": "98d7a6e7d2"
+  },
+  {
+   "id": "oraciones/r30",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r30.mp3",
+   "titulo": "Después de comer",
+   "version": "",
+   "cap": "ch010",
+   "a": "después-de-comer",
+   "dioses": [],
+   "bytes": 407553,
+   "huella": "9bea314f73"
+  },
+  {
+   "id": "oraciones/r31",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r31.mp3",
+   "titulo": "Al limpiar la casa",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-limpiar-la-casa",
+   "dioses": [],
+   "bytes": 213202,
+   "huella": "efd8818d67"
+  },
+  {
+   "id": "oraciones/r32",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r32.mp3",
+   "titulo": "Al entrar en una casa nueva",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-entrar-en-una-casa-nueva",
+   "dioses": [],
+   "bytes": 584141,
+   "huella": "a568d47f38"
+  },
+  {
+   "id": "oraciones/r33",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r33.mp3",
+   "titulo": "Al dejar una casa (mudanza)",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-dejar-una-casa-mudanza",
+   "dioses": [],
+   "bytes": 240369,
+   "huella": "dab4eb2105"
+  },
+  {
+   "id": "oraciones/r34",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r34.mp3",
+   "titulo": "Al abrir la puerta por la mañana",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-abrir-la-puerta-por-la-mañana",
+   "dioses": [],
+   "bytes": 313512,
+   "huella": "c22dd3a7a4"
+  },
+  {
+   "id": "oraciones/r35",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r35.mp3",
+   "titulo": "Al Agathos Daimon, el buen espíritu de la casa",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-agathos-daimon-el-buen-espíritu-de-la-casa",
+   "dioses": [],
+   "bytes": 466067,
+   "huella": "c46c736373"
+  },
+  {
+   "id": "oraciones/r36",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r36.mp3",
+   "titulo": "Antes de una cita médica o una prueba",
+   "version": "",
+   "cap": "ch010",
+   "a": "antes-de-una-cita-médica-o-una-prueba",
+   "dioses": [],
+   "bytes": 305153,
+   "huella": "2698003cb4"
+  },
+  {
+   "id": "oraciones/r37",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r37.mp3",
+   "titulo": "Antes de dormir, en la enfermedad",
+   "version": "",
+   "cap": "ch010",
+   "a": "antes-de-dormir-en-la-enfermedad",
+   "dioses": [],
+   "bytes": 552794,
+   "huella": "17a09c5036"
+  },
+  {
+   "id": "oraciones/r38",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r38.mp3",
+   "titulo": "En la enfermedad",
+   "version": "",
+   "cap": "ch010",
+   "a": "en-la-enfermedad",
+   "dioses": [],
+   "bytes": 369937,
+   "huella": "5b337a31f0"
+  },
+  {
+   "id": "oraciones/r39",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r39.mp3",
+   "titulo": "Himno a Higía, la salud (Arifrón)",
+   "version": "",
+   "cap": "ch010",
+   "a": "himno-a-higía-la-salud-arifrón",
+   "dioses": [],
+   "bytes": 1387667,
+   "huella": "0bfe14b082"
+  },
+  {
+   "id": "oraciones/r40",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r40.mp3",
+   "titulo": "Himno de la mañana a Asclepio (Atenas)",
+   "version": "",
+   "cap": "ch010",
+   "a": "himno-de-la-mañana-a-asclepio-atenas",
+   "dioses": [
+    "Asclepio"
+   ],
+   "bytes": 1045986,
+   "huella": "96fca9ccec"
+  },
+  {
+   "id": "oraciones/r41",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r41.mp3",
+   "titulo": "Himno a Telesforo, el que trae el buen final (Atenas)",
+   "version": "",
+   "cap": "ch010",
+   "a": "himno-a-telesforo-el-que-trae-el-buen-final-atenas",
+   "dioses": [],
+   "bytes": 1215259,
+   "huella": "4eb728bdf2"
+  },
+  {
+   "id": "oraciones/r42",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r42.mp3",
+   "titulo": "Al tomar una medicina",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-tomar-una-medicina",
+   "dioses": [],
+   "bytes": 259177,
+   "huella": "47b5876c3a"
+  },
+  {
+   "id": "oraciones/r43",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r43.mp3",
+   "titulo": "Al hacer ejercicio o deporte",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-hacer-ejercicio-o-deporte",
+   "dioses": [],
+   "bytes": 317692,
+   "huella": "536f78e2b7"
+  },
+  {
+   "id": "oraciones/r44",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r44.mp3",
+   "titulo": "Cuando tengo miedo",
+   "version": "",
+   "cap": "ch010",
+   "a": "cuando-tengo-miedo",
+   "dioses": [],
+   "bytes": 266492,
+   "huella": "0e698b272c"
+  },
+  {
+   "id": "oraciones/r45",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r45.mp3",
+   "titulo": "Cuando todo me agobia",
+   "version": "",
+   "cap": "ch010",
+   "a": "cuando-todo-me-agobia",
+   "dioses": [],
+   "bytes": 409643,
+   "huella": "6e1a49973b"
+  },
+  {
+   "id": "oraciones/r46",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r46.mp3",
+   "titulo": "Cuando la ansiedad aprieta",
+   "version": "",
+   "cap": "ch010",
+   "a": "cuando-la-ansiedad-aprieta",
+   "dioses": [],
+   "bytes": 598769,
+   "huella": "624f3e3f43"
+  },
+  {
+   "id": "oraciones/r47",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r47.mp3",
+   "titulo": "Cuando los pensamientos no paran",
+   "version": "",
+   "cap": "ch010",
+   "a": "cuando-los-pensamientos-no-paran",
+   "dioses": [],
+   "bytes": 736696,
+   "huella": "070af1bff7"
+  },
+  {
+   "id": "oraciones/r48",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r48.mp3",
+   "titulo": "Cuando me frustro porque algo no me sale",
+   "version": "",
+   "cap": "ch010",
+   "a": "cuando-me-frustro-porque-algo-no-me-sale",
+   "dioses": [],
+   "bytes": 571602,
+   "huella": "61d853e4c3"
+  },
+  {
+   "id": "oraciones/r49",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r49.mp3",
+   "titulo": "Cuando dudo de mí",
+   "version": "",
+   "cap": "ch010",
+   "a": "cuando-dudo-de-mí",
+   "dioses": [],
+   "bytes": 319781,
+   "huella": "7f359e094f"
+  },
+  {
+   "id": "oraciones/r50",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r50.mp3",
+   "titulo": "Ante una decisión difícil",
+   "version": "",
+   "cap": "ch010",
+   "a": "ante-una-decisión-difícil",
+   "dioses": [],
+   "bytes": 409643,
+   "huella": "9eedef3049"
+  },
+  {
+   "id": "oraciones/r51",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r51.mp3",
+   "titulo": "Antes de consultar un oráculo (dados o tabas)",
+   "version": "",
+   "cap": "ch010",
+   "a": "antes-de-consultar-un-oráculo-dados-o-tabas",
+   "dioses": [],
+   "bytes": 373071,
+   "huella": "8dd6c1c6be"
+  },
+  {
+   "id": "oraciones/r52",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r52.mp3",
+   "titulo": "Al percibir una señal",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-percibir-una-señal",
+   "dioses": [],
+   "bytes": 631161,
+   "huella": "e05f7e8f80"
+  },
+  {
+   "id": "oraciones/r53",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r53.mp3",
+   "titulo": "Al hacer una promesa",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-hacer-una-promesa",
+   "dioses": [],
+   "bytes": 228875,
+   "huella": "e895c42c19"
+  },
+  {
+   "id": "oraciones/r54",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r54.mp3",
+   "titulo": "Por los antepasados",
+   "version": "",
+   "cap": "ch010",
+   "a": "por-los-antepasados",
+   "dioses": [],
+   "bytes": 356353,
+   "huella": "192a90fab7"
+  },
+  {
+   "id": "oraciones/r55",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r55.mp3",
+   "titulo": "Al esperar un resultado",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-esperar-un-resultado-1",
+   "dioses": [],
+   "bytes": 425316,
+   "huella": "15540d744c"
+  },
+  {
+   "id": "oraciones/r56",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r56.mp3",
+   "titulo": "Al recibir una buena noticia",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-recibir-una-buena-noticia",
+   "dioses": [],
+   "bytes": 318737,
+   "huella": "bb379b686b"
+  },
+  {
+   "id": "oraciones/r57",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r57.mp3",
+   "titulo": "Cuando estoy triste",
+   "version": "",
+   "cap": "ch010",
+   "a": "cuando-estoy-triste",
+   "dioses": [],
+   "bytes": 405463,
+   "huella": "809752bce1"
+  },
+  {
+   "id": "oraciones/r58",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r58.mp3",
+   "titulo": "Cuando no puedo dormir",
+   "version": "",
+   "cap": "ch010",
+   "a": "cuando-no-puedo-dormir",
+   "dioses": [],
+   "bytes": 440990,
+   "huella": "923ca460d6"
+  },
+  {
+   "id": "oraciones/r59",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r59.mp3",
+   "titulo": "Después de un mal sueño",
+   "version": "",
+   "cap": "ch010",
+   "a": "después-de-un-mal-sueño",
+   "dioses": [],
+   "bytes": 400239,
+   "huella": "f4f6acfd4f"
+  },
+  {
+   "id": "oraciones/r60",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r60.mp3",
+   "titulo": "Después de un buen sueño",
+   "version": "",
+   "cap": "ch010",
+   "a": "después-de-un-buen-sueño",
+   "dioses": [],
+   "bytes": 227830,
+   "huella": "3eb3fd8388"
+  },
+  {
+   "id": "oraciones/r61",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r61.mp3",
+   "titulo": "Para limpiarse después de algo malo",
+   "version": "",
+   "cap": "ch010",
+   "a": "para-limpiarse-después-de-algo-malo",
+   "dioses": [],
+   "bytes": 295749,
+   "huella": "068aa40d01"
+  },
+  {
+   "id": "oraciones/r62",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r62.mp3",
+   "titulo": "Para pedir perdón",
+   "version": "",
+   "cap": "ch010",
+   "a": "para-pedir-perdón",
+   "dioses": [],
+   "bytes": 270671,
+   "huella": "9149032ce2"
+  },
+  {
+   "id": "oraciones/r63",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r63.mp3",
+   "titulo": "Para dar las gracias por un regalo",
+   "version": "",
+   "cap": "ch010",
+   "a": "para-dar-las-gracias-por-un-regalo",
+   "dioses": [],
+   "bytes": 327096,
+   "huella": "a90895cd6b"
+  },
+  {
+   "id": "oraciones/r64",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r64.mp3",
+   "titulo": "Por la familia",
+   "version": "",
+   "cap": "ch010",
+   "a": "por-la-familia",
+   "dioses": [],
+   "bytes": 374116,
+   "huella": "8c0606fa31"
+  },
+  {
+   "id": "oraciones/r65",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r65.mp3",
+   "titulo": "Por un amigo o una amiga",
+   "version": "",
+   "cap": "ch010",
+   "a": "por-un-amigo-o-una-amiga",
+   "dioses": [],
+   "bytes": 274851,
+   "huella": "8ab2a604f3"
+  },
+  {
+   "id": "oraciones/r66",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r66.mp3",
+   "titulo": "La comida de la amistad",
+   "version": "",
+   "cap": "ch010",
+   "a": "la-comida-de-la-amistad",
+   "dioses": [],
+   "bytes": 546524,
+   "huella": "57d5b7cc90"
+  },
+  {
+   "id": "oraciones/r67",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r67.mp3",
+   "titulo": "Las tres libaciones de la comida",
+   "version": "",
+   "cap": "ch010",
+   "a": "las-tres-libaciones-de-la-comida",
+   "dioses": [],
+   "bytes": 556973,
+   "huella": "675af56e8f"
+  },
+  {
+   "id": "oraciones/r68",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r68.mp3",
+   "titulo": "Por el amor",
+   "version": "",
+   "cap": "ch010",
+   "a": "por-el-amor",
+   "dioses": [],
+   "bytes": 357398,
+   "huella": "0fcedb19a3"
+  },
+  {
+   "id": "oraciones/r69",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r69.mp3",
+   "titulo": "Ante una discusión o un enfado",
+   "version": "",
+   "cap": "ch010",
+   "a": "ante-una-discusión-o-un-enfado",
+   "dioses": [],
+   "bytes": 316647,
+   "huella": "6344dc7eae"
+  },
+  {
+   "id": "oraciones/r70",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r70.mp3",
+   "titulo": "Por una boda",
+   "version": "",
+   "cap": "ch010",
+   "a": "por-una-boda",
+   "dioses": [],
+   "bytes": 379341,
+   "huella": "8c0665b142"
+  },
+  {
+   "id": "oraciones/r71",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r71.mp3",
+   "titulo": "Por un nacimiento",
+   "version": "",
+   "cap": "ch010",
+   "a": "por-un-nacimiento",
+   "dioses": [],
+   "bytes": 374116,
+   "huella": "a60b49999a"
+  },
+  {
+   "id": "oraciones/r72",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r72.mp3",
+   "titulo": "En un cumpleaños",
+   "version": "",
+   "cap": "ch010",
+   "a": "en-un-cumpleaños",
+   "dioses": [],
+   "bytes": 282165,
+   "huella": "fc699dcd43"
+  },
+  {
+   "id": "oraciones/r73",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r73.mp3",
+   "titulo": "Por los animales y las mascotas",
+   "version": "",
+   "cap": "ch010",
+   "a": "por-los-animales-y-las-mascotas",
+   "dioses": [],
+   "bytes": 298884,
+   "huella": "6873010eb8"
+  },
+  {
+   "id": "oraciones/r74",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r74.mp3",
+   "titulo": "Cuando muere un animal querido",
+   "version": "",
+   "cap": "ch010",
+   "a": "cuando-muere-un-animal-querido-1",
+   "dioses": [],
+   "bytes": 246639,
+   "huella": "19e611956c"
+  },
+  {
+   "id": "oraciones/r75",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r75.mp3",
+   "titulo": "Por los compañeros de clase o de trabajo",
+   "version": "",
+   "cap": "ch010",
+   "a": "por-los-compañeros-de-clase-o-de-trabajo",
+   "dioses": [],
+   "bytes": 479651,
+   "huella": "ee7c7cb763"
+  },
+  {
+   "id": "oraciones/r76",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r76.mp3",
+   "titulo": "Antes de una entrevista o una prueba importante",
+   "version": "",
+   "cap": "ch010",
+   "a": "antes-de-una-entrevista-o-una-prueba-importante",
+   "dioses": [],
+   "bytes": 329186,
+   "huella": "57f1bb6996"
+  },
+  {
+   "id": "oraciones/r77",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r77.mp3",
+   "titulo": "Antes de trabajar con el ordenador o con herramientas",
+   "version": "",
+   "cap": "ch010",
+   "a": "antes-de-trabajar-con-el-ordenador-o-con-herramientas",
+   "dioses": [],
+   "bytes": 340679,
+   "huella": "556a382e79"
+  },
+  {
+   "id": "oraciones/r78",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r78.mp3",
+   "titulo": "Al empezar un curso o una etapa nueva",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-empezar-un-curso-o-una-etapa-nueva",
+   "dioses": [],
+   "bytes": 601904,
+   "huella": "4cfb759602"
+  },
+  {
+   "id": "oraciones/r79",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r79.mp3",
+   "titulo": "Al volver de un viaje",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-volver-de-un-viaje",
+   "dioses": [],
+   "bytes": 374116,
+   "huella": "8f9a9e6688"
+  },
+  {
+   "id": "oraciones/r80",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r80.mp3",
+   "titulo": "Ante una tormenta o un temporal",
+   "version": "",
+   "cap": "ch010",
+   "a": "ante-una-tormenta-o-un-temporal",
+   "dioses": [],
+   "bytes": 343814,
+   "huella": "f3ae0420d7"
+  },
+  {
+   "id": "oraciones/r81",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r81.mp3",
+   "titulo": "Para pedir lluvia",
+   "version": "",
+   "cap": "ch010",
+   "a": "para-pedir-lluvia",
+   "dioses": [],
+   "bytes": 228875,
+   "huella": "f87d78d2b2"
+  },
+  {
+   "id": "oraciones/r82",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r82.mp3",
+   "titulo": "El canto de Dodona",
+   "version": "",
+   "cap": "ch010",
+   "a": "el-canto-de-dodona",
+   "dioses": [],
+   "bytes": 163047,
+   "huella": "be3ba05292"
+  },
+  {
+   "id": "oraciones/r83",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r83.mp3",
+   "titulo": "Por el mundo y la naturaleza",
+   "version": "",
+   "cap": "ch010",
+   "a": "por-el-mundo-y-la-naturaleza",
+   "dioses": [],
+   "bytes": 285300,
+   "huella": "33c0c8f7ec"
+  },
+  {
+   "id": "oraciones/r84",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r84.mp3",
+   "titulo": "Para la suerte y el dinero",
+   "version": "",
+   "cap": "ch010",
+   "a": "para-la-suerte-y-el-dinero",
+   "dioses": [],
+   "bytes": 467112,
+   "huella": "95a593fb8d"
+  },
+  {
+   "id": "oraciones/r85",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r85.mp3",
+   "titulo": "Por la ciudad y por la paz",
+   "version": "",
+   "cap": "ch010",
+   "a": "por-la-ciudad-y-por-la-paz",
+   "dioses": [],
+   "bytes": 469202,
+   "huella": "d72ad4b0dd"
+  },
+  {
+   "id": "oraciones/r86",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r86.mp3",
+   "titulo": "En la Noumenia (luna nueva, primer día del mes)",
+   "version": "",
+   "cap": "ch010",
+   "a": "en-la-noumenia-luna-nueva-primer-día-del-mes",
+   "dioses": [],
+   "bytes": 347994,
+   "huella": "c86518567c"
+  },
+  {
+   "id": "oraciones/r87",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r87.mp3",
+   "titulo": "Para abrir un rito",
+   "version": "",
+   "cap": "ch010",
+   "a": "para-abrir-un-rito",
+   "dioses": [],
+   "bytes": 374116,
+   "huella": "3ede9d7032"
+  },
+  {
+   "id": "oraciones/r88",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r88.mp3",
+   "titulo": "Para cerrar un rito",
+   "version": "",
+   "cap": "ch010",
+   "a": "para-cerrar-un-rito",
+   "dioses": [],
+   "bytes": 292614,
+   "huella": "cab8cf1aa4"
+  },
+  {
+   "id": "oraciones/r89",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r89.mp3",
+   "titulo": "Las primeras frutas de la temporada",
+   "version": "",
+   "cap": "ch010",
+   "a": "las-primeras-frutas-de-la-temporada",
+   "dioses": [],
+   "bytes": 395014,
+   "huella": "e683063af1"
+  },
+  {
+   "id": "oraciones/r90",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r90.mp3",
+   "titulo": "En el Deipnon de Hécate (último día del mes)",
+   "version": "",
+   "cap": "ch010",
+   "a": "en-el-deipnon-de-hécate-último-día-del-mes",
+   "dioses": [
+    "Hécate"
+   ],
+   "bytes": 425316,
+   "huella": "936562f5b2"
+  },
+  {
+   "id": "oraciones/r91",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r91.mp3",
+   "titulo": "Al empezar una fiesta",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-empezar-una-fiesta",
+   "dioses": [],
+   "bytes": 232010,
+   "huella": "cb1aae92e9"
+  },
+  {
+   "id": "oraciones/r92",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r92.mp3",
+   "titulo": "En año nuevo (Noumenia de Hekatombaion)",
+   "version": "",
+   "cap": "ch010",
+   "a": "en-año-nuevo-noumenia-de-hekatombaion",
+   "dioses": [],
+   "bytes": 261267,
+   "huella": "62204265c1"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b01",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b01.mp3",
+   "titulo": "Antes de comer",
+   "version": "",
+   "cap": "ch052",
+   "a": "antes-de-comer-2",
+   "dioses": [],
+   "bytes": 75275,
+   "huella": "d3088eb61a"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b02",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b02.mp3",
+   "titulo": "Al terminar de comer",
+   "version": "",
+   "cap": "ch052",
+   "a": "al-terminar-de-comer",
+   "dioses": [],
+   "bytes": 67961,
+   "huella": "65a1c0587c"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b03",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b03.mp3",
+   "titulo": "Para calmarte, con la respiración",
+   "version": "",
+   "cap": "ch052",
+   "a": "para-calmarte-con-la-respiración",
+   "dioses": [],
+   "bytes": 268581,
+   "huella": "a6ff3760ba"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b04",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b04.mp3",
+   "titulo": "Cuando tienes nervios",
+   "version": "",
+   "cap": "ch052",
+   "a": "cuando-tienes-nervios",
+   "dioses": [],
+   "bytes": 172451,
+   "huella": "00be46177b"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b05",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b05.mp3",
+   "titulo": "Para concentrarte en clase o en un examen",
+   "version": "",
+   "cap": "ch052",
+   "a": "para-concentrarte-en-clase-o-en-un-examen",
+   "dioses": [],
+   "bytes": 74230,
+   "huella": "0b63cd7470"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b06",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b06.mp3",
+   "titulo": "Ante algo difícil",
+   "version": "",
+   "cap": "ch052",
+   "a": "ante-algo-difícil",
+   "dioses": [],
+   "bytes": 66916,
+   "huella": "df5565e4b8"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b07",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b07.mp3",
+   "titulo": "Al salir de casa o de camino",
+   "version": "",
+   "cap": "ch052",
+   "a": "al-salir-de-casa-o-de-camino",
+   "dioses": [],
+   "bytes": 73186,
+   "huella": "6cd2b91a73"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b08",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b08.mp3",
+   "titulo": "Al caminar sin compañía, con miedo a perderte",
+   "version": "",
+   "cap": "ch052",
+   "a": "al-caminar-sin-compañía-con-miedo-a-perderte",
+   "dioses": [],
+   "bytes": 152598,
+   "huella": "2df0bb6890"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b09",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b09.mp3",
+   "titulo": "Al Sol",
+   "version": "",
+   "cap": "ch052",
+   "a": "al-sol",
+   "dioses": [
+    "Helios"
+   ],
+   "bytes": 123341,
+   "huella": "7620eb3db1"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b10",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b10.mp3",
+   "titulo": "Cuando algo te sale bien o sientes algo bonito",
+   "version": "",
+   "cap": "ch052",
+   "a": "cuando-algo-te-sale-bien-o-sientes-algo-bonito",
+   "dioses": [],
+   "bytes": 70051,
+   "huella": "9638893929"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b11",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b11.mp3",
+   "titulo": "Cuando tienes ansiedad",
+   "version": "",
+   "cap": "ch052",
+   "a": "cuando-tienes-ansiedad-1",
+   "dioses": [],
+   "bytes": 172451,
+   "huella": "6b19fddd12"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b12",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b12.mp3",
+   "titulo": "Cuando tienes miedo",
+   "version": "",
+   "cap": "ch052",
+   "a": "cuando-tienes-miedo-1",
+   "dioses": [],
+   "bytes": 150508,
+   "huella": "115dae0b5b"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b13",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b13.mp3",
+   "titulo": "Cuando estás triste",
+   "version": "",
+   "cap": "ch052",
+   "a": "cuando-estás-triste",
+   "dioses": [],
+   "bytes": 124386,
+   "huella": "1f33c86020"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b14",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b14.mp3",
+   "titulo": "En la enfermedad o con dolor",
+   "version": "",
+   "cap": "ch052",
+   "a": "en-la-enfermedad-o-con-dolor-1",
+   "dioses": [],
+   "bytes": 133790,
+   "huella": "83aa2cabc3"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b15",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b15.mp3",
+   "titulo": "Por alguien que lo está pasando mal",
+   "version": "",
+   "cap": "ch052",
+   "a": "por-alguien-que-lo-está-pasando-mal",
+   "dioses": [],
+   "bytes": 476516,
+   "huella": "90fee07ad3"
+  },
+  {
+   "id": "oraciones-de-bolsillo/b16",
+   "bloque": "oraciones-de-bolsillo",
+   "archivo": "audios/oraciones-de-bolsillo/b16.mp3",
+   "titulo": "Cuando muere alguien querido",
+   "version": "",
+   "cap": "ch052",
+   "a": "cuando-muere-alguien-querido-1",
+   "dioses": [],
+   "bytes": 249773,
+   "huella": "f79b20aadb"
+  },
+  {
+   "id": "frases-en-griego/g00",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g00.mp3",
+   "titulo": "Todas las frases seguidas",
+   "version": "",
+   "cap": "ch011",
+   "a": "",
+   "dioses": [],
+   "bytes": 1684964,
+   "huella": "02c47362e8"
+  },
+  {
+   "id": "frases-en-griego/g01",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g01.mp3",
+   "titulo": "Χαῖρε (jére)",
+   "version": "",
+   "cap": "ch011",
+   "a": "χαῖρε-jére",
+   "dioses": [],
+   "bytes": 8492,
+   "huella": "ebe8865138"
+  },
+  {
+   "id": "frases-en-griego/g02",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g02.mp3",
+   "titulo": "Χαίρετε, θεοί (jérete, zeí)",
+   "version": "",
+   "cap": "ch011",
+   "a": "χαίρετε-θεοί-jérete-zeí",
+   "dioses": [],
+   "bytes": 13508,
+   "huella": "e9e475bf99"
+  },
+  {
+   "id": "frases-en-griego/g03",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g03.mp3",
+   "titulo": "Ἀφ᾽ Ἑστίας ἀρχόμεθα (af estías arjómeza)",
+   "version": "",
+   "cap": "ch011",
+   "a": "ἀφ-ἑστίας-ἀρχόμεθα-af-estías-arjómeza",
+   "dioses": [
+    "Hestia"
+   ],
+   "bytes": 14468,
+   "huella": "a091211b04"
+  },
+  {
+   "id": "frases-en-griego/g04",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g04.mp3",
+   "titulo": "Εὐφημεῖτε (efimíte)",
+   "version": "",
+   "cap": "ch011",
+   "a": "εὐφημεῖτε-efimíte",
+   "dioses": [],
+   "bytes": 9716,
+   "huella": "60a43ad509"
+  },
+  {
+   "id": "frases-en-griego/g05",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g05.mp3",
+   "titulo": "Ἑκὰς ἑκὰς ἔστε βέβηλοι (ekás, ekás, éste vévili)",
+   "version": "",
+   "cap": "ch011",
+   "a": "ἑκὰς-ἑκὰς-ἔστε-βέβηλοι-ekás-ekás-éste-vévili",
+   "dioses": [],
+   "bytes": 16412,
+   "huella": "ef7c2bb1fd"
+  },
+  {
+   "id": "frases-en-griego/g06",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g06.mp3",
+   "titulo": "Εὐοῖ (eví)",
+   "version": "",
+   "cap": "ch011",
+   "a": "εὐοῖ-eví",
+   "dioses": [],
+   "bytes": 23030,
+   "huella": "841681b026"
+  },
+  {
+   "id": "frases-en-griego/g07",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g07.mp3",
+   "titulo": "Ἰὴ παιάν (ií peán)",
+   "version": "",
+   "cap": "ch011",
+   "a": "ἰὴ-παιάν-ií-peán",
+   "dioses": [],
+   "bytes": 50198,
+   "huella": "a208c2fe41"
+  },
+  {
+   "id": "frases-en-griego/g08",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g08.mp3",
+   "titulo": "Ζεὺς ἦν, Ζεὺς ἐστί, Ζεὺς ἔσσεται· ὦ μεγάλε Ζεῦ (zéfs in, zéfs estí, zéfs ésete; o megále zef)",
+   "version": "",
+   "cap": "ch011",
+   "a": "ζεὺς-ἦν-ζεὺς-ἐστί-ζεὺς-ἔσσεται-ὦ-μεγάλε-ζεῦ-zéfs-in-zéfs-estí-zéfs-ésete-o-megále-zef",
+   "dioses": [
+    "Zeus"
+   ],
+   "bytes": 32324,
+   "huella": "59543ad466"
+  },
+  {
+   "id": "frases-en-griego/g09",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g09.mp3",
+   "titulo": "Ὗσον, ὗσον, ὦ φίλε Ζεῦ (íson, íson, o fíle zef)",
+   "version": "",
+   "cap": "ch011",
+   "a": "ὗσον-ὗσον-ὦ-φίλε-ζεῦ-íson-íson-o-fíle-zef",
+   "dioses": [
+    "Zeus"
+   ],
+   "bytes": 18668,
+   "huella": "aeee6bba9e"
+  },
+  {
+   "id": "frases-en-griego/g10",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g10.mp3",
+   "titulo": "Κλῦθί μοι (klízi mi)",
+   "version": "",
+   "cap": "ch011",
+   "a": "κλῦθί-μοι-klízi-mi",
+   "dioses": [],
+   "bytes": 9308,
+   "huella": "17f9f87a6e"
+  },
+  {
+   "id": "frases-en-griego/g11",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g11.mp3",
+   "titulo": "Κλῦτε, θεοί (klíte, zeí)",
+   "version": "",
+   "cap": "ch011",
+   "a": "κλῦτε-θεοί-klíte-zeí",
+   "dioses": [],
+   "bytes": 12092,
+   "huella": "3681b0196c"
+  },
+  {
+   "id": "frases-en-griego/g12",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g12.mp3",
+   "titulo": "Ἐλθέ (elzé)",
+   "version": "",
+   "cap": "ch011",
+   "a": "ἐλθέ-elzé",
+   "dioses": [],
+   "bytes": 8852,
+   "huella": "fe82741409"
+  },
+  {
+   "id": "frases-en-griego/g13",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g13.mp3",
+   "titulo": "Ἵλαθι (ílazi)",
+   "version": "",
+   "cap": "ch011",
+   "a": "ἵλαθι-ílazi",
+   "dioses": [],
+   "bytes": 8708,
+   "huella": "4756dbc00e"
+  },
+  {
+   "id": "frases-en-griego/g14",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g14.mp3",
+   "titulo": "Δέξαι τόδε (dékse tóde)",
+   "version": "",
+   "cap": "ch011",
+   "a": "δέξαι-τόδε-dékse-tóde",
+   "dioses": [],
+   "bytes": 10724,
+   "huella": "645235cbf0"
+  },
+  {
+   "id": "frases-en-griego/g15",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g15.mp3",
+   "titulo": "Δὸς ὑγίειαν (dos iyíian)",
+   "version": "",
+   "cap": "ch011",
+   "a": "δὸς-ὑγίειαν-dos-iyíian",
+   "dioses": [],
+   "bytes": 10148,
+   "huella": "c7abda2b17"
+  },
+  {
+   "id": "frases-en-griego/g16",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g16.mp3",
+   "titulo": "Χάριν οἶδα (járin ída)",
+   "version": "",
+   "cap": "ch011",
+   "a": "χάριν-οἶδα-járin-ída",
+   "dioses": [],
+   "bytes": 10100,
+   "huella": "a603318d57"
+  },
+  {
+   "id": "frases-en-griego/g17",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g17.mp3",
+   "titulo": "Χάριν οἶδα ὑμῖν (járin ída imín)",
+   "version": "",
+   "cap": "ch011",
+   "a": "χάριν-οἶδα-ὑμῖν-járin-ída-imín",
+   "dioses": [],
+   "bytes": 12044,
+   "huella": "8ba6f34715"
+  },
+  {
+   "id": "frases-en-griego/g18",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g18.mp3",
+   "titulo": "Εὐχαριστῶ (efjaristó)",
+   "version": "",
+   "cap": "ch011",
+   "a": "εὐχαριστῶ-efjaristó",
+   "dioses": [],
+   "bytes": 10220,
+   "huella": "e42e720843"
+  },
+  {
+   "id": "frases-en-griego/g19",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g19.mp3",
+   "titulo": "Γένοιτο (yénito)",
+   "version": "",
+   "cap": "ch011",
+   "a": "γένοιτο-yénito",
+   "dioses": [],
+   "bytes": 9548,
+   "huella": "8950fab0ef"
+  },
+  {
+   "id": "frases-en-griego/g20",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g20.mp3",
+   "titulo": "Ἑστία (estía)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Hestia"
+   ],
+   "bytes": 9428,
+   "huella": "b1ee11d417"
+  },
+  {
+   "id": "frases-en-griego/g21",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g21.mp3",
+   "titulo": "Ζεῦ (zef)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Zeus"
+   ],
+   "bytes": 8564,
+   "huella": "dad068b8c0"
+  },
+  {
+   "id": "frases-en-griego/g22",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g22.mp3",
+   "titulo": "Ἥρα (íra)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Hera"
+   ],
+   "bytes": 7772,
+   "huella": "4b8659eafc"
+  },
+  {
+   "id": "frases-en-griego/g23",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g23.mp3",
+   "titulo": "Ἀθηνᾶ (aziná)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Atenea"
+   ],
+   "bytes": 8972,
+   "huella": "fbae199922"
+  },
+  {
+   "id": "frases-en-griego/g24",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g24.mp3",
+   "titulo": "Ἄπολλον (ápolon)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Apolo"
+   ],
+   "bytes": 9524,
+   "huella": "efae6c5bf1"
+  },
+  {
+   "id": "frases-en-griego/g25",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g25.mp3",
+   "titulo": "Ἄρτεμι (ártemi)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Ártemis"
+   ],
+   "bytes": 9260,
+   "huella": "4556cec502"
+  },
+  {
+   "id": "frases-en-griego/g26",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g26.mp3",
+   "titulo": "Ἑρμῆ (ermí)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Hermes"
+   ],
+   "bytes": 8444,
+   "huella": "a1aaa5f221"
+  },
+  {
+   "id": "frases-en-griego/g27",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g27.mp3",
+   "titulo": "Ἀφροδίτη (afrodíti)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Afrodita"
+   ],
+   "bytes": 9812,
+   "huella": "2d2add9d01"
+  },
+  {
+   "id": "frases-en-griego/g28",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g28.mp3",
+   "titulo": "Δήμητερ (dímiter)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Deméter"
+   ],
+   "bytes": 9740,
+   "huella": "9a3a4c6f1a"
+  },
+  {
+   "id": "frases-en-griego/g29",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g29.mp3",
+   "titulo": "Ποσειδῶν (posidón)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Poseidón"
+   ],
+   "bytes": 9452,
+   "huella": "0911417823"
+  },
+  {
+   "id": "frases-en-griego/g30",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g30.mp3",
+   "titulo": "Διόνυσε (diónise)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Dioniso"
+   ],
+   "bytes": 32435,
+   "huella": "6e5db64e45"
+  },
+  {
+   "id": "frases-en-griego/g31",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g31.mp3",
+   "titulo": "Ἥφαιστε (ífeste)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Hefesto"
+   ],
+   "bytes": 10100,
+   "huella": "1e1a726abb"
+  },
+  {
+   "id": "frases-en-griego/g32",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g32.mp3",
+   "titulo": "Ἑκάτη (ekáti)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Hécate"
+   ],
+   "bytes": 9404,
+   "huella": "9187d09bb9"
+  },
+  {
+   "id": "frases-en-griego/g33",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g33.mp3",
+   "titulo": "Ἥλιε (ílie)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Helios"
+   ],
+   "bytes": 8132,
+   "huella": "2860b75af8"
+  },
+  {
+   "id": "frases-en-griego/g34",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g34.mp3",
+   "titulo": "Νύξ (niks)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Nyx"
+   ],
+   "bytes": 8780,
+   "huella": "ec880f877e"
+  },
+  {
+   "id": "frases-en-griego/g35",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g35.mp3",
+   "titulo": "Ὕπνε (ípne)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Hipnos"
+   ],
+   "bytes": 8732,
+   "huella": "6bba05bbab"
+  },
+  {
+   "id": "frases-en-griego/g36",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g36.mp3",
+   "titulo": "Μοῦσαι (múse)",
+   "version": "",
+   "cap": "ch011",
+   "a": "los-nombres-de-los-dioses",
+   "dioses": [
+    "Las Musas"
+   ],
+   "bytes": 9188,
+   "huella": "dc8a19cdeb"
+  },
+  {
+   "id": "frases-en-griego/g37",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g37.mp3",
+   "titulo": "Χαῖρε, Ἑστία (jére, estía)",
+   "version": "",
+   "cap": "ch011",
+   "a": "oración-corta-para-empezar",
+   "dioses": [
+    "Hestia"
+   ],
+   "bytes": 13604,
+   "huella": "558382522f"
+  },
+  {
+   "id": "frases-en-griego/g38",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g38.mp3",
+   "titulo": "Κλῦθί μοι, ἵλαθι (klízi mi, ílazi)",
+   "version": "",
+   "cap": "ch011",
+   "a": "oración-corta-para-empezar",
+   "dioses": [],
+   "bytes": 13076,
+   "huella": "640d85229c"
+  },
+  {
+   "id": "frases-en-griego/g39",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g39.mp3",
+   "titulo": "Χαῖρε, Ἀθηνᾶ (jére, aziná)",
+   "version": "",
+   "cap": "ch011",
+   "a": "para-dar-las-gracias-por-una-señal-por-ejemplo-a-atenea",
+   "dioses": [
+    "Atenea"
+   ],
+   "bytes": 53332,
+   "huella": "5780643f2a"
+  },
+  {
+   "id": "frases-en-griego/g40",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g40.mp3",
+   "titulo": "Χάριν οἶδα ὑμῖν (járin ída imín)",
+   "version": "",
+   "cap": "ch011",
+   "a": "χάριν-οἶδα-ὑμῖν-járin-ída-imín",
+   "dioses": [],
+   "bytes": 15452,
+   "huella": "2b4eb3533e"
+  },
+  {
+   "id": "frases-en-griego/g41",
+   "bloque": "frases-en-griego",
+   "archivo": "audios/frases-en-griego/g41.mp3",
+   "titulo": "Χαίρετε (jérete)",
+   "version": "",
+   "cap": "ch011",
+   "a": "χαίρετε-θεοί-jérete-zeí",
+   "dioses": [],
+   "bytes": 9236,
+   "huella": "a6b868a677"
+  },
+  {
+   "id": "musica-antigua/himno-a-helios-mesomedes-lento",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/himno-a-helios-mesomedes-lento.mp3",
+   "titulo": "Himno a Helios (Mesomedes)",
+   "version": "lento",
+   "cap": "ch040",
+   "a": "el-himno-a-helios-de-mesomedes",
+   "dioses": [
+    "Helios"
+   ],
+   "bytes": 2967554,
+   "huella": "d27ffb7760"
+  },
+  {
+   "id": "musica-antigua/himno-a-helios-mesomedes-normal",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/himno-a-helios-mesomedes-normal.mp3",
+   "titulo": "Himno a Helios (Mesomedes)",
+   "version": "normal",
+   "cap": "ch040",
+   "a": "el-himno-a-helios-de-mesomedes",
+   "dioses": [
+    "Helios"
+   ],
+   "bytes": 1897578,
+   "huella": "0aafeca3a7"
+  },
+  {
+   "id": "musica-antigua/himno-a-helios-mesomedes-practica-verso-a-verso",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/himno-a-helios-mesomedes-practica-verso-a-verso.mp3",
+   "titulo": "Himno a Helios (Mesomedes)",
+   "version": "práctica verso a verso",
+   "cap": "ch040",
+   "a": "el-himno-a-helios-de-mesomedes",
+   "dioses": [
+    "Helios"
+   ],
+   "bytes": 6980380,
+   "huella": "8a630d46ad"
+  },
+  {
+   "id": "musica-antigua/himno-a-nemesis-mesomedes-lento",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/himno-a-nemesis-mesomedes-lento.mp3",
+   "titulo": "Himno a Némesis (Mesomedes)",
+   "version": "lento",
+   "cap": "ch040",
+   "a": "el-himno-a-némesis-de-mesomedes",
+   "dioses": [
+    "Némesis"
+   ],
+   "bytes": 3111332,
+   "huella": "d4a64125d6"
+  },
+  {
+   "id": "musica-antigua/himno-a-nemesis-mesomedes-normal",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/himno-a-nemesis-mesomedes-normal.mp3",
+   "titulo": "Himno a Némesis (Mesomedes)",
+   "version": "normal",
+   "cap": "ch040",
+   "a": "el-himno-a-némesis-de-mesomedes",
+   "dioses": [
+    "Némesis"
+   ],
+   "bytes": 1988693,
+   "huella": "85731e4c9e"
+  },
+  {
+   "id": "musica-antigua/himno-a-nemesis-mesomedes-practica-verso-a-verso",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/himno-a-nemesis-mesomedes-practica-verso-a-verso.mp3",
+   "titulo": "Himno a Némesis (Mesomedes)",
+   "version": "práctica verso a verso",
+   "cap": "ch040",
+   "a": "el-himno-a-némesis-de-mesomedes",
+   "dioses": [
+    "Némesis"
+   ],
+   "bytes": 7326032,
+   "huella": "0468a1416f"
+  },
+  {
+   "id": "musica-antigua/himno-de-ateneo-primer-himno-delfico-lento",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/himno-de-ateneo-primer-himno-delfico-lento.mp3",
+   "titulo": "Himno de Ateneo (primer himno délfico)",
+   "version": "lento",
+   "cap": "ch040",
+   "a": "el-primer-himno-délfico-de-ateneo",
+   "dioses": [
+    "Apolo"
+   ],
+   "bytes": 3526783,
+   "huella": "040f3159ff"
+  },
+  {
+   "id": "musica-antigua/himno-de-ateneo-primer-himno-delfico-normal",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/himno-de-ateneo-primer-himno-delfico-normal.mp3",
+   "titulo": "Himno de Ateneo (primer himno délfico)",
+   "version": "normal",
+   "cap": "ch040",
+   "a": "el-primer-himno-délfico-de-ateneo",
+   "dioses": [
+    "Apolo"
+   ],
+   "bytes": 2367364,
+   "huella": "3cc059bb74"
+  },
+  {
+   "id": "musica-antigua/himno-de-ateneo-primer-himno-delfico-practica-verso-a-verso",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/himno-de-ateneo-primer-himno-delfico-practica-verso-a-verso.mp3",
+   "titulo": "Himno de Ateneo (primer himno délfico)",
+   "version": "práctica verso a verso",
+   "cap": "ch040",
+   "a": "el-primer-himno-délfico-de-ateneo",
+   "dioses": [
+    "Apolo"
+   ],
+   "bytes": 7738558,
+   "huella": "10c6230965"
+  },
+  {
+   "id": "musica-antigua/himno-de-ateneo-introduccion-para-lira-composicion-de-esta-antologia",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/himno-de-ateneo-introduccion-para-lira-composicion-de-esta-antologia.mp3",
+   "titulo": "Himno de Ateneo",
+   "version": "introducción para lira (composición de esta antología)",
+   "cap": "ch040",
+   "a": "el-primer-himno-délfico-de-ateneo",
+   "dioses": [
+    "Apolo"
+   ],
+   "bytes": 228249,
+   "huella": "ff2e2ff68c"
+  },
+  {
+   "id": "musica-antigua/himno-de-ateneo-version-completa-con-introduccion-y-final-compuestos",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/himno-de-ateneo-version-completa-con-introduccion-y-final-compuestos.mp3",
+   "titulo": "Himno de Ateneo",
+   "version": "versión completa con introducción y final compuestos",
+   "cap": "ch040",
+   "a": "el-primer-himno-délfico-de-ateneo",
+   "dioses": [
+    "Apolo"
+   ],
+   "bytes": 2708419,
+   "huella": "7dadb0ffb4"
+  },
+  {
+   "id": "musica-antigua/himno-de-limenio-segundo-himno-delfico-lento",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/himno-de-limenio-segundo-himno-delfico-lento.mp3",
+   "titulo": "Himno de Limenio (segundo himno délfico)",
+   "version": "lento",
+   "cap": "ch040",
+   "a": "el-segundo-himno-délfico-de-limenio",
+   "dioses": [
+    "Apolo"
+   ],
+   "bytes": 6126071,
+   "huella": "d08e675d25"
+  },
+  {
+   "id": "musica-antigua/himno-de-limenio-segundo-himno-delfico-normal",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/himno-de-limenio-segundo-himno-delfico-normal.mp3",
+   "titulo": "Himno de Limenio (segundo himno délfico)",
+   "version": "normal",
+   "cap": "ch040",
+   "a": "el-segundo-himno-délfico-de-limenio",
+   "dioses": [
+    "Apolo"
+   ],
+   "bytes": 4100223,
+   "huella": "dd1410e903"
+  },
+  {
+   "id": "musica-antigua/himno-de-limenio-segundo-himno-delfico-practica-verso-a-verso",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/himno-de-limenio-segundo-himno-delfico-practica-verso-a-verso.mp3",
+   "titulo": "Himno de Limenio (segundo himno délfico)",
+   "version": "práctica verso a verso",
+   "cap": "ch040",
+   "a": "el-segundo-himno-délfico-de-limenio",
+   "dioses": [
+    "Apolo"
+   ],
+   "bytes": 13368886,
+   "huella": "4b27a0d063"
+  },
+  {
+   "id": "musica-antigua/himno-de-limenio-version-completa-con-las-secciones-8-y-9-compuestas",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/himno-de-limenio-version-completa-con-las-secciones-8-y-9-compuestas.mp3",
+   "titulo": "Himno de Limenio",
+   "version": "versión completa con las secciones 8 y 9 compuestas",
+   "cap": "ch040",
+   "a": "el-segundo-himno-délfico-de-limenio",
+   "dioses": [
+    "Apolo"
+   ],
+   "bytes": 4407423,
+   "huella": "f093993876"
+  },
+  {
+   "id": "musica-antigua/seikilos-lento",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/seikilos-lento.mp3",
+   "titulo": "Seikilos",
+   "version": "lento",
+   "cap": "ch040",
+   "a": "el-epitafio-de-seikilos",
+   "dioses": [],
+   "bytes": 348990,
+   "huella": "52334529c0"
+  },
+  {
+   "id": "musica-antigua/seikilos-normal",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/seikilos-normal.mp3",
+   "titulo": "Seikilos",
+   "version": "normal",
+   "cap": "ch040",
+   "a": "el-epitafio-de-seikilos",
+   "dioses": [],
+   "bytes": 231126,
+   "huella": "c414a82cc0"
+  },
+  {
+   "id": "musica-antigua/seikilos-practica-por-frases",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/seikilos-practica-por-frases.mp3",
+   "titulo": "Seikilos",
+   "version": "práctica por frases",
+   "cap": "ch040",
+   "a": "el-epitafio-de-seikilos",
+   "dioses": [],
+   "bytes": 3310127,
+   "huella": "a5d2e2ca9c"
+  },
+  {
+   "id": "musica-antigua/seikilos-practica-verso-a-verso",
+   "bloque": "musica-antigua",
+   "archivo": "audios/musica-antigua/seikilos-practica-verso-a-verso.mp3",
+   "titulo": "Seikilos",
+   "version": "práctica verso a verso",
+   "cap": "ch040",
+   "a": "el-epitafio-de-seikilos",
+   "dioses": [],
+   "bytes": 1057062,
+   "huella": "d5297cd703"
+  },
+  {
+   "id": "como-recitar-y-cantar-los-himnos/formula-de-recitacion-1-solemne",
+   "bloque": "como-recitar-y-cantar-los-himnos",
+   "archivo": "audios/como-recitar-y-cantar-los-himnos/formula-de-recitacion-1-solemne.mp3",
+   "titulo": "Fórmula de recitación 1 solemne",
+   "version": "",
+   "cap": "ch041",
+   "a": "fórmula-1-solemne",
+   "dioses": [],
+   "bytes": 439688,
+   "huella": "f5ad677476"
+  },
+  {
+   "id": "como-recitar-y-cantar-los-himnos/formula-de-recitacion-2-luminosa",
+   "bloque": "como-recitar-y-cantar-los-himnos",
+   "archivo": "audios/como-recitar-y-cantar-los-himnos/formula-de-recitacion-2-luminosa.mp3",
+   "titulo": "Fórmula de recitación 2 luminosa",
+   "version": "",
+   "cap": "ch041",
+   "a": "fórmula-2-luminosa",
+   "dioses": [],
+   "bytes": 439688,
+   "huella": "ea171bdc17"
+  },
+  {
+   "id": "como-recitar-y-cantar-los-himnos/formula-de-recitacion-3-suave",
+   "bloque": "como-recitar-y-cantar-los-himnos",
+   "archivo": "audios/como-recitar-y-cantar-los-himnos/formula-de-recitacion-3-suave.mp3",
+   "titulo": "Fórmula de recitación 3 suave",
+   "version": "",
+   "cap": "ch041",
+   "a": "fórmula-3-suave",
+   "dioses": [],
+   "bytes": 439688,
+   "huella": "3acdf9d821"
+  },
+  {
+   "id": "como-recitar-y-cantar-los-himnos/himno-a-hestia-voz-sintetica-recitando-con-bordon",
+   "bloque": "como-recitar-y-cantar-los-himnos",
+   "archivo": "audios/como-recitar-y-cantar-los-himnos/himno-a-hestia-voz-sintetica-recitando-con-bordon.mp3",
+   "titulo": "Himno a Hestia",
+   "version": "voz sintética recitando con bordón",
+   "cap": "ch041",
+   "a": "el-himno-a-hestia-entero-con-la-fórmula-3",
+   "dioses": [
+    "Hestia"
+   ],
+   "bytes": 733513,
+   "huella": "4e6dfd6653"
+  },
+  {
+   "id": "como-recitar-y-cantar-los-himnos/himno-a-hestia-completo-formula-suave",
+   "bloque": "como-recitar-y-cantar-los-himnos",
+   "archivo": "audios/como-recitar-y-cantar-los-himnos/himno-a-hestia-completo-formula-suave.mp3",
+   "titulo": "Himno a Hestia completo",
+   "version": "fórmula suave",
+   "cap": "ch041",
+   "a": "el-himno-a-hestia-entero-con-la-fórmula-3",
+   "dioses": [
+    "Hestia"
+   ],
+   "bytes": 1431819,
+   "huella": "345e21023b"
+  }
+ ],
+ "dioses": {
+  "Afrodita": [
+   "himnos-homericos/h06",
+   "himnos-homericos/h10",
+   "himnos-orficos/o55",
+   "himnos-de-proclo/p2",
+   "himnos-de-proclo/p5",
+   "frases-en-griego/g27"
+  ],
+  "Apolo": [
+   "himnos-homericos/h21",
+   "himnos-homericos/h25",
+   "himnos-orficos/o34",
+   "frases-en-griego/g24",
+   "musica-antigua/himno-de-ateneo-primer-himno-delfico-lento",
+   "musica-antigua/himno-de-ateneo-primer-himno-delfico-normal",
+   "musica-antigua/himno-de-ateneo-primer-himno-delfico-practica-verso-a-verso",
+   "musica-antigua/himno-de-ateneo-introduccion-para-lira-composicion-de-esta-antologia",
+   "musica-antigua/himno-de-ateneo-version-completa-con-introduccion-y-final-compuestos",
+   "musica-antigua/himno-de-limenio-segundo-himno-delfico-lento",
+   "musica-antigua/himno-de-limenio-segundo-himno-delfico-normal",
+   "musica-antigua/himno-de-limenio-segundo-himno-delfico-practica-verso-a-verso",
+   "musica-antigua/himno-de-limenio-version-completa-con-las-secciones-8-y-9-compuestas"
+  ],
+  "Ares": [
+   "himnos-homericos/h08",
+   "himnos-orficos/o65"
+  ],
+  "Ártemis": [
+   "himnos-homericos/h09",
+   "himnos-homericos/h27",
+   "himnos-orficos/o02",
+   "himnos-orficos/o36",
+   "frases-en-griego/g25"
+  ],
+  "Asclepio": [
+   "himnos-homericos/h16",
+   "himnos-orficos/o67",
+   "oraciones/r40"
+  ],
+  "Atenea": [
+   "himnos-homericos/h11",
+   "himnos-homericos/h28",
+   "himnos-orficos/o32",
+   "himnos-de-proclo/p7",
+   "frases-en-griego/g23",
+   "frases-en-griego/g39"
+  ],
+  "Crono": [
+   "himnos-homericos/h23",
+   "himnos-orficos/o13"
+  ],
+  "Deméter": [
+   "himnos-homericos/h13",
+   "himnos-orficos/o40",
+   "frases-en-griego/g28"
+  ],
+  "Dioniso": [
+   "himnos-homericos/h26",
+   "himnos-orficos/o30",
+   "himnos-orficos/o45",
+   "himnos-orficos/o46",
+   "himnos-orficos/o47",
+   "himnos-orficos/o50",
+   "himnos-orficos/o52",
+   "himnos-orficos/o53",
+   "frases-en-griego/g30"
+  ],
+  "Eos": [
+   "himnos-orficos/o78"
+  ],
+  "Eros": [
+   "himnos-orficos/o58"
+  ],
+  "Gea": [
+   "himnos-orficos/o26"
+  ],
+  "Hades": [
+   "himnos-orficos/o18"
+  ],
+  "Hécate": [
+   "himnos-orficos/o01",
+   "himnos-de-proclo/p6",
+   "oraciones/r90",
+   "frases-en-griego/g32"
+  ],
+  "Hefesto": [
+   "himnos-homericos/h20",
+   "himnos-orficos/o66",
+   "frases-en-griego/g31"
+  ],
+  "Helios": [
+   "himnos-homericos/h31",
+   "himnos-orficos/o08",
+   "himnos-de-proclo/p1",
+   "oraciones/r05",
+   "oraciones-de-bolsillo/b09",
+   "frases-en-griego/g33",
+   "musica-antigua/himno-a-helios-mesomedes-lento",
+   "musica-antigua/himno-a-helios-mesomedes-normal",
+   "musica-antigua/himno-a-helios-mesomedes-practica-verso-a-verso"
+  ],
+  "Hera": [
+   "himnos-homericos/h12",
+   "himnos-orficos/o16",
+   "frases-en-griego/g22"
+  ],
+  "Heracles": [
+   "himnos-homericos/h15",
+   "himnos-orficos/o12"
+  ],
+  "Hermes": [
+   "himnos-homericos/h18",
+   "himnos-homericos/h29",
+   "himnos-orficos/o28",
+   "himnos-orficos/o57",
+   "frases-en-griego/g26"
+  ],
+  "Hestia": [
+   "himnos-homericos/h24",
+   "himnos-homericos/h29",
+   "himnos-orficos/o84",
+   "frases-en-griego/g03",
+   "frases-en-griego/g20",
+   "frases-en-griego/g37",
+   "como-recitar-y-cantar-los-himnos/himno-a-hestia-voz-sintetica-recitando-con-bordon",
+   "como-recitar-y-cantar-los-himnos/himno-a-hestia-completo-formula-suave"
+  ],
+  "Hipnos": [
+   "himnos-orficos/o85",
+   "frases-en-griego/g35"
+  ],
+  "Las Horas": [
+   "himnos-orficos/o43"
+  ],
+  "Las Moiras": [
+   "himnos-orficos/o59"
+  ],
+  "Las Musas": [
+   "himnos-homericos/h25",
+   "himnos-orficos/o00",
+   "himnos-orficos/o76",
+   "himnos-de-proclo/p3",
+   "frases-en-griego/g36"
+  ],
+  "Las ninfas": [
+   "himnos-orficos/o51"
+  ],
+  "Leto": [
+   "himnos-orficos/o35"
+  ],
+  "Los Dioscuros": [
+   "himnos-homericos/h17",
+   "himnos-homericos/h33"
+  ],
+  "Mnemósine": [
+   "himnos-orficos/o77"
+  ],
+  "Némesis": [
+   "himnos-orficos/o61",
+   "musica-antigua/himno-a-nemesis-mesomedes-lento",
+   "musica-antigua/himno-a-nemesis-mesomedes-normal",
+   "musica-antigua/himno-a-nemesis-mesomedes-practica-verso-a-verso"
+  ],
+  "Nike": [
+   "himnos-orficos/o33"
+  ],
+  "Nyx": [
+   "himnos-orficos/o03",
+   "frases-en-griego/g34"
+  ],
+  "Pan": [
+   "himnos-homericos/h19",
+   "himnos-orficos/o11"
+  ],
+  "Perséfone": [
+   "himnos-orficos/o29"
+  ],
+  "Poseidón": [
+   "himnos-homericos/h22",
+   "himnos-orficos/o17",
+   "frases-en-griego/g29"
+  ],
+  "Rea": [
+   "himnos-orficos/o14"
+  ],
+  "Selene": [
+   "himnos-homericos/h32",
+   "himnos-orficos/o09"
+  ],
+  "Tánatos": [
+   "himnos-orficos/o87"
+  ],
+  "Tique": [
+   "himnos-orficos/o72"
+  ],
+  "Urano": [
+   "himnos-orficos/o04"
+  ],
+  "Zeus": [
+   "himnos-orficos/o15",
+   "himnos-orficos/o19",
+   "himnos-orficos/o20",
+   "frases-en-griego/g08",
+   "frases-en-griego/g09",
+   "frases-en-griego/g21"
+  ]
+ },
+ "bytes": 378274221
+}

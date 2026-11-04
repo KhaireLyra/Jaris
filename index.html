@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jaris. Antología del helenismo</title>
+<meta name="description" content="Jaris, antología del helenismo de Khaire Lyra: oraciones, ritos, calendario, dioses, himnos y mitos, en español y sin necesidad de internet.">
+<meta name="theme-color" content="#8f3b22" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1714" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="iconos/icono-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="iconos/icono-180.png">
+<meta name="apple-mobile-web-app-title" content="Jaris">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="app.css">
+<script src="calendario.js" defer></script>
+<script src="calendario-datos.js" defer></script>
+<script src="audios.js" defer></script>
+<script src="buscar.js" defer></script>
+<script src="favoritos.js" defer></script>
+<script src="aprender.js" defer></script>
+<script src="oraculo.js" defer></script>
+<script src="buzon.js" defer></script>
+<script src="diario.js" defer></script>
+<script src="noche.js" defer></script>
+<script src="cancionero.js" defer></script>
+<script src="presentacion.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="saltar" href="#contenido" id="saltar">Saltar al contenido</a>
+<div id="aviso-edicion" class="aviso-edicion" role="region" aria-label="Edición nueva" hidden>
+  <p id="texto-edicion">Hay una edición nueva de Jaris.</p>
+  <button type="button" id="recargar" hidden>Abrir la edición nueva</button>
+  <a href="#/novedades" id="ver-novedades" hidden>Ver qué hay de nuevo</a>
+  <button type="button" id="cerrar-aviso-edicion" class="secundario" hidden>Cerrar este aviso</button>
+</div>
+<header class="cabecera">
+  <p class="marca" aria-hidden="true">Jaris</p>
+  <nav aria-label="Principal">
+    <ul>
+      <li><a href="#/">Portada</a></li>
+      <li><a href="#/hoy">Hoy</a></li>
+      <li><a href="#/calendario">Calendario</a></li>
+      <li><a href="#/buscar">Buscar</a></li>
+      <li><a href="#/favoritos">Favoritos</a></li>
+      <li><a href="#/oraculo">Oráculo</a></li>
+      <li><a href="#/diario">Diario</a></li>
+      <li><a href="#/noche">Noche</a></li>
+      <li><a href="#/cancionero">Cancionero</a></li>
+      <li><a href="#/indice">Índice</a></li>
+      <li><a href="#/oraciones">Oraciones</a></li>
+      <li><a href="#/himnos">Himnos</a></li>
+      <li><a href="#/ritos">Ritos</a></li>
+      <li><a href="#/audios">Audios</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="contenido" tabindex="-1">
+  <p>Abriendo Jaris…</p>
+  <noscript><p>Para leer Jaris hace falta tener activado JavaScript en el navegador.</p></noscript>
+</main>
+<footer class="pie-pagina">
+  <p id="edicion"></p>
+  <p><a href="#/novedades">Novedades de Jaris</a> · <a href="#/buzon">Buzón de sugerencias y erratas</a></p>
+  <p id="estado"></p>
+</footer>
+<div id="avisos" class="solo-lector" role="status" aria-live="polite"></div>
+</body>
+</html>

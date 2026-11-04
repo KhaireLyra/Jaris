@@ -1,0 +1,72 @@
+{
+ "plantilla": [
+  "Hoy he rezado u ofrecido (a qué dios, qué oración, qué ofrenda)",
+  "Cómo me he sentido",
+  "Doy las gracias por",
+  "Algo que me ha emocionado, sorprendido o hecho sonreír",
+  "Lo que me ha costado o me preocupa",
+  "Una duda o una pregunta para seguir aprendiendo",
+  "Una frase para recordar (de un himno, de una máxima o tuya)"
+ ],
+ "especiales": {
+  "noumenia": {
+   "titulo": "NOUMENIA (luna nueva, día 1 del mes)",
+   "preguntas": [
+    "¿Qué quiero pedir y empezar este mes?",
+    "¿Qué quiero cuidar en mi casa y en mi vida?"
+   ],
+   "nota": ""
+  },
+  "agathos": {
+   "titulo": "AGATHOS DAIMON (día 2)",
+   "preguntas": [
+    "¿Qué buena suerte he tenido últimamente, aunque sea pequeña?"
+   ],
+   "nota": ""
+  },
+  "deipnon": {
+   "titulo": "DEIPNON DE HÉCATE (último día del mes)",
+   "preguntas": [
+    "¿Qué dejo atrás de este mes?",
+    "¿Qué he aprendido?"
+   ],
+   "nota": ""
+  },
+  "fiesta": {
+   "titulo": "EN UNA FIESTA",
+   "preguntas": [
+    "¿Cómo la he celebrado?",
+    "¿Qué me ha enseñado el dios de la fiesta?"
+   ],
+   "nota": ""
+  },
+  "cumple": {
+   "titulo": "EN TU CUMPLEAÑOS O EN AÑO NUEVO",
+   "preguntas": [
+    "¿Qué ha cambiado en mí este año?",
+    "¿A qué dioses quiero dar las gracias?"
+   ],
+   "nota": ""
+  },
+  "dificil": {
+   "titulo": "EN UN DÍA DIFÍCIL",
+   "preguntas": [
+    "¿Qué me ha ayudado hoy, aunque sea un poco?",
+    "¿A quién o a qué dios quiero pedir fuerza?"
+   ],
+   "nota": "Si el día es muy difícil, no hace falta escribir nada. Basta con una oración corta, y descansar."
+  }
+ },
+ "masAlla": [
+  "¿Qué fue lo primero que me atrajo del helenismo?",
+  "¿Con qué dios o con qué símbolo me siento más cerca? ¿Por qué?",
+  "Cuando rezo o recito un himno, ¿qué siento?",
+  "¿Qué valores griegos quiero que formen parte de mi vida (la hospitalidad, la gratitud, la moderación, conocerme a mí misma)?",
+  "¿Qué mito me gusta más y qué me enseña?",
+  "¿Qué parte de mí es más racional y qué parte siente? ¿Cómo se llevan entre ellas?",
+  "Si pudiera hacer una pregunta a un dios, ¿cuál sería?"
+ ],
+ "senales": "Es bonito anotar las cosas que te emocionan: un pájaro que canta en el momento justo, una palabra oída por casualidad, un sueño. Pero con calma: no hace falta buscar señales en todo ni darle vueltas a cada cosa. Como dice Sarah Kate Istra Winter, \"a veces, un cuervo es solo un cuervo\". Y Plutarco recordaba que el miedo y la obsesión con los dioses no son piedad (capítulo 5). El diario es para conocerte y para dar las gracias, no para preocuparte.",
+ "sinObligacion": "No hay obligación: si un día, una semana o un mes no escribes, no pasa nada. Y no hace falta escribir bien: escribe como hablas.",
+ "cap": "ch049"
+}

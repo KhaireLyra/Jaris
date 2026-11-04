@@ -1,0 +1,339 @@
+/* Jaris: estilos. Colores de las ilustraciones del libro (terracota, ocre, azul egeo, verde oliva, marfil).
+   Tamaños en rem para respetar el tamaño de letra del dispositivo. Contraste WCAG 2.2 AA o mejor. */
+:root {
+  --fondo: #fbf6ec;        /* marfil */
+  --superficie: #f3e9d6;
+  --texto: #2a211c;
+  --suave: #5c4f45;
+  --acento: #8f3b22;       /* terracota oscuro */
+  --egeo: #1f5a7a;         /* azul egeo */
+  --oliva: #55652b;
+  --ocre: #b07d1c;
+  --borde: #cdb88f;
+  --foco: #1f5a7a;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #1b1714;
+    --superficie: #28211c;
+    --texto: #f1e8da;
+    --suave: #cfc1ad;
+    --acento: #f0a283;
+    --egeo: #8cc4e3;
+    --oliva: #bccb84;
+    --ocre: #e3b862;
+    --borde: #5a4a3c;
+    --foco: #8cc4e3;
+  }
+}
+html { font-size: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+/* En el iPhone, seguir el tamaño de letra elegido en Ajustes (Tamaño del texto). */
+@supports (font: -apple-system-body) { html { font: -apple-system-body; } }
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+/* Fondo ilustrado (ilustración 33: marfil con greca en los bordes y olivo en las esquinas, muy tenue).
+   Solo en modo claro y sin alto contraste; es un fondo: el lector de pantalla no lo lee. */
+/* Se pone en una capa fija detrás de todo (y no con «background-attachment: fixed», que el iPhone no respeta).
+   En el móvil y en pantallas estrechas, la versión alargada (img/fondo-movil.jpg, la hace montar_aplicacion.py). */
+@media (prefers-color-scheme: light) and (prefers-contrast: no-preference) {
+  body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background: url("img/fondo-movil.jpg") center / 100% 100% no-repeat; }
+  /* el texto va sobre una hoja marfil casi opaca, para que la greca nunca quede debajo de las letras;
+     a los lados queda un margen para que se vea la greca */
+  main { background: rgba(251, 246, 236, 0.95); border-radius: 0.75rem; box-shadow: 0 0 1.5rem rgba(120, 90, 50, 0.08);
+    box-sizing: border-box; width: calc(100% - 3.2rem); margin: 1rem auto; padding-left: 0.85rem; padding-right: 0.85rem; }
+}
+@media (prefers-color-scheme: light) and (prefers-contrast: no-preference) and (min-width: 62rem) {
+  body::before { background-image: url("img/fondo.jpg"); background-size: cover; }
+  main { width: auto; padding-left: 1rem; padding-right: 1rem; }
+}
+@media (forced-colors: active) { body::before { display: none; } }
+a { color: var(--acento); text-decoration-thickness: 0.08em; text-underline-offset: 0.15em; }
+a:hover { text-decoration-thickness: 0.15em; }
+:focus-visible { outline: 3px solid var(--foco); outline-offset: 3px; border-radius: 2px; }
+h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focus, main:focus { outline: none; }
+h1, h2, h3, h4, h5, h6 { line-height: 1.25; color: var(--texto); }
+h1 { font-size: 1.75rem; color: var(--acento); }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.2rem; }
+h4, h5, h6 { font-size: 1.05rem; }
+
+.solo-lector {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.saltar { position: absolute; left: 0.5rem; top: -10rem; z-index: 10; background: var(--fondo); padding: 0.75rem 1rem; }
+.saltar:focus { top: 0.5rem; }
+
+.cabecera { background: var(--superficie); border-bottom: 3px solid var(--ocre); }
+.cabecera .marca { margin: 0; padding: 0.5rem 1rem 0; font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif; font-size: 1.5rem; font-weight: bold; color: var(--acento); letter-spacing: 0.05em; }
+.cabecera ul { list-style: none; margin: 0; padding: 0.25rem 0.5rem 0.5rem; display: flex; flex-wrap: wrap; gap: 0.25rem; }
+.cabecera a { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 0.75rem; border-radius: 0.5rem; text-decoration: none; color: var(--texto); }
+.cabecera a:hover { background: var(--fondo); }
+.cabecera a[aria-current="page"] { background: var(--fondo); color: var(--acento); font-weight: bold; text-decoration: underline; }
+
+main { max-width: 44rem; margin: 0 auto; padding: 1rem 1rem 3rem; }
+main img { max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 0.4rem; }
+figure { margin: 1.75rem 0; }
+figcaption { text-align: center; font-size: 0.9rem; font-style: italic; color: var(--suave); margin-top: 0.4rem; }
+figcaption p { margin: 0; }
+li { margin: 0.25rem 0; }
+li > p { margin: 0.2rem 0; }
+blockquote { margin: 1rem 0; padding: 0.25rem 1rem; border-left: 4px solid var(--oliva); }
+[lang="el"] { font-family: Arial, "Noto Sans", "Segoe UI", sans-serif; }
+
+.boton, button {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 2.75rem; padding: 0.5rem 1.1rem; border-radius: 0.6rem;
+  font: inherit; font-weight: bold; text-decoration: none; cursor: pointer;
+  background: var(--acento); color: var(--fondo); border: 2px solid var(--acento);
+}
+.boton.secundario { background: transparent; color: var(--acento); }
+.botones { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0; padding: 0; list-style: none; }
+.botones li { margin: 0; }
+
+/* Portada */
+.portada .titulo-libro { text-align: center; font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif; font-size: 2.6rem; margin: 1rem 0 0; }
+.portada .titulo-libro .subtitulo { display: block; font-size: 1.3rem; color: var(--egeo); font-weight: normal; margin-top: 0.3rem; }
+.portada .autora { text-align: center; font-size: 1.15rem; margin: 0.5rem 0 1rem; color: var(--suave); }
+.portada .cubierta img { max-height: 70vh; width: auto; box-shadow: 0 0.3rem 1rem rgba(0,0,0,0.2); }
+.portada .instalar { background: var(--superficie); border-radius: 0.6rem; padding: 0.25rem 1rem 0.75rem; margin: 1.5rem 0; }
+
+/* Capítulos */
+.capitulo h1 { margin-top: 0.5rem; }
+.capitulo section { scroll-margin-top: 1rem; }
+.pasar { border-top: 2px solid var(--borde); margin-top: 2.5rem; padding-top: 1rem; }
+.pasar ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.pasar a { display: block; padding: 0.75rem 1rem; border: 2px solid var(--borde); border-radius: 0.6rem; text-decoration: none; min-height: 2.75rem; }
+.pasar .etiqueta { display: block; font-size: 0.9rem; color: var(--suave); }
+
+.indice ul ul { margin-top: 0.25rem; }
+.indice > ul > li { margin: 0.75rem 0; font-weight: bold; }
+.indice > ul > li > ul { font-weight: normal; }
+
+.aviso-edicion { background: var(--egeo); color: var(--fondo); padding: 0.5rem 1rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.aviso-edicion[hidden] { display: none; }
+.aviso-edicion p { margin: 0; }
+.aviso-edicion button { background: var(--fondo); color: var(--egeo); border-color: var(--fondo); }
+.aviso-edicion [hidden] { display: none; }
+.aviso-edicion a { color: var(--fondo); font-weight: bold; text-decoration: underline; padding: 0.5rem 0; min-height: 44px; display: inline-flex; align-items: center; }
+.aviso-edicion a:focus-visible, .aviso-edicion button:focus-visible { outline: 3px solid var(--fondo); outline-offset: 2px; }
+
+.pie-pagina { max-width: 44rem; margin: 0 auto; padding: 1rem; border-top: 1px solid var(--borde); color: var(--suave); font-size: 0.9rem; }
+.pie-pagina p { margin: 0.25rem 0; }
+
+@media (forced-colors: active) {
+  .boton, button, .pasar a, .cabecera a[aria-current="page"] { border: 2px solid ButtonText; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* Calendario */
+.calendario .hoy-griego { font-size: 1.15rem; font-weight: bold; color: var(--egeo); }
+.calendario ul.dias { list-style: none; padding: 0; }
+.calendario ul.dias > li { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--borde); margin: 0; }
+.calendario ul.dias > li ul { margin: 0.25rem 0 0; padding-left: 1.25rem; }
+.calendario ul.dias > li.es-hoy { background: var(--superficie); border-left: 5px solid var(--ocre); }
+.calendario a[aria-current="true"] { font-weight: bold; }
+.form-lugar label { display: block; font-weight: bold; margin: 0.75rem 0 0.25rem; }
+.form-lugar select { font: inherit; min-height: 2.75rem; max-width: 100%; padding: 0.25rem 0.5rem; border: 2px solid var(--borde); border-radius: 0.4rem; background: var(--fondo); color: var(--texto); }
+.form-lugar fieldset { border: 2px solid var(--borde); border-radius: 0.5rem; margin: 1rem 0; padding: 0.5rem 1rem; }
+.form-lugar legend { font-weight: bold; padding: 0 0.25rem; }
+.form-lugar .opcion { display: flex; align-items: flex-start; gap: 0.5rem; margin: 0.5rem 0; }
+.form-lugar .opcion input { width: 1.4rem; height: 1.4rem; margin-top: 0.15rem; flex: none; }
+.form-lugar .opcion label { display: inline; font-weight: normal; margin: 0; }
+.form-lugar button { margin-top: 1rem; }
+
+/* Hoy */
+.acceso-hoy { background: var(--superficie); border-left: 5px solid var(--ocre); border-radius: 0.5rem; padding: 0.25rem 1rem 0.5rem; margin: 1rem 0; }
+.acceso-hoy h2 { margin: 0.5rem 0 0.25rem; color: var(--egeo); }
+.hoy .fragmento { background: var(--superficie); border-radius: 0.5rem; padding: 0.25rem 1rem; }
+
+/* Números de verso: se ven pequeños y a un lado; el lector de pantalla no los lee (aria-hidden). */
+.verso { font-size: 0.75em; color: var(--suave); margin-left: 1.25em; font-style: normal; user-select: none; }
+
+/* ---------- Audios (parte 3b): botones «Escuchar» y reproductor ---------- */
+.escuchar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.25rem 0 0.75rem; }
+.escuchar button { font-size: 0.95rem; padding: 0.35rem 0.85rem; min-height: 2.75rem; }
+.escuchar button.sonando { background: var(--egeo); border-color: var(--egeo); color: var(--fondo); }
+.reproductor { position: sticky; bottom: 0; z-index: 5; max-width: 44rem; margin: 0 auto; padding: 0.6rem 1rem 0.75rem;
+  background: var(--superficie); border-top: 3px solid var(--ocre); box-shadow: 0 -0.2rem 0.8rem rgba(0,0,0,0.15);
+  max-height: 60vh; overflow-y: auto; }
+.reproductor[hidden] { display: none; }
+.reproductor p { margin: 0 0 0.4rem; }
+.rep-sonando { font-weight: bold; color: var(--acento); }
+.rep-controles, .rep-ajustes, .rep-pie { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 0.35rem 0; }
+.rep-controles button { flex: 1 1 auto; }
+.rep-principal { font-weight: bold; }
+.rep-ajustes select { font: inherit; min-height: 2.75rem; padding: 0 0.5rem; border: 2px solid var(--borde); border-radius: 0.4rem;
+  background: var(--fondo); color: var(--texto); }
+.rep-ajustes input[type="range"] { flex: 1 1 8rem; min-height: 2.75rem; accent-color: var(--acento); }
+.rep-tiempo { font-variant-numeric: tabular-nums; color: var(--suave); }
+.rep-pie { justify-content: space-between; }
+.rep-ir { display: inline-flex; align-items: center; min-height: 2.75rem; }
+@media (forced-colors: active) {
+  .reproductor { border: 2px solid CanvasText; }
+  .escuchar button.sonando { forced-color-adjust: none; background: Highlight; color: HighlightText; }
+}
+
+/* ---------- Audios (parte 3c): pantalla de descargas ---------- */
+.audios .aud-grupo { border-top: 1px solid var(--borde); padding: 0.25rem 0 0.75rem; }
+.audios .aud-grupo h3 { margin: 0.75rem 0 0.25rem; }
+.audios .aud-estado { margin: 0.25rem 0 0.5rem; color: var(--suave); }
+.aud-botones { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.aud-botones a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+.aud-progreso { background: var(--superficie); border-radius: 0.6rem; padding: 0.25rem 1rem 0.75rem; margin: 1rem 0; }
+.aud-progreso[hidden] { display: none; }
+.aud-progreso progress { width: 100%; height: 1.25rem; accent-color: var(--oliva); }
+.escuchar .estado { font-weight: normal; font-size: 0.85em; }
+
+/* ---------- Buscar (paso 4a) ---------- */
+.bus-form { background: var(--superficie); border-radius: 0.5rem; padding: 0.75rem 1rem; margin: 1rem 0; }
+.bus-form label { display: block; font-weight: bold; }
+.bus-ayuda { margin: 0.25rem 0 0.5rem; color: var(--suave); }
+.bus-fila { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.bus-fila input { font: inherit; flex: 1 1 14rem; min-height: 2.75rem; padding: 0.25rem 0.6rem; border: 2px solid var(--borde); border-radius: 0.4rem; background: var(--fondo); color: var(--texto); }
+.bus-dioses { columns: 12rem; }
+.bus-dioses li { break-inside: avoid; margin-bottom: 0.35rem; }
+.bus-trozo { margin: 0.2rem 0 0.9rem; color: var(--suave); }
+.bus-trozo mark { background: var(--ocre); color: #1b1714; border-radius: 0.15rem; padding: 0 0.1rem; }
+.bus-cap { color: var(--suave); }
+@media (forced-colors: active) { .bus-trozo mark { background: Mark; color: MarkText; } }
+
+/* ---------- Favoritos (paso 4b) ---------- */
+.favorito { margin: 0.25rem 0 0.75rem; }
+.fav-botones, .fav-acciones { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.fav-botones button, .fav-acciones button { font-size: 0.95rem; padding: 0.35rem 0.85rem; min-height: 2.75rem; }
+.fav-panel { background: var(--superficie); border-radius: 0.5rem; padding: 0.5rem 1rem; margin-top: 0.5rem; }
+.fav-panel fieldset { border: 0; padding: 0; margin: 0 0 0.75rem; }
+.fav-panel legend { font-weight: bold; margin-bottom: 0.25rem; }
+.fav-panel .opcion { display: flex; gap: 0.5rem; align-items: center; min-height: 2.75rem; }
+.fav-panel .opcion input { width: 1.4rem; height: 1.4rem; flex: none; }
+.fav-nueva { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin: 0.5rem 0 1rem; }
+.fav-nueva label { flex: 1 1 100%; font-weight: bold; }
+.fav-nueva input[type="text"] { font: inherit; flex: 1 1 12rem; min-height: 2.75rem; padding: 0.25rem 0.6rem; border: 2px solid var(--borde); border-radius: 0.4rem; background: var(--fondo); color: var(--texto); }
+.fav-nueva input[type="file"] { font: inherit; min-height: 2.75rem; }
+.fav-lista li { margin-bottom: 0.75rem; }
+.fav-lista li .fav-acciones { margin-top: 0.25rem; }
+
+/* ---------- Aprender de memoria (paso 4c) ---------- */
+.fav-botones a.boton, .fav-acciones a.boton { font-size: 0.95rem; padding: 0.35rem 0.85rem; min-height: 2.75rem; display: inline-flex; align-items: center; }
+.aprender h1 .subtitulo { display: block; font-size: 0.75em; font-weight: normal; }
+.apr-voz { display: flex; gap: 0.5rem; align-items: center; min-height: 2.75rem; margin: 0.5rem 0; }
+.apr-voz input { width: 1.4rem; height: 1.4rem; flex: none; }
+.apr-modos { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+.apr-modos button[aria-pressed="true"] { background: var(--acento); color: var(--fondo); }
+.apr-zona { background: var(--superficie); border-radius: 0.5rem; padding: 0.5rem 1rem 1rem; }
+.apr-estado { color: var(--suave); margin-bottom: 0.25rem; }
+.apr-verso { font-size: 1.35em; line-height: 1.5; margin: 0.25rem 0 1rem; }
+.apr-hueco { letter-spacing: 0.1em; color: var(--acento); font-weight: bold; }
+.apr-botones { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.apr-botones button { min-height: 2.75rem; }
+.apr-ayuda { font-weight: bold; min-height: 1.5em; }
+.apr-letras li, .apr-preguntas li { margin-bottom: 0.9rem; }
+.apr-letras li > span { font-size: 1.15em; letter-spacing: 0.05em; margin-right: 0.5rem; }
+.apr-entero, .apr-respuesta { margin: 0.35rem 0 0; font-size: 1.1em; }
+@media (forced-colors: active) { .apr-modos button[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; } }
+
+/* ---------- Oráculo (paso 5b) ---------- */
+.orc-paso { margin: 1.5rem 0; }
+.orc-pasos li { margin-bottom: 0.9rem; }
+.orc-oracion { border-left: 4px solid var(--ocre); padding: 0.25rem 0 0.25rem 1rem; margin: 0.5rem 0; }
+.orc-etiqueta { font-weight: bold; margin-bottom: 0.25rem; }
+.orc-ayuda { color: var(--suave); margin-top: 0.25rem; }
+.oraculo input[type="text"], .oraculo input[type="number"] { display: block; font: inherit; min-height: 2.75rem; padding: 0.4rem 0.6rem; margin: 0.35rem 0; border: 2px solid var(--borde); border-radius: 0.4rem; background: var(--fondo); color: var(--texto); width: 100%; max-width: 32rem; box-sizing: border-box; }
+.oraculo input[type="number"] { max-width: 8rem; }
+.oraculo input[aria-invalid="true"] { border-color: var(--acento); }
+.orc-formas { border: 1px solid var(--borde); border-radius: 0.5rem; padding: 0.5rem 1rem; margin: 1rem 0; }
+.orc-formas legend { font-weight: bold; padding: 0 0.3rem; }
+.orc-formas input[type="radio"] { width: 1.4rem; height: 1.4rem; flex: none; }
+.orc-letra { font-size: 4rem; line-height: 1; margin: 0.5rem 0; color: var(--egeo); font-family: Palatino, "Palatino Linotype", Georgia, serif; }
+.orc-verso { font-size: 1.4em; line-height: 1.5; margin: 0.5rem 0 1rem; }
+.orc-nota { color: var(--suave); }
+.orc-griego { background: var(--superficie); border-radius: 0.5rem; padding: 0.25rem 1rem 0.75rem; margin: 0.5rem 0 1rem; }
+.orc-verso-griego { font-size: 1.25em; margin: 0; }
+/* ---------- Oráculo de las tabas (paso 5c) ---------- */
+.orc-taba { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin: 0.5rem 0; }
+.orc-taba label { min-width: 4.5rem; font-weight: bold; }
+.oraculo select { font: inherit; min-height: 2.75rem; padding: 0.3rem 0.5rem; border: 2px solid var(--borde); border-radius: 0.4rem; background: var(--fondo); color: var(--texto); }
+.oraculo select[aria-invalid="true"] { border-color: var(--acento); }
+.orc-tirada { font-size: 2rem; letter-spacing: 0.1em; color: var(--egeo); margin: 0.25rem 0; }
+.orc-respuesta-lista { border-top: 1px solid var(--borde); padding-top: 0.5rem; }
+.orc-respuesta-lista h2 { font-size: 1.15em; }
+/* «Cómo leer la respuesta» */
+.orc-leer { border-left: 4px solid var(--oliva); padding: 0.1rem 0 0.1rem 1rem; margin: 1rem 0; }
+.orc-leer li { margin-bottom: 0.6rem; }
+/* ---------- Buzón de sugerencias y erratas (paso 6-2) ---------- */
+.enlace-buzon { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--borde); color: var(--suave); }
+.buzon form { margin: 1rem 0; }
+.buz-tipos { border: 1px solid var(--borde); border-radius: 0.5rem; padding: 0.5rem 1rem; margin: 1rem 0; }
+.buz-tipos legend { font-weight: bold; padding: 0 0.3rem; }
+.buz-opcion { display: flex; align-items: center; gap: 0.6rem; min-height: 2.75rem; }
+.buz-opcion input { width: 1.4rem; height: 1.4rem; flex: none; }
+.buz-etiqueta { display: block; font-weight: bold; margin-top: 1rem; }
+.buz-ayuda { color: var(--suave); margin: 0.25rem 0; }
+.buzon input[type="text"], .buzon textarea { display: block; font: inherit; width: 100%; max-width: 40rem; box-sizing: border-box; padding: 0.5rem 0.6rem; margin: 0.35rem 0; border: 2px solid var(--borde); border-radius: 0.4rem; background: var(--fondo); color: var(--texto); min-height: 2.75rem; }
+.buzon textarea { min-height: 10rem; line-height: 1.5; }
+.buzon textarea[aria-invalid="true"] { border-color: var(--acento); }
+.buz-error { color: var(--acento); font-weight: bold; margin: 0.25rem 0; }
+.buz-aviso { border-left: 4px solid var(--ocre); padding: 0.25rem 0 0.25rem 1rem; }
+.buz-botones { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1rem 0 0.5rem; }
+
+/* ---------- Mi diario helénico (parte 6b) ---------- */
+.diario input[type="text"], .diario input[type="date"], .diario select, .diario textarea { display: block; font: inherit; width: 100%; max-width: 40rem; box-sizing: border-box; padding: 0.5rem 0.6rem; margin: 0.35rem 0; border: 2px solid var(--borde); border-radius: 0.4rem; background: var(--fondo); color: var(--texto); min-height: 2.75rem; }
+.diario select, .diario input[type="date"] { width: auto; min-width: 10rem; }
+.diario textarea { line-height: 1.5; min-height: 6rem; }
+.diario section { margin: 2rem 0; }
+.diario-estado { border-left: 4px solid var(--borde); padding: 0.25rem 0 0.25rem 1rem; color: var(--suave); }
+.diario-texto { white-space: pre-line; max-width: 40rem; }
+.diario input[type="search"] { display: block; font: inherit; width: 100%; max-width: 40rem; box-sizing: border-box; padding: 0.5rem 0.6rem; margin: 0.35rem 0; border: 2px solid var(--borde); border-radius: 0.4rem; background: var(--fondo); color: var(--texto); min-height: 2.75rem; }
+
+/* ---------- Cancionero (extra 2) ---------- */
+.canc-antifona { font-weight: bold; border-left: 4px solid var(--ocre, var(--borde)); padding: 0.25rem 0 0.25rem 1rem; }
+.canc-repite { font-style: italic; color: var(--suave); }
+.canc-lista li { margin: 0.5rem 0; }
+.canc-donde { color: var(--suave); margin-top: 1.5rem; }
+.canc-verso { font-size: 2rem; line-height: 1.4; min-height: 6rem; margin: 1rem 0; max-width: 40rem; }
+.canc-marca { font-size: 1.2rem; font-weight: bold; display: block; color: var(--acento); }
+
+/* ---------- Presentación (extra 3) ---------- */
+.presentacion { position: fixed; inset: 0; z-index: 1000; background: var(--fondo); color: var(--texto); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem; }
+.pres-escena { position: relative; width: min(90vw, 28rem); }
+.pres-templo { display: block; width: 100%; height: auto; border-radius: 0.5rem; }
+.pres-palabra { position: absolute; left: 0; right: 0; top: 7%; display: flex; justify-content: center; gap: 0.02em; font-family: Georgia, "Times New Roman", serif; font-size: min(17vw, 5.2rem); line-height: 1; font-weight: bold; color: #7b2d14; text-shadow: 0 2px 3px rgba(123, 45, 20, 0.25); }
+/* El subtítulo y la firma, en su sitio de la cubierta; aparecen poco a poco cuando ya han caído las letras */
+.pres-sub, .pres-firma { position: absolute; left: 0; right: 0; margin: 0; text-align: center; font-family: Georgia, "Times New Roman", serif; opacity: 0; animation: pres-aparecer 0.8s ease forwards; }
+.pres-sub { top: 27%; font-size: min(6vw, 1.8rem); color: #4a3226; }
+.pres-firma { bottom: 3.5%; font-size: min(6.5vw, 1.9rem); font-weight: bold; color: #fffaf0; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.55); }
+@keyframes pres-aparecer { to { opacity: 1; } }
+.pres-palabra span { display: inline-block; opacity: 0; transform: translateY(-120vh); animation: pres-caer 0.9s cubic-bezier(.3, 1.4, .6, 1) forwards; }
+@keyframes pres-caer { 0% { opacity: 1; transform: translateY(-120vh); } 100% { opacity: 1; transform: translateY(0); } }
+.pres-saltar { margin-top: 1.5rem; }
+.presentacion { transition: opacity 0.5s ease; }
+.presentacion.saliendo { opacity: 0; }
+@media (prefers-reduced-motion: reduce) { .pres-palabra span, .pres-sub, .pres-firma { animation: none; opacity: 1; transform: none; } .presentacion { transition: none; } }
+.presentacion.quieta .pres-palabra span, .presentacion.quieta .pres-sub, .presentacion.quieta .pres-firma { animation: none; opacity: 1; transform: none; }
+
+/* ---------- Tu pequeño Delfos (3 de noviembre) ---------- */
+.orc-lema { font-style: italic; font-size: 1.15rem; color: var(--suave); }
+.orc-imagenes { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0 1.5rem; }
+.orc-figura { flex: 1 1 14rem; max-width: 20rem; margin: 0; }
+.orc-figura img { display: block; width: 100%; height: auto; border-radius: 0.5rem; }
+.orc-figura figcaption { color: var(--suave); font-size: 0.95rem; margin-top: 0.35rem; }
+
+/* ---------- Greca griega (solo adorno: es un fondo, el lector de pantalla no la lee) ---------- */
+.cabecera { position: relative; }
+.cabecera::after, .pie-pagina::before {
+  content: ""; display: block; height: 12px; margin: 0.5rem 0;
+  background-repeat: repeat-x; background-size: 20px 12px; opacity: 0.85;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cpath d='M0 11 H17 V1 H5 V8 H12 V5 M17 11 H20' fill='none' stroke='%23c8962e' stroke-width='1.6'/%3E%3C/svg%3E");
+}
+@media (forced-colors: active) { .cabecera::after, .pie-pagina::before { display: none; } }
