@@ -3,8 +3,8 @@
  "subtitulo": "Antología del helenismo",
  "autora": "Khaire Lyra",
  "edicion": "Primera edición, 2026",
- "fecha": "2026-11-04",
- "fechaTexto": "4 de noviembre de 2026",
+ "fecha": "2026-11-05",
+ "fechaTexto": "5 de noviembre de 2026",
  "portada": {
   "imagen": "img/file177.jpg",
   "descripcion": "Portada del libro «Jaris. Antología del helenismo», de Khaire Lyra: el título, en letras grandes de color terracota con un filo dorado y una greca griega debajo. Ilustración de un templo griego de columnas sobre un promontorio junto al mar, con un olivo delante. Al fondo, el sol sale sobre el mar en calma, bajo un cielo claro y despejado.",
@@ -1813,7 +1813,8 @@
     "El botón \"Ver otra vez la presentación\" está ahora en la portada, junto a \"Empezar a leer\".",
     "Cancionero nuevo: 16 salmos hechos con lo mejor de los himnos y oraciones del libro. Los 6 de antes, rehechos; 4 nuevos para los días del mes (Agathos Daimon, Poseidón, las Musas y el Deipnon); y 6 para momentos de la vida (al despertar, antes de dormir, cuando hay miedo, en una mala época, por alguien enfermo y para dar las gracias). Cada salmo enlaza todos los himnos de los que sale.",
     "El Cancionero está también en el libro, como apéndice A8, y en el libro de bolsillo. Desde \"Qué leer en cada momento\", los días del mes y las fichas de los dioses se llega a cada salmo.",
-    "El libro, más libre: vale cualquier bebida y cualquier vela, y ya no se repite a cada paso. La oración \"Por un amigo o una amiga\" se llama ahora \"Por una amistad\"."
+    "El libro, más libre: vale cualquier bebida y cualquier vela, y ya no se repite a cada paso. La oración \"Por un amigo o una amiga\" se llama ahora \"Por una amistad\".",
+    "Nuevo en el Libro de ritos: un guion para la amiga o el familiar que dirige una boda helénica, con lo que hace falta, la ropa y las palabras de cada paso. Y en las preguntas frecuentes: ¿hay sacerdotes helenistas hoy?"
    ]
   },
   {
@@ -1866,5 +1867,5 @@
   659.26
  ],
  "notasLira": [],
- "version": "c26c4c019c33"
+ "version": "c38bdc9b2229"
 }

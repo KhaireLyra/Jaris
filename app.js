@@ -708,6 +708,37 @@
     terminar(r.foco || null);
   }
 
+  /* ---------- Descargas de los libros (5 de noviembre de 2026; contenido/descargas.json, lo hace descargas_libros.py) ---------- */
+  function pesoTexto(b) {
+    if (b < 1048576) return Math.max(1, Math.round(b / 1024)) + ' KB';
+    return Math.round(b / 1048576) + ' MB';
+  }
+  async function vistaDescargas() {
+    const mio = ++turno;
+    let lista = [];
+    try { lista = await traer('contenido/descargas.json'); } catch (e) { lista = []; }
+    if (mio !== turno) return;
+    const nodo = el('div', { class: 'descargas' }, el('h1', { texto: 'Descargar los libros' }));
+    if (!lista.length) {
+      nodo.append(el('p', { texto: 'Las descargas estarán aquí muy pronto.' }));
+    } else {
+      nodo.append(el('p', { texto: 'Cada libro se descarga por separado; al final están todos juntos en un solo archivo. Son siempre la última edición.' }));
+      const ul = el('ul', { class: 'lista-descargas' });
+      lista.forEach(function (x) {
+        ul.append(el('li', {},
+          el('a', { href: x.url, download: x.nombre }, x.titulo + ' (' + pesoTexto(x.bytes) + ')'),
+          el('p', { texto: x.texto })));
+      });
+      nodo.append(ul);
+      nodo.append(el('p', {}, 'Los audios no hace falta descargarlos: en ', el('a', { href: '#/audios' }, 'Audios'),
+        ' se pueden guardar dentro de la aplicación para escucharlos sin internet.'));
+    }
+    main.replaceChildren(nodo);
+    ponerTitulo('Descargar los libros');
+    marcarMenu('#/descargas');
+    terminar(null);
+  }
+
   function noEncontrada() {
     main.replaceChildren(el('h1', { texto: 'Esta página no existe' }), el('p', {}, el('a', { href: '#/' }, 'Ir a la portada')));
     ponerTitulo('Página no encontrada'); marcarMenu(''); terminar(null);
@@ -734,6 +765,7 @@
       case 'diario': return vistaDiario(partes);
       case 'noche': return vistaNoche();
       case 'cancionero': return vistaCancionero(partes);
+      case 'descargas': return vistaDescargas();
       case 'oraciones': case 'himnos': case 'ritos':
         return leer(libro.indices[partes[0]], null, '#/' + partes[0]);
       case 'leer': return leer(partes[1], partes.slice(2).join('/') || null, null);

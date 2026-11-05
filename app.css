@@ -341,3 +341,7 @@ blockquote { margin: 1rem 0; padding: 0.25rem 1rem; border-left: 4px solid var(-
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cpath d='M0 11 H17 V1 H5 V8 H12 V5 M17 11 H20' fill='none' stroke='%23c8962e' stroke-width='1.6'/%3E%3C/svg%3E");
 }
 @media (forced-colors: active) { .cabecera::after, .pie-pagina::before { display: none; } }
+
+/* Descargas */
+.lista-descargas li { margin-bottom: 1em; }
+.lista-descargas li p { margin: 0.2em 0 0; }
