@@ -1,4 +1,4 @@
-/* Jaris: el motor del calendario ático (parte 2a-1). Calcula, sin internet, para cualquier año y lugar,
+/* Jaris: el motor del calendario ático (parte 2a-1). Calcula, sin conexión, para cualquier año y lugar,
    con las reglas del capítulo 8 («Cómo se calcula el calendario hoy»):
    1. El día empieza al ponerse el sol.
    2. El mes empieza con la Noumenia: si la luna nueva fue más de 20 horas antes de la puesta de sol,

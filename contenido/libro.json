@@ -3,8 +3,8 @@
  "subtitulo": "Antología del helenismo",
  "autora": "Khaire Lyra",
  "edicion": "Primera edición, 2026",
- "fecha": "2026-11-05",
- "fechaTexto": "5 de noviembre de 2026",
+ "fecha": "2026-11-07",
+ "fechaTexto": "7 de noviembre de 2026",
  "portada": {
   "imagen": "img/file177.jpg",
   "descripcion": "Portada del libro «Jaris. Antología del helenismo», de Khaire Lyra: el título, en letras grandes de color terracota con un filo dorado y una greca griega debajo. Ilustración de un templo griego de columnas sobre un promontorio junto al mar, con un olivo delante. Al fondo, el sol sale sobre el mar en calma, bajo un cielo claro y despejado.",
@@ -1804,6 +1804,25 @@
  ],
  "novedades": [
   {
+   "fecha": "2026-11-06",
+   "fechaTexto": "6 de noviembre de 2026",
+   "cambios": [
+    "Nueva pantalla «Ajustes», con cinco partes: Lectura, Calendario y lugar, Audios, Tus datos y Acerca de Jaris. Está en el menú y en el pie de todas las páginas.",
+    "Ajustes de lectura: tamaño de la letra (normal, grande o muy grande), tema (automático, claro u oscuro), alto contraste, espacio entre líneas, ancho del texto y las pronunciaciones «se dice», que puedes mostrar u ocultar. También hay un botón para volver a los valores de siempre.",
+    "Calendario y lugar: elige tu ciudad o país, y si estás en el hemisferio sur, cómo quieres ver las fiestas. Cambia lo mismo que en la pantalla del calendario.",
+    "Audios: elige la velocidad con la que se oyen, mira cuánto ocupan los audios guardados en tu dispositivo y bórralos si quieres, con un aviso antes.",
+    "Tus datos: guarda una copia de tu diario, tus favoritos y tus ajustes, envíala, recupérala en otro dispositivo o bórralo todo, con un aviso antes. Y puedes descargar tu diario en un archivo de texto para leerlo con calma.",
+    "Acerca de Jaris: la versión, los enlaces a Novedades, Buzón y Descargas, y cómo cuidamos tu privacidad.",
+    "Nueva pantalla «Descargas», para bajarte los libros: uno a uno o todos juntos, en EPUB y en PDF, normales y de bolsillo.",
+    "Textos más claros en toda la aplicación: ahora dice «dispositivo» y «sin conexión».",
+    "Seis salmos del Cancionero, más pulidos: Hestia, Apolo, Noumenia, Hermes, «Antes de dormir» y Atenea. Las melodías se compondrán más adelante.",
+    "En pantallas estrechas o con la letra muy grande, el menú de arriba se pliega y sale un botón «Menú» que dice si está contraído o expandido. Se cierra con Escape.",
+    "Los avisos de borrado tienen ahora un recuadro y los botones están más separados, para no pulsar uno por error.",
+    "Con alto contraste, las casillas y los botones de opción se ven mucho mejor, y los selectores son más altos.",
+    "Los símbolos de algunos botones (♪, ☆) tienen más espacio alrededor."
+   ]
+  },
+  {
    "fecha": "2026-11-04",
    "fechaTexto": "4 de noviembre de 2026",
    "cambios": [
@@ -1867,5 +1886,5 @@
   659.26
  ],
  "notasLira": [],
- "version": "c38bdc9b2229"
+ "version": "8cac6c93f969"
 }

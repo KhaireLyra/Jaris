@@ -4,7 +4,7 @@
    - Completar palabras: falta una palabra en cada verso; pistas (la inicial y cuántas letras; luego la mitad).
    - Primeras letras: cada verso solo con la primera letra de cada palabra, y botón para ver el verso.
    - Preguntas guía: cómo empieza, qué viene después de..., cómo termina; la respuesta se abre con un botón.
-   Opcional: leer cada verso con la voz del dispositivo (sin internet). Se recuerda por dónde se iba (solo en el dispositivo).
+   Opcional: leer cada verso con la voz del dispositivo (sin conexión). Se recuerda por dónde se iba (solo en el dispositivo).
    Los versos salen del propio capítulo: si el libro cambia, esto cambia solo. */
 'use strict';
 (function () {
@@ -50,7 +50,7 @@
     }).join(' ');
   }
 
-  /* Voz del dispositivo (opcional; funciona sin internet con las voces instaladas) */
+  /* Voz del dispositivo (opcional; funciona sin conexión con las voces instaladas) */
   function decir(t) {
     if (!leerEstado().voz || !('speechSynthesis' in window)) return;
     try {

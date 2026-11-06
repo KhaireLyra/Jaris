@@ -1,4 +1,4 @@
-/* Jaris: el programa de la aplicación (parte 1: leer el libro sin internet; los audios están en audios.js).
+/* Jaris: el programa de la aplicación (parte 1: leer el libro sin conexión; los audios están en audios.js).
    Rutas: #/ portada, #/indice, #/oraciones, #/himnos, #/ritos, #/leer/ch010 o #/leer/ch010/ancla.
    Normas: al cambiar de pantalla, el foco va al título (h1) o al apartado pedido; los avisos los dice
    el lector de pantalla (región #avisos); nada de atajos de una letra. */
@@ -141,7 +141,7 @@
     try { html = await capitulo(cap); }
     catch (e) {
       main.replaceChildren(el('h1', { texto: 'No se ha podido abrir este capítulo' }),
-        el('p', { texto: 'Si es la primera vez que abres Jaris, hace falta internet hasta que se guarde entera en el dispositivo. Vuelve a intentarlo dentro de un momento.' }),
+        el('p', { texto: 'Si es la primera vez que abres Jaris, hace falta conexión hasta que se guarde entera en el dispositivo. Vuelve a intentarlo dentro de un momento.' }),
         el('p', {}, el('a', { href: '#/indice' }, 'Volver al índice')));
       ponerTitulo('Error'); terminar(null); return;
     }
@@ -342,6 +342,41 @@
     return c ? c.cap : null;
   }
 
+  /* Formulario de «Tu lugar» (7B, 6 nov 2026): ciudad o país y, en el hemisferio sur, cómo seguir las fiestas.
+     Lo usan la pantalla Calendario y Ajustes, para que las dos cambien exactamente lo mismo (jaris.lugar y jaris.sur).
+     alGuardar(lugarNuevo) se llama después de guardar. */
+  function formularioLugar(lugar, idSelect, alGuardar) {
+    const select = el('select', { id: idSelect });
+    let grupo = null;
+    for (const l of DATOS.LUGARES) {
+      if (!grupo || grupo.label !== l.pais) { grupo = el('optgroup', { label: l.pais }); select.append(grupo); }
+      grupo.append(el('option', { value: l.id, selected: l === lugar ? 'selected' : null }, l.nombre + ' (' + l.pais + ')'));
+    }
+    const form = el('form', { class: 'form-lugar' },
+      el('label', { for: idSelect, texto: 'Ciudad o país más cercano' }), select);
+    if (lugar.lat < 0) {
+      const modo = modoSur(lugar);
+      const fs = el('fieldset', {}, el('legend', { texto: 'Estás en el hemisferio sur. ¿Cómo quieres seguir las fiestas?' }));
+      [['tal', 'Tal cual, como en Grecia (lo que hace la mayoría)'],
+        ['movido', 'Movido entero medio año, para que cada fiesta caiga en su estación'],
+        ['mixto', 'Mixto: las fiestas del campo siguen tus estaciones y las demás se quedan en su fecha']].forEach(function (o) {
+        fs.append(el('div', { class: 'opcion' }, el('input', { type: 'radio', name: 'sur', id: 'sur-' + o[0], value: o[0], checked: modo === o[0] ? 'checked' : null }),
+          el('label', { for: 'sur-' + o[0], texto: o[1] })));
+      });
+      form.append(fs);
+    }
+    form.append(el('button', { type: 'submit' }, 'Guardar'));
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const nuevo = DATOS.LUGARES.find(function (x) { return x.id === select.value; });
+      guardar('jaris.lugar', nuevo.id);
+      const marcado = form.querySelector('input[name="sur"]:checked');
+      if (marcado) guardar('jaris.sur', marcado.value);
+      alGuardar(nuevo);
+    });
+    return form;
+  }
+
   function vistaCalendario(partes, enfocarEn) {
     const elegido = lugarElegido(), lugar = elegido.lugar;
     const hoy = CAL.ahora(Date.now(), lugar);
@@ -393,33 +428,8 @@
     }
     pantalla.append(el('h2', { texto: 'Los meses de este año (' + anio.anio + '-' + (anio.anio + 1) + ')' + (anio.embolismico ? ', con Poseideon II' : '') }), meses);
 
-    /* Elegir el lugar (y, en el hemisferio sur, cómo seguir las fiestas) */
-    const select = el('select', { id: 'lugar' });
-    let grupo = null;
-    for (const l of DATOS.LUGARES) {
-      if (!grupo || grupo.label !== l.pais) { grupo = el('optgroup', { label: l.pais }); select.append(grupo); }
-      grupo.append(el('option', { value: l.id, selected: l === lugar ? 'selected' : null }, l.nombre + ' (' + l.pais + ')'));
-    }
-    const form = el('form', { class: 'form-lugar' },
-      el('label', { for: 'lugar', texto: 'Ciudad o país más cercano' }), select);
-    if (lugar.lat < 0) {
-      const modo = modoSur(lugar);
-      const fs = el('fieldset', {}, el('legend', { texto: 'Estás en el hemisferio sur. ¿Cómo quieres seguir las fiestas?' }));
-      [['tal', 'Tal cual, como en Grecia (lo que hace la mayoría)'],
-        ['movido', 'Movido entero medio año, para que cada fiesta caiga en su estación'],
-        ['mixto', 'Mixto: las fiestas del campo siguen tus estaciones y las demás se quedan en su fecha']].forEach(function (o) {
-        fs.append(el('div', { class: 'opcion' }, el('input', { type: 'radio', name: 'sur', id: 'sur-' + o[0], value: o[0], checked: modo === o[0] ? 'checked' : null }),
-          el('label', { for: 'sur-' + o[0], texto: o[1] })));
-      });
-      form.append(fs);
-    }
-    form.append(el('button', { type: 'submit' }, 'Guardar'));
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const nuevo = DATOS.LUGARES.find(function (x) { return x.id === select.value; });
-      guardar('jaris.lugar', nuevo.id);
-      const marcado = form.querySelector('input[name="sur"]:checked');
-      if (marcado) guardar('jaris.sur', marcado.value);
+    /* Elegir el lugar (y, en el hemisferio sur, cómo seguir las fiestas): el mismo formulario que en Ajustes */
+    const form = formularioLugar(lugar, 'lugar', function (nuevo) {
       vistaCalendario(partes, 'lugar-titulo');
       avisar('Guardado. Calendario calculado para ' + nuevo.nombre + '.');
     });
@@ -708,6 +718,663 @@
     terminar(r.foco || null);
   }
 
+  /* ---------- Ajustes (6 de noviembre de 2026): pantalla #/ajustes, en bloques ----------
+     Todo se guarda en el navegador, con claves «jaris.*» (para que la copia de seguridad de la sesión 7 las recoja).
+     Cada ajuste de lectura pone un atributo «data-...» en <html>, y app.css cambia el aspecto según ese atributo.
+     Si el valor es el de por defecto, el atributo no se pone. Los demás bloques llegan en las sesiones 7 y 7B. */
+  const AJUSTES_LECTURA = [
+    { clave: 'jaris.letra', atributo: 'data-letra', defecto: 'normal', titulo: 'Tamaño de la letra',
+      opciones: [['normal', 'Normal'], ['grande', 'Grande'], ['muygrande', 'Muy grande']] },
+    { clave: 'jaris.tema', atributo: 'data-tema', defecto: 'auto', titulo: 'Tema',
+      opciones: [['auto', 'Automático (el del dispositivo)'], ['claro', 'Claro'], ['oscuro', 'Oscuro']] },
+    { clave: 'jaris.contraste', atributo: 'data-contraste', defecto: 'normal', titulo: 'Contraste',
+      opciones: [['normal', 'Normal'], ['alto', 'Alto contraste']] },
+    { clave: 'jaris.interlineado', atributo: 'data-interlineado', defecto: 'normal', titulo: 'Espacio entre líneas',
+      opciones: [['normal', 'Normal'], ['amplio', 'Amplio'], ['muyamplio', 'Muy amplio']] },
+    { clave: 'jaris.ancho', atributo: 'data-ancho', defecto: 'normal', titulo: 'Ancho del texto',
+      opciones: [['estrecho', 'Estrecho'], ['normal', 'Normal'], ['ancho', 'Ancho']] },
+    { clave: 'jaris.sedice', atributo: 'data-sedice', defecto: 'si', titulo: 'Pronunciaciones',
+      ayuda: 'Son las que van entre paréntesis después de «se dice», para saber cómo se pronuncia una palabra.',
+      opciones: [['si', 'Mostrarlas'], ['no', 'Ocultarlas']] }
+  ];
+  function ajusteValor(a) {
+    const v = recuperar(a.clave);
+    return a.opciones.some(function (o) { return o[0] === v; }) ? v : a.defecto;
+  }
+  function aplicarAjustes() {
+    const raiz = document.documentElement;
+    AJUSTES_LECTURA.forEach(function (a) {
+      const v = ajusteValor(a);
+      if (v === a.defecto) raiz.removeAttribute(a.atributo); else raiz.setAttribute(a.atributo, v);
+    });
+    /* La velocidad de los audios también es un ajuste: el reproductor toma lo guardado (si ya está cargado). */
+    if (window.JarisAudios && window.JarisAudios.sincronizarVelocidad) window.JarisAudios.sincronizarVelocidad();
+  }
+  window.JarisAjustes = { valor: function (clave) { const a = AJUSTES_LECTURA.find(function (x) { return x.clave === clave; }); return a ? ajusteValor(a) : null; }, aplicar: aplicarAjustes };
+  aplicarAjustes();
+
+  /* Pronunciaciones: lo que va entre paréntesis después de «se dice» se envuelve en <span class="se-dice">,
+     y app.css lo oculta cuando <html> lleva data-sedice="no". Se hace sobre lo que se pinta en <main>
+     (capítulos, Hoy, Calendario...), sin tocar los textos del libro; no en Aprender ni en Ajustes. */
+  function envolverSeDice(raiz) {
+    const recorrido = document.createTreeWalker(raiz, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        if (!/\(se dice\b/i.test(n.nodeValue)) return NodeFilter.FILTER_REJECT;
+        const p = n.parentElement;
+        if (!p || p.closest('.se-dice, .aprender, .ajustes, script, style, textarea')) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    const nodos = [];
+    while (recorrido.nextNode()) nodos.push(recorrido.currentNode);
+    nodos.forEach(function (n) {
+      const texto = n.nodeValue;
+      const re = /\s*\(se dice\b[^()]*\)/gi;
+      const trozos = document.createDocumentFragment();
+      let m, ultimo = 0;
+      while ((m = re.exec(texto))) {
+        if (m.index > ultimo) trozos.append(texto.slice(ultimo, m.index));
+        const s = document.createElement('span');
+        s.className = 'se-dice';
+        s.textContent = m[0];
+        trozos.append(s);
+        ultimo = m.index + m[0].length;
+      }
+      if (!trozos.hasChildNodes()) return;
+      if (ultimo < texto.length) trozos.append(texto.slice(ultimo));
+      n.replaceWith(trozos);
+    });
+  }
+  if (window.MutationObserver) {
+    let pendienteSeDice = false;
+    const vigiaSeDice = new MutationObserver(function () {
+      if (pendienteSeDice) return;
+      pendienteSeDice = true;
+      setTimeout(function () {
+        pendienteSeDice = false;
+        vigiaSeDice.disconnect();
+        try { envolverSeDice(main); } catch (e) { /* si falla, se ve todo: no pasa nada */ }
+        vigiaSeDice.observe(main, { childList: true, subtree: true });
+      }, 0);
+    });
+    vigiaSeDice.observe(main, { childList: true, subtree: true });
+  }
+
+  /* ---------- Tus datos (6 de noviembre de 2026, sesión 7): copia de seguridad en un archivo ----------
+     La copia recoge lo que es de la persona: diario, favoritos, Aprender, oráculo, cantar, velocidad, lugar y ajustes de lectura.
+     NO recoge lo interno: jaris.errores, jaris.edicion, jaris.novedadesAntes, jaris.ultimo, jaris.presentacion. */
+  const CLAVES_DATOS = ['jaris.diario', 'jaris.favoritos', 'jaris.aprender', 'jaris.oraculo', 'jaris.cantar',
+    'jaris.velocidad', 'jaris.lugar', 'jaris.sur'].concat(AJUSTES_LECTURA.map(function (a) { return a.clave; }));
+  function datosDelDispositivo() {
+    const datos = {};
+    CLAVES_DATOS.forEach(function (c) {
+      let t = null;
+      try { t = localStorage.getItem(c); } catch (e) { t = null; }
+      if (t === null) return;
+      try { datos[c] = JSON.parse(t); } catch (e) { datos[c] = t; }
+    });
+    return datos;
+  }
+  function juntarLista(partes) {
+    if (partes.length < 2) return partes.join('');
+    return partes.slice(0, -1).join(', ') + ' y ' + partes[partes.length - 1];
+  }
+  /* Qué trae un conjunto de datos, en frases cortas (sirve para decir qué se guarda y, luego, qué trae una copia). */
+  function resumenDatos(datos) {
+    const partes = [];
+    const lleno = function (v) { return !!v && (Array.isArray(v) ? v.length > 0 : typeof v === 'object' ? Object.keys(v).length > 0 : true); };
+    const d = datos['jaris.diario'];
+    const nEntradas = d && d.entradas ? Object.keys(d.entradas).length : 0;
+    if (nEntradas) partes.push(nEntradas + (nEntradas === 1 ? ' entrada de diario' : ' entradas de diario'));
+    if (d && d.cumple) partes.push('tu cumpleaños');   /* revisión parte 3: sin esto, con solo el cumpleaños, «Borrar» decía que no había nada */
+    const f = datos['jaris.favoritos'];
+    if (f && Array.isArray(f.listas)) {
+      const vistos = {};
+      f.listas.forEach(function (l) { (l.items || []).forEach(function (x) { vistos[x.cap + '/' + x.a] = true; }); });
+      const nFav = Object.keys(vistos).length;
+      const nListas = f.listas.filter(function (l) { return l.items && l.items.length; }).length;
+      if (nFav) partes.push(nFav + (nFav === 1 ? ' favorito' : ' favoritos') + (nListas > 1 ? ' en ' + nListas + ' listas' : ''));
+    }
+    if (lleno(datos['jaris.aprender'])) partes.push('tu progreso en Aprender');
+    if (lleno(datos['jaris.oraculo'])) partes.push('tus preferencias del oráculo');
+    if (lleno(datos['jaris.cantar'])) partes.push('por dónde ibas en los salmos');
+    const otros = AJUSTES_LECTURA.map(function (a) { return a.clave; }).concat(['jaris.velocidad', 'jaris.lugar', 'jaris.sur']);
+    if (otros.some(function (c) { return datos[c] !== undefined; })) partes.push('tus ajustes');
+    return partes;
+  }
+  function fechaLocalISO() {
+    const h = new Date();
+    return h.getFullYear() + '-' + String(h.getMonth() + 1).padStart(2, '0') + '-' + String(h.getDate()).padStart(2, '0');
+  }
+  function hacerCopia() {
+    const datos = datosDelDispositivo();
+    if (!Object.keys(datos).length) return null;
+    const copia = { jaris: 'copia-de-datos', formato: 1, fecha: new Date().toISOString(),
+      edicion: (typeof libro !== 'undefined' && libro && libro.version) ? libro.version : '', datos: datos };
+    return { texto: JSON.stringify(copia, null, 1), nombre: 'Jaris - copia de mis datos (' + fechaLocalISO() + ').json', partes: resumenDatos(datos) };
+  }
+  function descargarArchivo(nombre, texto, tipo) {
+    const blob = new Blob([texto], { type: tipo });
+    const url = URL.createObjectURL(blob);
+    const enlace = document.createElement('a');
+    enlace.href = url;
+    enlace.download = nombre;
+    document.body.append(enlace);
+    enlace.click();
+    enlace.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 10000);
+  }
+  /* ---- El diario para leerlo (parte 4): un archivo .md con un título por cada día, del más antiguo al más nuevo ----
+     PRACTICAS_MD y CAMPOS_MD repiten NOMBRES_PRACTICA y CAMPOS de diario.js: si allí cambian, hay que cambiarlas aquí. */
+  const PRACTICAS_MD = { rezar: 'he rezado', libacion: 'he hecho una libación', incienso: 'he ofrecido incienso',
+    himno: 'he leído, recitado o cantado un himno', rito: 'he hecho el rito del día', ofrenda: 'he hecho otra ofrenda', texto: 'he leído el texto del día' };
+  const CAMPOS_MD = [['ofrecido', 'Qué he rezado u ofrecido'], ['preguntas', 'Mi respuesta a la pregunta del día'], ['libre', 'Escritura libre'],
+    ['gracias', 'Doy las gracias por'], ['senales', 'Señales'], ['suenos', 'Sueños'], ['sensaciones', 'Lo que he sentido']];
+  const formatoDiaMD = new Intl.DateTimeFormat('es-ES', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+  const formatoFechaMD = new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+  /* El texto escrito por la persona, sin que Markdown lo confunda con títulos, listas o citas; cada salto de línea se conserva. */
+  function mdTexto(t) {
+    const lineas = String(t).replace(/\r\n?/g, '\n').trim().split('\n');
+    return lineas.map(function (l, i) {
+      let s = l.replace(/\s+$/, '').replace(/^(\s*)(\d+)([.)])(?=\s)/, '$1$2\\$3').replace(/^(\s*)([#>*+=`|~-])/, '$1\\$2');
+      if (s && i < lineas.length - 1 && lineas[i + 1].trim()) s += '  ';
+      return s;
+    }).join('\n');
+  }
+  function mdLinea(t) { return mdTexto(t).replace(/\s+/g, ' ').trim(); }
+  function diarioEnMarkdown() {
+    const d = limpiarDatos(datosDelDispositivo())['jaris.diario'];
+    const claves = d ? Object.keys(d.entradas).sort() : [];
+    if (!claves.length) return null;
+    const fecha = function (k, conSemana) {
+      const m = k.split('-');
+      const t = (conSemana ? formatoDiaMD : formatoFechaMD).format(new Date(Date.UTC(+m[0], +m[1] - 1, +m[2])));
+      return conSemana ? t.charAt(0).toUpperCase() + t.slice(1) : t;
+    };
+    const desde = fecha(claves[0]), hasta = fecha(claves[claves.length - 1]);
+    const sal = ['# Mi diario helénico', '',
+      'Copia hecha el ' + fecha(fechaLocalISO(), true).toLowerCase() + '. ' + claves.length + (claves.length === 1 ? ' día con entrada' : ' días con entradas') +
+      (claves.length > 1 ? ', del ' + desde + ' al ' + hasta : ', el ' + desde) + '.'];
+    claves.forEach(function (k) {
+      const e = d.entradas[k];
+      sal.push('', '## ' + fecha(k, true));
+      if (typeof e.griego === 'string' && e.griego.trim()) sal.push('', 'Día griego: ' + mdLinea(e.griego));
+      let escrito = 0;
+      if (Array.isArray(e.practica) && e.practica.length) {
+        const hechas = e.practica.map(function (p) {
+          return p === 'texto' && e.textoDelDia && e.textoDelDia.t ? 'he leído el texto del día, «' + e.textoDelDia.t + '»' : (PRACTICAS_MD[p] || String(p));
+        });
+        sal.push('', '**Lo que he hecho:** ' + mdTexto(hechas.join(', ') + '.'));
+        escrito++;
+      }
+      if (typeof e.dioses === 'string' && e.dioses.trim()) { sal.push('', '**A qué dioses:** ' + mdLinea(e.dioses)); escrito++; }
+      CAMPOS_MD.forEach(function (c) {
+        if (typeof e[c[0]] === 'string' && e[c[0]].trim()) { sal.push('', '### ' + c[1], '', mdTexto(e[c[0]])); escrito++; }
+      });
+      const pl = e.plantilla && typeof e.plantilla === 'object' ? e.plantilla : {};
+      Object.keys(pl).forEach(function (p) {
+        if (typeof pl[p] === 'string' && pl[p].trim()) { sal.push('', '### ' + mdLinea(p), '', mdTexto(pl[p])); escrito++; }
+      });
+      if (!escrito) sal.push('', 'Sin nada escrito.');
+    });
+    return { texto: '\uFEFF' + sal.join('\n') + '\n', dias: claves.length, desde: desde, hasta: hasta };
+  }
+  /* ---- Recuperar una copia (parte 2) ---- */
+  let mensajeDatos = '';   /* lo que se dice al volver a pintar Ajustes tras recuperar una copia */
+  const FECHA_DIARIO = /^\d{4}-\d{2}-\d{2}$/;
+  /* Deja solo lo que Jaris sabe leer: ni claves ajenas ni formas raras (una copia puede venir de un archivo cualquiera). */
+  function limpiarDatos(datos) {
+    const r = {};
+    const objeto = function (v) { return !!v && typeof v === 'object' && !Array.isArray(v); };
+    CLAVES_DATOS.forEach(function (c) {
+      const v = datos[c];
+      if (v === undefined || v === null) return;
+      if (c === 'jaris.diario') {
+        if (!objeto(v) || !objeto(v.entradas)) return;
+        const entradas = {};
+        Object.keys(v.entradas).forEach(function (k) { if (FECHA_DIARIO.test(k) && objeto(v.entradas[k])) entradas[k] = v.entradas[k]; });
+        r[c] = Object.assign({}, v, { entradas: entradas });
+      } else if (c === 'jaris.favoritos') {
+        if (!objeto(v) || !Array.isArray(v.listas)) return;
+        const listas = v.listas.filter(function (l) { return objeto(l) && typeof l.id === 'string' && Array.isArray(l.items); })
+          .map(function (l) { return Object.assign({}, l, { items: l.items.filter(function (x) { return objeto(x) && typeof x.cap === 'string' && typeof x.a === 'string'; }) }); });
+        r[c] = Object.assign({}, v, { listas: listas });
+      } else if (c === 'jaris.aprender' || c === 'jaris.cantar' || c === 'jaris.oraculo') {
+        if (objeto(v)) r[c] = v;
+      } else if (c === 'jaris.sur') {
+        if (['tal', 'movido', 'mixto'].indexOf(v) >= 0) r[c] = v;   /* revisión parte 3: un valor raro hacía decir «undefined» en Ajustes */
+      } else if (typeof v === 'string' || typeof v === 'number') {
+        r[c] = v;   /* lugar, velocidad y ajustes de lectura: solo valores sencillos (cada pantalla ya ignora los que no conoce) */
+      }
+    });
+    return r;
+  }
+  function copiaValida(texto) {
+    let j = null;
+    try { j = JSON.parse(texto); } catch (e) { return { error: 'No se puede leer ese archivo: no es una copia de datos de Jaris. No se ha cambiado nada.' }; }
+    if (!j || j.jaris !== 'copia-de-datos' || !j.datos || typeof j.datos !== 'object') return { error: 'Ese archivo no es una copia de datos de Jaris. No se ha cambiado nada.' };
+    /* Revisión parte 3: una copia hecha por una edición futura (formato 2 o más) podría guardar el diario de otra forma y perderse al leerla con esta. */
+    if (typeof j.formato === 'number' && j.formato > 1) return { error: 'Esta copia la ha hecho una edición más nueva de Jaris. Abre la edición nueva y vuelve a recuperarla. No se ha cambiado nada.' };
+    return { datos: limpiarDatos(j.datos), fecha: j.fecha || '' };
+  }
+  /* Juntar: se suma todo; si hay conflicto, gana lo que ya hay en el dispositivo, salvo en el diario, donde gana la entrada más reciente de cada día. */
+  function fusionar(actual, copia) {
+    const r = {};
+    CLAVES_DATOS.forEach(function (c) {
+      const a = actual[c], b = copia[c];
+      if (b === undefined) { if (a !== undefined) r[c] = a; return; }
+      if (a === undefined) { r[c] = b; return; }
+      if (c === 'jaris.diario') {
+        const m = Object.assign({}, a, { entradas: Object.assign({}, a.entradas) });
+        Object.keys(b.entradas).forEach(function (k) {
+          const x = m.entradas[k], y = b.entradas[k];
+          if (!x || (Number(y.actualizada) || 0) > (Number(x.actualizada) || 0)) m.entradas[k] = y;
+        });
+        if (!m.cumple && b.cumple) m.cumple = b.cumple;
+        r[c] = m;
+      } else if (c === 'jaris.favoritos') {
+        const m = Object.assign({}, a, { listas: a.listas.map(function (l) { return Object.assign({}, l, { items: l.items.slice() }); }) });
+        b.listas.forEach(function (l) {
+          const mia = m.listas.find(function (x) { return x.id === l.id; });
+          if (!mia) { m.listas.push(l); return; }
+          l.items.forEach(function (it) { if (!mia.items.some(function (x) { return x.cap === it.cap && x.a === it.a; })) mia.items.push(it); });
+        });
+        r[c] = m;
+      } else if (c === 'jaris.aprender' || c === 'jaris.cantar' || c === 'jaris.oraculo') {
+        r[c] = Object.assign({}, b, a);
+      } else {
+        r[c] = a;
+      }
+    });
+    return r;
+  }
+  function fotoDelDispositivo() {
+    const f = {};
+    CLAVES_DATOS.forEach(function (c) { try { f[c] = localStorage.getItem(c); } catch (e) { f[c] = null; } });
+    return f;
+  }
+  /* Escribe los datos; si algo falla a medias, deja el dispositivo como estaba (por la foto de antes). */
+  function escribirDatos(datos, sustituir) {
+    const foto = fotoDelDispositivo();
+    try {
+      if (sustituir) CLAVES_DATOS.forEach(function (c) { localStorage.removeItem(c); });
+      Object.keys(datos).forEach(function (c) { localStorage.setItem(c, JSON.stringify(datos[c])); });
+      return true;
+    } catch (e) {
+      CLAVES_DATOS.forEach(function (c) {
+        try { if (foto[c] === null) localStorage.removeItem(c); else localStorage.setItem(c, foto[c]); } catch (x) { /* nada */ }
+      });
+      return false;
+    }
+  }
+  function bloqueDatos() {
+    const bloque = el('section', { 'aria-labelledby': 'ajustes-datos' },
+      el('h2', { id: 'ajustes-datos', texto: 'Tus datos' }),
+      el('p', { texto: 'Tu diario, tus favoritos, tu progreso y tus ajustes se guardan solo en este dispositivo. Una copia de seguridad los guarda en un archivo, para que no los pierdas si cambias de dispositivo o si el navegador borra sus datos.' }),
+      el('p', { class: 'buz-ayuda', texto: 'El archivo de la copia incluye tu diario: guárdalo en un sitio privado.' }));
+    const estado = el('p', { id: 'datos-estado', class: 'buz-ayuda', tabindex: '-1' });
+    const decir = function (texto) { estado.textContent = texto; avisar(texto); };
+    const botonGuardar = el('button', { type: 'button' }, 'Guardar una copia de mis datos');
+    botonGuardar.addEventListener('click', function () {
+      let c = null;
+      try { c = hacerCopia(); } catch (e) { c = null; decir('No se ha podido hacer la copia. Inténtalo otra vez.'); return; }
+      if (!c) { decir('Todavía no hay nada tuyo guardado en este dispositivo (ni diario, ni favoritos, ni ajustes), así que no hay copia que hacer.'); return; }
+      try { descargarArchivo(c.nombre, c.texto, 'application/json'); }
+      catch (e) { decir('No se ha podido guardar el archivo en este dispositivo.'); return; }
+      decir('Copia guardada en el archivo «' + c.nombre + '», que se ha descargado en este dispositivo (búscalo en la carpeta de descargas). Trae ' + juntarLista(c.partes) + '.');
+    });
+    const botones = el('p', {}, botonGuardar);
+    if (navigator.share) {
+      const botonEnviar = el('button', { type: 'button', class: 'secundario' }, 'Enviar una copia de mis datos');
+      botonEnviar.addEventListener('click', async function () {
+        let c = null;
+        try { c = hacerCopia(); } catch (e) { c = null; }
+        if (!c) { decir('Todavía no hay nada tuyo guardado en este dispositivo, así que no hay copia que enviar.'); return; }
+        try {
+          const archivo = new File([c.texto], c.nombre, { type: 'application/json' });
+          if (!navigator.canShare || !navigator.canShare({ files: [archivo] })) { decir('Este dispositivo no permite enviar archivos desde aquí. Usa «Guardar una copia de mis datos».'); return; }
+          await navigator.share({ files: [archivo], title: 'Copia de mis datos de Jaris' });
+          decir('Copia enviada. Trae ' + juntarLista(c.partes) + '.');
+        } catch (e) {
+          if (e && e.name === 'AbortError') decir('Has cancelado el envío. No se ha enviado nada.');
+          else decir('No se ha podido enviar la copia. Usa «Guardar una copia de mis datos».');
+        }
+      });
+      botones.append(' ', botonEnviar);
+    }
+    /* Recuperar una copia: elegir el archivo, decir qué trae y, si ya hay datos, preguntar si juntar o sustituir. */
+    const panel = el('div', { class: 'datos-panel' });
+    /* Revisión parte 3: vaciar el panel también le quita el papel de grupo o de diálogo (si no, el lector encontraba un grupo vacío). */
+    const cerrarPanel = function () { panel.replaceChildren(); ['role', 'aria-labelledby', 'aria-describedby'].forEach(function (a) { panel.removeAttribute(a); }); };
+    const archivo = el('input', { type: 'file', accept: '.json,application/json', id: 'datos-archivo', hidden: 'hidden', 'aria-hidden': 'true', tabindex: '-1' });
+    const botonRecuperar = el('button', { type: 'button', class: 'secundario' }, 'Recuperar una copia de mis datos');
+    botonRecuperar.addEventListener('click', function () { archivo.value = ''; archivo.click(); });
+    botones.append(' ', botonRecuperar, archivo);
+    function ofrecerCopia(texto) {
+      const c = copiaValida(texto);
+      cerrarPanel();
+      if (c.error) { decir(c.error); return; }
+      const partes = resumenDatos(c.datos);
+      if (!partes.length) { decir('La copia está vacía: no trae diario, favoritos ni ajustes. No se ha cambiado nada.'); return; }
+      const hay = Object.keys(datosDelDispositivo()).length > 0;
+      let cuando = '';
+      if (c.fecha) {
+        const f = new Date(c.fecha);
+        if (!isNaN(f.getTime())) cuando = ', hecha el ' + f.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }) + ',';
+      }
+      const titulo = el('h3', { id: 'datos-recuperar-titulo', tabindex: '-1', texto: 'Recuperar la copia' });
+      panel.removeAttribute('aria-describedby');
+      panel.setAttribute('role', 'group');
+      panel.setAttribute('aria-labelledby', 'datos-recuperar-titulo');
+      panel.append(titulo, el('p', { texto: 'La copia' + cuando + ' trae ' + juntarLista(partes) + '. ' + (hay
+        ? 'Este dispositivo ya tiene datos: elige qué hacer.' : 'Este dispositivo todavía no tiene datos.') }));
+      const aplicar = function (modo) {
+        const sustituir = modo === 'sustituir';
+        const nuevo = sustituir ? c.datos : fusionar(limpiarDatos(datosDelDispositivo()), c.datos);
+        if (!escribirDatos(nuevo, sustituir)) { cerrarPanel(); decir('No se ha podido recuperar la copia (puede que no quepa en el espacio del navegador). No se ha cambiado nada.'); estado.focus(); return; }
+        aplicarAjustes();
+        mensajeDatos = 'Copia recuperada' + (hay ? (sustituir ? ', sustituyendo lo que había' : ', juntada con lo que había') : '') +
+          '. Ahora este dispositivo tiene ' + juntarLista(resumenDatos(datosDelDispositivo())) + '.';
+        vistaAjustes();
+      };
+      const cancelar = el('button', { type: 'button', class: 'secundario' }, 'Cancelar');
+      cancelar.addEventListener('click', function () { cerrarPanel(); decir('No se ha cambiado nada.'); botonRecuperar.focus(); });
+      if (hay) {
+        const juntar = el('button', { type: 'button' }, 'Juntar con lo que ya tengo');
+        juntar.addEventListener('click', function () { aplicar('juntar'); });
+        const sustituir = el('button', { type: 'button' }, 'Sustituir lo que tengo por la copia');
+        sustituir.addEventListener('click', function () { aplicar('sustituir'); });
+        const antes = el('button', { type: 'button', class: 'secundario' }, 'Guardar antes una copia de lo que tengo');
+        antes.addEventListener('click', function () { botonGuardar.click(); });
+        /* Revisión parte 3: si la copia no trae diario (o trae menos días), decirlo claro antes de sustituir, porque se perdería el de aquí. */
+        const diarioAqui = limpiarDatos(datosDelDispositivo())['jaris.diario'], diarioCopia = c.datos['jaris.diario'];
+        const nAqui = diarioAqui ? Object.keys(diarioAqui.entradas).length : 0, nCopia = diarioCopia ? Object.keys(diarioCopia.entradas).length : 0;
+        const ojo = nAqui && !nCopia ? ' Ojo: la copia no trae diario, así que perderías las ' + nAqui + (nAqui === 1 ? ' entrada' : ' entradas') + ' del diario que tienes aquí.'
+          : nAqui > nCopia ? ' Ojo: aquí tienes ' + nAqui + ' entradas de diario y la copia trae ' + nCopia + '; las que no estén en la copia se perderían.' : '';
+        panel.append(
+          el('p', {}, juntar), el('p', { class: 'buz-ayuda', texto: 'Se suma todo. Si un mismo día del diario está en los dos sitios, se queda la entrada más reciente. Los ajustes que ya tengas en este dispositivo se quedan como están; los que no hayas cambiado nunca se toman de la copia.' }),
+          el('p', {}, sustituir), el('p', { class: 'buz-ayuda', texto: 'Se borra lo que hay en este dispositivo y se pone lo de la copia, ajustes incluidos.' + ojo + ' Si tienes dudas, guarda antes una copia de lo que tienes.' }),
+          el('p', {}, antes), el('p', {}, cancelar));
+      } else {
+        const poner = el('button', { type: 'button' }, 'Recuperar la copia');
+        poner.addEventListener('click', function () { aplicar('sustituir'); });
+        panel.append(el('p', {}, poner, ' ', cancelar));
+      }
+      titulo.focus();
+    }
+    archivo.addEventListener('change', function () {
+      const f = archivo.files && archivo.files[0];
+      if (!f) return;
+      const lector = new FileReader();
+      lector.onerror = function () { decir('No se ha podido leer el archivo. No se ha cambiado nada.'); };
+      lector.onload = function () { ofrecerCopia(String(lector.result || '').replace(/^\uFEFF/, '')); };
+      lector.readAsText(f);
+    });
+    /* Borrar todos mis datos: con confirmación (dos botones, y el foco en «No»). No toca libros ni audios guardados (eso es la caché). */
+    const CLAVES_BORRAR = CLAVES_DATOS.concat(['jaris.ultimo']);
+    const botonBorrar = el('button', { type: 'button', class: 'secundario' }, 'Borrar todos mis datos');
+    botonBorrar.addEventListener('click', function () {
+      const partes = resumenDatos(datosDelDispositivo());
+      let hayUltimo = false;
+      try { hayUltimo = localStorage.getItem('jaris.ultimo') !== null; } catch (e) { /* nada */ }
+      cerrarPanel();
+      if (!partes.length && !hayUltimo) { decir('No hay nada tuyo guardado en este dispositivo, así que no hay nada que borrar.'); return; }
+      const texto = 'Se va a borrar lo que Jaris tiene guardado en este dispositivo' + (partes.length ? ': ' + juntarLista(partes) : '') +
+        (hayUltimo ? (partes.length ? ', y' : ':') + ' por dónde ibas leyendo' : '') +
+        '. No se puede deshacer. No se borran los libros ni los audios que hayas guardado para usarlos sin conexión. Si quieres conservar algo, guarda antes una copia.';
+      panel.setAttribute('role', 'alertdialog');
+      panel.setAttribute('aria-labelledby', 'datos-borrar-titulo');
+      panel.setAttribute('aria-describedby', 'datos-borrar-texto');
+      const no = el('button', { type: 'button', class: 'secundario' }, 'No, cancelar');
+      const si = el('button', { type: 'button' }, 'Sí, borrar todo');
+      const antes = el('button', { type: 'button', class: 'secundario' }, 'Guardar antes una copia de mis datos');
+      no.addEventListener('click', function () { cerrarPanel(); decir('No se ha borrado nada.'); botonBorrar.focus(); });
+      antes.addEventListener('click', function () { botonGuardar.click(); });
+      si.addEventListener('click', function () {
+        let bien = true;
+        try {
+          CLAVES_BORRAR.forEach(function (c) { localStorage.removeItem(c); });
+          sessionStorage.removeItem('jaris.buzon');
+          bien = !CLAVES_BORRAR.some(function (c) { return localStorage.getItem(c) !== null; });
+        } catch (e) { bien = false; }
+        if (!bien) { cerrarPanel(); aplicarAjustes(); decir('No se han podido borrar todos los datos. Inténtalo otra vez.'); estado.focus(); return; }
+        aplicarAjustes();
+        mensajeDatos = 'Se han borrado todos tus datos de este dispositivo. Los ajustes han vuelto a sus valores por defecto.';
+        vistaAjustes();
+      });
+      panel.append(el('h3', { id: 'datos-borrar-titulo', texto: '¿Borrar todos tus datos?' }), el('p', { id: 'datos-borrar-texto', texto: texto }),
+        el('p', {}, no, ' ', si), el('p', {}, antes));
+      no.focus();
+    });
+    /* El diario para leerlo: un archivo Markdown (.md), no sirve para recuperar datos (para eso está la copia). */
+    const botonDiario = el('button', { type: 'button', class: 'secundario' }, 'Descargar mi diario para leerlo');
+    botonDiario.addEventListener('click', function () {
+      let r = null;
+      try { r = diarioEnMarkdown(); } catch (e) { decir('No se ha podido preparar el diario. Inténtalo otra vez.'); return; }
+      if (!r) { decir('Todavía no hay ninguna entrada en tu diario, así que no hay nada que descargar.'); return; }
+      const nombre = 'Jaris - mi diario (' + fechaLocalISO() + ').md';
+      try { descargarArchivo(nombre, r.texto, 'text/markdown;charset=utf-8'); }
+      catch (e) { decir('No se ha podido guardar el archivo en este dispositivo.'); return; }
+      decir('Diario guardado en el archivo «' + nombre + '», que se ha descargado en este dispositivo. Trae ' + r.dias + (r.dias === 1 ? ' día' : ' días') +
+        (r.dias > 1 ? ', del ' + r.desde + ' al ' + r.hasta : ', el ' + r.desde) + '.');
+    });
+    bloque.append(botones,
+      el('p', {}, botonDiario),
+      el('p', { class: 'buz-ayuda', texto: 'El diario para leerlo es un archivo de texto con formato Markdown (.md), con la fecha de cada día como título. Se abre con el Bloc de notas o con cualquier programa de texto. No sirve para recuperar datos: para eso está la copia.' }),
+      el('p', {}, botonBorrar), estado, panel);
+    if (mensajeDatos) {
+      /* Revisión parte 4: igual que en Calendario y lugar, el foco va directo al mensaje (sin pasar por el título ni oírse dos veces). */
+      estado.textContent = mensajeDatos;
+      mensajeDatos = '';
+      focoAjustes = 'datos-estado';
+    }
+    return bloque;
+  }
+
+  /* ---------- Ajustes > Calendario y lugar (sesión 7B, 6 de noviembre de 2026) ----------
+     Reutiliza formularioLugar() de la pantalla Calendario: elegir aquí o allí cambia lo mismo (jaris.lugar y jaris.sur). */
+  let mensajeLugar = '';
+  let focoAjustes = null;   /* id de lo que debe recibir el foco al volver a pintar Ajustes */
+  function bloqueLugar() {
+    const elegido = lugarElegido(), lugar = elegido.lugar;
+    const delCampo = DATOS.FIESTAS.filter(function (f) { return f.campo; }).map(function (f) { return f.nombre; });
+    const bloque = el('section', { 'aria-labelledby': 'ajustes-lugar-titulo' },
+      el('h2', { id: 'ajustes-lugar-titulo', texto: 'Calendario y lugar' }),
+      el('p', { texto: 'Jaris usa el calendario ático (el de Atenas) y lo calcula para el lugar que elijas, porque el comienzo de cada mes y la puesta del sol cambian según dónde estés. No usa la ubicación de tu dispositivo, y lo que elijas se guarda solo en él.' }));
+    const modos = { tal: 'las fiestas tal cual, como en Grecia', movido: 'las fiestas movidas medio año', mixto: 'las fiestas del campo movidas y las demás tal cual' };
+    const ahora = 'Ahora: ' + lugar.nombre + ' (' + lugar.pais + ')' +
+      (elegido.elegido ? '' : ', según la zona horaria de tu dispositivo, porque todavía no has elegido ninguno') +
+      (lugar.lat < 0 ? '; ' + modos[modoSur(lugar)] : '') + '.';
+    const estado = el('p', { id: 'lugar-estado', tabindex: '-1', texto: ahora });
+    bloque.append(estado);
+    bloque.append(formularioLugar(lugar, 'ajustes-lugar', function (nuevo) {
+      mensajeLugar = 'Guardado. Calendario calculado para ' + nuevo.nombre + ' (' + nuevo.pais + ').' +
+        (nuevo.lat < 0 ? ' Está en el hemisferio sur: elige abajo cómo quieres seguir las fiestas.' : '');
+      vistaAjustes();
+    }));
+    if (lugar.lat >= 0) {
+      bloque.append(el('p', { class: 'buz-ayuda', texto: 'Si eliges un lugar del hemisferio sur, al guardar aparecerán las opciones para las fiestas.' }));
+    }
+    bloque.append(
+      el('h3', { texto: 'Qué cambia según el hemisferio' }),
+      el('p', { texto: 'En el hemisferio norte no cambia nada: las fiestas caen en su fecha de Grecia y coinciden con tus estaciones.' }),
+      el('p', { texto: 'En el hemisferio sur las estaciones van al revés que en Grecia, y puedes elegir entre tres formas de seguir las fiestas:' }),
+      el('ul', {},
+        el('li', { texto: 'Tal cual: todas las fiestas caen en su fecha de Grecia, aunque aquí sea otra estación. Es lo que hace la mayoría.' }),
+        el('li', { texto: 'Movido: todas las fiestas se mueven medio año, para que cada una caiga en su estación. También cambian de sitio las fiestas del Sol: Heliogenna (solsticio de invierno) y Prometheia y Herakleia (solsticio de verano).' }),
+        el('li', { texto: 'Mixto: solo se mueven las fiestas del campo' + (delCampo.length ? ' (' + juntarLista(delCampo) + ')' : '') + ' y las del Sol; las demás se quedan en su fecha.' })),
+      el('p', { class: 'buz-ayuda', texto: 'Hay más sobre el calendario en el capítulo 8 del libro.' }));
+    if (mensajeLugar) {
+      /* Revisión parte 4: antes el foco pasaba por el título «Ajustes» y el mensaje se oía dos veces (aviso y foco).
+         Ahora vistaAjustes() lleva el foco directamente aquí, y al enfocarlo el lector lo lee una vez. */
+      estado.textContent = mensajeLugar + ' ' + ahora;
+      mensajeLugar = '';
+      focoAjustes = 'lugar-estado';
+    }
+    return bloque;
+  }
+
+  /* ---------- Ajustes > Audios (sesión 7B, 6 de noviembre de 2026) ----------
+     Velocidad por defecto (jaris.velocidad, la misma que cambia el reproductor), cuánto ocupan los audios guardados
+     para usarlos sin conexión y botón para borrarlos (con aviso). La lógica está en audios.js (JarisAudios). */
+  function bloqueAudios() {
+    const A = window.JarisAudios;
+    const bloque = el('section', { 'aria-labelledby': 'ajustes-audios' },
+      el('h2', { id: 'ajustes-audios', texto: 'Audios' }));
+    if (!A || !A.resumen) {
+      bloque.append(el('p', { texto: 'Los audios no están disponibles ahora mismo.' }));
+      return bloque;
+    }
+    bloque.append(el('p', { texto: 'Los audios (himnos, oraciones, frases en griego y música) se escuchan con conexión y, si quieres, se guardan en este dispositivo para escucharlos sin conexión. Aquí puedes ver cuánto espacio ocupan y borrarlos.' }));
+
+    /* Velocidad por defecto */
+    const guardada = recuperar('jaris.velocidad');
+    const selVel = el('select', { id: 'ajustes-velocidad' });
+    A.VELOCIDADES.forEach(function (v) {
+      selVel.append(el('option', { value: String(v), texto: String(v).replace('.', ',') + (v === 1 ? ' (normal)' : '') }));
+    });
+    selVel.value = String(A.VELOCIDADES.indexOf(guardada) >= 0 ? guardada : 1);
+    selVel.addEventListener('change', function () {
+      A.fijarVelocidad(Number(selVel.value));
+      avisar('Velocidad de los audios: ' + selVel.options[selVel.selectedIndex].textContent + '.');
+    });
+    bloque.append(el('p', {}, el('label', { for: 'ajustes-velocidad', texto: 'Velocidad al escuchar ' }), selVel),
+      el('p', { class: 'buz-ayuda', texto: 'Es la velocidad con la que empieza cada audio. También se puede cambiar desde el reproductor, y se guarda igual.' }));
+
+    /* Espacio */
+    const resumen = el('p', { id: 'audios-resumen', texto: 'Mirando cuánto espacio ocupan los audios guardados…' });
+    const estado = el('p', { id: 'audios-estado', class: 'buz-ayuda', tabindex: '-1' });
+    const panel = el('div', { id: 'audios-panel' });
+    const decir = function (texto) { estado.textContent = texto; avisar(texto); };
+    let ultimo = null;
+    async function pintarResumen() {
+      let r = null;
+      try { r = await A.resumen(); } catch (e) { r = null; }
+      ultimo = r;
+      if (!r) { resumen.textContent = 'No se ha podido mirar qué audios hay guardados. Inténtalo más tarde.'; return; }
+      if (!r.puedeGuardar) { resumen.textContent = 'Este navegador no deja guardar audios para escucharlos sin conexión; se oyen con conexión.'; return; }
+      const todos = 'Todos los audios juntos ocupan ' + A.tamano(r.bytesTotal) + '.';
+      resumen.textContent = r.guardados
+        ? 'Guardados en este dispositivo: ' + r.guardados + (r.guardados === 1 ? ' audio' : ' audios') + ' de ' + r.total + ', que ocupan ' + A.tamano(r.bytesGuardados) + '. ' + todos
+        : 'No hay ningún audio guardado en este dispositivo. ' + todos + ' Se guardan desde la pantalla Audios.';
+      if (navigator.storage && navigator.storage.estimate) {
+        try {
+          const e = await navigator.storage.estimate();
+          if (e && e.quota) resumen.textContent += ' Espacio libre para Jaris: unos ' + A.tamano(Math.max(0, e.quota - (e.usage || 0))) + '.';
+        } catch (e) { /* nada */ }
+      }
+    }
+    pintarResumen();
+
+    /* Borrar, con aviso (mismo estilo que «Borrar todos mis datos»; el foco empieza en «No») */
+    const botonBorrar = el('button', { type: 'button', class: 'secundario' }, 'Borrar los audios guardados');
+    botonBorrar.addEventListener('click', async function () {
+      panel.replaceChildren();
+      panel.removeAttribute('role');
+      await pintarResumen();
+      if (!ultimo || !ultimo.puedeGuardar) { decir('Este navegador no guarda audios, así que no hay nada que borrar.'); return; }
+      if (!ultimo.guardados) { decir('No hay ningún audio guardado en este dispositivo, así que no hay nada que borrar.'); return; }
+      const texto = 'Se van a borrar de este dispositivo ' + ultimo.guardados + (ultimo.guardados === 1 ? ' audio guardado' : ' audios guardados') +
+        ' (' + A.tamano(ultimo.bytesGuardados) + '). Dejarán de oírse sin conexión, pero se pueden volver a guardar cuando quieras. El libro y tus datos no se borran.';
+      panel.setAttribute('role', 'alertdialog');
+      panel.setAttribute('aria-labelledby', 'audios-borrar-titulo');
+      panel.setAttribute('aria-describedby', 'audios-borrar-texto');
+      const no = el('button', { type: 'button', class: 'secundario' }, 'No, cancelar');
+      const si = el('button', { type: 'button' }, 'Sí, borrar los audios');
+      no.addEventListener('click', function () { panel.replaceChildren(); panel.removeAttribute('role'); decir('No se ha borrado nada.'); botonBorrar.focus(); });
+      si.addEventListener('click', async function () {
+        /* Revisión parte 4: un doble clic ya no borra dos veces, y si falla el foco no se pierde (el botón desaparece). */
+        if (si.disabled) return;
+        si.disabled = true;
+        let n = 0;
+        try { n = await A.quitarTodo(); } catch (e) { panel.replaceChildren(); panel.removeAttribute('role'); decir('No se han podido borrar los audios. Inténtalo otra vez.'); estado.focus(); return; }
+        panel.replaceChildren();
+        panel.removeAttribute('role');
+        await pintarResumen();
+        decir('Borrados ' + n + (n === 1 ? ' audio' : ' audios') + ' de este dispositivo.');
+        estado.focus();
+      });
+      panel.append(el('h3', { id: 'audios-borrar-titulo', texto: '¿Borrar los audios guardados?' }), el('p', { id: 'audios-borrar-texto', texto: texto }),
+        el('p', {}, no, ' ', si));
+      no.focus();
+    });
+    bloque.append(resumen, el('p', {}, botonBorrar, ' ', el('a', { href: '#/audios', class: 'boton secundario' }, 'Ir a la pantalla Audios')), estado, panel);
+    return bloque;
+  }
+
+  /* ---------- Ajustes > Acerca de Jaris (sesión 7B, 6 de noviembre de 2026) ----------
+     La frase de privacidad se comprobó contra el código el 6 de noviembre: solo hay fetch() de archivos de la propia aplicación
+     (app.js, audios.js, cancionero.js, oraculo.js, sw.js), ningún servicio externo, estadísticas, cookies ni geolocalización;
+     lo único que sale del dispositivo es lo que la persona manda (buzon.js abre el correo con «mailto:»; app.js usa
+     navigator.share solo al pulsar «Enviar una copia de mis datos») y las descargas de descargas.json (enlaces a GitHub).
+     SI SE AÑADE ALGO QUE ENVÍE DATOS, HAY QUE CAMBIAR ESTE TEXTO. */
+  function bloqueAcerca() {
+    const bloque = el('section', { 'aria-labelledby': 'ajustes-acerca' },
+      el('h2', { id: 'ajustes-acerca', texto: 'Acerca de Jaris' }));
+    if (libro) {
+      bloque.append(el('p', { texto: libro.titulo + (libro.subtitulo ? '. ' + libro.subtitulo : '') + ', de ' + libro.autora + '. ' + libro.edicion +
+        ' (montada el ' + libro.fechaTexto + ').' }),
+        el('p', { texto: 'Versión de la aplicación: ' + libro.version + '. Es un código que cambia en cada edición; el Buzón lo añade si dejas marcada la casilla de la edición y el dispositivo, y ayuda a arreglar fallos.' }));
+    }
+    bloque.append(el('h3', { texto: 'Más sobre Jaris' }),
+      el('ul', {},
+        el('li', {}, el('a', { href: '#/novedades' }, 'Novedades de Jaris'), ': lo que ha cambiado en cada edición.'),
+        el('li', {}, el('a', { href: '#/buzon' }, 'Buzón de sugerencias y erratas'), ': para contar una errata, una idea o algo que no funciona.'),
+        el('li', {}, el('a', { href: '#/descargas' }, 'Descargar los libros'), ': para leerlos fuera de la aplicación.')),
+      el('h3', { texto: 'Privacidad' }),
+      el('p', { texto: 'Tu diario, tus favoritos, tus ajustes y tu progreso se quedan en este dispositivo. Jaris no los envía a ningún sitio, no tiene cuentas, no usa cookies ni estadísticas y no te pide la ubicación (para el calendario usa la zona horaria del dispositivo o el lugar que elijas).' }),
+      el('p', { texto: 'Solo sale algo de tu dispositivo si tú lo mandas. El Buzón abre tu programa de correo con el mensaje ya escrito y eres tú quien lo envía; quien lo reciba verá tu dirección de correo. «Enviar una copia de mis datos» usa el menú de compartir del dispositivo, donde eliges adónde va.' }),
+      el('p', { texto: 'Como en cualquier página web, al abrir Jaris el servidor donde está alojada (GitHub) recibe la petición de la página, y los libros de «Descargar los libros» se bajan de GitHub cuando tú los pulsas.' }));
+    return bloque;
+  }
+
+  function vistaAjustes() {
+    ++turno;
+    const nodo = el('div', { class: 'ajustes' }, el('h1', { texto: 'Ajustes' }));
+    const lectura = el('section', { 'aria-labelledby': 'ajustes-lectura' },
+      el('h2', { id: 'ajustes-lectura', texto: 'Lectura' }));
+    AJUSTES_LECTURA.forEach(function (a, n) {
+      const grupo = el('fieldset', { class: 'buz-tipos' }, el('legend', { texto: a.titulo }));
+      a.opciones.forEach(function (o) {
+        const id = 'ajuste-' + n + '-' + o[0];
+        const radio = el('input', { type: 'radio', name: 'ajuste-' + n, id: id, value: o[0] });
+        radio.checked = ajusteValor(a) === o[0];
+        radio.addEventListener('change', function () {
+          if (!radio.checked) return;
+          guardar(a.clave, o[0]);
+          aplicarAjustes();
+          avisar(a.titulo + ': ' + o[1].toLowerCase() + '.');
+        });
+        grupo.append(el('div', { class: 'buz-opcion' }, radio, el('label', { for: id, texto: o[1] })));
+      });
+      if (a.ayuda) grupo.append(el('p', { class: 'buz-ayuda', texto: a.ayuda }));
+      lectura.append(grupo);
+    });
+    const volver = el('button', { type: 'button' }, 'Volver a los valores por defecto');
+    volver.addEventListener('click', function () {
+      /* Se marcan las opciones por defecto sin volver a pintar la pantalla: así el foco se queda en este botón (revisión del 6 nov). */
+      AJUSTES_LECTURA.forEach(function (a, n) {
+        try { localStorage.removeItem(a.clave); } catch (e) { /* nada */ }
+        a.opciones.forEach(function (o) { const r = document.getElementById('ajuste-' + n + '-' + o[0]); if (r) r.checked = o[0] === a.defecto; });
+      });
+      aplicarAjustes();
+      avisar('Los ajustes de lectura han vuelto a sus valores por defecto.');
+    });
+    lectura.append(el('p', {}, volver));
+    lectura.append(el('p', { texto: 'Los ajustes se guardan en este móvil u ordenador; en otro dispositivo hay que elegirlos otra vez (o recuperarlos desde una copia de tus datos, más abajo).' }));
+    nodo.append(lectura);
+    nodo.append(bloqueLugar());
+    nodo.append(bloqueAudios());
+    nodo.append(bloqueDatos());
+    nodo.append(bloqueAcerca());
+    main.replaceChildren(nodo);
+    ponerTitulo('Ajustes');
+    marcarMenu('#/ajustes');
+    const foco = focoAjustes ? document.getElementById(focoAjustes) : null;
+    focoAjustes = null;
+    terminar(foco);
+  }
+
   /* ---------- Descargas de los libros (5 de noviembre de 2026; contenido/descargas.json, lo hace descargas_libros.py) ---------- */
   function pesoTexto(b) {
     if (b < 1048576) return Math.max(1, Math.round(b / 1024)) + ' KB';
@@ -731,7 +1398,7 @@
       });
       nodo.append(ul);
       nodo.append(el('p', {}, 'Los audios no hace falta descargarlos: en ', el('a', { href: '#/audios' }, 'Audios'),
-        ' se pueden guardar dentro de la aplicación para escucharlos sin internet.'));
+        ' se pueden guardar dentro de la aplicación para escucharlos sin conexión.'));
     }
     main.replaceChildren(nodo);
     ponerTitulo('Descargar los libros');
@@ -766,6 +1433,7 @@
       case 'noche': return vistaNoche();
       case 'cancionero': return vistaCancionero(partes);
       case 'descargas': return vistaDescargas();
+      case 'ajustes': return vistaAjustes();
       case 'oraciones': case 'himnos': case 'ritos':
         return leer(libro.indices[partes[0]], null, '#/' + partes[0]);
       case 'leer': return leer(partes[1], partes.slice(2).join('/') || null, null);
@@ -773,7 +1441,7 @@
     }
   }
 
-  /* ---------- Instalar y funcionar sin internet ---------- */
+  /* ---------- Instalar y funcionar sin conexión ---------- */
   let avisoInstalar = null;
   function rellenarInstalar(instalar) {
     if (!instalar.hidden) return;
@@ -781,7 +1449,7 @@
     const esIphone = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
     if (enPantalla) return;
     if (esIphone) {
-      instalar.append(el('p', { texto: 'En el iPhone o el iPad: abre Jaris en Safari, pulsa el botón Compartir y elige «Añadir a pantalla de inicio». Así se abre como una aplicación más y funciona sin internet.' }));
+      instalar.append(el('p', { texto: 'En el iPhone o el iPad: abre Jaris en Safari, pulsa el botón Compartir y elige «Añadir a pantalla de inicio». Así se abre como una aplicación más y funciona sin conexión.' }));
       instalar.hidden = false;
     } else if (avisoInstalar) {
       const boton = el('button', { type: 'button' }, 'Instalar Jaris');
@@ -792,7 +1460,7 @@
         avisoInstalar = null;
         if (r.outcome === 'accepted') instalar.hidden = true;
       });
-      instalar.append(el('p', { texto: 'Puedes instalar Jaris como una aplicación más: se abre en su propia ventana y funciona sin internet.' }), boton);
+      instalar.append(el('p', { texto: 'Puedes instalar Jaris como una aplicación más: se abre en su propia ventana y funciona sin conexión.' }), boton);
       instalar.hidden = false;
     }
   }
@@ -812,7 +1480,7 @@
     const estado = document.getElementById('estado');
     try {
       if (window.caches && await caches.has('jaris-' + libro.version)) {
-        estado.textContent = 'Guardada en este dispositivo: funciona sin internet.';
+        estado.textContent = 'Guardada en este dispositivo: funciona sin conexión.';
         return true;
       }
     } catch (e) { /* nada */ }
@@ -885,11 +1553,11 @@
       if (!registro || !navigator.onLine) return;
       if (!forzar && Date.now() - ultimaComprobacion < 60000) return;   // como mucho, una vez por minuto
       ultimaComprobacion = Date.now();
-      registro.update().catch(function () { /* sin internet o sin servidor: se probará más tarde */ });
+      registro.update().catch(function () { /* sin conexión o sin servidor: se probará más tarde */ });
     };
     navigator.serviceWorker.addEventListener('message', async function (e) {
       if (e.data && e.data.tipo === 'guardada' && !navigator.serviceWorker.controller && libro) {
-        if (await estadoSinInternet()) avisar('Jaris ya está guardada en este dispositivo y funciona sin internet.');
+        if (await estadoSinInternet()) avisar('Jaris ya está guardada en este dispositivo y funciona sin conexión.');
       }
     });
     navigator.serviceWorker.addEventListener('controllerchange', function () {
@@ -1019,6 +1687,28 @@
   });
   document.getElementById('saltar').addEventListener('click', function (e) { e.preventDefault(); enfocar(main.querySelector('h1') || main); });
 
+  /* ---------- Menú plegable en pantallas estrechas o con letra grande (6 de noviembre de 2026) ----------
+     En el móvil con letra muy grande, la lista de enlaces ocupaba casi toda la pantalla. Ahora hay un botón «Menú»
+     (aria-expanded: el lector dice «contraído» o «expandido») que abre y cierra la lista; app.css solo lo muestra
+     cuando la pantalla es estrecha. En pantallas anchas, la lista se ve siempre y el botón no existe. */
+  (function () {
+    const botonMenu = document.getElementById('boton-menu');
+    const cabecera = document.querySelector('.cabecera');
+    if (!botonMenu || !cabecera) return;
+    function menu(abrir) {
+      cabecera.classList.toggle('menu-abierto', abrir);
+      botonMenu.setAttribute('aria-expanded', abrir ? 'true' : 'false');
+    }
+    botonMenu.addEventListener('click', function () { menu(botonMenu.getAttribute('aria-expanded') !== 'true'); });
+    cabecera.querySelectorAll('nav a').forEach(function (a) { a.addEventListener('click', function () { menu(false); }); });
+    window.addEventListener('hashchange', function () { menu(false); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && botonMenu.getAttribute('aria-expanded') === 'true' && cabecera.contains(document.activeElement)) {
+        menu(false); botonMenu.focus();
+      }
+    });
+  })();
+
   /* ---------- Arranque ---------- */
   window.addEventListener('hashchange', irA);
   traer('contenido/libro.json').then(function (datos) {
@@ -1037,6 +1727,6 @@
     }
   }).catch(function () {
     main.replaceChildren(el('h1', { texto: 'No se ha podido abrir Jaris' }),
-      el('p', { texto: 'La primera vez hace falta internet. Comprueba la conexión y vuelve a abrirla.' }));
+      el('p', { texto: 'La primera vez hace falta conexión. Compruébala y vuelve a abrir Jaris.' }));
   });
 })();

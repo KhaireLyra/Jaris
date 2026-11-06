@@ -38,6 +38,50 @@ body {
   font-size: 1.0625rem;
   line-height: 1.6;
 }
+/* Ajustes de lectura (pantalla Ajustes): tema, alto contraste, tamaño de la letra, interlineado, ancho y pronunciaciones. */
+/* Tema claro u oscuro elegido a mano (el automático sigue al dispositivo, con las reglas de arriba). */
+:root[data-tema="claro"] {
+  --fondo: #fbf6ec; --superficie: #f3e9d6; --texto: #2a211c; --suave: #5c4f45; --acento: #8f3b22;
+  --egeo: #1f5a7a; --oliva: #55652b; --ocre: #b07d1c; --borde: #cdb88f; --foco: #1f5a7a;
+  color-scheme: light;
+}
+:root[data-tema="oscuro"] {
+  --fondo: #1b1714; --superficie: #28211c; --texto: #f1e8da; --suave: #cfc1ad; --acento: #f0a283;
+  --egeo: #8cc4e3; --oliva: #bccb84; --ocre: #e3b862; --borde: #5a4a3c; --foco: #8cc4e3;
+  color-scheme: dark;
+}
+/* Alto contraste: negro sobre blanco (o blanco sobre negro si el tema es oscuro). */
+:root[data-contraste="alto"] {
+  --fondo: #ffffff; --superficie: #ffffff; --texto: #000000; --suave: #000000; --acento: #8a1c00;
+  --egeo: #00417a; --oliva: #2f4000; --ocre: #6b4400; --borde: #000000; --foco: #0000cc;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-contraste="alto"]:not([data-tema="claro"]) {
+    --fondo: #000000; --superficie: #000000; --texto: #ffffff; --suave: #ffffff; --acento: #ffb199;
+    --egeo: #9fd8ff; --oliva: #d3e69a; --ocre: #ffd780; --borde: #ffffff; --foco: #ffe14d;
+    color-scheme: dark;
+  }
+}
+:root[data-contraste="alto"][data-tema="oscuro"] {
+  --fondo: #000000; --superficie: #000000; --texto: #ffffff; --suave: #ffffff; --acento: #ffb199;
+  --egeo: #9fd8ff; --oliva: #d3e69a; --ocre: #ffd780; --borde: #ffffff; --foco: #ffe14d;
+  color-scheme: dark;
+}
+/* Sin el fondo ilustrado (es solo para el tema claro normal) cuando el tema es oscuro o el contraste es alto. */
+:root[data-tema="oscuro"] body::before, :root[data-contraste="alto"] body::before { display: none; }
+:root[data-tema="oscuro"] main, :root[data-contraste="alto"] main { background: none; box-shadow: none; }
+:root[data-contraste="alto"] a { text-decoration-thickness: 0.15em; }
+/* Tamaño de la letra: se multiplica el tamaño base, y todo lo que va en rem sigue. */
+html[data-letra="grande"] { font-size: 125%; }
+html[data-letra="muygrande"] { font-size: 150%; }
+/* Espacio entre líneas y ancho del texto. */
+html[data-interlineado="amplio"] body { line-height: 1.9; }
+html[data-interlineado="muyamplio"] body { line-height: 2.2; }
+html[data-ancho="estrecho"] main { max-width: 34rem; }
+html[data-ancho="ancho"] main { max-width: 64rem; }
+/* Pronunciaciones «(se dice ...)»: las envuelve app.js en un span.se-dice. */
+html[data-sedice="no"] .se-dice { display: none; }
 /* Fondo ilustrado (ilustración 33: marfil con greca en los bordes y olivo en las esquinas, muy tenue).
    Solo en modo claro y sin alto contraste; es un fondo: el lector de pantalla no lo lee. */
 /* Se pone en una capa fija detrás de todo (y no con «background-attachment: fixed», que el iPhone no respeta).
@@ -345,3 +389,47 @@ blockquote { margin: 1rem 0; padding: 0.25rem 1rem; border-left: 4px solid var(-
 /* Descargas */
 .lista-descargas li { margin-bottom: 1em; }
 .lista-descargas li p { margin: 0.2em 0 0; }
+
+
+/* ---------- Arreglos de las comprobaciones visuales (6 de noviembre de 2026) ---------- */
+/* Menú plegable: el botón solo existe en pantallas estrechas (o con letra grande); sin JavaScript, la lista se ve siempre.
+   Los @media usan el tamaño de letra de fábrica del navegador, no el de Ajustes; por eso hay un límite más ancho para letra grande y muy grande. */
+.boton-menu { display: none; }
+.cabecera .boton-menu { margin: 0.25rem 1rem 0.75rem; }
+@media (max-width: 700px) {
+  .js-menu .cabecera .boton-menu { display: inline-flex; }
+  .js-menu .cabecera ul { display: none; }
+  .js-menu .cabecera.menu-abierto ul { display: flex; }
+}
+@media (max-width: 900px) {
+  html.js-menu[data-letra="grande"] .cabecera .boton-menu { display: inline-flex; }
+  html.js-menu[data-letra="grande"] .cabecera ul { display: none; }
+  html.js-menu[data-letra="grande"] .cabecera.menu-abierto ul { display: flex; }
+}
+@media (max-width: 1120px) {
+  html.js-menu[data-letra="muygrande"] .cabecera .boton-menu { display: inline-flex; }
+  html.js-menu[data-letra="muygrande"] .cabecera ul { display: none; }
+  html.js-menu[data-letra="muygrande"] .cabecera.menu-abierto ul { display: flex; }
+}
+/* Avisos de borrado: con recuadro, y con los botones separados para no pulsar el que no toca. */
+[role="alertdialog"]:not(:empty) { border: 2px solid var(--acento); border-radius: 0.6rem; padding: 0.5rem 1rem 0.75rem; margin: 1rem 0; background: var(--superficie); }
+[role="alertdialog"] button { margin: 0.4rem 0.9rem 0.4rem 0; }
+/* Los selectores, tan altos como los botones (para el dedo). */
+select { min-height: 2.75rem; }
+/* Alto contraste: casillas y botones de opción con borde grueso del color del texto; marcados, con el centro lleno. */
+:root[data-contraste="alto"] input[type="radio"], :root[data-contraste="alto"] input[type="checkbox"] {
+  -webkit-appearance: none; appearance: none; width: 1.4rem; height: 1.4rem; flex: none; box-sizing: border-box;
+  border: 3px solid var(--texto); border-radius: 50%; background: var(--fondo); vertical-align: middle; margin: 0.2rem 0.5rem 0.2rem 0.25rem;
+}
+:root[data-contraste="alto"] input[type="checkbox"] { border-radius: 0.25rem; }
+:root[data-contraste="alto"] input[type="radio"]:checked, :root[data-contraste="alto"] input[type="checkbox"]:checked {
+  background: var(--texto); box-shadow: inset 0 0 0 3px var(--fondo);
+}
+/* Los símbolos de los botones (♪ de «Escuchar», ☆ de «Guardar en favoritos») con un poco de espacio antes del texto: el espacio escrito se perdía en los botones. */
+.icono { margin-right: 0.4em; }
+/* En Ajustes, los botones que quedan uno debajo de otro (cuando no caben en la misma línea) con espacio entre ellos. */
+.ajustes p > button, .ajustes p > a.boton { margin: 0.25rem 0.5rem 0.25rem 0; }
+/* Con el alto contraste de Windows (colores forzados), las casillas dibujadas a mano podían no mostrar cuál está marcada: ahí, las del sistema (revisión del 6 nov). */
+@media (forced-colors: active) {
+  :root[data-contraste="alto"] input[type="radio"], :root[data-contraste="alto"] input[type="checkbox"] { -webkit-appearance: auto; appearance: auto; }
+}

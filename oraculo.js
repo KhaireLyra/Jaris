@@ -15,7 +15,7 @@
   }
   function recuperar() { try { return JSON.parse(localStorage.getItem('jaris.oraculo')) || {}; } catch (e) { return {}; } }
   function guardar(v) { try { localStorage.setItem('jaris.oraculo', JSON.stringify(v)); } catch (e) { /* sin almacenamiento */ } }
-  /* Un número al azar del 0 al n-1, igual de probable para todos (sin internet). */
+  /* Un número al azar del 0 al n-1, igual de probable para todos (sin conexión). */
   function azar(n) {
     const a = new Uint32Array(1), limite = Math.floor(0x100000000 / n) * n;
     let x;

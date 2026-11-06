@@ -1,6 +1,6 @@
 /* Jaris: el buscador (paso 4a).
    Rutas: #/buscar (pantalla), #/buscar/texto/PALABRAS (buscar en todo el libro) y #/buscar/dios/NOMBRE (todo lo de un dios).
-   - Busca sin internet: lee los capítulos que ya están guardados en el dispositivo y hace un índice por apartados
+   - Busca sin conexión: lee los capítulos que ya están guardados en el dispositivo y hace un índice por apartados
      la primera vez (luego se queda en memoria mientras la aplicación está abierta).
    - No distingue mayúsculas ni tildes, y también busca en griego (sin espíritus ni acentos).
    - Por dios: fiestas y días sagrados (calendario-datos.js), ritos, himnos, oraciones, audios y otros apartados.
@@ -240,7 +240,7 @@
       const items = ids.map(function (id) { return d.audios.find(function (a) { return a.id === id; }); }).filter(Boolean)
         .map(function (a) { return enlace({ cap: a.cap, a: a.a, titulo: a.titulo + (a.version ? ', ' + a.version : '') }, false); });
       const g = grupo('Audios', items);
-      g.append(A.el('p', {}, A.el('a', { href: '#/audios/dios/' + encodeURIComponent(nombre) }, 'Descargar los audios de ' + nombre + ' para escucharlos sin internet')));
+      g.append(A.el('p', {}, A.el('a', { href: '#/audios/dios/' + encodeURIComponent(nombre) }, 'Descargar los audios de ' + nombre + ' para escucharlos sin conexión')));
       grupos.push(g); resumen.push(items.length + (items.length === 1 ? ' audio' : ' audios'));
     }
     /* Otros apartados del libro con su nombre en el título (mitos, la ficha del dios, preguntas...) */

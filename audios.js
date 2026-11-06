@@ -163,7 +163,7 @@
   function fallo() {
     if (!actual) return;
     avisar(navigator.onLine === false
-      ? 'Este audio no está descargado y ahora no hay internet. Con conexión, se puede descargar en la pantalla Audios, del menú.'
+      ? 'Este audio no está descargado y ahora no hay conexión. Cuando vuelva, se puede descargar en la pantalla Audios, del menú.'
       : 'No se ha podido abrir el audio. Vuelve a intentarlo dentro de un momento.');
     pintarEstado();
   }
@@ -221,7 +221,7 @@
   /* ---------- Descargar por bloques (parte 3c) ----------
      Los audios descargados se guardan en la caché «audios-jaris» (aparte de la aplicación: una edición
      nueva no los borra). Cada uno se guarda con su huella (?v=...): si un audio cambia en una edición
-     nueva, el viejo se borra solo y hay que volver a descargarlo. sw.js los sirve sin internet. */
+     nueva, el viejo se borra solo y hay que volver a descargarlo. sw.js los sirve sin conexión. */
   const CACHE_AUDIOS = 'audios-jaris';
   const descargados = new Set();
   let estadoListo = null;
@@ -268,7 +268,7 @@
     const total = lista.reduce(function (s, a) { return s + a.bytes; }, 0);
     const base = lista.length + (lista.length === 1 ? ' audio, ' : ' audios, ') + tamano(total) + '. ';
     if (!hechos) return base + 'Sin descargar.';
-    if (hechos === lista.length) return base + 'Ya descargado: se puede escuchar sin internet.';
+    if (hechos === lista.length) return base + 'Ya descargado: se puede escuchar sin conexión.';
     return base + 'Descargados ' + hechos + ' de ' + lista.length + '.';
   }
   function textoResumen() {
@@ -307,8 +307,8 @@
       avisar('Ya hay una descarga en marcha (' + descarga.nombre + '). Espera a que termine o pulsa «Pausar la descarga».');
       return;
     }
-    if (!window.caches) { avisar('Este navegador no deja guardar los audios. Se pueden escuchar con internet.'); return; }
-    if (navigator.onLine === false) { avisar('Ahora no hay internet. Vuelve a intentarlo cuando haya conexión.'); return; }
+    if (!window.caches) { avisar('Este navegador no deja guardar los audios. Se pueden escuchar con conexión.'); return; }
+    if (navigator.onLine === false) { avisar('Ahora no hay conexión. Vuelve a intentarlo cuando la haya.'); return; }
     const faltan = audiosDe(ids).filter(function (a) { return !descargados.has(a.id); });
     if (!faltan.length) { avisar(nombre + ' ya está descargado.'); return; }
     try { if (navigator.storage && navigator.storage.persist) await navigator.storage.persist(); } catch (e) { /* nada */ }
@@ -338,9 +338,10 @@
         pintarDescarga();
         avisar(e && e.name === 'QuotaExceededError'
           ? 'No queda espacio en el dispositivo para más audios. La descarga se ha parado; puedes borrar otros bloques.'
-          : 'La descarga de ' + x.nombre + ' se ha parado, quizá por falta de internet. Lo descargado se queda guardado. Pulsa «Seguir con la descarga» cuando haya conexión.');
+          : 'La descarga de ' + x.nombre + ' se ha parado, quizá por falta de conexión. Lo descargado se queda guardado. Pulsa «Seguir con la descarga» cuando haya conexión.');
         return;
       }
+      if (descarga !== x) return;   /* revisión parte 4: se borró todo mientras se guardaba este audio; no contarlo */
       descargados.add(a.id);
       x.hechos++;
       x.bytesHechos += a.bytes;
@@ -350,7 +351,7 @@
     }
     x.terminada = true;
     pintarDescarga(); pintarBloques();
-    avisar('Descarga terminada: ' + x.nombre + '. Ya se puede escuchar sin internet.');
+    avisar('Descarga terminada: ' + x.nombre + '. Ya se puede escuchar sin conexión.');
   }
   function pausarDescarga() {
     if (!descarga || descarga.terminada || descarga.pausada) return;
@@ -372,16 +373,46 @@
     marcarBotones(); pintarBloques();
     avisar('Borrados los audios de ' + nombre + '.');
   }
+  /* Quita todos los audios descargados, sin preguntar (quien llama pregunta antes). Devuelve cuántos había.
+     Lo usan la pantalla Audios (borrarTodo) y Ajustes > Audios (7B, 6 nov 2026). */
+  async function quitarTodo() {
+    await prepararEstado();
+    const n = descargados.size;
+    if (descarga && !descarga.terminada) pausarDescarga();
+    /* Revisión parte 4: si el navegador no deja borrar, se avisa del fallo (antes decía «Borrados» aunque no se hubiera borrado nada). */
+    if (window.caches) await caches.delete(CACHE_AUDIOS);
+    descargados.clear();
+    descarga = null;
+    marcarBotones(); pintarBloques(); pintarDescarga();
+    return n;
+  }
   async function borrarTodo() {
     await prepararEstado();
     if (!descargados.size) { avisar('No hay ningún audio descargado.'); return; }
     if (!window.confirm('¿Borrar de este dispositivo todos los audios descargados? El libro no se borra, y los audios se pueden volver a descargar.')) return;
-    if (descarga && !descarga.terminada) pausarDescarga();
-    try { await caches.delete(CACHE_AUDIOS); } catch (e) { /* nada */ }
-    descargados.clear();
-    descarga = null;
-    marcarBotones(); pintarBloques(); pintarDescarga();
+    try { await quitarTodo(); } catch (e) { avisar('No se han podido borrar los audios. Inténtalo otra vez.'); return; }
     avisar('Borrados todos los audios descargados.');
+  }
+  /* Cuántos audios hay guardados en este dispositivo y cuánto ocupan (para Ajustes). */
+  async function resumenGuardados() {
+    const d = await cargar();
+    if (!d) return null;
+    await prepararEstado();
+    const hechos = d.audios.filter(function (a) { return descargados.has(a.id); });
+    return { guardados: hechos.length, total: d.audios.length, bytesGuardados: hechos.reduce(function (s, a) { return s + a.bytes; }, 0),
+      bytesTotal: d.bytes, puedeGuardar: !!window.caches };
+  }
+  /* La velocidad por defecto (jaris.velocidad): la misma que cambia el reproductor. */
+  function fijarVelocidad(v) {
+    if (VELOCIDADES.indexOf(v) < 0) return;
+    selVelocidad.value = String(v);
+    ponerVelocidad();
+  }
+  function sincronizarVelocidad() {   // tras recuperar una copia o borrar los datos: el reproductor toma lo guardado
+    const g = recuperar('jaris.velocidad'), v = VELOCIDADES.indexOf(g) >= 0 ? g : 1;
+    selVelocidad.value = String(v);
+    sonido.playbackRate = v;
+    sonido.defaultPlaybackRate = v;
   }
 
   /* La pantalla «Audios» (#/audios). app.js la pone en la página. */
@@ -424,12 +455,12 @@
     await prepararEstado();
     const caja = el('div', { class: 'audios' }, el('h1', { texto: 'Audios' }));
     if (!d) {
-      caja.append(el('p', { texto: 'No se ha podido abrir la lista de audios. Vuelve a intentarlo con internet.' }));
+      caja.append(el('p', { texto: 'No se ha podido abrir la lista de audios. Vuelve a intentarlo con conexión.' }));
       return caja;
     }
     gruposEnPantalla.length = 0;
     caja.append(
-      el('p', { texto: 'Los audios son opcionales: el libro se lee entero sin ellos. Con internet, cualquier audio se puede escuchar pulsando «Escuchar» junto a su texto. Para escucharlos sin internet, descárgalos aquí, por tipo o por dios. Se guardan solo en este dispositivo y se pueden borrar cuando quieras.' }),
+      el('p', { texto: 'Los audios son opcionales: el libro se lee entero sin ellos. Con conexión, cualquier audio se puede escuchar pulsando «Escuchar» junto a su texto. Para escucharlos sin conexión, descárgalos aquí, por tipo o por dios. Se guardan solo en este dispositivo y se pueden borrar cuando quieras.' }),
       el('p', { id: 'aud-resumen', texto: textoResumen() }),
       el('p', { id: 'aud-espacio' }));
     const bPausa = el('button', { type: 'button', id: 'aud-pausa' }, 'Pausar la descarga');
@@ -443,7 +474,7 @@
     // Todo de una vez (pedido por la autora el 3 de noviembre): pregunta antes, diciendo cuánto ocupa lo que falta
     const todos = d.audios.map(function (a) { return a.id; });
     caja.append(el('h2', { texto: 'Todo de una vez' }),
-      el('p', { texto: 'Descarga todos los audios de Jaris para escucharlos sin internet. Ocupa mucho: mejor con wifi. En el iPhone el espacio para las aplicaciones web es más pequeño; si no cabe todo, la descarga se para y lo descargado se queda.' }),
+      el('p', { texto: 'Descarga todos los audios de Jaris para escucharlos sin conexión. Ocupa mucho: mejor con wifi. En el iPhone el espacio para las aplicaciones web es más pequeño; si no cabe todo, la descarga se para y lo descargado se queda.' }),
       grupo('h3', 'Todos los audios', todos, null, function () {
         const faltan = audiosDe(todos).filter(function (a) { return !descargados.has(a.id); });
         return '¿Descargar ' + (faltan.length === todos.length ? 'todos los audios' : 'los ' + faltan.length + ' audios que faltan') + ' (' +
@@ -521,6 +552,9 @@
   }
 
   window.JarisAudios = { cargar: cargar, ponerBotones: ponerBotones, botonesPara: botonesPara, pantalla: pantalla,
+    /* Para Ajustes > Audios */
+    VELOCIDADES: VELOCIDADES, tamano: tamano, resumen: resumenGuardados, quitarTodo: quitarTodo,
+    fijarVelocidad: fijarVelocidad, sincronizarVelocidad: sincronizarVelocidad,
     /* Para el temporizador del rincón de la noche: para lo que suene (sin cerrar el reproductor). */
     pausar: function () { if (!sonido.paused) { sonido.pause(); return true; } return false; } };
 })();

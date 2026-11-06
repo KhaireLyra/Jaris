@@ -14,6 +14,14 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="stylesheet" href="app.css">
+<script>
+/* Menú plegable y ajustes de lectura puestos antes de que se vea nada (si no, al abrir se veía un momento el tema claro y la letra normal). app.js los vuelve a comprobar después. */
+(function () {
+  var r = document.documentElement, a = { letra: 'normal', tema: 'auto', contraste: 'normal', interlineado: 'normal', ancho: 'normal', sedice: 'si' };
+  r.classList.add('js-menu');
+  try { for (var k in a) { var v = JSON.parse(localStorage.getItem('jaris.' + k)); if (typeof v === 'string' && /^[a-z]+$/.test(v) && v !== a[k]) r.setAttribute('data-' + k, v); } } catch (e) { /* sin almacenamiento: valores por defecto */ }
+})();
+</script>
 <script src="calendario.js" defer></script>
 <script src="calendario-datos.js" defer></script>
 <script src="audios.js" defer></script>
@@ -39,7 +47,8 @@
 <header class="cabecera">
   <p class="marca" aria-hidden="true">Jaris</p>
   <nav aria-label="Principal">
-    <ul>
+    <button type="button" class="boton-menu" id="boton-menu" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+    <ul id="menu-principal">
       <li><a href="#/">Portada</a></li>
       <li><a href="#/hoy">Hoy</a></li>
       <li><a href="#/calendario">Calendario</a></li>
@@ -55,6 +64,7 @@
       <li><a href="#/ritos">Ritos</a></li>
       <li><a href="#/audios">Audios</a></li>
       <li><a href="#/descargas">Descargas</a></li>
+      <li><a href="#/ajustes">Ajustes</a></li>
     </ul>
   </nav>
 </header>
@@ -64,7 +74,7 @@
 </main>
 <footer class="pie-pagina">
   <p id="edicion"></p>
-  <p><a href="#/novedades">Novedades de Jaris</a> · <a href="#/buzon">Buzón de sugerencias y erratas</a></p>
+  <p><a href="#/novedades">Novedades de Jaris</a> · <a href="#/buzon">Buzón de sugerencias y erratas</a> · <a href="#/ajustes">Ajustes</a></p>
   <p id="estado"></p>
 </footer>
 <div id="avisos" class="solo-lector" role="status" aria-live="polite"></div>
