@@ -164,6 +164,8 @@
         });
         sec.append(ul);
       }
+      /* Sesión C5: la lista puede salir como un grupo más en «Cuando lo necesites» */
+      if (window.JarisNecesito && l.items.length) sec.append(casillaNecesito(l));
       if (l.id !== PRINCIPAL) {
         sec.append(A.el('div', { class: 'fav-acciones' },
           boton('Cambiar el nombre', 'de la lista ' + l.nombre, 'r:' + l.id, function () {
@@ -182,6 +184,20 @@
     const buscarFoco = function (k) { return caja.querySelector('[data-foco="' + CSS.escape(k) + '"]'); };
     const f = foco ? (buscarFoco(foco) || buscarFoco('e:' + foco.split(':').slice(1).join(':'))) : null;
     if (f) { if (!f.hasAttribute('tabindex') && /^H/.test(f.tagName)) f.setAttribute('tabindex', '-1'); f.focus(); }
+  }
+
+  /* La casilla «Mostrar en Cuando lo necesites» de cada lista (se guarda en jaris.necesito, que hace necesito.js). */
+  function casillaNecesito(l) {
+    const id = 'fav-nec-' + l.id;
+    const c = A.el('input', { type: 'checkbox', id: id });
+    c.checked = window.JarisNecesito.listaMostrada(l.id);
+    c.addEventListener('change', function () {
+      if (window.JarisNecesito.mostrarLista(l.id, c.checked)) {
+        A.avisar(c.checked ? 'La lista «' + l.nombre + '» saldrá en Cuando lo necesites, como un grupo más.' : 'La lista «' + l.nombre + '» ya no sale en Cuando lo necesites.');
+      } else { c.checked = !c.checked; A.avisar('No se ha podido guardar: este navegador no deja guardar datos.'); }
+    });
+    return A.el('div', { class: 'opcion' }, c,
+      A.el('label', { for: id }, 'Mostrar en Cuando lo necesites', A.el('span', { class: 'solo-lector', texto: ' (lista ' + l.nombre + ')' })));
   }
 
   function nuevaLista(caja) {

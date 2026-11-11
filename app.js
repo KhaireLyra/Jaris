@@ -99,12 +99,24 @@
       el('h2', { id: 'instalar-titulo', texto: 'Tener Jaris en este dispositivo' }));
     rellenarInstalar(instalar);
 
+    // La dedicatoria a Atenea (y a Hestia, Apolo y Hefesto), la misma que abre el libro (sesión C8, 10 nov 2026).
+    // Va después de los botones para que «Empezar a leer» siga siendo fácil de encontrar.
+    let dedicatoria = null;
+    if (libro.dedicatoria && libro.dedicatoria.length) {
+      dedicatoria = el('section', { class: 'dedicatoria', 'aria-labelledby': 'dedicatoria-titulo' },
+        el('h2', { id: 'dedicatoria-titulo', texto: 'Dedicatoria' }));
+      libro.dedicatoria.forEach(function (t, i) {
+        const griego = /[\u0370-\u03FF\u1F00-\u1FFF]/.test(t);
+        dedicatoria.append(el('p', { texto: t, lang: griego ? 'el' : null, class: i === libro.dedicatoria.length - 1 ? 'firma' : null }));
+      });
+    }
+
     const cubierta = el('figure', { class: 'cubierta' },
       el('img', { src: p.imagen, alt: p.descripcion, width: p.ancho, height: p.alto }));
     const pantalla = el('div', { class: 'portada' },
       el('h1', { class: 'titulo-libro' }, libro.titulo, el('span', { class: 'solo-lector', texto: '.\u00a0' }), el('span', { class: 'subtitulo', texto: libro.subtitulo })),
       el('p', { class: 'autora', texto: libro.autora }),
-      accesoHoy(), cubierta, botones,
+      accesoHoy(), cubierta, botones, dedicatoria,
       el('section', { 'aria-labelledby': 'partes-titulo' }, el('h2', { id: 'partes-titulo', texto: 'Partes del libro' }),
         lista(libro.arbol.map(function (n) { return { cap: n.cap, titulo: n.titulo, hijos: [] }; }))),
       instalar, sobre);
@@ -534,6 +546,13 @@
 
     const pantalla = el('div', { class: 'hoy' },
       el('h1', { texto: 'Hoy, ' + g.f.dia + ' de ' + g.mes.nombre + (g.f.ultimo ? ' (último día del mes)' : '') }),
+      /* Sesión C6: sugerencia según el diario (solo si se ha activado en Ajustes; la hace sugerencias.js) */
+      window.JarisSugerencias ? window.JarisSugerencias.seccionHoy({ el: el, avisar: avisar }, civil) : null,
+      /* Sesión C2: por la mañana (hasta mediodía, hora del lugar elegido) un enlace corto a «Al despertar» */
+      /* Revisión C7: desde las 5 (como la Noche, que cuenta la madrugada como noche): a la 1 de la noche no salía bien «Buenos días» */
+      (window.JarisDespertar && momentoLugar().hora >= 5 && momentoLugar().hora < 12) ? el('p', { class: 'enlace-despertar' }, el('a', { href: '#/despertar' }, 'Buenos días: una oración corta para empezar el día')) : null,
+      /* Sesión C5: un enlace a «Cuando lo necesites» */
+      window.JarisNecesito ? el('p', { class: 'enlace-necesito' }, el('a', { href: '#/necesito' }, 'Cuando lo necesites: un texto corto para este momento')) : null,
       el('p', { texto: (ahora.trasLaPuesta ? 'Empezó esta tarde, al ponerse el sol. De día será el ' : 'Es el ') + fechaCivil(civil, true) +
         '. Año ' + g.f.anio.anioOlimpiada + ' de la Olimpiada ' + g.f.anio.olimpiada + ', en ' + lugar.nombre + '.' }));
     pantalla.append(el('h2', { texto: 'Lo que se celebra' }));
@@ -545,6 +564,15 @@
     if (pc) pantalla.append(pc);
 
     if (t) pantalla.append(el('section', { 'aria-labelledby': 'texto-dia' }, el('h2', { id: 'texto-dia', texto: 'Para leer hoy: ' + t.t }), texto));
+
+    /* La máxima de la semana (sesión B, parte 4; la hace maximas.js). Si falla, el resto de «Hoy» sigue. */
+    if (window.JarisMaximas) {
+      try {
+        const c23 = capituloQueEmpieza('Capítulo 23.');
+        pantalla.append(window.JarisMaximas.seccion({ el: el, avisar: avisar, civil: civil,
+          griego: g.f.dia + ' de ' + g.mes.nombre + (g.f.ultimo ? ' (último día del mes)' : ''), rutaLibro: c23 ? '#/leer/' + c23 : null }));
+      } catch (e) { /* sin máxima de la semana */ }
+    }
 
     /* Mañana y los próximos días señalados */
     const m = diaGriegoCompleto(civil + 1, lugar);
@@ -667,7 +695,8 @@
     const le = lugarElegido(), lugar = le.lugar, ahora = CAL.ahora(Date.now(), lugar);
     let hora = 12;
     try { hora = +new Intl.DateTimeFormat('es-ES', { hour: 'numeric', hourCycle: 'h23', timeZone: lugar.zona }).format(new Date()); } catch (e) { /* nada */ }
-    const g = diaGriegoCompleto(ahora.diaCivil + 1, lugar);
+    /* Revisión C7: tras la puesta, diaCivil ya es el del día griego que ha empezado (sumarle 1 daba el de mañana por la noche). */
+    const g = diaGriegoCompleto(ahora.trasLaPuesta ? ahora.diaCivil : ahora.diaCivil + 1, lugar);
     return { civil: ahora.diaCivil, hora: hora, trasLaPuesta: ahora.trasLaPuesta, lugar: lugar.nombre, elegido: le.elegido,
       griegoNoche: g.f.dia + ' de ' + g.mes.nombre };
   }
@@ -683,26 +712,55 @@
     terminar(r.foco || null);
   }
 
+  /* ---------- Al despertar (sesión C2; la pantalla la hace despertar.js) ---------- */
+  async function vistaDespertar() {
+    const mio = ++turno;
+    if (!window.JarisDespertar) return noEncontrada();
+    const r = await window.JarisDespertar.pantalla({ el: el, avisar: avisar, libro: libro, fragmento: fragmento,
+      hoy: hoyCivil, dia: diaParaDiario });
+    if (mio !== turno) return;
+    main.replaceChildren(r.nodo);
+    ponerTitulo(r.titulo);
+    marcarMenu('#/despertar');
+    terminar(null);
+  }
+
   /* ---------- El rincón de la noche (extra; la pantalla la hace noche.js) ---------- */
   /* Qué día griego empieza (o ha empezado ya) esta noche, al ponerse el sol. De madrugada (antes de las 5) cuenta el día de ayer. */
   function nocheInfo() {
     const lugar = lugarElegido().lugar, ahora = CAL.ahora(Date.now(), lugar);
     const madrugada = momentoLugar().hora < 5;   // la hora del lugar elegido, no la del dispositivo
-    const base = madrugada ? ahora.diaCivil - 1 : ahora.diaCivil;
+    /* Revisión C7: CAL.ahora() da en diaCivil el día del calendario griego, que tras la puesta de sol ya es el de MAÑANA.
+       Antes, entre la puesta y medianoche, «base» salía un día de más: la Noche decía un día griego de más y la oración
+       final y «Esta noche, otra cosa» cambiaban a medianoche. Ahora «base» es siempre el día civil de esta tarde. */
+    const base = (madrugada || ahora.trasLaPuesta) ? ahora.diaCivil - 1 : ahora.diaCivil;
     const g = diaGriegoCompleto(base + 1, lugar);
     const hora = new Intl.DateTimeFormat('es-ES', { hour: 'numeric', minute: '2-digit', timeZone: lugar.zona }).format(new Date(CAL.puestaDeSol(base, lugar)));
-    return { base: base, yaEmpezo: madrugada || ahora.trasLaPuesta, hora: hora,
+    /* «hoy» = el mismo día que «hoy» en Mi diario: lo que se guarda desde la Noche va a la entrada que el diario llama «hoy». */
+    return { base: base, hoy: ahora.diaCivil, yaEmpezo: madrugada || ahora.trasLaPuesta, hora: hora,
       griego: g.f.dia + ' de ' + g.mes.nombre, resumen: resumenDia(g.cosas), ruta: rutaDia(g) };
   }
   async function vistaNoche() {
     const mio = ++turno;
     if (!window.JarisNoche) return noEncontrada();
-    const r = await window.JarisNoche.pantalla({ el: el, avisar: avisar, libro: libro, capitulo: capitulo, fragmento: fragmento,
+    const r = await window.JarisNoche.pantalla({ el: el, avisar: avisar, libro: libro, capitulo: capitulo, fragmento: fragmento, traer: traer,
       noche: nocheInfo, dia: diaParaDiario });
     if (mio !== turno) return;
     main.replaceChildren(r.nodo);
     ponerTitulo(r.titulo);
     marcarMenu('#/noche');
+    terminar(null);
+  }
+
+  /* ---------- Cuando lo necesites (sesión C5; la pantalla la hace necesito.js) ---------- */
+  async function vistaNecesito() {
+    const mio = ++turno;
+    if (!window.JarisNecesito) return noEncontrada();
+    const r = await window.JarisNecesito.pantalla({ el: el, avisar: avisar, libro: libro, fragmento: fragmento, traer: traer, hoy: hoyCivil });
+    if (mio !== turno) return;
+    main.replaceChildren(r.nodo);
+    ponerTitulo(r.titulo);
+    marcarMenu('#/necesito');
     terminar(null);
   }
 
@@ -803,8 +861,8 @@
   /* ---------- Tus datos (6 de noviembre de 2026, sesión 7): copia de seguridad en un archivo ----------
      La copia recoge lo que es de la persona: diario, favoritos, Aprender, oráculo, cantar, velocidad, lugar y ajustes de lectura.
      NO recoge lo interno: jaris.errores, jaris.edicion, jaris.novedadesAntes, jaris.ultimo, jaris.presentacion. */
-  const CLAVES_DATOS = ['jaris.diario', 'jaris.favoritos', 'jaris.aprender', 'jaris.oraculo', 'jaris.cantar',
-    'jaris.velocidad', 'jaris.lugar', 'jaris.sur'].concat(AJUSTES_LECTURA.map(function (a) { return a.clave; }));
+  const CLAVES_DATOS = ['jaris.diario', 'jaris.favoritos', 'jaris.aprender', 'jaris.oraculo', 'jaris.cantar', 'jaris.maxima', 'jaris.alba', 'jaris.necesito', 'jaris.lectura', 'jaris.noche',
+    'jaris.velocidad', 'jaris.lugar', 'jaris.sur', 'jaris.sugerencias'].concat(AJUSTES_LECTURA.map(function (a) { return a.clave; }));
   function datosDelDispositivo() {
     const datos = {};
     CLAVES_DATOS.forEach(function (c) {
@@ -838,7 +896,11 @@
     if (lleno(datos['jaris.aprender'])) partes.push('tu progreso en Aprender');
     if (lleno(datos['jaris.oraculo'])) partes.push('tus preferencias del oráculo');
     if (lleno(datos['jaris.cantar'])) partes.push('por dónde ibas en los salmos');
-    const otros = AJUSTES_LECTURA.map(function (a) { return a.clave; }).concat(['jaris.velocidad', 'jaris.lugar', 'jaris.sur']);
+    if (lleno(datos['jaris.maxima'])) partes.push('tu máxima de la semana');
+    if (lleno(datos['jaris.necesito'])) partes.push('tus grupos de «Cuando lo necesites»');
+    if (lleno(datos['jaris.lectura'])) partes.push('por dónde vas en tus lecturas de la noche');
+    if (lleno(datos['jaris.noche'])) partes.push('tu lista de oraciones de la noche');
+    const otros = AJUSTES_LECTURA.map(function (a) { return a.clave; }).concat(['jaris.velocidad', 'jaris.lugar', 'jaris.sur', 'jaris.sugerencias']);
     if (otros.some(function (c) { return datos[c] !== undefined; })) partes.push('tus ajustes');
     return partes;
   }
@@ -869,7 +931,8 @@
   const PRACTICAS_MD = { rezar: 'he rezado', libacion: 'he hecho una libación', incienso: 'he ofrecido incienso',
     himno: 'he leído, recitado o cantado un himno', rito: 'he hecho el rito del día', ofrenda: 'he hecho otra ofrenda', texto: 'he leído el texto del día' };
   const CAMPOS_MD = [['ofrecido', 'Qué he rezado u ofrecido'], ['preguntas', 'Mi respuesta a la pregunta del día'], ['libre', 'Escritura libre'],
-    ['gracias', 'Doy las gracias por'], ['senales', 'Señales'], ['suenos', 'Sueños'], ['sensaciones', 'Lo que he sentido']];
+    ['gracias', 'Doy las gracias por'], ['senales', 'Señales'], ['suenos', 'Sueños'], ['sensaciones', 'Lo que he sentido'], ['maxima', 'La máxima de la semana'],
+    ['pensar', 'Para pensar (lectura de la noche)']];
   const formatoDiaMD = new Intl.DateTimeFormat('es-ES', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
   const formatoFechaMD = new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
   /* El texto escrito por la persona, sin que Markdown lo confunda con títulos, listas o citas; cada salto de línea se conserva. */
@@ -939,7 +1002,30 @@
         const listas = v.listas.filter(function (l) { return objeto(l) && typeof l.id === 'string' && Array.isArray(l.items); })
           .map(function (l) { return Object.assign({}, l, { items: l.items.filter(function (x) { return objeto(x) && typeof x.cap === 'string' && typeof x.a === 'string'; }) }); });
         r[c] = Object.assign({}, v, { listas: listas });
-      } else if (c === 'jaris.aprender' || c === 'jaris.cantar' || c === 'jaris.oraculo') {
+      } else if (c === 'jaris.noche') {
+        if (objeto(v) && typeof v.lista === 'string') r[c] = { lista: v.lista.slice(0, 80) };   /* sesión C4: la lista de Favoritos de «Mis oraciones de la noche» */
+      } else if (c === 'jaris.alba') {
+        if (objeto(v) && typeof v.lista === 'string') r[c] = { lista: v.lista.slice(0, 80) };   /* sesión C2: la lista de Favoritos de «Mis oraciones de la mañana» */
+      } else if (c === 'jaris.necesito') {
+        /* sesión C5: grupos ocultos, orden de los grupos y listas de Favoritos que salen en «Cuando lo necesites» */
+        if (!objeto(v)) return;
+        const lista = function (x) { return Array.isArray(x) ? x.filter(function (s) { return typeof s === 'string' && s; }).map(function (s) { return s.slice(0, 80); }).slice(0, 100) : []; };
+        r[c] = { ocultos: lista(v.ocultos), orden: lista(v.orden), listas: lista(v.listas) };
+      } else if (c === 'jaris.lectura') {
+        /* sesión C4: plan y duración elegidos, por dónde vas en cada plan, si está en pausa y la lectura «otra cosa» de esta noche */
+        if (!objeto(v)) return;
+        const cad = function (s, n) { return typeof s === 'string' ? s.slice(0, n) : ''; };
+        const progreso = {};
+        if (objeto(v.progreso)) Object.keys(v.progreso).slice(0, 100).forEach(function (k) { if (typeof v.progreso[k] === 'string') progreso[k.slice(0, 80)] = v.progreso[k].slice(0, 200); });
+        const lec = { plan: cad(v.plan, 40), duracion: ['corta', 'media', 'larga'].indexOf(v.duracion) >= 0 ? v.duracion : 'media', dios: cad(v.dios, 80), progreso: progreso, pausa: v.pausa === true };
+        if (objeto(v.otra) && typeof v.otra.cap === 'string' && typeof v.otra.a === 'string') lec.otra = { dia: Number(v.otra.dia) || 0, cap: cad(v.otra.cap, 40), a: cad(v.otra.a, 200), t: cad(v.otra.t, 200) };
+        /* sesión C7: cuántas veces se ha repetido cada plan (segunda vuelta) y cuándo salen las preguntas para pensar */
+        const vueltas = {};
+        if (objeto(v.vueltas)) Object.keys(v.vueltas).slice(0, 100).forEach(function (k) { const n = Math.floor(Number(v.vueltas[k])); if (n > 0) vueltas[k.slice(0, 80)] = Math.min(n, 999); });
+        lec.vueltas = vueltas;
+        if (['vuelta', 'siempre', 'nunca'].indexOf(v.preguntas) >= 0) lec.preguntas = v.preguntas;
+        r[c] = lec;
+      } else if (c === 'jaris.aprender' || c === 'jaris.cantar' || c === 'jaris.oraculo' || c === 'jaris.maxima') {
         if (objeto(v)) r[c] = v;
       } else if (c === 'jaris.sur') {
         if (['tal', 'movido', 'mixto'].indexOf(v) >= 0) r[c] = v;   /* revisión parte 3: un valor raro hacía decir «undefined» en Ajustes */
@@ -980,7 +1066,17 @@
           l.items.forEach(function (it) { if (!mia.items.some(function (x) { return x.cap === it.cap && x.a === it.a; })) mia.items.push(it); });
         });
         r[c] = m;
-      } else if (c === 'jaris.aprender' || c === 'jaris.cantar' || c === 'jaris.oraculo') {
+      } else if (c === 'jaris.necesito') {
+        /* se suma todo: ocultos y listas se juntan; el orden de aquí manda y lo nuevo de la copia va detrás */
+        const unir = function (x, y) { return (x || []).concat((y || []).filter(function (z) { return (x || []).indexOf(z) < 0; })); };
+        r[c] = { ocultos: unir(a.ocultos, b.ocultos), orden: unir(a.orden, b.orden), listas: unir(a.listas, b.listas) };
+      } else if (c === 'jaris.lectura') {
+        /* se suma por dónde ibas en cada plan; si hay conflicto, gana lo que ya hay en el dispositivo */
+        /* sesión C7: de las vueltas de cada plan se queda la mayor (no se pierde una segunda vuelta que venga en la copia) */
+        const vueltas = Object.assign({}, b.vueltas);
+        Object.keys(a.vueltas || {}).forEach(function (k) { vueltas[k] = Math.max(Number(a.vueltas[k]) || 0, Number(vueltas[k]) || 0); });
+        r[c] = Object.assign({}, b, a, { progreso: Object.assign({}, b.progreso, a.progreso), vueltas: vueltas });
+      } else if (c === 'jaris.aprender' || c === 'jaris.cantar' || c === 'jaris.oraculo' || c === 'jaris.maxima' || c === 'jaris.alba' || c === 'jaris.noche') {
         r[c] = Object.assign({}, b, a);
       } else {
         r[c] = a;
@@ -1307,6 +1403,9 @@
      (app.js, audios.js, cancionero.js, oraculo.js, sw.js), ningún servicio externo, estadísticas, cookies ni geolocalización;
      lo único que sale del dispositivo es lo que la persona manda (buzon.js abre el correo con «mailto:»; app.js usa
      navigator.share solo al pulsar «Enviar una copia de mis datos») y las descargas de descargas.json (enlaces a GitHub).
+     Revisado otra vez el 7 de noviembre (sesión C6, sugerencias según el diario): sugerencias.js no tiene fetch() ni nada
+     que salga del dispositivo; lee jaris.diario, calcula y lo olvida; solo guarda la casilla (jaris.sugerencias). Los
+     enlaces tel:024 y tel:112 solo llaman si la persona los pulsa. La frase sigue siendo verdad.
      SI SE AÑADE ALGO QUE ENVÍE DATOS, HAY QUE CAMBIAR ESTE TEXTO. */
   function bloqueAcerca() {
     const bloque = el('section', { 'aria-labelledby': 'ajustes-acerca' },
@@ -1363,6 +1462,8 @@
     lectura.append(el('p', {}, volver));
     lectura.append(el('p', { texto: 'Los ajustes se guardan en este móvil u ordenador; en otro dispositivo hay que elegirlos otra vez (o recuperarlos desde una copia de tus datos, más abajo).' }));
     nodo.append(lectura);
+    /* Sesión C6: casilla «Sugerirme lecturas según mi diario» (apagada por defecto; la hace sugerencias.js) */
+    if (window.JarisSugerencias) { try { nodo.append(window.JarisSugerencias.bloqueAjustes({ el: el, avisar: avisar })); } catch (e) { /* sin este bloque */ } }
     nodo.append(bloqueLugar());
     nodo.append(bloqueAudios());
     nodo.append(bloqueDatos());
@@ -1386,6 +1487,16 @@
     try { lista = await traer('contenido/descargas.json'); } catch (e) { lista = []; }
     if (mio !== turno) return;
     const nodo = el('div', { class: 'descargas' }, el('h1', { texto: 'Descargar los libros' }));
+    // Sesión C11: «Qué cambia en la segunda edición», plegado, para quien ya tenía la edición anterior.
+    if (libro.queCambia && libro.queCambia.parrafos && libro.queCambia.parrafos.length) {
+      const det = el('details', { class: 'que-cambia', id: 'que-cambia' }, el('summary', { texto: libro.queCambia.titulo }));
+      libro.queCambia.parrafos.forEach(function (t) {
+        const m = /^([^.]{3,45}\.)\s(.+)$/.exec(t);   // «Los audios. Ya tienen…»: la entradilla en negrita
+        det.append(m ? el('p', {}, el('strong', { texto: m[1] }), ' ' + m[2]) : el('p', { texto: t }));
+      });
+      nodo.append(det);
+      if (location.hash === '#/descargas/que-cambia') det.open = true;
+    }
     if (!lista.length) {
       nodo.append(el('p', { texto: 'Las descargas estarán aquí muy pronto.' }));
     } else {
@@ -1403,7 +1514,7 @@
     main.replaceChildren(nodo);
     ponerTitulo('Descargar los libros');
     marcarMenu('#/descargas');
-    terminar(null);
+    terminar(location.hash === '#/descargas/que-cambia' ? main.querySelector('#que-cambia summary') : null);   // C11
   }
 
   function noEncontrada() {
@@ -1430,7 +1541,9 @@
       case 'novedades': return vistaNovedades();
       case 'buzon': return vistaBuzon(partes);
       case 'diario': return vistaDiario(partes);
+      case 'despertar': return vistaDespertar();
       case 'noche': return vistaNoche();
+      case 'necesito': return vistaNecesito();
       case 'cancionero': return vistaCancionero(partes);
       case 'descargas': return vistaDescargas();
       case 'ajustes': return vistaAjustes();
@@ -1628,6 +1741,9 @@
       const nuevas = cambiosDe(libro).filter(esNuevo).length;
       if (nuevas) cosas.push(el('p', { texto: nuevas === 1 ? 'Lo nuevo desde la última vez que abriste Jaris va marcado como «nuevo».'
         : 'Lo nuevo desde la última vez que abriste Jaris (' + nuevas + ' cosas) va marcado como «nuevo».' }));
+      // Sesión C11: enlace a «Qué cambia en la segunda edición» (en Descargas)
+      if (libro.queCambia) cosas.push(el('p', {}, 'Si tenías la edición anterior del libro, en Descargas tienes ',
+        el('a', { href: '#/descargas/que-cambia' }, libro.queCambia.titulo.charAt(0).toLowerCase() + libro.queCambia.titulo.slice(1)), '.'));
       lista.forEach(function (n, i) {
         const seccion = el('section', { 'aria-labelledby': 'novedad-' + i });
         seccion.append(el('h2', { id: 'novedad-' + i, texto: n.fechaTexto + (n.cambios.some(esNuevo) ? ' (con cosas nuevas)' : '') }));
@@ -1699,7 +1815,14 @@
       cabecera.classList.toggle('menu-abierto', abrir);
       botonMenu.setAttribute('aria-expanded', abrir ? 'true' : 'false');
     }
-    botonMenu.addEventListener('click', function () { menu(botonMenu.getAttribute('aria-expanded') !== 'true'); });
+    /* 7 nov 2026: en el iPhone, VoiceOver no siempre dice «expandido» al pulsar «Menú» y parecía que no hacía nada.
+       Ahora, al abrirlo, el foco va a la primera opción («Portada»), y el lector la dice enseguida.
+       El pequeño retraso es para que el iPhone ya haya mostrado la lista antes de mover el foco. */
+    botonMenu.addEventListener('click', function () {
+      const abrir = botonMenu.getAttribute('aria-expanded') !== 'true';
+      menu(abrir);
+      if (abrir) setTimeout(function () { const primero = cabecera.querySelector('#menu-principal a'); if (primero) primero.focus(); }, 60);
+    });
     cabecera.querySelectorAll('nav a').forEach(function (a) { a.addEventListener('click', function () { menu(false); }); });
     window.addEventListener('hashchange', function () { menu(false); });
     document.addEventListener('keydown', function (e) {

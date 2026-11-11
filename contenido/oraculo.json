@@ -7,6 +7,7 @@
     "griego": "Ἅπαντα πράξεις εὐτυχῶς, θεὸς λέγει.",
     "texto": "Todo lo harás con buena fortuna, dice el dios.",
     "nota": "",
+    "pron": "ápanda práksis eftijós, zeós léyi.",
     "numero": 1,
     "dados": 30,
     "tabas": 30
@@ -17,6 +18,7 @@
     "griego": "Βοηθὸν ἕξεις μετὰ Τύχης τὸν Πύθιον.",
     "texto": "Tendrás como ayuda, junto a la Fortuna, al Pitio (Apolo).",
     "nota": "",
+    "pron": "voizón éksis metá tíjis tón pízion.",
     "numero": 2,
     "dados": 29,
     "tabas": 28
@@ -27,6 +29,7 @@
     "griego": "Γῆ σοι τέλειον καρπὸν ἀποδώσει πόνων.",
     "texto": "La Tierra te dará el fruto completo de tus trabajos.",
     "nota": "",
+    "pron": "yí si télion karpón apodósi pónon.",
     "numero": 3,
     "dados": 28,
     "tabas": 27
@@ -37,6 +40,7 @@
     "griego": "Δύναμις ἄκαιρος ἐν νόμοισιν ἀσθενής.",
     "texto": "La fuerza a destiempo es débil ante las leyes.",
     "nota": "La palabra \"nómoisin\" también puede entenderse como \"en los pastos\". El sentido es el mismo: la fuerza usada en mal momento no sirve.",
+    "pron": "dínamis ákeros en nómisin aszenís.",
     "numero": 4,
     "dados": 27,
     "tabas": 26
@@ -47,6 +51,7 @@
     "griego": "Ἐρᾷς δικαίων ἐγ γάμων ἰδεῖν σποράν.",
     "texto": "Deseas ver la descendencia de un matrimonio justo.",
     "nota": "",
+    "pron": "erás dikéon eg gámon idín sporán.",
     "numero": 5,
     "dados": 26,
     "tabas": 25
@@ -57,6 +62,7 @@
     "griego": "Ζάλην μεγίστην φεῦγε, μή τι καὶ β[λ]αβῇς.",
     "texto": "Huye de la gran tormenta, no vayas a sufrir algún daño.",
     "nota": "",
+    "pron": "sálin meyístin févye, mí ti ké vlavís.",
     "numero": 6,
     "dados": 24,
     "tabas": 24
@@ -67,6 +73,7 @@
     "griego": "Ἥλιος ὁρᾷ σε λαμπρός, ὃς τὰ πάντα ὁρᾷ.",
     "texto": "Te mira el brillante Helios, que todo lo ve.",
     "nota": "",
+    "pron": "ílios orá se lambrós, ós tá pánda orá.",
     "numero": 7,
     "dados": 23,
     "tabas": 23
@@ -77,6 +84,7 @@
     "griego": "Θεοὺς ἀρωγοὺς τῆς ὁδοῦ ταύτης ἔχεις.",
     "texto": "Tienes a los dioses como ayuda en este camino.",
     "nota": "",
+    "pron": "zeús arogús tís odú táftis éjis.",
     "numero": 8,
     "dados": 22,
     "tabas": 22
@@ -87,6 +95,7 @@
     "griego": "Ἱδρῶτές εἰσιν, πλὴν ἁπάντων [π]εριέσῃ.",
     "texto": "Habrá sudores (esfuerzos), pero lo superarás todo.",
     "nota": "",
+    "pron": "idrótes ísin, plín apándon periési.",
     "numero": 9,
     "dados": 21,
     "tabas": 21
@@ -97,6 +106,7 @@
     "griego": "Κύμασι μάχεσθαι χαλεπόν· ἀνάμειν[ον], φίλε.",
     "texto": "Es difícil luchar contra las olas: espera, amigo.",
     "nota": "",
+    "pron": "kímasi májesze jalepón, anáminon, fíle.",
     "numero": 10,
     "dados": 20,
     "tabas": 20
@@ -107,6 +117,7 @@
     "griego": "Λαιὸς διελθὼν πάντα σημαίνει καλῶς.",
     "texto": "Un ave que pasa por la izquierda lo anuncia todo bien.",
     "nota": "Verso dudoso: \"laiós\" puede ser \"el de la izquierda\" o el nombre de un pájaro, el roquero solitario. Para los griegos, las aves eran mensajeras de los dioses.",
+    "pron": "leós dielzón pánda siméni kalós.",
     "numero": 11,
     "dados": 19,
     "tabas": 19
@@ -117,6 +128,7 @@
     "griego": "Μοχθεῖν ἀνάγκη· μετα[β]ολὴ δ' ἔσται καλή.",
     "texto": "Es necesario esforzarse, pero el cambio será bueno.",
     "nota": "",
+    "pron": "mojzín anángi, metavolí d éste kalí.",
     "numero": 12,
     "dados": 18,
     "tabas": 18
@@ -127,6 +139,7 @@
     "griego": "Νεικηφόρον δώρημα τὸν χρησμὸν τε[λεῖ].",
     "texto": "Un regalo que trae la victoria cumplirá el oráculo.",
     "nota": "",
+    "pron": "nikifóron dórima tón jrismón telí.",
     "numero": 13,
     "dados": 17,
     "tabas": 17
@@ -137,6 +150,7 @@
     "griego": "Ξηρῶν ἀπὸ κλάδων καρπὸν οὐκ ἔσται λα[βεῖν].",
     "texto": "De las ramas secas no se podrá coger fruto.",
     "nota": "",
+    "pron": "ksirón apó kládon karpón uk éste lavín.",
     "numero": 14,
     "dados": 16,
     "tabas": 16
@@ -147,6 +161,7 @@
     "griego": "Οὐκ ἔστι μ[ὴ] σπείραντα θερίσαι κάρπιμα.",
     "texto": "No es posible cosechar frutos sin haber sembrado.",
     "nota": "",
+    "pron": "uk ésti mí spíranda zeríse kárpima.",
     "numero": 15,
     "dados": 15,
     "tabas": 15
@@ -157,6 +172,7 @@
     "griego": "Πολλοὺς ἀ[γ]ῶνα[ς] διανύσας λήψῃ στέφος.",
     "texto": "Después de terminar muchas luchas, recibirás la corona.",
     "nota": "",
+    "pron": "polús agónas dianísas lípsi stéfos.",
     "numero": 16,
     "dados": 14,
     "tabas": 14
@@ -167,6 +183,7 @@
     "griego": "Ῥᾷον διάξεις ἔτι βραχὺν μείνας χ[ρ]όνο[ν].",
     "texto": "Te irá más fácil si esperas todavía un poco de tiempo.",
     "nota": "",
+    "pron": "ráon diáksis éti vrajín mínas jrónon.",
     "numero": 17,
     "dados": 12,
     "tabas": 13
@@ -177,6 +194,7 @@
     "griego": "[Σ]αφῶς ὁ Φοῖβος ἐννέπει· \"μεῖνον, φίλε.\"",
     "texto": "Febo lo dice claramente: 'Espera, amigo'.",
     "nota": "",
+    "pron": "safós o fívos enépi: «mínon, fíle».",
     "numero": 18,
     "dados": 11,
     "tabas": 12
@@ -187,6 +205,7 @@
     "griego": "Τῶν νῦν παρουσῶν συμφορῶν ἕξεις [λύ]σιν.",
     "texto": "Encontrarás solución a las desgracias que tienes ahora.",
     "nota": "",
+    "pron": "tón nín parusón simforón éksis lísin.",
     "numero": 19,
     "dados": 10,
     "tabas": 11
@@ -197,6 +216,7 @@
     "griego": "Ὑπόσχεσιν τὸ [π]ρᾶγμα γενναίαν ἔχει.",
     "texto": "El asunto trae consigo una promesa noble.",
     "nota": "",
+    "pron": "ipósjesin tó prágma yenéan éji.",
     "numero": 20,
     "dados": 9,
     "tabas": 10
@@ -207,6 +227,7 @@
     "griego": "Φαύλως τι πράξας μετὰ χρόνον [μ]έμψῃ θ[ε]οῖς.",
     "texto": "Si haces algo con descuido, con el tiempo culparás a los dioses.",
     "nota": "Es decir: si sale mal por tu descuido, no será culpa de los dioses.",
+    "pron": "fávlos ti práksas metá jrónon mémpsi zeís.",
     "numero": 21,
     "dados": 8,
     "tabas": 9
@@ -217,6 +238,7 @@
     "griego": "Χρυσοῦν ποιήσεις χρησμὸν ἐπιτυχών, φίλε.",
     "texto": "Si aciertas, amigo, harás de oro este oráculo.",
     "nota": "",
+    "pron": "jrisún piísis jrismón epitijón, fíle.",
     "numero": 22,
     "dados": 7,
     "tabas": 8
@@ -227,6 +249,7 @@
     "griego": "Ψῆφον δικαίαν τήνδε παρὰ θεῶν ἔχεις.",
     "texto": "Este es el veredicto justo que recibes de los dioses.",
     "nota": "",
+    "pron": "psífon dikéan tínde pará zeón éjis.",
     "numero": 23,
     "dados": 6,
     "tabas": 7
@@ -237,6 +260,7 @@
     "griego": "Ὠμὴν ὀπώραν [ἣν] λάβῃς, οὐ χρήσιμον.",
     "texto": "La fruta que cojas verde no te servirá.",
     "nota": "Es decir: no lo fuerces antes de tiempo.",
+    "pron": "omín opóran ín lávis, u jrísimon.",
     "numero": 24,
     "dados": 5,
     "tabas": 5

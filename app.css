@@ -299,6 +299,8 @@ blockquote { margin: 1rem 0; padding: 0.25rem 1rem; border-left: 4px solid var(-
 .orc-formas { border: 1px solid var(--borde); border-radius: 0.5rem; padding: 0.5rem 1rem; margin: 1rem 0; }
 .orc-formas legend { font-weight: bold; padding: 0 0.3rem; }
 .orc-formas input[type="radio"] { width: 1.4rem; height: 1.4rem; flex: none; }
+/* C11: las casillas de «Ordenar y ocultar grupos» (Cuando lo necesites) eran muy pequeñas para tocarlas. */
+:root .nec-orden .opcion input[type="checkbox"] { width: 1.6rem; height: 1.6rem; flex: none; vertical-align: middle; margin: 0.2rem 0.5rem 0.2rem 0.25rem; }
 .orc-letra { font-size: 4rem; line-height: 1; margin: 0.5rem 0; color: var(--egeo); font-family: Palatino, "Palatino Linotype", Georgia, serif; }
 .orc-verso { font-size: 1.4em; line-height: 1.5; margin: 0.5rem 0 1rem; }
 .orc-nota { color: var(--suave); }
@@ -433,3 +435,19 @@ select { min-height: 2.75rem; }
 @media (forced-colors: active) {
   :root[data-contraste="alto"] input[type="radio"], :root[data-contraste="alto"] input[type="checkbox"] { -webkit-appearance: auto; appearance: auto; }
 }
+
+/* Sesión C4: lectura de la noche */
+.noche-lectura .lectura-texto { margin: 1.2em 0; }
+.noche-lectura details { margin: 1em 0; }
+.noche-lectura summary { cursor: pointer; }
+/* Segunda vuelta (sesión C7): la pregunta para pensar, separada de los textos */
+.noche-pensar { margin: 1.5em 0 1em; padding-top: 0.8em; border-top: 1px solid currentColor; }
+.noche-pensar-pregunta { font-style: italic; }
+.noche-pensar textarea { width: 100%; box-sizing: border-box; }
+
+/* Sesión C6: sugerencia según el diario (arriba de Hoy) y frase de ayuda */
+.sugerencia { background: var(--superficie); border: 1px solid var(--borde); border-left: 4px solid var(--egeo); border-radius: 6px; padding: .6rem 1rem; margin: 1rem 0; }
+.sugerencia p { margin: .4rem 0; }
+
+/* Dedicatoria de la portada (sesión C8, 10 nov 2026) */
+.portada .dedicatoria p.firma { text-align: right; font-style: italic; }

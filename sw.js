@@ -3,7 +3,7 @@
    Cuando cambia la versión, el navegador baja la edición nueva sola y avisa en la página.
    Los audios descargados van en otra caché aparte, «audios-jaris», que esto no borra (parte 3c). */
 'use strict';
-const VERSION = 'd3ba304e7927';
+const VERSION = 'b6710085e62c';
 const CACHE = 'jaris-' + VERSION;
 const ARCHIVOS = [
 "./",
@@ -82,9 +82,11 @@ const ARCHIVOS = [
 "./contenido/ch062.html",
 "./contenido/descargas.json",
 "./contenido/diario.json",
+"./contenido/lecturas.json",
 "./contenido/libro.json",
 "./contenido/oraculo.json",
 "./contenido/que-hacer.json",
+"./despertar.js",
 "./diario.js",
 "./favoritos.js",
 "./iconos/icono-180.png",
@@ -179,7 +181,11 @@ const ARCHIVOS = [
 "./img/file175.jpg",
 "./img/file176.jpg",
 "./img/file177.jpg",
+"./img/file178.jpg",
+"./img/file179.jpg",
 "./img/file18.jpg",
+"./img/file180.jpg",
+"./img/file181.jpg",
 "./img/file19.jpg",
 "./img/file2.jpg",
 "./img/file20.jpg",
@@ -276,9 +282,12 @@ const ARCHIVOS = [
 "./img/presentacion.jpg",
 "./index.html",
 "./manifest.webmanifest",
+"./maximas.js",
+"./necesito.js",
 "./noche.js",
 "./oraculo.js",
-"./presentacion.js"
+"./presentacion.js",
+"./sugerencias.js"
 ];
 
 self.addEventListener('install', function (evento) {

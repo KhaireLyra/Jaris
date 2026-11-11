@@ -80,6 +80,11 @@
     raiz.append(el('h1', { texto: 'Mi diario helénico' }),
       el('p', { texto: 'Un sitio para escribir tu práctica de cada día: lo que has rezado u ofrecido, lo que has sentido y por qué das las gracias. Las preguntas salen del apéndice A1 del libro, «Tu diario helénico». Rellena solo lo que te apetezca; ninguna casilla es obligatoria.' }));
     if (A1.sinObligacion) raiz.append(el('p', { texto: A1.sinObligacion }));
+    /* Sesión C6: la primera vez (mientras el diario esté vacío y las sugerencias apagadas), una frase que lo cuenta.
+       Así no hace falta guardar que ya se ha dicho. */
+    if (window.JarisSugerencias && !window.JarisSugerencias.activo() && !Object.keys(d.entradas).length) {
+      raiz.append(el('p', {}, 'Puedes activar sugerencias de lectura según lo que escribes, en ', el('a', { href: '#/ajustes' }, 'Ajustes'), '.'));
+    }
     raiz.append(el('p', {}, el('a', { class: 'boton', href: '#/diario/' + iso(hoy) }, 'Escribir lo de hoy (' + fechaTexto(hoy) + ')')));
     // La fecha sigue la hora del lugar elegido en el calendario; de madrugada se ofrece el día de ayer.
     const mo = a.momento ? a.momento() : null;
@@ -224,7 +229,8 @@
   const NOMBRES_PRACTICA = { rezar: 'he rezado', libacion: 'he hecho una libación', incienso: 'he ofrecido incienso',
     himno: 'he leído, recitado o cantado un himno', rito: 'he hecho el rito del día', ofrenda: 'he hecho otra ofrenda', texto: 'he leído el texto del día' };
   const CAMPOS = [['dioses', 'A qué dioses'], ['ofrecido', 'Qué he rezado u ofrecido'], ['preguntas', 'Mi respuesta a la pregunta del día'],
-    ['libre', 'Escritura libre'], ['gracias', 'Doy las gracias por'], ['senales', 'Señales'], ['suenos', 'Sueños'], ['sensaciones', 'Lo que he sentido']];
+    ['libre', 'Escritura libre'], ['gracias', 'Doy las gracias por'], ['senales', 'Señales'], ['suenos', 'Sueños'], ['sensaciones', 'Lo que he sentido'], ['maxima', 'La máxima de la semana'],
+    ['pensar', 'Para pensar (lectura de la noche)']];
   /* Lo escrito un día, en párrafos con su etiqueta en negrita (en el mismo orden que al escribirlo). */
   function verEntrada(e, el) {
     const sal = [];
@@ -464,6 +470,19 @@
       const sPla = el('section', { 'aria-labelledby': 'diario-pla' }, el('h2', { id: 'diario-pla', texto: 'Más preguntas de la plantilla del libro' }));
       resto.forEach(function (p) { sPla.append.apply(sPla, campo('plantilla:' + p, p, '', 3)); });
       form.append(sPla);
+    }
+    // 7. La máxima de la semana (sesión B, parte 4): lo escrito desde «Hoy». Solo sale si ese día hay algo escrito,
+    // y así se puede corregir aquí sin que se pierda al guardar (guardarYa rehace la entrada con lo que hay en el formulario).
+    if (e.maxima && e.maxima.trim()) {
+      const sMax = el('section', { 'aria-labelledby': 'diario-max' }, el('h2', { id: 'diario-max', texto: 'La máxima de la semana' }));
+      sMax.append.apply(sMax, campo('maxima', 'Lo que significa para mí la máxima de la semana', 'Lo escribiste desde la pantalla «Hoy». Puedes cambiarlo aquí.', 4));
+      form.append(sMax);
+    }
+    // 8. Para pensar (sesión C7): lo escrito desde la pregunta de la lectura de la noche. Igual que la máxima: solo sale si hay algo.
+    if (e.pensar && e.pensar.trim()) {
+      const sPen = el('section', { 'aria-labelledby': 'diario-pen' }, el('h2', { id: 'diario-pen', texto: 'Para pensar (lectura de la noche)' }));
+      sPen.append.apply(sPen, campo('pensar', 'Lo que he pensado con la lectura de la noche', 'Lo escribiste desde «Lectura de esta noche». Cada respuesta va debajo de su pregunta. Puedes cambiarlo aquí.', 5));
+      form.append(sPen);
     }
     // Orden (3 de noviembre, tras la prueba de la autora): primero lo rápido (casillas), luego la pregunta,
     // la escritura libre, la gratitud, la conexión con los dioses y el resto de la plantilla.

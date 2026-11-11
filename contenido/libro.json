@@ -2,11 +2,11 @@
  "titulo": "Jaris",
  "subtitulo": "Antología del helenismo",
  "autora": "Khaire Lyra",
- "edicion": "Primera edición, 2026",
- "fecha": "2026-11-07",
- "fechaTexto": "7 de noviembre de 2026",
+ "edicion": "Segunda edición, 2026",
+ "fecha": "2026-11-11",
+ "fechaTexto": "11 de noviembre de 2026",
  "portada": {
-  "imagen": "img/file177.jpg",
+  "imagen": "img/file181.jpg",
   "descripcion": "Portada del libro «Jaris. Antología del helenismo», de Khaire Lyra: el título, en letras grandes de color terracota con un filo dorado y una greca griega debajo. Ilustración de un templo griego de columnas sobre un promontorio junto al mar, con un olivo delante. Al fondo, el sol sale sobre el mar en calma, bajo un cielo claro y despejado.",
   "ancho": 848,
   "alto": 1264,
@@ -19,6 +19,39 @@
   "Para quien acaba de descubrir el helenismo y para quien lleva años practicándolo. Porque no hace falta hacerlo todo perfecto, ni saberlo todo, ni parecerse a nadie.",
   "«No escribo esta antología porque haya una gran comunidad hispanohablante. La escribo porque todavía no la hay.»"
  ],
+ "dedicatoria": [
+  "Χαῖρε, Ἀθηνᾶ.",
+  "Para ti, Atenea, la de los ojos claros.",
+  "Hace no tanto, casi no sabía nada de ti. Empecé por curiosidad: un pódcast, unas lecturas, una pregunta detrás de otra. Y sin darme cuenta, la curiosidad se volvió admiración; la admiración, cercanía; y la cercanía, devoción. Este libro nació de ese camino, y es tuyo.",
+  "Quizá ya me esperabas cuando, de niña, llevaba al cuello un búho de plata.",
+  "Me has enseñado que pensar y creer no son enemigos, que se puede rezar sin dejar de hacerse preguntas, y que mi razón y algo más pueden aprender a convivir. Me has acompañado en los días de estudio y en las noches de dudas. Y cuando creía que solo hablaba yo, aprendí que el silencio no significa que no haya nadie escuchando.",
+  "Lo que siento por ti se parece a esa admiración que, según Platón, nos empuja a querer ser mejores.",
+  "Cuando Odiseo llegó por fin a Ítaca, le dijiste que no lo abandonarías en la desgracia. Yo no sé si me lo merezco tanto como él. No sé explicar lo que siento, pero lo siento, y quiero dejarlo escrito aquí, donde no se borre: estás en mi corazón, y has venido para quedarte. Gracias por estar.",
+  "Este libro ha sido la puerta, no el camino. Lo que siento por ti no termina en su última página.",
+  "Tú, Ergane, que guías las manos que trabajan: cada página de Jaris se escribió pensando en ti. Es mi primera cosecha, y te la ofrezco.",
+  "Y no me olvido de los demás.",
+  "A ti, Hestia, que me diste calma cuando más la necesitaba, y a quien va siempre lo primero.",
+  "A ti, Apolo, por la inspiración y por la música, y por la sonrisa que me salió la primera vez que toqué la lira para ti.",
+  "A ti, Hefesto, compañero de Atenea en el taller, por ayudarme a construir esto con paciencia, pieza a pieza.",
+  "No sé si algún día entenderé por qué aparecisteis en mi vida. Solo sé que, por extraño que parezca, estoy justo donde necesito estar, y que siempre formaréis parte de mí y de mi corazón. Os dejo esta antología como ofrenda, para que quien la lea encuentre el camino un poco más fácil de lo que lo encontré yo.",
+  "Χάριν οἶδα ὑμῖν, θεοί.",
+  "Khaire Lyra"
+ ],
+ "queCambia": {
+  "titulo": "Qué cambia en la segunda edición",
+  "parrafos": [
+   "Si ya tenías la primera edición de Jaris, esto es lo nuevo. Los capítulos siguen en el mismo orden y con los mismos números, y todos conservan su título menos uno: el capítulo 19, que ha crecido y se llama ahora «Teogonía y pasajes de Homero». Todo lo que sabías encontrar sigue en su sitio.",
+   "Para encontrar las cosas más rápido. El capítulo 1, «Qué leer en cada momento», es ahora una guía rápida: empieza diciendo por dónde empezar si es tu primera vez, y después reúne las oraciones del día a día, los himnos, los ritos, el Cancionero y la música, antes de las situaciones de siempre. Cada oración, himno, pasaje de Homero, rito y salmo tiene ahora un código entre paréntesis debajo de su título, como (Oración 12) o (Himno órfico 84), que se busca en un momento, también con una línea braille. Los índices de oraciones, himnos y ritos dicen en cada línea el código, el título, el capítulo y la página. Todo es igual en el libro y en la aplicación.",
+   "Textos nuevos. Oraciones nuevas en el capítulo 6: tres a Eos para despertar, tres a la Noche para acostarse, y otras como «Danos lo bueno», «Al salir de casa, con Atenea», «En tiempos de duda o de silencio», «La oración de la serenidad, al estilo helénico» y «Guíame, Zeus». El capítulo 19 termina ahora con veintiocho pasajes de la Ilíada y la Odisea para rezar y para pensar. El capítulo 25 tiene una parte nueva, «El año del campo», con la oración de la siembra. Hay preguntas frecuentes nuevas en el capítulo 4: si el helenismo tiene un libro sagrado y por qué algunas oraciones cristianas se parecen tanto a las griegas.",
+   "Otras maneras de ser helenista. Al final del capítulo 27 hay un apartado nuevo sobre las distintas ramas del helenismo y lo que piensa cada una de la muerte y del más allá. La reencarnación se presenta como una postura más, no como la única.",
+   "La música. Los capítulos 30, 31 y 32 están reescritos para que se entiendan con o sin conocimientos de música, y con lector de pantalla: cada melodía va nota a nota, con su figura, su compás y su cuerda; primero va cómo se dicen las palabras griegas y después el griego. Están pensados para una lira arpa de dieciséis cuerdas como las que se venden hoy. El Epitafio de Seikilos se puede cantar también en español.",
+   "El griego. El glosario (apéndice A6) dice primero cómo se pronuncia cada palabra y después cómo se escribe en griego, sin letras raras. Los versos del oráculo del alfabeto (capítulo 29) llevan su pronunciación.",
+   "Los audios. Ya tienen grabación todas las oraciones del capítulo 6. En el libro, cada oración e himno con grabación dice debajo de su título cómo se llama su audio y en qué carpeta está, y los audios de las oraciones siguen el orden del libro: «R005» es la Oración 5.",
+   "Ilustraciones nuevas. Cuatro ilustraciones acompañan a los textos nuevos: Telémaco rezando junto al mar, Héctor con su hijo, la oración de la siembra y la vendimia.",
+   "La dedicatoria. El libro y la aplicación empiezan con una dedicatoria a Atenea, sin olvidar a Hestia, Apolo y Hefesto.",
+   "En la aplicación, además: la pantalla «Al despertar», planes de lectura para la noche que siguen donde lo dejaste, «Cuando lo necesites» para los momentos difíciles, sugerencias de lectura según tu diario (apagadas si no las activas, y todo se queda en tu dispositivo), preguntas para pensar cuando repites un plan y la máxima de la semana. «Al despertar» y «Cuando lo necesites» traen también pasajes de Homero."
+  ]
+ },
  "primero": "ch002",
  "indices": {
   "oraciones": "ch059",
@@ -158,7 +191,7 @@
     },
     {
      "cap": "ch026",
-     "titulo": "Capítulo 19. Teogonía",
+     "titulo": "Capítulo 19. Teogonía y pasajes de Homero",
      "hijos": []
     },
     {
@@ -479,7 +512,7 @@
   },
   {
    "cap": "ch026",
-   "titulo": "Capítulo 19. Teogonía",
+   "titulo": "Capítulo 19. Teogonía y pasajes de Homero",
    "parte": "Parte 5. Textos sagrados"
   },
   {
@@ -680,14 +713,34 @@
    "a": "la-oración-de-pletón-para-cada-día"
   },
   {
+   "t": "Danos lo bueno (para cualquier día)",
+   "cap": "ch010",
+   "a": "danos-lo-bueno-para-cualquier-día"
+  },
+  {
    "t": "Al empezar el día",
    "cap": "ch010",
    "a": "al-empezar-el-día"
   },
   {
-   "t": "Al saludar al Sol",
+   "t": "Al saludar al sol",
    "cap": "ch010",
    "a": "al-saludar-al-sol"
+  },
+  {
+   "t": "Al despertar",
+   "cap": "ch010",
+   "a": "al-despertar"
+  },
+  {
+   "t": "Buenos días a Eos",
+   "cap": "ch010",
+   "a": "buenos-días-a-eos"
+  },
+  {
+   "t": "Para despertar poco a poco",
+   "cap": "ch010",
+   "a": "para-despertar-poco-a-poco"
   },
   {
    "t": "Antes de comer",
@@ -705,6 +758,11 @@
    "a": "al-salir-de-casa-o-empezar-un-viaje"
   },
   {
+   "t": "Al salir de casa, con Atenea",
+   "cap": "ch010",
+   "a": "al-salir-de-casa-con-atenea"
+  },
+  {
    "t": "Al caminar sin compañía, con miedo a perderme",
    "cap": "ch010",
    "a": "al-caminar-sin-compañía-con-miedo-a-perderme"
@@ -720,6 +778,21 @@
    "a": "antes-de-dormir"
   },
   {
+   "t": "Al cerrar el día, a la Noche",
+   "cap": "ch010",
+   "a": "al-cerrar-el-día-a-la-noche"
+  },
+  {
+   "t": "A la Noche, sin miedo",
+   "cap": "ch010",
+   "a": "a-la-noche-sin-miedo"
+  },
+  {
+   "t": "Al acostarse",
+   "cap": "ch010",
+   "a": "al-acostarse"
+  },
+  {
    "t": "Cuando me invaden los nervios",
    "cap": "ch010",
    "a": "cuando-me-invaden-los-nervios"
@@ -728,6 +801,11 @@
    "t": "En una mala época",
    "cap": "ch010",
    "a": "en-una-mala-época"
+  },
+  {
+   "t": "En tiempos de duda o de silencio",
+   "cap": "ch010",
+   "a": "en-tiempos-de-duda-o-de-silencio"
   },
   {
    "t": "Ante un reto o un obstáculo",
@@ -890,6 +968,11 @@
    "a": "cuando-todo-me-agobia"
   },
   {
+   "t": "La oración de la serenidad, al estilo helénico",
+   "cap": "ch010",
+   "a": "la-oración-de-la-serenidad-al-estilo-helénico"
+  },
+  {
    "t": "Cuando la ansiedad aprieta",
    "cap": "ch010",
    "a": "cuando-la-ansiedad-aprieta"
@@ -913,6 +996,11 @@
    "t": "Ante una decisión difícil",
    "cap": "ch010",
    "a": "ante-una-decisión-difícil"
+  },
+  {
+   "t": "Guíame, Zeus (los versos de Cleantes)",
+   "cap": "ch010",
+   "a": "guíame-zeus-los-versos-de-cleantes"
   },
   {
    "t": "Antes de consultar un oráculo (dados o tabas)",
@@ -1133,6 +1221,46 @@
    "t": "En año nuevo (Noumenia de Hekatombaion)",
    "cap": "ch010",
    "a": "en-año-nuevo-noumenia-de-hekatombaion"
+  },
+  {
+   "t": "Pasaje de Homero 1. La oración de Crises, el modelo de oración griega",
+   "cap": "ch026",
+   "a": "la-oración-de-crises-el-modelo-de-oración-griega"
+  },
+  {
+   "t": "Pasaje de Homero 6. Héctor reza por su hijo",
+   "cap": "ch026",
+   "a": "héctor-reza-por-su-hijo"
+  },
+  {
+   "t": "Pasaje de Homero 9. Aquiles reza a Zeus de Dodona",
+   "cap": "ch026",
+   "a": "aquiles-reza-a-zeus-de-dodona"
+  },
+  {
+   "t": "Pasaje de Homero 13. Telémaco reza junto al mar",
+   "cap": "ch026",
+   "a": "telémaco-reza-junto-al-mar"
+  },
+  {
+   "t": "Pasaje de Homero 15. Atenea reza a Poseidón",
+   "cap": "ch026",
+   "a": "atenea-reza-a-poseidón"
+  },
+  {
+   "t": "Pasaje de Homero 17. Penélope reza por su hijo",
+   "cap": "ch026",
+   "a": "penélope-reza-por-su-hijo"
+  },
+  {
+   "t": "Pasaje de Homero 18. La bendición de Odiseo para una pareja",
+   "cap": "ch026",
+   "a": "la-bendición-de-odiseo-para-una-pareja"
+  },
+  {
+   "t": "La oración de la siembra",
+   "cap": "ch033",
+   "a": "la-oración-de-la-siembra"
   }
  ],
  "himnos": [
@@ -1302,6 +1430,11 @@
    "a": "himno-33.-a-los-dioscuros"
   },
   {
+   "t": "Himno órfico 0. Oración a Museo (introducción)",
+   "cap": "ch023",
+   "a": "oración-a-museo-introducción"
+  },
+  {
    "t": "Himno órfico 1. A Hécate",
    "cap": "ch023",
    "a": "a-hécate"
@@ -1337,7 +1470,7 @@
    "a": "a-las-estrellas"
   },
   {
-   "t": "Himno órfico 8. A Helios (el Sol)",
+   "t": "Himno órfico 8. A Helios (el sol)",
    "cap": "ch023",
    "a": "a-helios-el-sol"
   },
@@ -1417,7 +1550,7 @@
    "a": "a-nereo"
   },
   {
-   "t": "Himno órfico 24. A las nereidas",
+   "t": "Himno órfico 24. A las Nereidas",
    "cap": "ch023",
    "a": "a-las-nereidas"
   },
@@ -1527,7 +1660,7 @@
    "a": "a-dioniso-basareo-el-de-las-fiestas-cada-tres-años"
   },
   {
-   "t": "Himno órfico 46. A Dioniso Licnites (el de la cuna)",
+   "t": "Himno órfico 46. A Dioniso licnites (el de la cuna)",
    "cap": "ch023",
    "a": "a-dioniso-licnites-el-de-la-cuna"
   },
@@ -1562,7 +1695,7 @@
    "a": "a-dioniso-trietérico-el-de-las-fiestas-cada-tres-años"
   },
   {
-   "t": "Himno órfico 53. A Dioniso Anfietes (el que vuelve cada año)",
+   "t": "Himno órfico 53. A Dioniso anfietes (el que vuelve cada año)",
    "cap": "ch023",
    "a": "a-dioniso-anfietes-el-que-vuelve-cada-año"
   },
@@ -1617,7 +1750,7 @@
    "a": "a-dikaiosyne-la-rectitud"
   },
   {
-   "t": "Himno órfico 64. A nomos (la ley)",
+   "t": "Himno órfico 64. A Nomos (la ley)",
    "cap": "ch023",
    "a": "a-nomos-la-ley"
   },
@@ -1727,7 +1860,7 @@
    "a": "a-hipnos-el-sueño"
   },
   {
-   "t": "Himno órfico 86. A Oneiro (el sueño que se sueña)",
+   "t": "Himno órfico 86. A oneiro (el sueño que se sueña)",
    "cap": "ch023",
    "a": "a-oneiro-el-sueño-que-se-sueña"
   },
@@ -1737,37 +1870,37 @@
    "a": "a-tánatos-la-muerte"
   },
   {
-   "t": "Himno 1. A Zeus",
+   "t": "Himno de Calímaco 1. A Zeus",
    "cap": "ch024",
    "a": "himno-1.-a-zeus"
   },
   {
-   "t": "Himno 2. A Apolo",
+   "t": "Himno de Calímaco 2. A Apolo",
    "cap": "ch024",
    "a": "himno-2.-a-apolo"
   },
   {
-   "t": "Himno 3. A Ártemis",
+   "t": "Himno de Calímaco 3. A Ártemis",
    "cap": "ch024",
    "a": "himno-3.-a-ártemis"
   },
   {
-   "t": "Himno 4. A Delos",
+   "t": "Himno de Calímaco 4. A Delos",
    "cap": "ch024",
    "a": "himno-4.-a-delos"
   },
   {
-   "t": "Himno 5. El baño de Palas (a Atenea)",
+   "t": "Himno de Calímaco 5. El baño de Palas (a Atenea)",
    "cap": "ch024",
    "a": "himno-5.-el-baño-de-palas-a-atenea"
   },
   {
-   "t": "Himno 6. A Deméter",
+   "t": "Himno de Calímaco 6. A Deméter",
    "cap": "ch024",
    "a": "himno-6.-a-deméter"
   },
   {
-   "t": "Himno de Proclo 1. Al Sol",
+   "t": "Himno de Proclo 1. Al sol",
    "cap": "ch025",
    "a": "himno-1.-al-sol"
   },
@@ -1800,9 +1933,208 @@
    "t": "Himno de Proclo 7. A Atenea de muchos consejos",
    "cap": "ch025",
    "a": "himno-7.-a-atenea-de-muchos-consejos"
+  },
+  {
+   "t": "Pasaje de Homero 1. La oración de Crises, el modelo de oración griega",
+   "cap": "ch026",
+   "a": "la-oración-de-crises-el-modelo-de-oración-griega"
+  },
+  {
+   "t": "Pasaje de Homero 2. A quien escucha a los dioses",
+   "cap": "ch026",
+   "a": "a-quien-escucha-a-los-dioses"
+  },
+  {
+   "t": "Pasaje de Homero 3. El juramento ante los dioses",
+   "cap": "ch026",
+   "a": "el-juramento-ante-los-dioses"
+  },
+  {
+   "t": "Pasaje de Homero 4. Por qué Zeus quería a Troya",
+   "cap": "ch026",
+   "a": "por-qué-zeus-quería-a-troya"
+  },
+  {
+   "t": "Pasaje de Homero 5. Como las hojas",
+   "cap": "ch026",
+   "a": "como-las-hojas"
+  },
+  {
+   "t": "Pasaje de Homero 6. Héctor reza por su hijo",
+   "cap": "ch026",
+   "a": "héctor-reza-por-su-hijo"
+  },
+  {
+   "t": "Pasaje de Homero 7. La ofrenda de las troyanas",
+   "cap": "ch026",
+   "a": "la-ofrenda-de-las-troyanas"
+  },
+  {
+   "t": "Pasaje de Homero 8. Las súplicas, hijas de Zeus",
+   "cap": "ch026",
+   "a": "las-súplicas-hijas-de-zeus"
+  },
+  {
+   "t": "Pasaje de Homero 9. Aquiles reza a Zeus de Dodona",
+   "cap": "ch026",
+   "a": "aquiles-reza-a-zeus-de-dodona"
+  },
+  {
+   "t": "Pasaje de Homero 10. Príamo ante Aquiles",
+   "cap": "ch026",
+   "a": "príamo-ante-aquiles"
+  },
+  {
+   "t": "Pasaje de Homero 11. Las dos tinajas de Zeus",
+   "cap": "ch026",
+   "a": "las-dos-tinajas-de-zeus"
+  },
+  {
+   "t": "Pasaje de Homero 12. Zeus y la culpa de los hombres",
+   "cap": "ch026",
+   "a": "zeus-y-la-culpa-de-los-hombres"
+  },
+  {
+   "t": "Pasaje de Homero 13. Telémaco reza junto al mar",
+   "cap": "ch026",
+   "a": "telémaco-reza-junto-al-mar"
+  },
+  {
+   "t": "Pasaje de Homero 14. Todos los hombres necesitan a los dioses",
+   "cap": "ch026",
+   "a": "todos-los-hombres-necesitan-a-los-dioses"
+  },
+  {
+   "t": "Pasaje de Homero 15. Atenea reza a Poseidón",
+   "cap": "ch026",
+   "a": "atenea-reza-a-poseidón"
+  },
+  {
+   "t": "Pasaje de Homero 16. Cómo empezaba un rito",
+   "cap": "ch026",
+   "a": "cómo-empezaba-un-rito"
+  },
+  {
+   "t": "Pasaje de Homero 17. Penélope reza por su hijo",
+   "cap": "ch026",
+   "a": "penélope-reza-por-su-hijo"
+  },
+  {
+   "t": "Pasaje de Homero 18. La bendición de Odiseo para una pareja",
+   "cap": "ch026",
+   "a": "la-bendición-de-odiseo-para-una-pareja"
+  },
+  {
+   "t": "Pasaje de Homero 19. Los forasteros y los pobres vienen de Zeus",
+   "cap": "ch026",
+   "a": "los-forasteros-y-los-pobres-vienen-de-zeus"
+  },
+  {
+   "t": "Pasaje de Homero 20. Demódoco, el cantor al que amaba la Musa",
+   "cap": "ch026",
+   "a": "demódoco-el-cantor-al-que-amaba-la-musa"
+  },
+  {
+   "t": "Pasaje de Homero 21. Por qué se honra a los cantores",
+   "cap": "ch026",
+   "a": "por-qué-se-honra-a-los-cantores"
+  },
+  {
+   "t": "Pasaje de Homero 22. Zeus, protector de los forasteros",
+   "cap": "ch026",
+   "a": "zeus-protector-de-los-forasteros"
+  },
+  {
+   "t": "Pasaje de Homero 23. Mejor vivo",
+   "cap": "ch026",
+   "a": "mejor-vivo"
+  },
+  {
+   "t": "Pasaje de Homero 24. Eumeo aparta la parte de los dioses",
+   "cap": "ch026",
+   "a": "eumeo-aparta-la-parte-de-los-dioses"
+  },
+  {
+   "t": "Pasaje de Homero 25. Los dioses disfrazados de forasteros",
+   "cap": "ch026",
+   "a": "los-dioses-disfrazados-de-forasteros"
+  },
+  {
+   "t": "Pasaje de Homero 26. Nada hay más frágil que el hombre",
+   "cap": "ch026",
+   "a": "nada-hay-más-frágil-que-el-hombre"
+  },
+  {
+   "t": "Pasaje de Homero 27. Las dos puertas de los sueños",
+   "cap": "ch026",
+   "a": "las-dos-puertas-de-los-sueños"
+  },
+  {
+   "t": "Pasaje de Homero 28. Todavía hay dioses en el Olimpo",
+   "cap": "ch026",
+   "a": "todavía-hay-dioses-en-el-olimpo"
   }
  ],
  "novedades": [
+  {
+   "fecha": "2026-11-11",
+   "fechaTexto": "11 de noviembre de 2026",
+   "cambios": [
+    "Ya está la segunda edición de Jaris. Textos nuevos que también lees aquí: veintiocho pasajes de la Ilíada y la Odisea al final del capítulo 19 (que ahora se llama «Teogonía y pasajes de Homero»), «El año del campo» en el capítulo 25, oraciones nuevas en el capítulo 6, preguntas frecuentes nuevas en el capítulo 4 y los capítulos de música (30 a 32) reescritos nota a nota para una lira de dieciséis cuerdas.",
+    "Cuatro ilustraciones nuevas: Telémaco junto al mar y Héctor con su hijo, en los pasajes de Homero, y la oración de la siembra y la vendimia, en «El año del campo».",
+    "El capítulo 1, «Qué leer en cada momento», es ahora una guía rápida: por dónde empezar, las oraciones del día a día, los himnos, los ritos, el Cancionero y la música, y después las situaciones de siempre.",
+    "Cada oración, himno, pasaje de Homero, rito y salmo tiene un código debajo de su título, como (Oración 12) o (Himno órfico 84). Búscalo con el paréntesis de cerrar, «Oración 12)», y llegas enseguida. Son los mismos que en el libro.",
+    "Los índices de oraciones, himnos y ritos dicen en cada línea el código, el título y el capítulo, ordenados por grupos.",
+    "El himno del día de «Hoy» puede ser también uno de los pasajes de Homero del capítulo 19.",
+    "En «Tu pequeño Delfos», el verso griego del oráculo del alfabeto trae primero cómo se dice.",
+    "Ya tienen audio todas las oraciones del capítulo 6: se han grabado las catorce que faltaban.",
+    "Los audios de las oraciones siguen ahora el orden del libro: su número es el de su código (R005 es la Oración 5). Si te habías descargado los audios de las oraciones, vuelve a descargarlos en «Audios». Los de los himnos no cambian.",
+    "En «Cuando lo necesites» hay pasajes de Homero y la oración de la siembra, y en «Al despertar», dos pasajes de Homero para pensar.",
+    "En «Cuando lo necesites», las casillas de «Ordenar y ocultar grupos» son más grandes, para tocarlas mejor con el dedo."
+   ]
+  },
+  {
+   "fecha": "2026-11-10",
+   "fechaTexto": "10 de noviembre de 2026",
+   "cambios": [
+    "En la portada, la dedicatoria del libro a Atenea, y también a Hestia, Apolo y Hefesto. Es la misma que abre el libro.",
+    "En el capítulo 27, un apartado nuevo, «Otras maneras de ser helenista»: las distintas ramas del helenismo de hoy y lo que piensa cada una de la muerte y el más allá, como una postura más entre varias."
+   ]
+  },
+  {
+   "fecha": "2026-11-08",
+   "fechaTexto": "8 de noviembre de 2026",
+   "cambios": [
+    "Segunda vuelta de los planes de lectura de la noche: cuando terminas un plan y lo repites, cada lectura trae al final una pregunta corta para pensar («Para pensar»), como «¿Qué te dice hoy este himno?». Es opcional: puedes pedir otra pregunta, escribir tu respuesta en el diario o quitar las preguntas.",
+    "Lo que escribes desde la pregunta se guarda en tu diario de ese día, en su propio apartado, «Para pensar (lectura de la noche)», con la pregunta encima. Lo puedes corregir, releer y buscar, va en el archivo del diario cuando lo descargas y en la copia de seguridad de tus datos.",
+    "En «Cambiar de plan o de duración» puedes elegir cuándo salen las preguntas: solo al repetir un plan (así viene), también la primera vez, o nunca.",
+    "En «Mis oraciones de la mañana» y «Mis oraciones de la noche», la lista se elige ahora con el botón «Usar esta lista». Así, con el lector de pantalla, puedes recorrer las listas con las flechas sin que se cambie ni se anuncie nada hasta que pulsas el botón.",
+    "Arreglado: después de la puesta de sol, la Noche decía un día griego de más, y la oración final y «Esta noche, otra cosa» cambiaban a medianoche. Ahora se quedan iguales toda la noche.",
+    "Arreglado: lo que guardas en el diario desde la Noche (el repaso del día y la pregunta para pensar) va siempre al día que tu diario llama «hoy».",
+    "El enlace «Buenos días» de arriba de «Hoy» sale de las 5 de la mañana a mediodía (antes salía también de madrugada).",
+    "En «Cuando lo necesites», si un texto no se puede abrir (por ejemplo, sin conexión y sin haberlo guardado antes), ahora lo dice y te deja un enlace para abrirlo en el libro."
+   ]
+  },
+  {
+   "fecha": "2026-11-07",
+   "fechaTexto": "7 de noviembre de 2026",
+   "cambios": [
+    "Nuevo en Ajustes, «Sugerencias según el diario» (viene apagado): si lo activas, Jaris mira unas palabras sencillas en lo que escribiste en tu diario los tres días anteriores y, si un tema sale varias veces, te propone un texto de «Cuando lo necesites», como mucho una vez al día. Lo verás arriba de «Hoy», y el grupo sale marcado como sugerido. Todo se hace dentro de tu dispositivo, sin conexión: no guarda nada nuevo, no envía nada y nunca copia lo que escribiste. En Ajustes puedes ver qué palabras busca, y lo apagas cuando quieras, también con «No mostrar sugerencias».",
+    "Nueva lectura de la noche, arriba del todo en «Noche»: cada noche un trocito del libro para leer o escuchar, con calma. Cuando la has leído, pulsas «Ya la he leído» y pasa a la siguiente; si una noche no la lees, al día siguiente sale la misma. No hay rachas ni avisos. También puedes volver a la anterior, empezar desde otro sitio del libro o empezar el plan de nuevo.",
+    "Puedes elegir entre seis planes de lectura (El libro tranquilo, El libro entero, Los himnos, La sabiduría, Los dioses y sus mitos, y Un dios) y entre lecturas cortas, medias o largas. Cada plan dice cuántas noches dura. Si cambias de plan o de duración, no pierdes por dónde ibas.",
+    "Con «Esta noche, otra cosa» lees algo distinto solo esa noche (algo que aún no has leído o algo de tus favoritos) sin perder tu sitio. Y con «Pausar el plan» lo dejas parado, sin ninguna consecuencia: al seguir, vuelves justo por donde ibas.",
+    "La oración final de la noche alterna «Antes de dormir», a Hipnos, con tres oraciones nuevas a Nyx, la Noche. Y en «Mis oraciones de la noche» puedes elegir una de tus listas de Favoritos: la oración final de cada noche saldrá de ella.",
+    "Por dónde vas en tus lecturas de la noche y tu lista de oraciones de la noche se guardan solo en tu dispositivo y van en la copia de seguridad de tus datos. Todo funciona sin conexión.",
+    "Nueva pantalla «Cuando lo necesites», para esos momentos en que hace falta un texto corto: eliges cómo estás (calma, ayuda con algo concreto, estudios y exámenes, buenos días, un proyecto que estás creando, dar las gracias, estoy triste o en una mala época, por alguien que quiero) y sale una oración, un himno o un salmo. Con «Otra» sale otro distinto; también puedes escucharlo, guardarlo en favoritos o ver todos los del grupo. Está en el menú y con un enlace arriba de «Hoy» y de «Noche». Funciona sin conexión.",
+    "Puedes hacer que tus listas de Favoritos salgan en «Cuando lo necesites» como un grupo más: en cada lista, marca «Mostrar en Cuando lo necesites». Y en esa misma pantalla puedes ocultar los grupos que no uses y cambiar su orden. Se guarda solo en tu dispositivo y va en la copia de seguridad de tus datos.",
+    "Nueva pantalla «Al despertar», pareja de la Noche: una frase de hoy, una oración corta que cambia cada día, y si tienes un minuto más, el himno a Eos, la aurora. Está en el menú, y por la mañana, hasta mediodía, tienes un enlace arriba de «Hoy». Funciona sin conexión.",
+    "En «Mis oraciones de la mañana» puedes elegir una de tus listas de Favoritos: la oración corta de cada mañana saldrá de ella. Se guarda solo en tu dispositivo y va en la copia de seguridad de tus datos.",
+    "Nueva sección «La máxima de la semana» en la pantalla «Hoy»: una máxima de Delfos para pensar en ella de lunes a domingo. Puedes elegirla al azar o según el momento, por grupos (calma, días difíciles, estudiar y aprender...), y pedir otra cuando quieras.",
+    "Con el botón «Escribir en mi diario lo que significa para mí» puedes apuntar en tu diario de hoy lo que te dice la máxima. Sale en su propio apartado del diario, «La máxima de la semana»: lo puedes corregir, releer y buscar, y va también en el archivo del diario cuando lo descargas.",
+    "La copia de seguridad de tus datos guarda también tu máxima de la semana.",
+    "En el móvil, al pulsar «Menú», ahora pasas directamente a la primera opción, «Portada». Así, con VoiceOver o TalkBack, se nota enseguida que el menú se ha abierto."
+   ]
+  },
   {
    "fecha": "2026-11-06",
    "fechaTexto": "6 de noviembre de 2026",
@@ -1871,7 +2203,7 @@
   },
   {
    "src": "img/oraculo-pitia.jpg",
-   "alt": "La Pitia, sacerdotisa de Delfos, sentada en lo alto de un trípode de bronce con una rama de laurel en una mano y un cuenco en la otra.",
+   "alt": "La Pitia, sacerdotisa de Delfos, sentada en lo alto de un trípode de bronce con una rama de laurel en una mano y un cuenco en la otra.\n\n\n\n========================================\nI) IMÁGENES NUEVAS DEL 11 DE NOVIEMBRE DE 2026 (4): HOMERO Y EL AÑO DEL CAMPO (SEGUNDA EDICIÓN)\n========================================\n\nPara las dos partes nuevas de la segunda edición que no tenían ninguna imagen: «Homero para rezar y para pensar» (capítulo 19) y «El año del campo» (capítulo 25). Son escenas de los textos antiguos, así que las personas llevan ropa griega antigua. Elegidas por la autora (sesión C11).\n\n71-telemaco-junto-al-mar.png\nCopia desde aquí:\n\"Ilustración digital con estilo de libro ilustrado, plana y cálida, inspirada en la pintura de la cerámica griega antigua pero moderna y amable. Colores: terracota, ocre, azul egeo, verde oliva, blanco marfil y negro suave. Líneas limpias, formas sencillas, buen contraste y luz suave. Escena: un joven griego de la Antigüedad, Telémaco, de unos veinte años, con túnica corta y manto, está solo en la orilla de una playa tranquila al atardecer. Está agachado junto al agua y se lava las manos en el mar, que es de color gris azulado y tiene olas pequeñas. Tiene la cara levantada hacia el cielo, porque está rezando. A lo lejos, por la playa, se acerca caminando un hombre mayor con barba y manto. Formato horizontal. Tiene que verse claramente: el joven solo junto al agua, sus manos mojándose en el mar, la cara levantada rezando y, pequeño y lejos, el hombre mayor que se acerca. No debe aparecer: barcos de guerra, armas, otras personas, la diosa Atenea con casco ni lechuzas, fuego. No pongas ningún texto, letra, número, firma ni marca de agua.\"\nHasta aquí.\nDescripción alternativa: Al atardecer, el joven Telémaco se lava las manos en el mar y reza con la cara levantada al cielo. A lo lejos, por la playa, se acerca un hombre mayor: es Atenea, con la figura de Méntor.\n\n72-hector-reza-por-su-hijo.png\nCopia desde aquí:\n\"Ilustración digital con estilo de libro ilustrado, plana y cálida, inspirada en la pintura de la cerámica griega antigua pero moderna y amable. Colores: terracota, ocre, azul egeo, verde oliva, blanco marfil y negro suave. Líneas limpias, formas sencillas, buen contraste y luz suave. Escena: junto a la muralla de una ciudad griega antigua, el guerrero Héctor, con coraza de bronce y sin casco, sostiene en brazos a su hijo, un bebé, y lo levanta con cariño mientras mira al cielo, rezando por él. El casco de bronce, con un penacho de crin de caballo, está en el suelo, a sus pies. A su lado, su esposa Andrómaca, con ropa griega antigua larga y un velo, los mira con una sonrisa tierna y un poco triste. Formato horizontal. Tiene que verse claramente: Héctor sin casco con el bebé en brazos, la cara levantada rezando, el casco con penacho en el suelo y Andrómaca sonriendo a su lado. No debe aparecer: sangre, heridos, batalla, lanzas en alto, espadas desenvainadas, fuego, otras personas. No pongas ningún texto, letra, número, firma ni marca de agua.\"\nHasta aquí.\nDescripción alternativa: Junto a la muralla de Troya, Héctor, sin casco, levanta a su hijo pequeño en brazos y reza por él mirando al cielo. Su casco está en el suelo y su esposa, Andrómaca, los mira sonriendo.\n\n73-oracion-de-la-siembra.png\nCopia desde aquí:\n\"Ilustración digital con estilo de libro ilustrado, plana y cálida, inspirada en la pintura de la cerámica griega antigua pero moderna y amable. Colores: terracota, ocre, azul egeo, verde oliva, blanco marfil y negro suave. Líneas limpias, formas sencillas, buen contraste y luz suave. Escena: un campesino griego de la Antigüedad, con túnica corta y sombrero de paja, en un campo de tierra marrón recién removida, a principios de otoño, por la mañana. Con una mano coge la punta del mango de un arado de madera sencillo, tirado por dos bueyes, y con la otra sostiene una vara larga y fina que toca suavemente el lomo de un buey. Antes de empezar a arar, tiene la cara levantada y los ojos cerrados: está rezando. Al borde del campo, un saco de semillas de trigo. Al fondo, colinas suaves y un olivo. Formato horizontal. Tiene que verse claramente: el campesino rezando, el arado de madera, los dos bueyes, la vara tocando el lomo del buey y el saco de semillas. No debe aparecer: tractores ni máquinas, látigos, animales heridos, estatuas, templos, fuego, otras personas. No pongas ningún texto, letra, número, firma ni marca de agua.\"\nHasta aquí.\nDescripción alternativa: Un campesino griego reza con los ojos cerrados antes de empezar a arar. Coge el arado de madera, tirado por dos bueyes, y toca el lomo de uno con una vara. Al borde del campo hay un saco de semillas.\n\n74-vendimia.png\nCopia desde aquí:\n\"Ilustración digital con estilo de libro ilustrado, plana y cálida, inspirada en la pintura de la cerámica griega antigua pero moderna y amable. Colores: terracota, ocre, azul egeo, verde oliva, blanco marfil y negro suave. Líneas limpias, formas sencillas, buen contraste y luz suave. Escena: la vendimia en una granja griega de la Antigüedad, al amanecer, con el cielo rosado. Una familia con ropa griega antigua sencilla (un hombre, una mujer y una niña) lleva cestos llenos de racimos de uva negra y los extiende con cuidado sobre unas esteras de juncos, al sol, para que se sequen. Junto a la pared de la casa hay unas tinajas grandes de barro. Al fondo, una viña con hojas de color otoñal. Formato horizontal. Tiene que verse claramente: los cestos con racimos, los racimos extendidos sobre las esteras al sol, las tinajas de barro y el cielo rosado del amanecer. No debe aparecer: personas borrachas, copas de vino, botellas, el dios Dioniso, máquinas modernas, fuego. No pongas ningún texto, letra, número, firma ni marca de agua.\"\nHasta aquí.\nDescripción alternativa: Al amanecer, una familia griega extiende al sol racimos de uva negra sobre esteras de juncos para que se sequen, como manda Hesíodo. Junto a la casa esperan unas tinajas de barro.",
    "pie": "La Pitia, la sacerdotisa que daba las respuestas de Apolo.",
    "ancho": 604,
    "alto": 900
@@ -1886,5 +2218,5 @@
   659.26
  ],
  "notasLira": [],
- "version": "d3ba304e7927"
+ "version": "b6710085e62c"
 }

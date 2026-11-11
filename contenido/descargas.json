@@ -2,49 +2,49 @@
  {
   "titulo": "El libro entero, en EPUB",
   "texto": "Para el móvil, la tableta o un lector de libros electrónicos. Es el más cómodo con lector de pantalla.",
-  "bytes": 28579706,
+  "bytes": 28977003,
   "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-libro.epub",
   "nombre": "Jaris-libro.epub"
  },
  {
   "titulo": "El libro entero, en PDF para leer en pantalla",
   "texto": "Para leerlo en el ordenador o en la tableta.",
-  "bytes": 24776887,
+  "bytes": 26427412,
   "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-libro-para-leer-en-pantalla.pdf",
   "nombre": "Jaris-libro-para-leer-en-pantalla.pdf"
  },
  {
   "titulo": "El libro entero, en PDF para imprimir",
   "texto": "En A4 y a doble cara, para imprimirlo en casa.",
-  "bytes": 39064313,
+  "bytes": 40787032,
   "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-libro-para-imprimir.pdf",
   "nombre": "Jaris-libro-para-imprimir.pdf"
  },
  {
   "titulo": "El libro de bolsillo, en EPUB",
   "texto": "Las oraciones cortas y los ritos de cada día, con los 16 salmos del Cancionero al final.",
-  "bytes": 1135950,
+  "bytes": 1136788,
   "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-libro-de-bolsillo.epub",
   "nombre": "Jaris-libro-de-bolsillo.epub"
  },
  {
   "titulo": "El libro de bolsillo, en PDF para imprimir",
   "texto": "Sin los salmos. Se imprime en «Folleto» y queda un librito.",
-  "bytes": 208094,
+  "bytes": 218702,
   "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-libro-de-bolsillo.pdf",
   "nombre": "Jaris-libro-de-bolsillo.pdf"
  },
  {
   "titulo": "El libro de bolsillo con el Cancionero, en PDF para imprimir",
   "texto": "Con los 16 salmos al final. También se imprime en «Folleto».",
-  "bytes": 387537,
+  "bytes": 401389,
   "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-libro-de-bolsillo-con-el-Cancionero.pdf",
   "nombre": "Jaris-libro-de-bolsillo-con-el-Cancionero.pdf"
  },
  {
   "titulo": "Todos los libros juntos, en un ZIP",
   "texto": "Los seis libros de arriba en un solo archivo. En el iPhone se abre tocándolo en la app Archivos; en Android, con Files de Google.",
-  "bytes": 94152487,
+  "bytes": 97948326,
   "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-todos-los-libros.zip",
   "nombre": "Jaris-todos-los-libros.zip"
  }

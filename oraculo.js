@@ -387,7 +387,9 @@
         A.el('p', { class: 'orc-letra', 'aria-hidden': 'true', lang: 'el', texto: letra.letra }),
         A.el('p', { class: 'orc-verso', texto: '«' + letra.texto + '»' }));
       if (letra.nota) cuerpo.append(A.el('p', { class: 'orc-nota', texto: 'Nota: ' + letra.nota }));
+      // Sesión C10: primero cómo se dice (con nuestras letras), luego el griego, como en el libro.
       cajaGriego.replaceChildren(A.el('p', { class: 'orc-etiqueta', texto: 'Verso original en griego:' }),
+        ...(letra.pron ? [A.el('p', { class: 'orc-pron', texto: 'Se dice: ' + letra.pron })] : []),
         A.el('p', { lang: 'el', class: 'orc-verso-griego', texto: letra.griego }));
       cajaGriego.hidden = !casilla.checked;
       sP.hidden = true; sA.hidden = false;
