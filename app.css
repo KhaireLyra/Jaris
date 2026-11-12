@@ -391,6 +391,8 @@ blockquote { margin: 1rem 0; padding: 0.25rem 1rem; border-left: 4px solid var(-
 /* Descargas */
 .lista-descargas li { margin-bottom: 1em; }
 .lista-descargas li p { margin: 0.2em 0 0; }
+.lista-partituras h3 { font-size: 1.05em; margin: 0 0 0.2em; }
+.lista-partituras .formatos a { white-space: nowrap; }
 
 
 /* ---------- Arreglos de las comprobaciones visuales (6 de noviembre de 2026) ---------- */

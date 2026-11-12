@@ -2082,7 +2082,9 @@
    "cambios": [
     "Arreglado: Jaris vuelve a recibir sola las ediciones nuevas. Si un archivo no se puede descargar, la edición nueva se pone igual, y si algo falla, te avisa.",
     "La Noche tiene un orden nuevo: arriba, «Tu plan de lectura», con el plan, los botones y «Cambiar de plan» sin tener que desplegar nada. El cambio de plan se guarda solo al pulsar «Guardar y empezar este plan». Debajo, la lectura de esta noche, con «Ya la he leído» al final.",
-    "Nuevo en Ajustes, «Si Jaris no se pone al día»: el botón «Buscar edición nueva», que no borra nada, y «Borrar todo y empezar de cero», que antes te ofrece guardar una copia de tus datos y te pide confirmación."
+    "Nuevo en Ajustes, «Si Jaris no se pone al día»: el botón «Buscar edición nueva», que no borra nada, y «Borrar todo y empezar de cero», que antes te ofrece guardar una copia de tus datos y te pide confirmación.",
+    "Nuevo en «Descargar los libros»: el apartado «Partituras», con las partituras de la música antigua del capítulo 30 y de lo que ha compuesto esta antología. Cada pieza, en PDF (para leer o imprimir), en MusicXML (para un programa de música o la musicografía braille) y en MIDI; y todas juntas en un ZIP.",
+    "Ahora sí están en «Audios» las catorce oraciones grabadas que faltaban, con los números del libro. Si te habías descargado los audios de las oraciones, vuelve a descargarlos."
    ]
   },
   {
@@ -2227,5 +2229,5 @@
   659.26
  ],
  "notasLira": [],
- "version": "16c135b67c18"
+ "version": "97322e3f4a5f"
 }

@@ -1,0 +1,195 @@
+{
+ "piezas": [
+  {
+   "titulo": "El Epitafio de Seikilos",
+   "formatos": [
+    {
+     "formato": "PDF",
+     "nombre": "Jaris-partitura-seikilos.pdf",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-seikilos.pdf",
+     "bytes": 65602
+    },
+    {
+     "formato": "MusicXML",
+     "nombre": "Jaris-partitura-seikilos.musicxml",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-seikilos.musicxml",
+     "bytes": 15036
+    },
+    {
+     "formato": "MIDI",
+     "nombre": "Jaris-partitura-seikilos.mid",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-seikilos.mid",
+     "bytes": 1055
+    }
+   ]
+  },
+  {
+   "titulo": "El himno a Helios, de Mesomedes",
+   "formatos": [
+    {
+     "formato": "PDF",
+     "nombre": "Jaris-partitura-helios.pdf",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-helios.pdf",
+     "bytes": 174541
+    },
+    {
+     "formato": "MusicXML",
+     "nombre": "Jaris-partitura-helios.musicxml",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-helios.musicxml",
+     "bytes": 76505
+    },
+    {
+     "formato": "MIDI",
+     "nombre": "Jaris-partitura-helios.mid",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-helios.mid",
+     "bytes": 5074
+    }
+   ]
+  },
+  {
+   "titulo": "El himno a Némesis, de Mesomedes",
+   "formatos": [
+    {
+     "formato": "PDF",
+     "nombre": "Jaris-partitura-nemesis.pdf",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-nemesis.pdf",
+     "bytes": 182860
+    },
+    {
+     "formato": "MusicXML",
+     "nombre": "Jaris-partitura-nemesis.musicxml",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-nemesis.musicxml",
+     "bytes": 79818
+    },
+    {
+     "formato": "MIDI",
+     "nombre": "Jaris-partitura-nemesis.mid",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-nemesis.mid",
+     "bytes": 5278
+    }
+   ]
+  },
+  {
+   "titulo": "El primer himno délfico, de Ateneo",
+   "formatos": [
+    {
+     "formato": "PDF",
+     "nombre": "Jaris-partitura-ateneo.pdf",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-ateneo.pdf",
+     "bytes": 287325
+    },
+    {
+     "formato": "MusicXML",
+     "nombre": "Jaris-partitura-ateneo.musicxml",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-ateneo.musicxml",
+     "bytes": 129370
+    },
+    {
+     "formato": "MIDI",
+     "nombre": "Jaris-partitura-ateneo.mid",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-ateneo.mid",
+     "bytes": 8708
+    }
+   ]
+  },
+  {
+   "titulo": "Himno de Ateneo: introducción para lira (composición de esta antología)",
+   "formatos": [
+    {
+     "formato": "PDF",
+     "nombre": "Jaris-partitura-ateneo-introduccion.pdf",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-ateneo-introduccion.pdf",
+     "bytes": 57909
+    },
+    {
+     "formato": "MusicXML",
+     "nombre": "Jaris-partitura-ateneo-introduccion.musicxml",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-ateneo-introduccion.musicxml",
+     "bytes": 6210
+    },
+    {
+     "formato": "MIDI",
+     "nombre": "Jaris-partitura-ateneo-introduccion.mid",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-ateneo-introduccion.mid",
+     "bytes": 549
+    }
+   ]
+  },
+  {
+   "titulo": "Himno de Ateneo: final reconstruido (composición de esta antología)",
+   "formatos": [
+    {
+     "formato": "PDF",
+     "nombre": "Jaris-partitura-ateneo-final.pdf",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-ateneo-final.pdf",
+     "bytes": 69433
+    },
+    {
+     "formato": "MusicXML",
+     "nombre": "Jaris-partitura-ateneo-final.musicxml",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-ateneo-final.musicxml",
+     "bytes": 9435
+    },
+    {
+     "formato": "MIDI",
+     "nombre": "Jaris-partitura-ateneo-final.mid",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-ateneo-final.mid",
+     "bytes": 791
+    }
+   ]
+  },
+  {
+   "titulo": "El segundo himno délfico, de Limenio",
+   "formatos": [
+    {
+     "formato": "PDF",
+     "nombre": "Jaris-partitura-limenio.pdf",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-limenio.pdf",
+     "bytes": 431077
+    },
+    {
+     "formato": "MusicXML",
+     "nombre": "Jaris-partitura-limenio.musicxml",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-limenio.musicxml",
+     "bytes": 203667
+    },
+    {
+     "formato": "MIDI",
+     "nombre": "Jaris-partitura-limenio.mid",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-limenio.mid",
+     "bytes": 13678
+    }
+   ]
+  },
+  {
+   "titulo": "Himno de Limenio: partes 8 y 9 (composición de esta antología)",
+   "formatos": [
+    {
+     "formato": "PDF",
+     "nombre": "Jaris-partitura-limenio-partes-8-y-9.pdf",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-limenio-partes-8-y-9.pdf",
+     "bytes": 81013
+    },
+    {
+     "formato": "MusicXML",
+     "nombre": "Jaris-partitura-limenio-partes-8-y-9.musicxml",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-limenio-partes-8-y-9.musicxml",
+     "bytes": 14115
+    },
+    {
+     "formato": "MIDI",
+     "nombre": "Jaris-partitura-limenio-partes-8-y-9.mid",
+     "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-partitura-limenio-partes-8-y-9.mid",
+     "bytes": 1112
+    }
+   ]
+  }
+ ],
+ "zip": {
+  "titulo": "Todas las partituras juntas, en un ZIP",
+  "texto": "Las de arriba, en sus tres formatos, en un solo archivo.",
+  "nombre": "Jaris-todas-las-partituras.zip",
+  "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-todas-las-partituras.zip",
+  "bytes": 1920161
+ }
+}

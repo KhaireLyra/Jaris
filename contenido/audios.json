@@ -155,100 +155,114 @@
    "cap": "ch010",
    "capTitulo": "Capítulo 6. Oraciones para cada momento",
    "audios": [
-    "oraciones/r01",
-    "oraciones/r02",
-    "oraciones/r03",
-    "oraciones/r04",
-    "oraciones/r05",
-    "oraciones/r06",
-    "oraciones/r07",
-    "oraciones/r08",
-    "oraciones/r09",
-    "oraciones/r10",
-    "oraciones/r11",
-    "oraciones/r12",
-    "oraciones/r13",
-    "oraciones/r14",
-    "oraciones/r15",
-    "oraciones/r16",
-    "oraciones/r17",
-    "oraciones/r18",
-    "oraciones/r19",
-    "oraciones/r20",
-    "oraciones/r21",
-    "oraciones/r22",
-    "oraciones/r23",
-    "oraciones/r24",
-    "oraciones/r25",
-    "oraciones/r26",
-    "oraciones/r27",
-    "oraciones/r28",
-    "oraciones/r29",
-    "oraciones/r30",
-    "oraciones/r31",
-    "oraciones/r32",
-    "oraciones/r33",
-    "oraciones/r34",
-    "oraciones/r35",
-    "oraciones/r36",
-    "oraciones/r37",
-    "oraciones/r38",
-    "oraciones/r39",
-    "oraciones/r40",
-    "oraciones/r41",
-    "oraciones/r42",
-    "oraciones/r43",
-    "oraciones/r44",
-    "oraciones/r45",
-    "oraciones/r46",
-    "oraciones/r47",
-    "oraciones/r48",
-    "oraciones/r49",
-    "oraciones/r50",
-    "oraciones/r51",
-    "oraciones/r52",
-    "oraciones/r53",
-    "oraciones/r54",
-    "oraciones/r55",
-    "oraciones/r56",
-    "oraciones/r57",
-    "oraciones/r58",
-    "oraciones/r59",
-    "oraciones/r60",
-    "oraciones/r61",
-    "oraciones/r62",
-    "oraciones/r63",
-    "oraciones/r64",
-    "oraciones/r65",
-    "oraciones/r66",
-    "oraciones/r67",
-    "oraciones/r68",
-    "oraciones/r69",
-    "oraciones/r70",
-    "oraciones/r71",
-    "oraciones/r72",
-    "oraciones/r73",
-    "oraciones/r74",
-    "oraciones/r75",
-    "oraciones/r76",
-    "oraciones/r77",
-    "oraciones/r78",
-    "oraciones/r79",
-    "oraciones/r80",
-    "oraciones/r81",
-    "oraciones/r82",
-    "oraciones/r83",
-    "oraciones/r84",
-    "oraciones/r85",
-    "oraciones/r86",
-    "oraciones/r87",
-    "oraciones/r88",
-    "oraciones/r89",
-    "oraciones/r90",
-    "oraciones/r91",
-    "oraciones/r92"
+    "oraciones/r001",
+    "oraciones/r002",
+    "oraciones/r003",
+    "oraciones/r004",
+    "oraciones/r005",
+    "oraciones/r006",
+    "oraciones/r007",
+    "oraciones/r008",
+    "oraciones/r009",
+    "oraciones/r010",
+    "oraciones/r011",
+    "oraciones/r012",
+    "oraciones/r013",
+    "oraciones/r014",
+    "oraciones/r015",
+    "oraciones/r016",
+    "oraciones/r017",
+    "oraciones/r018",
+    "oraciones/r019",
+    "oraciones/r020",
+    "oraciones/r021",
+    "oraciones/r022",
+    "oraciones/r023",
+    "oraciones/r024",
+    "oraciones/r025",
+    "oraciones/r026",
+    "oraciones/r027",
+    "oraciones/r028",
+    "oraciones/r029",
+    "oraciones/r030",
+    "oraciones/r031",
+    "oraciones/r032",
+    "oraciones/r033",
+    "oraciones/r034",
+    "oraciones/r035",
+    "oraciones/r036",
+    "oraciones/r037",
+    "oraciones/r037b",
+    "oraciones/r038",
+    "oraciones/r039",
+    "oraciones/r040",
+    "oraciones/r041",
+    "oraciones/r042",
+    "oraciones/r043",
+    "oraciones/r044",
+    "oraciones/r045",
+    "oraciones/r046",
+    "oraciones/r047",
+    "oraciones/r048",
+    "oraciones/r049",
+    "oraciones/r050",
+    "oraciones/r051",
+    "oraciones/r052",
+    "oraciones/r053",
+    "oraciones/r054",
+    "oraciones/r055",
+    "oraciones/r056",
+    "oraciones/r057",
+    "oraciones/r058",
+    "oraciones/r059",
+    "oraciones/r060",
+    "oraciones/r061",
+    "oraciones/r062",
+    "oraciones/r063",
+    "oraciones/r064",
+    "oraciones/r065",
+    "oraciones/r066",
+    "oraciones/r067",
+    "oraciones/r068",
+    "oraciones/r069",
+    "oraciones/r070",
+    "oraciones/r071",
+    "oraciones/r072",
+    "oraciones/r073",
+    "oraciones/r074",
+    "oraciones/r075",
+    "oraciones/r076",
+    "oraciones/r077",
+    "oraciones/r078",
+    "oraciones/r079",
+    "oraciones/r080",
+    "oraciones/r081",
+    "oraciones/r082",
+    "oraciones/r083",
+    "oraciones/r084",
+    "oraciones/r085",
+    "oraciones/r086",
+    "oraciones/r087",
+    "oraciones/r088",
+    "oraciones/r089",
+    "oraciones/r090",
+    "oraciones/r091",
+    "oraciones/r092",
+    "oraciones/r093",
+    "oraciones/r094",
+    "oraciones/r095",
+    "oraciones/r096",
+    "oraciones/r097",
+    "oraciones/r098",
+    "oraciones/r099",
+    "oraciones/r100",
+    "oraciones/r101",
+    "oraciones/r102",
+    "oraciones/r103",
+    "oraciones/r104",
+    "oraciones/r105"
    ],
-   "bytes": 37581595
+   "bytes": 44708398
   },
   {
    "id": "oraciones-de-bolsillo",
@@ -1999,9 +2013,9 @@
    "huella": "e3595826f0"
   },
   {
-   "id": "oraciones/r01",
+   "id": "oraciones/r001",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r01.mp3",
+   "archivo": "audios/oraciones/r001.mp3",
    "titulo": "Al lavarse las manos antes de rezar",
    "version": "",
    "cap": "ch010",
@@ -2011,9 +2025,9 @@
    "huella": "bd2b03def1"
   },
   {
-   "id": "oraciones/r02",
+   "id": "oraciones/r002",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r02.mp3",
+   "archivo": "audios/oraciones/r002.mp3",
    "titulo": "La oración de Sócrates (para cualquier día)",
    "version": "",
    "cap": "ch010",
@@ -2023,9 +2037,9 @@
    "huella": "3a37bc26be"
   },
   {
-   "id": "oraciones/r03",
+   "id": "oraciones/r003",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r03.mp3",
+   "archivo": "audios/oraciones/r003.mp3",
    "titulo": "La oración de Pletón (para cada día)",
    "version": "",
    "cap": "ch010",
@@ -2035,9 +2049,21 @@
    "huella": "789ed35019"
   },
   {
-   "id": "oraciones/r04",
+   "id": "oraciones/r004",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r04.mp3",
+   "archivo": "audios/oraciones/r004.mp3",
+   "titulo": "Danos lo bueno (para cualquier día)",
+   "version": "",
+   "cap": "ch010",
+   "a": "danos-lo-bueno-para-cualquier-día",
+   "dioses": [],
+   "bytes": 280075,
+   "huella": "ac5b0483c0"
+  },
+  {
+   "id": "oraciones/r005",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r005.mp3",
    "titulo": "Al empezar el día",
    "version": "",
    "cap": "ch010",
@@ -2047,9 +2073,9 @@
    "huella": "332f7a25a8"
   },
   {
-   "id": "oraciones/r05",
+   "id": "oraciones/r006",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r05.mp3",
+   "archivo": "audios/oraciones/r006.mp3",
    "titulo": "Al saludar al sol",
    "version": "",
    "cap": "ch010",
@@ -2061,9 +2087,47 @@
    "huella": "c52d616cab"
   },
   {
-   "id": "oraciones/r06",
+   "id": "oraciones/r007",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r06.mp3",
+   "archivo": "audios/oraciones/r007.mp3",
+   "titulo": "Al despertar",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-despertar",
+   "dioses": [],
+   "bytes": 594590,
+   "huella": "f58842a481"
+  },
+  {
+   "id": "oraciones/r008",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r008.mp3",
+   "titulo": "Buenos días a Eos",
+   "version": "",
+   "cap": "ch010",
+   "a": "buenos-días-a-eos",
+   "dioses": [
+    "Eos"
+   ],
+   "bytes": 398149,
+   "huella": "fe8497e25a"
+  },
+  {
+   "id": "oraciones/r009",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r009.mp3",
+   "titulo": "Para despertar poco a poco",
+   "version": "",
+   "cap": "ch010",
+   "a": "para-despertar-poco-a-poco",
+   "dioses": [],
+   "bytes": 494279,
+   "huella": "8b12123f1a"
+  },
+  {
+   "id": "oraciones/r010",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r010.mp3",
    "titulo": "Antes de comer",
    "version": "",
    "cap": "ch010",
@@ -2073,9 +2137,9 @@
    "huella": "043fe4c09d"
   },
   {
-   "id": "oraciones/r07",
+   "id": "oraciones/r011",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r07.mp3",
+   "archivo": "audios/oraciones/r011.mp3",
    "titulo": "Al hacer una libación",
    "version": "",
    "cap": "ch010",
@@ -2085,9 +2149,9 @@
    "huella": "360502ade8"
   },
   {
-   "id": "oraciones/r08",
+   "id": "oraciones/r012",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r08.mp3",
+   "archivo": "audios/oraciones/r012.mp3",
    "titulo": "Al salir de casa o empezar un viaje",
    "version": "",
    "cap": "ch010",
@@ -2097,9 +2161,23 @@
    "huella": "27c4a010fb"
   },
   {
-   "id": "oraciones/r09",
+   "id": "oraciones/r013",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r09.mp3",
+   "archivo": "audios/oraciones/r013.mp3",
+   "titulo": "Al salir de casa, con Atenea",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-salir-de-casa-con-atenea",
+   "dioses": [
+    "Atenea"
+   ],
+   "bytes": 717888,
+   "huella": "81dbaa4512"
+  },
+  {
+   "id": "oraciones/r014",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r014.mp3",
    "titulo": "Al caminar sin compañía, con miedo a perderme",
    "version": "",
    "cap": "ch010",
@@ -2109,9 +2187,9 @@
    "huella": "ed682875e7"
   },
   {
-   "id": "oraciones/r10",
+   "id": "oraciones/r015",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r10.mp3",
+   "archivo": "audios/oraciones/r015.mp3",
    "titulo": "Al terminar el día",
    "version": "",
    "cap": "ch010",
@@ -2121,9 +2199,9 @@
    "huella": "7d78ae3dd6"
   },
   {
-   "id": "oraciones/r11",
+   "id": "oraciones/r016",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r11.mp3",
+   "archivo": "audios/oraciones/r016.mp3",
    "titulo": "Antes de dormir",
    "version": "",
    "cap": "ch010",
@@ -2133,9 +2211,45 @@
    "huella": "6c286afeca"
   },
   {
-   "id": "oraciones/r12",
+   "id": "oraciones/r017",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r12.mp3",
+   "archivo": "audios/oraciones/r017.mp3",
+   "titulo": "Al cerrar el día, a la Noche",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-cerrar-el-día-a-la-noche",
+   "dioses": [],
+   "bytes": 446214,
+   "huella": "770eb64113"
+  },
+  {
+   "id": "oraciones/r018",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r018.mp3",
+   "titulo": "A la Noche, sin miedo",
+   "version": "",
+   "cap": "ch010",
+   "a": "a-la-noche-sin-miedo",
+   "dioses": [],
+   "bytes": 513088,
+   "huella": "bbd815f366"
+  },
+  {
+   "id": "oraciones/r019",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r019.mp3",
+   "titulo": "Al acostarse",
+   "version": "",
+   "cap": "ch010",
+   "a": "al-acostarse",
+   "dioses": [],
+   "bytes": 405463,
+   "huella": "49cb531045"
+  },
+  {
+   "id": "oraciones/r020",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r020.mp3",
    "titulo": "Cuando me invaden los nervios",
    "version": "",
    "cap": "ch010",
@@ -2145,9 +2259,9 @@
    "huella": "cdc3b5f17c"
   },
   {
-   "id": "oraciones/r13",
+   "id": "oraciones/r021",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r13.mp3",
+   "archivo": "audios/oraciones/r021.mp3",
    "titulo": "En una mala época",
    "version": "",
    "cap": "ch010",
@@ -2157,9 +2271,21 @@
    "huella": "3c581a80fc"
   },
   {
-   "id": "oraciones/r14",
+   "id": "oraciones/r022",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r14.mp3",
+   "archivo": "audios/oraciones/r022.mp3",
+   "titulo": "En tiempos de duda o de silencio",
+   "version": "",
+   "cap": "ch010",
+   "a": "en-tiempos-de-duda-o-de-silencio",
+   "dioses": [],
+   "bytes": 562198,
+   "huella": "09ac58416d"
+  },
+  {
+   "id": "oraciones/r023",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r023.mp3",
    "titulo": "Ante un reto o un obstáculo",
    "version": "",
    "cap": "ch010",
@@ -2169,9 +2295,9 @@
    "huella": "224911a9de"
   },
   {
-   "id": "oraciones/r15",
+   "id": "oraciones/r024",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r15.mp3",
+   "archivo": "audios/oraciones/r024.mp3",
    "titulo": "Ante una injusticia",
    "version": "",
    "cap": "ch010",
@@ -2181,9 +2307,9 @@
    "huella": "a53e873759"
   },
   {
-   "id": "oraciones/r16",
+   "id": "oraciones/r025",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r16.mp3",
+   "archivo": "audios/oraciones/r025.mp3",
    "titulo": "Por una persona enferma",
    "version": "",
    "cap": "ch010",
@@ -2193,9 +2319,9 @@
    "huella": "05c338271c"
   },
   {
-   "id": "oraciones/r17",
+   "id": "oraciones/r026",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r17.mp3",
+   "archivo": "audios/oraciones/r026.mp3",
    "titulo": "Por los difuntos",
    "version": "",
    "cap": "ch010",
@@ -2205,9 +2331,21 @@
    "huella": "4647d1742d"
   },
   {
-   "id": "oraciones/r18",
+   "id": "oraciones/r027",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r18.mp3",
+   "archivo": "audios/oraciones/r027.mp3",
+   "titulo": "Palabras de consuelo ante la muerte",
+   "version": "",
+   "cap": "ch010",
+   "a": "palabras-de-consuelo-ante-la-muerte",
+   "dioses": [],
+   "bytes": 212157,
+   "huella": "edf6ff2a3e"
+  },
+  {
+   "id": "oraciones/r028",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r028.mp3",
    "titulo": "Antes de estudiar o de un examen",
    "version": "",
    "cap": "ch010",
@@ -2217,9 +2355,9 @@
    "huella": "e6ae319593"
   },
   {
-   "id": "oraciones/r19",
+   "id": "oraciones/r029",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r19.mp3",
+   "archivo": "audios/oraciones/r029.mp3",
    "titulo": "Antes de hacer música o crear",
    "version": "",
    "cap": "ch010",
@@ -2229,9 +2367,9 @@
    "huella": "ebf33852fe"
   },
   {
-   "id": "oraciones/r20",
+   "id": "oraciones/r030",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r20.mp3",
+   "archivo": "audios/oraciones/r030.mp3",
    "titulo": "Para expresar lo que cuesta decir",
    "version": "",
    "cap": "ch010",
@@ -2241,9 +2379,9 @@
    "huella": "9de90d2a48"
   },
   {
-   "id": "oraciones/r21",
+   "id": "oraciones/r031",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r21.mp3",
+   "archivo": "audios/oraciones/r031.mp3",
    "titulo": "Al terminar un trabajo",
    "version": "",
    "cap": "ch010",
@@ -2253,9 +2391,9 @@
    "huella": "c03a1bbaa6"
   },
   {
-   "id": "oraciones/r22",
+   "id": "oraciones/r032",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r22.mp3",
+   "archivo": "audios/oraciones/r032.mp3",
    "titulo": "Con nervios",
    "version": "",
    "cap": "ch010",
@@ -2265,9 +2403,9 @@
    "huella": "43cd0d412e"
   },
   {
-   "id": "oraciones/r23",
+   "id": "oraciones/r033",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r23.mp3",
+   "archivo": "audios/oraciones/r033.mp3",
    "titulo": "Al bloquearse",
    "version": "",
    "cap": "ch010",
@@ -2277,9 +2415,9 @@
    "huella": "41bdec6ad1"
   },
   {
-   "id": "oraciones/r24",
+   "id": "oraciones/r034",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r24.mp3",
+   "archivo": "audios/oraciones/r034.mp3",
    "titulo": "Al no saber cómo hacer algo",
    "version": "",
    "cap": "ch010",
@@ -2289,9 +2427,9 @@
    "huella": "b521de679b"
   },
   {
-   "id": "oraciones/r25",
+   "id": "oraciones/r035",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r25.mp3",
+   "archivo": "audios/oraciones/r035.mp3",
    "titulo": "Antes de hablar en público",
    "version": "",
    "cap": "ch010",
@@ -2301,9 +2439,9 @@
    "huella": "ffa8dfe94b"
   },
   {
-   "id": "oraciones/r26",
+   "id": "oraciones/r036",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r26.mp3",
+   "archivo": "audios/oraciones/r036.mp3",
    "titulo": "Antes de un examen",
    "version": "",
    "cap": "ch010",
@@ -2313,9 +2451,9 @@
    "huella": "8d36daa6f6"
   },
   {
-   "id": "oraciones/r27",
+   "id": "oraciones/r037",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r27.mp3",
+   "archivo": "audios/oraciones/r037.mp3",
    "titulo": "Al terminar, pase lo que pase",
    "version": "",
    "cap": "ch010",
@@ -2325,9 +2463,9 @@
    "huella": "a15e0624f2"
   },
   {
-   "id": "oraciones/r28",
+   "id": "oraciones/r037b",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r28.mp3",
+   "archivo": "audios/oraciones/r037b.mp3",
    "titulo": "6. Dar las gracias",
    "version": "",
    "cap": "ch010",
@@ -2337,9 +2475,9 @@
    "huella": "d55fe2a989"
   },
   {
-   "id": "oraciones/r29",
+   "id": "oraciones/r038",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r29.mp3",
+   "archivo": "audios/oraciones/r038.mp3",
    "titulo": "Antes de cocinar",
    "version": "",
    "cap": "ch010",
@@ -2349,9 +2487,9 @@
    "huella": "98d7a6e7d2"
   },
   {
-   "id": "oraciones/r30",
+   "id": "oraciones/r039",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r30.mp3",
+   "archivo": "audios/oraciones/r039.mp3",
    "titulo": "Después de comer",
    "version": "",
    "cap": "ch010",
@@ -2361,9 +2499,9 @@
    "huella": "9bea314f73"
   },
   {
-   "id": "oraciones/r31",
+   "id": "oraciones/r040",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r31.mp3",
+   "archivo": "audios/oraciones/r040.mp3",
    "titulo": "Al limpiar la casa",
    "version": "",
    "cap": "ch010",
@@ -2373,9 +2511,9 @@
    "huella": "efd8818d67"
   },
   {
-   "id": "oraciones/r32",
+   "id": "oraciones/r041",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r32.mp3",
+   "archivo": "audios/oraciones/r041.mp3",
    "titulo": "Al entrar en una casa nueva",
    "version": "",
    "cap": "ch010",
@@ -2385,9 +2523,9 @@
    "huella": "a568d47f38"
   },
   {
-   "id": "oraciones/r33",
+   "id": "oraciones/r042",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r33.mp3",
+   "archivo": "audios/oraciones/r042.mp3",
    "titulo": "Al dejar una casa (mudanza)",
    "version": "",
    "cap": "ch010",
@@ -2397,9 +2535,9 @@
    "huella": "dab4eb2105"
   },
   {
-   "id": "oraciones/r34",
+   "id": "oraciones/r043",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r34.mp3",
+   "archivo": "audios/oraciones/r043.mp3",
    "titulo": "Al abrir la puerta por la mañana",
    "version": "",
    "cap": "ch010",
@@ -2409,9 +2547,9 @@
    "huella": "c22dd3a7a4"
   },
   {
-   "id": "oraciones/r35",
+   "id": "oraciones/r044",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r35.mp3",
+   "archivo": "audios/oraciones/r044.mp3",
    "titulo": "Al Agathos Daimon, el buen espíritu de la casa",
    "version": "",
    "cap": "ch010",
@@ -2421,9 +2559,9 @@
    "huella": "c46c736373"
   },
   {
-   "id": "oraciones/r36",
+   "id": "oraciones/r045",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r36.mp3",
+   "archivo": "audios/oraciones/r045.mp3",
    "titulo": "Antes de una cita médica o una prueba",
    "version": "",
    "cap": "ch010",
@@ -2433,9 +2571,9 @@
    "huella": "2698003cb4"
   },
   {
-   "id": "oraciones/r37",
+   "id": "oraciones/r046",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r37.mp3",
+   "archivo": "audios/oraciones/r046.mp3",
    "titulo": "Antes de dormir, en la enfermedad",
    "version": "",
    "cap": "ch010",
@@ -2445,9 +2583,9 @@
    "huella": "17a09c5036"
   },
   {
-   "id": "oraciones/r38",
+   "id": "oraciones/r047",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r38.mp3",
+   "archivo": "audios/oraciones/r047.mp3",
    "titulo": "En la enfermedad",
    "version": "",
    "cap": "ch010",
@@ -2457,9 +2595,9 @@
    "huella": "5b337a31f0"
   },
   {
-   "id": "oraciones/r39",
+   "id": "oraciones/r048",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r39.mp3",
+   "archivo": "audios/oraciones/r048.mp3",
    "titulo": "Himno a Higía, la salud (Arifrón)",
    "version": "",
    "cap": "ch010",
@@ -2469,9 +2607,9 @@
    "huella": "0bfe14b082"
   },
   {
-   "id": "oraciones/r40",
+   "id": "oraciones/r049",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r40.mp3",
+   "archivo": "audios/oraciones/r049.mp3",
    "titulo": "Himno de la mañana a Asclepio (Atenas)",
    "version": "",
    "cap": "ch010",
@@ -2483,9 +2621,9 @@
    "huella": "96fca9ccec"
   },
   {
-   "id": "oraciones/r41",
+   "id": "oraciones/r050",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r41.mp3",
+   "archivo": "audios/oraciones/r050.mp3",
    "titulo": "Himno a Telesforo, el que trae el buen final (Atenas)",
    "version": "",
    "cap": "ch010",
@@ -2495,9 +2633,9 @@
    "huella": "4eb728bdf2"
   },
   {
-   "id": "oraciones/r42",
+   "id": "oraciones/r051",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r42.mp3",
+   "archivo": "audios/oraciones/r051.mp3",
    "titulo": "Al tomar una medicina",
    "version": "",
    "cap": "ch010",
@@ -2507,9 +2645,9 @@
    "huella": "47b5876c3a"
   },
   {
-   "id": "oraciones/r43",
+   "id": "oraciones/r052",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r43.mp3",
+   "archivo": "audios/oraciones/r052.mp3",
    "titulo": "Al hacer ejercicio o deporte",
    "version": "",
    "cap": "ch010",
@@ -2519,9 +2657,9 @@
    "huella": "536f78e2b7"
   },
   {
-   "id": "oraciones/r44",
+   "id": "oraciones/r053",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r44.mp3",
+   "archivo": "audios/oraciones/r053.mp3",
    "titulo": "Cuando tengo miedo",
    "version": "",
    "cap": "ch010",
@@ -2531,9 +2669,9 @@
    "huella": "0e698b272c"
   },
   {
-   "id": "oraciones/r45",
+   "id": "oraciones/r054",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r45.mp3",
+   "archivo": "audios/oraciones/r054.mp3",
    "titulo": "Cuando todo me agobia",
    "version": "",
    "cap": "ch010",
@@ -2543,9 +2681,21 @@
    "huella": "6e1a49973b"
   },
   {
-   "id": "oraciones/r46",
+   "id": "oraciones/r055",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r46.mp3",
+   "archivo": "audios/oraciones/r055.mp3",
+   "titulo": "La oración de la serenidad, al estilo helénico",
+   "version": "",
+   "cap": "ch010",
+   "a": "la-oración-de-la-serenidad-al-estilo-helénico",
+   "dioses": [],
+   "bytes": 440990,
+   "huella": "bd9852d8f1"
+  },
+  {
+   "id": "oraciones/r056",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r056.mp3",
    "titulo": "Cuando la ansiedad aprieta",
    "version": "",
    "cap": "ch010",
@@ -2555,9 +2705,9 @@
    "huella": "624f3e3f43"
   },
   {
-   "id": "oraciones/r47",
+   "id": "oraciones/r057",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r47.mp3",
+   "archivo": "audios/oraciones/r057.mp3",
    "titulo": "Cuando los pensamientos no paran",
    "version": "",
    "cap": "ch010",
@@ -2567,9 +2717,9 @@
    "huella": "070af1bff7"
   },
   {
-   "id": "oraciones/r48",
+   "id": "oraciones/r058",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r48.mp3",
+   "archivo": "audios/oraciones/r058.mp3",
    "titulo": "Cuando me frustro porque algo no me sale",
    "version": "",
    "cap": "ch010",
@@ -2579,9 +2729,9 @@
    "huella": "61d853e4c3"
   },
   {
-   "id": "oraciones/r49",
+   "id": "oraciones/r059",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r49.mp3",
+   "archivo": "audios/oraciones/r059.mp3",
    "titulo": "Cuando dudo de mí",
    "version": "",
    "cap": "ch010",
@@ -2591,9 +2741,9 @@
    "huella": "7f359e094f"
   },
   {
-   "id": "oraciones/r50",
+   "id": "oraciones/r060",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r50.mp3",
+   "archivo": "audios/oraciones/r060.mp3",
    "titulo": "Ante una decisión difícil",
    "version": "",
    "cap": "ch010",
@@ -2603,9 +2753,23 @@
    "huella": "9eedef3049"
   },
   {
-   "id": "oraciones/r51",
+   "id": "oraciones/r061",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r51.mp3",
+   "archivo": "audios/oraciones/r061.mp3",
+   "titulo": "Guíame, Zeus (los versos de Cleantes)",
+   "version": "",
+   "cap": "ch010",
+   "a": "guíame-zeus-los-versos-de-cleantes",
+   "dioses": [
+    "Zeus"
+   ],
+   "bytes": 455618,
+   "huella": "bc9fc0e9f3"
+  },
+  {
+   "id": "oraciones/r062",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r062.mp3",
    "titulo": "Antes de consultar un oráculo (dados o tabas)",
    "version": "",
    "cap": "ch010",
@@ -2615,9 +2779,9 @@
    "huella": "8dd6c1c6be"
   },
   {
-   "id": "oraciones/r52",
+   "id": "oraciones/r063",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r52.mp3",
+   "archivo": "audios/oraciones/r063.mp3",
    "titulo": "Al percibir una señal",
    "version": "",
    "cap": "ch010",
@@ -2627,9 +2791,9 @@
    "huella": "e05f7e8f80"
   },
   {
-   "id": "oraciones/r53",
+   "id": "oraciones/r064",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r53.mp3",
+   "archivo": "audios/oraciones/r064.mp3",
    "titulo": "Al hacer una promesa",
    "version": "",
    "cap": "ch010",
@@ -2639,9 +2803,9 @@
    "huella": "e895c42c19"
   },
   {
-   "id": "oraciones/r54",
+   "id": "oraciones/r065",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r54.mp3",
+   "archivo": "audios/oraciones/r065.mp3",
    "titulo": "Por los antepasados",
    "version": "",
    "cap": "ch010",
@@ -2651,9 +2815,9 @@
    "huella": "192a90fab7"
   },
   {
-   "id": "oraciones/r55",
+   "id": "oraciones/r066",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r55.mp3",
+   "archivo": "audios/oraciones/r066.mp3",
    "titulo": "Al esperar un resultado",
    "version": "",
    "cap": "ch010",
@@ -2663,9 +2827,9 @@
    "huella": "15540d744c"
   },
   {
-   "id": "oraciones/r56",
+   "id": "oraciones/r067",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r56.mp3",
+   "archivo": "audios/oraciones/r067.mp3",
    "titulo": "Al recibir una buena noticia",
    "version": "",
    "cap": "ch010",
@@ -2675,9 +2839,9 @@
    "huella": "bb379b686b"
   },
   {
-   "id": "oraciones/r57",
+   "id": "oraciones/r068",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r57.mp3",
+   "archivo": "audios/oraciones/r068.mp3",
    "titulo": "Cuando estoy triste",
    "version": "",
    "cap": "ch010",
@@ -2687,9 +2851,9 @@
    "huella": "809752bce1"
   },
   {
-   "id": "oraciones/r58",
+   "id": "oraciones/r069",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r58.mp3",
+   "archivo": "audios/oraciones/r069.mp3",
    "titulo": "Cuando no puedo dormir",
    "version": "",
    "cap": "ch010",
@@ -2699,9 +2863,21 @@
    "huella": "923ca460d6"
   },
   {
-   "id": "oraciones/r59",
+   "id": "oraciones/r070",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r59.mp3",
+   "archivo": "audios/oraciones/r070.mp3",
+   "titulo": "Cuando me despierto de madrugada y no puedo volver a dormir",
+   "version": "",
+   "cap": "ch010",
+   "a": "cuando-me-despierto-de-madrugada-y-no-puedo-volver-a-dormir",
+   "dioses": [],
+   "bytes": 714753,
+   "huella": "591632e5a0"
+  },
+  {
+   "id": "oraciones/r071",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r071.mp3",
    "titulo": "Después de un mal sueño",
    "version": "",
    "cap": "ch010",
@@ -2711,9 +2887,9 @@
    "huella": "f4f6acfd4f"
   },
   {
-   "id": "oraciones/r60",
+   "id": "oraciones/r072",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r60.mp3",
+   "archivo": "audios/oraciones/r072.mp3",
    "titulo": "Después de un buen sueño",
    "version": "",
    "cap": "ch010",
@@ -2723,9 +2899,9 @@
    "huella": "3eb3fd8388"
   },
   {
-   "id": "oraciones/r61",
+   "id": "oraciones/r073",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r61.mp3",
+   "archivo": "audios/oraciones/r073.mp3",
    "titulo": "Para limpiarse después de algo malo",
    "version": "",
    "cap": "ch010",
@@ -2735,9 +2911,9 @@
    "huella": "068aa40d01"
   },
   {
-   "id": "oraciones/r62",
+   "id": "oraciones/r074",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r62.mp3",
+   "archivo": "audios/oraciones/r074.mp3",
    "titulo": "Para pedir perdón",
    "version": "",
    "cap": "ch010",
@@ -2747,9 +2923,9 @@
    "huella": "9149032ce2"
   },
   {
-   "id": "oraciones/r63",
+   "id": "oraciones/r075",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r63.mp3",
+   "archivo": "audios/oraciones/r075.mp3",
    "titulo": "Para dar las gracias por un regalo",
    "version": "",
    "cap": "ch010",
@@ -2759,9 +2935,9 @@
    "huella": "a90895cd6b"
   },
   {
-   "id": "oraciones/r64",
+   "id": "oraciones/r076",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r64.mp3",
+   "archivo": "audios/oraciones/r076.mp3",
    "titulo": "Por la familia",
    "version": "",
    "cap": "ch010",
@@ -2771,9 +2947,9 @@
    "huella": "8c0606fa31"
   },
   {
-   "id": "oraciones/r65",
+   "id": "oraciones/r077",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r65.mp3",
+   "archivo": "audios/oraciones/r077.mp3",
    "titulo": "Por un amigo o una amiga",
    "version": "",
    "cap": "ch010",
@@ -2783,9 +2959,9 @@
    "huella": "8ab2a604f3"
   },
   {
-   "id": "oraciones/r66",
+   "id": "oraciones/r078",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r66.mp3",
+   "archivo": "audios/oraciones/r078.mp3",
    "titulo": "La comida de la amistad",
    "version": "",
    "cap": "ch010",
@@ -2795,9 +2971,9 @@
    "huella": "57d5b7cc90"
   },
   {
-   "id": "oraciones/r67",
+   "id": "oraciones/r079",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r67.mp3",
+   "archivo": "audios/oraciones/r079.mp3",
    "titulo": "Las tres libaciones de la comida",
    "version": "",
    "cap": "ch010",
@@ -2807,9 +2983,9 @@
    "huella": "675af56e8f"
   },
   {
-   "id": "oraciones/r68",
+   "id": "oraciones/r080",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r68.mp3",
+   "archivo": "audios/oraciones/r080.mp3",
    "titulo": "Por el amor",
    "version": "",
    "cap": "ch010",
@@ -2819,9 +2995,9 @@
    "huella": "0fcedb19a3"
   },
   {
-   "id": "oraciones/r69",
+   "id": "oraciones/r081",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r69.mp3",
+   "archivo": "audios/oraciones/r081.mp3",
    "titulo": "Ante una discusión o un enfado",
    "version": "",
    "cap": "ch010",
@@ -2831,9 +3007,9 @@
    "huella": "6344dc7eae"
   },
   {
-   "id": "oraciones/r70",
+   "id": "oraciones/r082",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r70.mp3",
+   "archivo": "audios/oraciones/r082.mp3",
    "titulo": "Por una boda",
    "version": "",
    "cap": "ch010",
@@ -2843,9 +3019,9 @@
    "huella": "8c0665b142"
   },
   {
-   "id": "oraciones/r71",
+   "id": "oraciones/r083",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r71.mp3",
+   "archivo": "audios/oraciones/r083.mp3",
    "titulo": "Por un nacimiento",
    "version": "",
    "cap": "ch010",
@@ -2855,9 +3031,9 @@
    "huella": "a60b49999a"
   },
   {
-   "id": "oraciones/r72",
+   "id": "oraciones/r084",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r72.mp3",
+   "archivo": "audios/oraciones/r084.mp3",
    "titulo": "En un cumpleaños",
    "version": "",
    "cap": "ch010",
@@ -2867,9 +3043,9 @@
    "huella": "fc699dcd43"
   },
   {
-   "id": "oraciones/r73",
+   "id": "oraciones/r085",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r73.mp3",
+   "archivo": "audios/oraciones/r085.mp3",
    "titulo": "Por los animales y las mascotas",
    "version": "",
    "cap": "ch010",
@@ -2879,9 +3055,9 @@
    "huella": "6873010eb8"
   },
   {
-   "id": "oraciones/r74",
+   "id": "oraciones/r086",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r74.mp3",
+   "archivo": "audios/oraciones/r086.mp3",
    "titulo": "Cuando muere un animal querido",
    "version": "",
    "cap": "ch010",
@@ -2891,9 +3067,21 @@
    "huella": "19e611956c"
   },
   {
-   "id": "oraciones/r75",
+   "id": "oraciones/r087",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r75.mp3",
+   "archivo": "audios/oraciones/r087.mp3",
+   "titulo": "Ante una tragedia (un accidente, una catástrofe)",
+   "version": "",
+   "cap": "ch010",
+   "a": "ante-una-tragedia-un-accidente-una-catástrofe-1",
+   "dioses": [],
+   "bytes": 891341,
+   "huella": "acac5c7b26"
+  },
+  {
+   "id": "oraciones/r088",
+   "bloque": "oraciones",
+   "archivo": "audios/oraciones/r088.mp3",
    "titulo": "Por los compañeros de clase o de trabajo",
    "version": "",
    "cap": "ch010",
@@ -2903,9 +3091,9 @@
    "huella": "ee7c7cb763"
   },
   {
-   "id": "oraciones/r76",
+   "id": "oraciones/r089",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r76.mp3",
+   "archivo": "audios/oraciones/r089.mp3",
    "titulo": "Antes de una entrevista o una prueba importante",
    "version": "",
    "cap": "ch010",
@@ -2915,9 +3103,9 @@
    "huella": "57f1bb6996"
   },
   {
-   "id": "oraciones/r77",
+   "id": "oraciones/r090",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r77.mp3",
+   "archivo": "audios/oraciones/r090.mp3",
    "titulo": "Antes de trabajar con el ordenador o con herramientas",
    "version": "",
    "cap": "ch010",
@@ -2927,9 +3115,9 @@
    "huella": "556a382e79"
   },
   {
-   "id": "oraciones/r78",
+   "id": "oraciones/r091",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r78.mp3",
+   "archivo": "audios/oraciones/r091.mp3",
    "titulo": "Al empezar un curso o una etapa nueva",
    "version": "",
    "cap": "ch010",
@@ -2939,9 +3127,9 @@
    "huella": "4cfb759602"
   },
   {
-   "id": "oraciones/r79",
+   "id": "oraciones/r092",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r79.mp3",
+   "archivo": "audios/oraciones/r092.mp3",
    "titulo": "Al volver de un viaje",
    "version": "",
    "cap": "ch010",
@@ -2951,9 +3139,9 @@
    "huella": "8f9a9e6688"
   },
   {
-   "id": "oraciones/r80",
+   "id": "oraciones/r093",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r80.mp3",
+   "archivo": "audios/oraciones/r093.mp3",
    "titulo": "Ante una tormenta o un temporal",
    "version": "",
    "cap": "ch010",
@@ -2963,9 +3151,9 @@
    "huella": "f3ae0420d7"
   },
   {
-   "id": "oraciones/r81",
+   "id": "oraciones/r094",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r81.mp3",
+   "archivo": "audios/oraciones/r094.mp3",
    "titulo": "Para pedir lluvia",
    "version": "",
    "cap": "ch010",
@@ -2975,9 +3163,9 @@
    "huella": "f87d78d2b2"
   },
   {
-   "id": "oraciones/r82",
+   "id": "oraciones/r095",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r82.mp3",
+   "archivo": "audios/oraciones/r095.mp3",
    "titulo": "El canto de Dodona",
    "version": "",
    "cap": "ch010",
@@ -2987,9 +3175,9 @@
    "huella": "be3ba05292"
   },
   {
-   "id": "oraciones/r83",
+   "id": "oraciones/r096",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r83.mp3",
+   "archivo": "audios/oraciones/r096.mp3",
    "titulo": "Por el mundo y la naturaleza",
    "version": "",
    "cap": "ch010",
@@ -2999,9 +3187,9 @@
    "huella": "33c0c8f7ec"
   },
   {
-   "id": "oraciones/r84",
+   "id": "oraciones/r097",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r84.mp3",
+   "archivo": "audios/oraciones/r097.mp3",
    "titulo": "Para la suerte y el dinero",
    "version": "",
    "cap": "ch010",
@@ -3011,9 +3199,9 @@
    "huella": "95a593fb8d"
   },
   {
-   "id": "oraciones/r85",
+   "id": "oraciones/r098",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r85.mp3",
+   "archivo": "audios/oraciones/r098.mp3",
    "titulo": "Por la ciudad y por la paz",
    "version": "",
    "cap": "ch010",
@@ -3023,9 +3211,9 @@
    "huella": "d72ad4b0dd"
   },
   {
-   "id": "oraciones/r86",
+   "id": "oraciones/r099",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r86.mp3",
+   "archivo": "audios/oraciones/r099.mp3",
    "titulo": "En la Noumenia (luna nueva, primer día del mes)",
    "version": "",
    "cap": "ch010",
@@ -3035,9 +3223,9 @@
    "huella": "c86518567c"
   },
   {
-   "id": "oraciones/r87",
+   "id": "oraciones/r100",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r87.mp3",
+   "archivo": "audios/oraciones/r100.mp3",
    "titulo": "Para abrir un rito",
    "version": "",
    "cap": "ch010",
@@ -3047,9 +3235,9 @@
    "huella": "3ede9d7032"
   },
   {
-   "id": "oraciones/r88",
+   "id": "oraciones/r101",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r88.mp3",
+   "archivo": "audios/oraciones/r101.mp3",
    "titulo": "Para cerrar un rito",
    "version": "",
    "cap": "ch010",
@@ -3059,9 +3247,9 @@
    "huella": "cab8cf1aa4"
   },
   {
-   "id": "oraciones/r89",
+   "id": "oraciones/r102",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r89.mp3",
+   "archivo": "audios/oraciones/r102.mp3",
    "titulo": "Las primeras frutas de la temporada",
    "version": "",
    "cap": "ch010",
@@ -3071,9 +3259,9 @@
    "huella": "e683063af1"
   },
   {
-   "id": "oraciones/r90",
+   "id": "oraciones/r103",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r90.mp3",
+   "archivo": "audios/oraciones/r103.mp3",
    "titulo": "En el Deipnon de Hécate (último día del mes)",
    "version": "",
    "cap": "ch010",
@@ -3085,9 +3273,9 @@
    "huella": "936562f5b2"
   },
   {
-   "id": "oraciones/r91",
+   "id": "oraciones/r104",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r91.mp3",
+   "archivo": "audios/oraciones/r104.mp3",
    "titulo": "Al empezar una fiesta",
    "version": "",
    "cap": "ch010",
@@ -3097,9 +3285,9 @@
    "huella": "cb1aae92e9"
   },
   {
-   "id": "oraciones/r92",
+   "id": "oraciones/r105",
    "bloque": "oraciones",
-   "archivo": "audios/oraciones/r92.mp3",
+   "archivo": "audios/oraciones/r105.mp3",
    "titulo": "En año nuevo (Noumenia de Hekatombaion)",
    "version": "",
    "cap": "ch010",
@@ -4211,13 +4399,14 @@
   "Asclepio": [
    "himnos-homericos/h16",
    "himnos-orficos/o67",
-   "oraciones/r40"
+   "oraciones/r049"
   ],
   "Atenea": [
    "himnos-homericos/h11",
    "himnos-homericos/h28",
    "himnos-orficos/o32",
    "himnos-de-proclo/p7",
+   "oraciones/r013",
    "frases-en-griego/g23",
    "frases-en-griego/g39"
   ],
@@ -4242,7 +4431,8 @@
    "frases-en-griego/g30"
   ],
   "Eos": [
-   "himnos-orficos/o78"
+   "himnos-orficos/o78",
+   "oraciones/r008"
   ],
   "Eros": [
    "himnos-orficos/o58"
@@ -4256,7 +4446,7 @@
   "Hécate": [
    "himnos-orficos/o01",
    "himnos-de-proclo/p6",
-   "oraciones/r90",
+   "oraciones/r103",
    "frases-en-griego/g32"
   ],
   "Hefesto": [
@@ -4268,7 +4458,7 @@
    "himnos-homericos/h31",
    "himnos-orficos/o08",
    "himnos-de-proclo/p1",
-   "oraciones/r05",
+   "oraciones/r006",
    "oraciones-de-bolsillo/b09",
    "frases-en-griego/g33",
    "musica-antigua/himno-a-helios-mesomedes-lento",
@@ -4376,10 +4566,11 @@
    "himnos-orficos/o15",
    "himnos-orficos/o19",
    "himnos-orficos/o20",
+   "oraciones/r061",
    "frases-en-griego/g08",
    "frases-en-griego/g09",
    "frases-en-griego/g21"
   ]
  },
- "bytes": 378274221
+ "bytes": 385401024
 }

@@ -3,7 +3,7 @@
    Cuando cambia la versión, el navegador baja la edición nueva sola y avisa en la página.
    Los audios descargados van en otra caché aparte, «audios-jaris», que esto no borra (parte 3c). */
 'use strict';
-const VERSION = '16c135b67c18';
+const VERSION = '97322e3f4a5f';
 const CACHE = 'jaris-' + VERSION;
 const ARCHIVOS = [
 "./",
@@ -85,6 +85,7 @@ const ARCHIVOS = [
 "./contenido/lecturas.json",
 "./contenido/libro.json",
 "./contenido/oraculo.json",
+"./contenido/partituras.json",
 "./contenido/que-hacer.json",
 "./despertar.js",
 "./diario.js",

@@ -1530,11 +1530,11 @@
       el('ul', {},
         el('li', {}, el('a', { href: '#/novedades' }, 'Novedades de Jaris'), ': lo que ha cambiado en cada edición.'),
         el('li', {}, el('a', { href: '#/buzon' }, 'Buzón de sugerencias y erratas'), ': para contar una errata, una idea o algo que no funciona.'),
-        el('li', {}, el('a', { href: '#/descargas' }, 'Descargar los libros'), ': para leerlos fuera de la aplicación.')),
+        el('li', {}, el('a', { href: '#/descargas' }, 'Descargar los libros'), ': para leerlos fuera de la aplicación. También están ahí las partituras de la música.')),
       el('h3', { texto: 'Privacidad' }),
       el('p', { texto: 'Tu diario, tus favoritos, tus ajustes y tu progreso se quedan en este dispositivo. Jaris no los envía a ningún sitio, no tiene cuentas, no usa cookies ni estadísticas y no te pide la ubicación (para el calendario usa la zona horaria del dispositivo o el lugar que elijas).' }),
       el('p', { texto: 'Solo sale algo de tu dispositivo si tú lo mandas. El Buzón abre tu programa de correo con el mensaje ya escrito y eres tú quien lo envía; quien lo reciba verá tu dirección de correo. «Enviar una copia de mis datos» usa el menú de compartir del dispositivo, donde eliges adónde va.' }),
-      el('p', { texto: 'Como en cualquier página web, al abrir Jaris el servidor donde está alojada (GitHub) recibe la petición de la página, y los libros de «Descargar los libros» se bajan de GitHub cuando tú los pulsas.' }));
+      el('p', { texto: 'Como en cualquier página web, al abrir Jaris el servidor donde está alojada (GitHub) recibe la petición de la página, y los libros y las partituras de «Descargar los libros» se bajan de GitHub cuando tú los pulsas.' }));
     return bloque;
   }
 
@@ -1623,10 +1623,44 @@
       nodo.append(el('p', {}, 'Los audios no hace falta descargarlos: en ', el('a', { href: '#/audios' }, 'Audios'),
         ' se pueden guardar dentro de la aplicación para escucharlos sin conexión.'));
     }
+    // Partituras (12 de noviembre de 2026; contenido/partituras.json): una entrada por pieza con sus tres formatos.
+    let part = null;
+    try { part = await traer('contenido/partituras.json'); } catch (e) { part = null; }
+    if (mio !== turno) return;
+    if (part && part.piezas && part.piezas.length) {
+      const cap30 = ((libro.capitulos || []).find(function (c) { return /^Capítulo 30\./.test(c.titulo); }) || {}).cap;
+      const sec = el('section', { class: 'partituras', id: 'partituras', 'aria-labelledby': 'partituras-titulo' },
+        el('h2', { id: 'partituras-titulo', texto: 'Partituras' }),
+        el('p', {}, 'Las partituras de la música antigua del ', cap30 ? el('a', { href: '#/leer/' + cap30 }, 'capítulo 30') : 'capítulo 30',
+          ' y de lo que ha compuesto esta antología. Cada pieza viene en tres formatos:'),
+        el('ul', {},
+          el('li', {}, el('strong', { texto: 'PDF' }), ': para leerla o imprimirla.'),
+          el('li', {}, el('strong', { texto: 'MusicXML' }), ': para abrirla en un programa de música o pasarla a musicografía braille.'),
+          el('li', {}, el('strong', { texto: 'MIDI' }), ': para oírla o tocarla con un programa o un teclado.')));
+      const ul = el('ul', { class: 'lista-descargas lista-partituras' });
+      part.piezas.forEach(function (p) {
+        const formatos = el('p', { class: 'formatos' });
+        p.formatos.forEach(function (f, i) {
+          if (i) formatos.append(' · ');
+          formatos.append(el('a', { href: f.url, download: f.nombre,
+            'aria-label': p.titulo + ', en ' + f.formato + ' (' + pesoTexto(f.bytes) + ')' }, f.formato + ' (' + pesoTexto(f.bytes) + ')'));
+        });
+        ul.append(el('li', {}, el('h3', { texto: p.titulo }), formatos));
+      });
+      if (part.zip) {
+        ul.append(el('li', {},
+          el('a', { href: part.zip.url, download: part.zip.nombre }, part.zip.titulo + ' (' + pesoTexto(part.zip.bytes) + ')'),
+          el('p', { texto: part.zip.texto })));
+      }
+      sec.append(ul);
+      sec.append(el('p', { texto: 'Las partituras de los salmos del Cancionero llegarán con sus melodías.' }));
+      nodo.append(sec);
+    }
     main.replaceChildren(nodo);
     ponerTitulo('Descargar los libros');
     marcarMenu('#/descargas');
-    terminar(location.hash === '#/descargas/que-cambia' ? main.querySelector('#que-cambia summary') : null);   // C11
+    terminar(location.hash === '#/descargas/que-cambia' ? main.querySelector('#que-cambia summary')   // C11
+      : location.hash === '#/descargas/partituras' ? main.querySelector('#partituras-titulo') : null);    // partituras
   }
 
   function noEncontrada() {
