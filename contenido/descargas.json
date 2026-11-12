@@ -2,7 +2,7 @@
  {
   "titulo": "El libro entero, en EPUB",
   "texto": "Para el móvil, la tableta o un lector de libros electrónicos. Es el más cómodo con lector de pantalla.",
-  "bytes": 28977003,
+  "bytes": 28975662,
   "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-libro.epub",
   "nombre": "Jaris-libro.epub"
  },
@@ -44,7 +44,7 @@
  {
   "titulo": "Todos los libros juntos, en un ZIP",
   "texto": "Los seis libros de arriba en un solo archivo. En el iPhone se abre tocándolo en la app Archivos; en Android, con Files de Google.",
-  "bytes": 97948326,
+  "bytes": 97946985,
   "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-todos-los-libros.zip",
   "nombre": "Jaris-todos-los-libros.zip"
  }

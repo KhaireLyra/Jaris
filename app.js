@@ -1398,6 +1398,117 @@
     return bloque;
   }
 
+  /* ---------- Ajustes > Si Jaris no se pone al día (sesión C12, 12 de noviembre de 2026) ----------
+     «Buscar edición nueva» pide al trabajador que mire si hay edición nueva y la baje, sin borrar nada.
+     «Borrar todo y empezar de cero» hace lo mismo que borrar los datos del sitio en los ajustes de Safari:
+     ofrece antes la copia de seguridad, pide confirmación y borra los datos, las cachés (también la de los
+     audios) y el trabajador; luego vuelve a cargar Jaris desde internet. Necesita conexión. */
+  function bloqueReparar() {
+    const bloque = el('section', { 'aria-labelledby': 'ajustes-reparar' },
+      el('h2', { id: 'ajustes-reparar', texto: 'Si Jaris no se pone al día' }),
+      el('p', { texto: 'Jaris busca sola las ediciones nuevas. Si sabes que hay una y no te llega, prueba primero «Buscar edición nueva», que no borra nada. Si aun así no llega, o Jaris no funciona bien, usa «Borrar todo y empezar de cero».' }));
+    const estado = el('p', { id: 'reparar-estado', class: 'buz-ayuda', tabindex: '-1' });
+    const decir = function (texto) { estado.textContent = texto; avisar(texto); };
+    const panel = el('div', { class: 'datos-panel' });
+    const cerrarPanel = function () { panel.replaceChildren(); ['role', 'aria-labelledby', 'aria-describedby'].forEach(function (a) { panel.removeAttribute(a); }); };
+
+    // Buscar edición nueva
+    const buscar = el('button', { type: 'button' }, 'Buscar edición nueva');
+    let buscando = false;
+    function ofrecerEdicion() {
+      if (estadoEdicion === 'lista') avisar('La edición nueva de Jaris está lista. El botón «Abrir la edición nueva» está al principio de la página.');
+      else mostrarEdicion('lista');
+      estado.textContent = 'La edición nueva está descargada. Para ponerla, pulsa «Abrir la edición nueva», al principio de la página.';
+    }
+    buscar.addEventListener('click', async function () {
+      if (buscando) return;
+      if (!navigator.onLine) { decir('No hay conexión a internet. Conéctate y vuelve a probar.'); return; }
+      if (!('serviceWorker' in navigator)) { decir('Este navegador no guarda Jaris en el dispositivo: siempre lees la última edición.'); return; }
+      buscando = true;
+      decir('Buscando edición nueva…');
+      try {
+        const reg = await navigator.serviceWorker.getRegistration();
+        if (!reg) { decir('Jaris todavía no está guardada en este dispositivo. Se vuelve a cargar.'); setTimeout(function () { location.reload(); }, 1500); return; }
+        if (!reg.waiting) await reg.update();
+        const nueva = reg.installing || reg.waiting;
+        if (!nueva) { decir('Ya tienes la última edición de Jaris' + (libro ? ' (versión ' + libro.version + ').' : '.')); return; }
+        if (nueva.state === 'installed') { ofrecerEdicion(); return; }
+        decir('Hay una edición nueva. Descargándola… Puedes seguir usando Jaris; te avisaré cuando esté lista.');
+        const fin = await new Promise(function (listo) {
+          const mirar = function () { if (nueva.state === 'installed' || nueva.state === 'activated' || nueva.state === 'redundant') listo(nueva.state); };
+          nueva.addEventListener('statechange', mirar);
+          setTimeout(function () { listo('tarde'); }, 5 * 60000);
+          mirar();
+        });
+        if (fin === 'installed') ofrecerEdicion();
+        else if (fin === 'redundant') decir('No se ha podido descargar la edición nueva. Prueba más tarde o usa «Borrar todo y empezar de cero».');
+        else if (fin === 'tarde') decir('La edición nueva está tardando mucho en descargarse. Prueba más tarde o usa «Borrar todo y empezar de cero».');
+      } catch (e) {
+        decir('No se ha podido buscar la edición nueva. Comprueba la conexión y vuelve a probar.');
+      } finally { buscando = false; }
+    });
+
+    // Borrar todo y empezar de cero
+    const borrar = el('button', { type: 'button', class: 'secundario' }, 'Borrar todo y empezar de cero');
+    async function borrarTodo() {
+      cerrarPanel();
+      if (!navigator.onLine) { decir('Hace falta conexión a internet para volver a cargar Jaris. No se ha borrado nada.'); estado.focus(); return; }
+      decir('Borrando todo…');
+      try { localStorage.clear(); } catch (e) { /* nada */ }
+      try { sessionStorage.clear(); } catch (e) { /* nada */ }
+      try { if (window.caches) for (const n of await caches.keys()) await caches.delete(n); } catch (e) { /* nada */ }
+      try {
+        if ('serviceWorker' in navigator) for (const r of await navigator.serviceWorker.getRegistrations()) await r.unregister();
+      } catch (e) { /* nada */ }
+      decir('Todo borrado. Jaris se vuelve a cargar desde cero.');
+      setTimeout(function () { location.replace(location.pathname + '?desde-cero=' + Date.now()); }, 2500);
+    }
+    function pedirConfirmacion(previo) {
+      cerrarPanel();
+      const texto = (previo ? previo + ' ' : '') + 'Se borrará todo lo que Jaris guarda en este dispositivo: tu diario, tus favoritos, tu progreso, tus ajustes y los audios descargados. ' +
+        'Después Jaris se vuelve a cargar desde internet, con la última edición. No se puede deshacer.';
+      panel.setAttribute('role', 'alertdialog');
+      panel.setAttribute('aria-labelledby', 'reparar-titulo');
+      panel.setAttribute('aria-describedby', 'reparar-texto');
+      const no = el('button', { type: 'button', class: 'secundario' }, 'Cancelar');
+      const si = el('button', { type: 'button' }, 'Sí, borrar todo');
+      no.addEventListener('click', function () { cerrarPanel(); decir('No se ha borrado nada.'); borrar.focus(); });
+      si.addEventListener('click', borrarTodo);
+      panel.append(el('h3', { id: 'reparar-titulo', texto: '¿Borrar todo?' }), el('p', { id: 'reparar-texto', texto: texto }), el('p', {}, no, ' ', si));
+      no.focus();
+    }
+    borrar.addEventListener('click', function () {
+      cerrarPanel();
+      let c = null;
+      try { c = hacerCopia(); } catch (e) { c = null; }
+      if (!c) { pedirConfirmacion('No tienes diario, favoritos ni ajustes guardados, así que no hace falta copia.'); return; }
+      panel.setAttribute('role', 'group');
+      panel.setAttribute('aria-labelledby', 'reparar-copia-titulo');
+      const hacer = el('button', { type: 'button' }, 'Hacer la copia');
+      const seguir = el('button', { type: 'button', class: 'secundario' }, 'Seguir sin copia');
+      const cancelar = el('button', { type: 'button', class: 'secundario' }, 'Cancelar');
+      hacer.addEventListener('click', function () {
+        let copia = null;
+        try { copia = hacerCopia(); descargarArchivo(copia.nombre, copia.texto, 'application/json'); }
+        catch (e) { decir('No se ha podido guardar la copia. No se ha borrado nada.'); return; }
+        pedirConfirmacion('Copia guardada en el archivo «' + copia.nombre + '», en la carpeta de descargas. Trae ' + juntarLista(copia.partes) + '.');
+      });
+      seguir.addEventListener('click', function () { pedirConfirmacion(''); });
+      cancelar.addEventListener('click', function () { cerrarPanel(); decir('No se ha borrado nada.'); borrar.focus(); });
+      const titulo = el('h3', { id: 'reparar-copia-titulo', tabindex: '-1', texto: 'Antes de borrar, ¿quieres guardar una copia de tus datos?' });
+      panel.append(titulo, el('p', { texto: 'La copia trae ' + juntarLista(c.partes) + '. Con ella puedes recuperarlo todo después, en «Tus datos», con «Recuperar una copia de mis datos».' }),
+        el('p', {}, hacer, ' ', seguir, ' ', cancelar));
+      titulo.focus();
+    });
+
+    bloque.append(el('p', {}, buscar),
+      el('p', { class: 'buz-ayuda', texto: 'Mira si hay una edición nueva y la descarga. No borra nada.' }),
+      el('p', {}, borrar),
+      el('p', { class: 'buz-ayuda', texto: 'Borra todo lo que Jaris guarda en este dispositivo y la vuelve a cargar, como recién instalada. Antes te ofrece guardar una copia de tus datos. Necesita conexión a internet.' }),
+      estado, panel);
+    return bloque;
+  }
+
   /* ---------- Ajustes > Acerca de Jaris (sesión 7B, 6 de noviembre de 2026) ----------
      La frase de privacidad se comprobó contra el código el 6 de noviembre: solo hay fetch() de archivos de la propia aplicación
      (app.js, audios.js, cancionero.js, oraculo.js, sw.js), ningún servicio externo, estadísticas, cookies ni geolocalización;
@@ -1467,6 +1578,7 @@
     nodo.append(bloqueLugar());
     nodo.append(bloqueAudios());
     nodo.append(bloqueDatos());
+    nodo.append(bloqueReparar());
     nodo.append(bloqueAcerca());
     main.replaceChildren(nodo);
     ponerTitulo('Ajustes');
@@ -1618,12 +1730,16 @@
   async function hayNovedadesEnEspera() {
     try {
       const actual = 'jaris-' + libro.version;
+      let mirada = false;
+      // Sesión C12: puede haber restos de un intento anterior; basta con que UNA edición guardada traiga novedades
       for (const nombre of await caches.keys()) {
         if (nombre.indexOf('jaris-') !== 0 || nombre === actual) continue;
         const r = await (await caches.open(nombre)).match('contenido/libro.json', { ignoreSearch: true });
         if (!r) continue;
-        return JSON.stringify(cambiosDe(await r.json())) !== JSON.stringify(cambiosDe(libro));
+        if (JSON.stringify(cambiosDe(await r.json())) !== JSON.stringify(cambiosDe(libro))) return true;
+        mirada = true;
       }
+      if (mirada) return false;
     } catch (e) { /* si no se puede mirar, se avisa por si acaso */ }
     return true;
   }
@@ -1649,12 +1765,21 @@
   }
   function seguirInstalacion(trabajador) {
     if (!trabajador || !navigator.serviceWorker.controller) return;   // la primera instalación no es una edición nueva
+    let estabaBajando = trabajador.state === 'installing';
     const mirar = function () {
       // Solo se avisa si la edición nueva trae novedades; si no, se pone sola la próxima vez que se abra Jaris, sin decir nada.
-      if (trabajador.state === 'installed') hayNovedadesEnEspera().then(function (si) { if (si) mostrarEdicion('lista'); });
-      else if (trabajador.state === 'redundant' && estadoEdicion === 'bajando') {
+      if (trabajador.state === 'installing') estabaBajando = true;
+      if (trabajador.state === 'installed') {
+        estabaBajando = false;   // ya está descargada: si luego la sustituye otra más nueva, no es un fallo
+        hayNovedadesEnEspera().then(function (si) { if (si) mostrarEdicion('lista'); });
+      } else if (trabajador.state === 'redundant' && estabaBajando && !abriendoEdicion) {
+        /* Sesión C12: antes este aviso no salía nunca (solo si se había dicho «Descargando», que no se decía),
+           y una descarga fallida pasaba en silencio. Se avisa una vez por sesión. */
+        estabaBajando = false;
         mostrarEdicion('');
-        avisar('No se ha podido terminar de descargar la edición nueva. Se volverá a intentar más tarde; puedes seguir usando esta.');
+        let dicho = false;
+        try { dicho = sessionStorage.getItem('jaris.falloEdicion') === '1'; sessionStorage.setItem('jaris.falloEdicion', '1'); } catch (e) { /* nada */ }
+        if (!dicho) avisar('Hay una edición nueva de Jaris, pero no se ha podido descargar entera. Se volverá a intentar más tarde; puedes seguir usando esta.');
       }
     };
     trabajador.addEventListener('statechange', mirar);
@@ -1680,7 +1805,20 @@
       try {
         registro = await navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' });
       } catch (e) { return; /* sin servicio: se lee con internet */ }
-      if (registro.waiting) seguirInstalacion(registro.waiting);
+      if (registro.waiting && navigator.serviceWorker.controller) {
+        /* Sesión C12: en el iPhone, Jaris casi nunca se cierra del todo, así que una edición sin novedades
+           que esperaba a «la próxima vez que se abra» se quedaba esperando para siempre. Ahora, al abrir
+           Jaris, se pone enseguida (una vez por sesión, para no entrar en un bucle si algo falla). */
+        let yaProbado = false;
+        try { yaProbado = sessionStorage.getItem('jaris.edicionAlAbrir') === '1'; sessionStorage.setItem('jaris.edicionAlAbrir', '1'); } catch (e) { yaProbado = true; }
+        if (!yaProbado && !(await hayNovedadesEnEspera())) {
+          abriendoEdicion = true;
+          registro.waiting.postMessage({ tipo: 'activar' });
+          setTimeout(function () { location.reload(); }, 4000);
+          return;
+        }
+        seguirInstalacion(registro.waiting);
+      }
       if (registro.installing) seguirInstalacion(registro.installing);
       registro.addEventListener('updatefound', function () { seguirInstalacion(registro.installing); });
       comprobar(true);

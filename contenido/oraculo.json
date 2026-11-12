@@ -533,7 +533,7 @@
      4
     ],
     "suma": 14,
-    "dios": "El Buen Daimon (Agathos Daimon (se dice \"agazós démon\"))",
+    "dios": "El Buen Daimon (Agathos Daimon, se dice \"agazós démon\")",
     "diosPerdido": false,
     "etiqueta": "antigua",
     "texto": "Si caen tres cuatros y dos unos, el dios te guiará en el camino que emprendes. La sonriente Afrodita te llevará a algo bueno: caminarás con muchos frutos y con un destino sin daño."
@@ -872,7 +872,7 @@
     "dios": "La Buena Fortuna",
     "diosPerdido": false,
     "etiqueta": "compuesta",
-    "texto": "Tres seises y dos unos: [la rueda de la fortuna gira a tu favor. No la fuerces ni la detengas; aprovecha lo que te trae y comparte lo que recibas]."
+    "texto": "Tres seises y dos unos: la rueda de la fortuna gira a tu favor. No la fuerces ni la detengas; aprovecha lo que te trae y comparte lo que recibas."
    },
    {
     "romano": "XXXVIII",
@@ -1182,14 +1182,14 @@
   "inscripcion": "La inscripción empieza así: \"Estos son los oráculos de Apolo Pitio con cinco tabas: hay que escuchar siempre su voz\".",
   "pasos": [
    "Lávate las manos y saluda a Hestia (rito 1).",
-   "Pide a Apolo y a Hermes que guíen la suerte (oración \"Antes de consultar un oráculo\"): \"Apolo, señor, y Hermes, guiadme. Que la suerte hable con verdad.\"",
+   "Pide a Apolo y a Hermes que guíen la suerte, con la invocación antigua de más arriba (\"Apolo, señor, y Hermes, guiadme. Que la suerte hable con verdad.\") o con la oración \"Antes de consultar un oráculo (dados o tabas)\" (Oración 62, capítulo 6).",
    "Piensa con claridad una sola pregunta.",
    "Tira las cinco tabas (o una taba cinco veces) y apunta lo que sale en cada una.",
    "Ordena los números de menor a mayor y busca la respuesta en la lista.",
-   "Da las gracias. Y recuerda los consejos del principio de este capítulo: con calma, sin consultar una y otra vez la misma pregunta, y sin tomar decisiones importantes solo por un oráculo."
+   "Da las gracias. Y recuerda los consejos del final de este capítulo (apartado 6): con calma, sin consultar una y otra vez la misma pregunta, y sin tomar decisiones importantes solo por un oráculo."
   ],
   "caras": [
-   "Una taba tiene cuatro caras en las que puede quedar: la estrecha y plana vale 1; la ancha y cóncava, 3; la ancha y convexa, 4; y la estrecha y sinuosa, 6 (los 2 y los 5 no existen). Las caras de 3 y 4 salen mucho más a menudo que las de 1 y 6. Si no tienes tabas: tira un dado normal y, si sale 2 o 5, vuelve a tirar. No da exactamente la misma suerte que una taba, pero sirve. La aplicación de la antología simulará tabas de verdad."
+   "Una taba tiene cuatro caras en las que puede quedar: la estrecha y plana vale 1; la ancha y cóncava, 3; la ancha y convexa, 4; y la estrecha y sinuosa, 6 (los 2 y los 5 no existen). Las caras de 3 y 4 salen mucho más a menudo que las de 1 y 6. Si no tienes tabas: tira un dado normal y, si sale 2 o 5, vuelve a tirar. No da exactamente la misma suerte que una taba, pero sirve. La aplicación Jaris tiene este oráculo, con tabas, en la pantalla «Oráculo»."
   ],
   "probabilidades": {
    "1": 0.1,
@@ -1208,7 +1208,7 @@
  ],
  "leer": [
   "Una señal no es un destino: los griegos sabían que un presagio se podía interpretar mal. En la Odisea, Penélope dice que hay sueños que se cumplen y sueños que engañan (Odisea 19.560-567). Y la pregunta importa: Jenofonte preguntó en Delfos a qué dios debía rezar para que su viaje saliera bien, y Sócrates le regañó porque no había preguntado si debía ir (Anábasis 3.1.5-7). Un oráculo o una señal se tomaban como un consejo; la decisión seguía siendo de cada uno.",
-  "Para no ver solo lo que quieres ver (según Sarah Kate Istra Winter): en vez de repetir la consulta, espera a ver si aparece después una señal que la confirme.",
+  "Para no ver solo lo que quieres ver: en vez de repetir la consulta, espera a ver si aparece después una señal que la confirme.",
   "No usarla para calmar la ansiedad: puede volverse compulsiva. Los propios griegos criticaban ese exceso, al que llamaban deisidaimonia (superstición)."
  ],
  "libro": {

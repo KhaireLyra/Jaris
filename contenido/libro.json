@@ -3,8 +3,8 @@
  "subtitulo": "Antología del helenismo",
  "autora": "Khaire Lyra",
  "edicion": "Segunda edición, 2026",
- "fecha": "2026-11-11",
- "fechaTexto": "11 de noviembre de 2026",
+ "fecha": "2026-11-12",
+ "fechaTexto": "12 de noviembre de 2026",
  "portada": {
   "imagen": "img/file181.jpg",
   "descripcion": "Portada del libro «Jaris. Antología del helenismo», de Khaire Lyra: el título, en letras grandes de color terracota con un filo dorado y una greca griega debajo. Ilustración de un templo griego de columnas sobre un promontorio junto al mar, con un olivo delante. Al fondo, el sol sale sobre el mar en calma, bajo un cielo claro y despejado.",
@@ -2077,6 +2077,15 @@
  ],
  "novedades": [
   {
+   "fecha": "2026-11-12",
+   "fechaTexto": "12 de noviembre de 2026",
+   "cambios": [
+    "Arreglado: Jaris vuelve a recibir sola las ediciones nuevas. Si un archivo no se puede descargar, la edición nueva se pone igual, y si algo falla, te avisa.",
+    "La Noche tiene un orden nuevo: arriba, «Tu plan de lectura», con el plan, los botones y «Cambiar de plan» sin tener que desplegar nada. El cambio de plan se guarda solo al pulsar «Guardar y empezar este plan». Debajo, la lectura de esta noche, con «Ya la he leído» al final.",
+    "Nuevo en Ajustes, «Si Jaris no se pone al día»: el botón «Buscar edición nueva», que no borra nada, y «Borrar todo y empezar de cero», que antes te ofrece guardar una copia de tus datos y te pide confirmación."
+   ]
+  },
+  {
    "fecha": "2026-11-11",
    "fechaTexto": "11 de noviembre de 2026",
    "cambios": [
@@ -2218,5 +2227,5 @@
   659.26
  ],
  "notasLira": [],
- "version": "b6710085e62c"
+ "version": "16c135b67c18"
 }

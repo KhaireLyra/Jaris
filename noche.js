@@ -368,8 +368,9 @@
   /* ---------- La pantalla: «Lectura de esta noche» ---------- */
   async function seccionLectura(a, n) {
     const el = a.el, base = n ? n.base : 0, azar = a.azar || Math.random;
-    const sec = el('section', { 'aria-labelledby': 'noche-lectura-t', class: 'noche-lectura' });
-    sec.append(el('h2', { id: 'noche-lectura-t', texto: 'Lectura de esta noche' }));
+    /* Sesión C12: arriba «Tu plan de lectura» (el plan, los botones y «Cambiar de plan»); debajo, «Lectura de esta noche». */
+    const sec = el('div', { class: 'noche-lectura' });
+    sec.append(el('h2', { id: 'noche-plan-t', texto: 'Tu plan de lectura' }));
     let datos = null;
     try { datos = await cargarLecturas(a); } catch (e) { datos = null; }
     if (!datos) {
@@ -434,7 +435,7 @@
       escribir.append(etiqueta, area, el('div', { class: 'buz-botones' }, guardar, ' ', cancelar));
       const quitar = boton('No mostrar preguntas', function () {
         const x = leerEstado(); x.preguntas = 'nunca';
-        guardarYPintar(x, 'Ya no saldrán preguntas. Puedes volver a ponerlas en «Cambiar de plan o de duración».');
+        guardarYPintar(x, 'Ya no saldrán preguntas. Puedes volver a ponerlas en «Cambiar de plan», al principio de la Noche.');
       });
       caja.append(el('div', { class: 'buz-botones' }, otraPregunta, ' ', botonEscribir, ' ', quitar), escribir, abrirDiario);
       return caja;
@@ -445,7 +446,8 @@
       const L = lecturaDe(p, e.duracion, i), otra = otraDeEstaNoche(e, base), nodos = [];
       const total = (p.lecturas[e.duracion] || []).length;
       const vuelta = e.vueltas[ap.clave] || 0, nomVuelta = nombreVuelta(vuelta);
-      nodos.push(el('p', { class: 'buz-ayuda', texto: 'Plan: ' + ap.nombre + (nomVuelta ? ' (' + nomVuelta + ')' : '') + '. Duración: ' + NOMBRE_DURACION[e.duracion] + '. Dura ' + plural(total, 'noche', 'noches') + '.' }));
+      const plan = [];   // sesión C12: lo del plan va arriba; en «nodos», la lectura
+      const infoPlan = 'Plan: ' + ap.nombre + (nomVuelta ? ' (' + nomVuelta + ')' : '') + '. Duración: ' + NOMBRE_DURACION[e.duracion] + '. Dura ' + plural(total, 'noche', 'noches') + '.';
       let foco = null, resumen = '';
 
       if (otra) {
@@ -471,9 +473,10 @@
       } else {
         resumen = 'Has terminado el plan.';
         foco = el('h3', { id: 'noche-lectura-foco', tabindex: '-1', texto: 'Has terminado «' + ap.nombre + '»' });
-        nodos.push(foco, el('p', { texto: 'Ya has leído todo este plan. Puedes repetirlo desde el principio, volver a la última lectura o elegir otro plan en «Cambiar de plan o de duración».' }));
+        nodos.push(foco, el('p', { texto: 'Ya has leído todo este plan. Puedes repetirlo desde el principio, volver a la última lectura o elegir otro plan en «Cambiar de plan», más arriba.' }));
         if (e.preguntas !== 'nunca') nodos.push(el('p', { texto: 'Si lo repites, cada lectura traerá una pregunta corta para pensar o apuntar en tu diario. Es opcional y puedes quitarla.' }));
       }
+      plan.push(el('p', { texto: infoPlan + ' ' + resumen }));
 
       // Botones del plan
       const botones = el('div', { class: 'buz-botones' });
@@ -488,10 +491,10 @@
           const x = leerEstado(); if (!volverALaAnterior(datos, x)) return; guardarYPintar(x, 'Vuelves a la lectura anterior.');
         }));
       }
-      if (e.pausa && !otra) botones.append(boton('Seguir con el plan', function () {
+      if (e.pausa && !otra) plan.push(el('p', {}, boton('Seguir con el plan', function () {
         const x = leerEstado(); ponerPausa(x, false); guardarYPintar(x, 'Sigues con el plan.');
-      }));
-      nodos.push(botones);
+      })));
+      if (botones.childNodes.length) nodos.push(botones);
 
       // Esta noche, otra cosa (dos opciones que salen al pulsar)
       const otras = el('div', { class: 'buz-botones', hidden: 'hidden' });
@@ -511,11 +514,11 @@
       });
       const cancelarOtra = boton('No, mejor no', function () { otras.hidden = true; abrirOtra.hidden = false; abrirOtra.focus(); });
       otras.append(primeraOtra, ' ', deFavoritos, ' ', cancelarOtra);
-      nodos.push(el('p', {}, abrirOtra), otras);
+      plan.push(el('p', {}, abrirOtra), otras);
 
       // Pausar (sin consecuencias)
       if (!e.pausa) {
-        nodos.push(el('p', {}, boton('Pausar el plan', function () {
+        plan.push(el('p', {}, boton('Pausar el plan', function () {
           const x = leerEstado(); ponerPausa(x, true); guardarYPintar(x, 'Plan en pausa. Sin prisa, aquí queda tu sitio.');
         })), el('p', { class: 'buz-ayuda', texto: 'Pausar no borra nada y no cuenta días: al seguir vuelves justo por donde lo dejaste.' }));
       }
@@ -523,7 +526,7 @@
       // Cambiar de plan o de duración (con las noches que dura cada cosa)
       {
         const planes = listaDePlanes(datos);
-        const det = el('details', { class: 'noche-cambiar' }, el('summary', { texto: 'Cambiar de plan o de duración' }));
+        const det = el('div', { class: 'noche-cambiar' }, el('h3', { id: 'noche-cambiar-t', texto: 'Cambiar de plan' }));
         const selPlan = el('select', { id: 'noche-plan' }), selDios = el('select', { id: 'noche-dios' }), selDur = el('select', { id: 'noche-dur' });
         const descr = el('p', { class: 'buz-ayuda', id: 'noche-plan-descr' });
         const cajaDios = el('div', {}, el('label', { for: 'noche-dios', class: 'buz-etiqueta', texto: 'Dios' }), selDios);
@@ -553,23 +556,25 @@
         const selPreg = el('select', { id: 'noche-preguntas', 'aria-describedby': 'noche-preguntas-ayuda' });
         MODOS_PREGUNTAS.forEach(function (m) { selPreg.append(el('option', { value: m, texto: NOMBRE_MODO[m] })); });
         selPreg.value = e.preguntas;
-        const aplicar = boton('Usar este plan y esta duración', function () {
+        const aplicar = boton('Guardar y empezar este plan', function () {
           const x = leerEstado(), antes = x.preguntas;
           if (!cambiarPlan(datos, x, selPlan.value, selDios.value, selDur.value)) return;
           if (MODOS_PREGUNTAS.indexOf(selPreg.value) >= 0) x.preguntas = selPreg.value;
           const nuevo = planActivo(datos, x);
-          guardarYPintar(x, 'Plan «' + nuevo.nombre + '», duración ' + NOMBRE_DURACION[x.duracion].split(' (')[0] + '. Sigues por donde lo dejaste.' +
+          guardarYPintar(x, 'Guardado. Plan «' + nuevo.nombre + '», duración ' + NOMBRE_DURACION[x.duracion].split(' (')[0] + '.' +
             (x.preguntas !== antes ? ' Preguntas para pensar: ' + NOMBRE_MODO[x.preguntas].toLowerCase() + '.' : ''));
         });
-        det.append(el('p', { class: 'buz-ayuda', texto: 'Cada plan recuerda por dónde ibas. Si cambias de duración, sigues en el mismo texto, sin perder nada.' }),
+        det.append(el('p', { class: 'buz-ayuda', texto: 'Elige el plan y la duración: no cambia nada hasta que pulses «Guardar y empezar este plan». Cada plan recuerda por dónde ibas, y si cambias de duración sigues en el mismo texto, sin perder nada.' }),
           el('label', { for: 'noche-plan', class: 'buz-etiqueta', texto: 'Plan (entre paréntesis, cuántas noches dura)' }), selPlan, descr, cajaDios,
           el('label', { for: 'noche-dur', class: 'buz-etiqueta', texto: 'Duración de cada lectura' }), selDur,
           el('label', { for: 'noche-preguntas', class: 'buz-etiqueta', texto: 'Preguntas para pensar' }), selPreg,
-          el('p', { class: 'buz-ayuda', id: 'noche-preguntas-ayuda', texto: 'Una pregunta corta después de cada lectura, para pensar o apuntar en tu diario. Es opcional. El cambio se guarda al pulsar «Usar este plan y esta duración».' }),
+          el('p', { class: 'buz-ayuda', id: 'noche-preguntas-ayuda', texto: 'Una pregunta corta después de cada lectura, para pensar o apuntar en tu diario. Es opcional. El cambio se guarda al pulsar «Guardar y empezar este plan».' }),
           el('p', {}, aplicar));
-        nodos.push(det);
+        plan.push(det);
       }
 
+      // Más opciones del plan (sesión C12): empezar desde otro sitio y empezar de nuevo
+      plan.push(el('h3', { id: 'noche-mas-t', texto: 'Más opciones del plan' }));
       // Empezar desde otro sitio
       if (ap.inicios.length) {
         const det = el('details', { class: 'noche-otro-sitio' }, el('summary', { texto: 'Empezar desde otro sitio' }));
@@ -582,7 +587,7 @@
             x.pausa = false; x.otra = null;
             guardarYPintar(x, 'Empiezas en «' + sel.options[sel.selectedIndex].textContent + '».');
           }));
-        nodos.push(det);
+        plan.push(det);
       }
       // Empezar el plan de nuevo (con confirmación en la misma pantalla)
       const nuevo = el('button', { type: 'button', texto: 'Empezar el plan de nuevo' });
@@ -593,10 +598,10 @@
       const no = boton('No, dejarlo como está', function () { confirmar.hidden = true; nuevo.hidden = false; nuevo.focus(); });
       confirmar.append(si, ' ', no);
       nuevo.addEventListener('click', function () { nuevo.hidden = true; confirmar.hidden = false; si.focus(); });
-      nodos.push(el('p', {}, nuevo), confirmar);
+      plan.push(el('p', {}, nuevo), confirmar);
 
       if (mio !== version) return;
-      cuerpo.replaceChildren(...nodos);
+      cuerpo.replaceChildren(...plan, el('h2', { id: 'noche-lectura-t', texto: 'Lectura de esta noche' }), ...nodos);
       if (conFoco && foco) {
         foco.focus();
         if (foco.scrollIntoView) foco.scrollIntoView({ block: 'start' });
@@ -724,15 +729,15 @@
     // Sesión C4 (parte 3): la oración final (sustituye a la «Oración de esta noche») y «Mis oraciones de la noche»
     raiz.append(await oracionFinal(a, n));
 
-    // Esta noche: el día griego empieza al ponerse el sol
-    raiz.append(el('h2', { texto: 'Esta noche' }), el('p', {},
-      (n.yaEmpezo ? 'Desde la puesta del sol (hacia las ' + n.hora + ') ya es el ' : 'Esta tarde, al ponerse el sol (hacia las ' + n.hora + '), empieza el ') +
-      n.griego + ': ' + n.resumen + '. ', el('a', { href: n.ruta }, 'Ver qué se hace ese día')));
-
     const oraciones = oracionesDeNoche(libro);
 
     // Repaso amable del día
     raiz.append(repaso(a, n));
+
+    // Esta noche: el día griego empieza al ponerse el sol (sesión C12: después del repaso)
+    raiz.append(el('h2', { texto: 'Esta noche' }), el('p', {},
+      (n.yaEmpezo ? 'Desde la puesta del sol (hacia las ' + n.hora + ') ya es el ' : 'Esta tarde, al ponerse el sol (hacia las ' + n.hora + '), empieza el ') +
+      n.griego + ': ' + n.resumen + '. ', el('a', { href: n.ruta }, 'Ver qué se hace ese día')));
 
     // Si no puedes dormir
     if (oraciones.otras.length) {

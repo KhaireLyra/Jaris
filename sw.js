@@ -3,7 +3,7 @@
    Cuando cambia la versión, el navegador baja la edición nueva sola y avisa en la página.
    Los audios descargados van en otra caché aparte, «audios-jaris», que esto no borra (parte 3c). */
 'use strict';
-const VERSION = 'b6710085e62c';
+const VERSION = '16c135b67c18';
 const CACHE = 'jaris-' + VERSION;
 const ARCHIVOS = [
 "./",
@@ -290,15 +290,50 @@ const ARCHIVOS = [
 "./sugerencias.js"
 ];
 
+/* Sesión C12: antes se guardaba todo de golpe (cache.addAll): si UN archivo fallaba, la edición nueva
+   entera no se instalaba y la aplicación se quedaba en la vieja sin decir nada. Ahora se guarda archivo a
+   archivo, con reintentos. Solo los imprescindibles (la página, los estilos, los programas y libro.json)
+   pueden parar la instalación; si falla otro (una ilustración, un capítulo), la edición nueva se instala
+   igual y ese archivo se baja de internet la primera vez que haga falta. */
+function imprescindible(a) {
+  return a === './' || /^\.\/[^\/]+\.(html|css|js|webmanifest)$/.test(a) || a === './contenido/libro.json';
+}
+async function guardarUno(cache, a) {
+  for (let intento = 0; intento < 3; intento++) {
+    try {
+      const r = await fetch(new Request(a, { cache: 'reload' }));
+      if (r.ok) { await cache.put(a, r); return true; }
+    } catch (e) { /* se reintenta */ }
+    await new Promise(function (listo) { setTimeout(listo, 800 * (intento + 1)); });
+  }
+  return false;
+}
+async function guardarEdicion() {
+  const cache = await caches.open(CACHE);
+  const pendientes = [];
+  for (const a of ARCHIVOS) if (!(await cache.match(a))) pendientes.push(a);   // lo de un intento anterior ya está
+  const fallidos = [];
+  let i = 0;
+  async function trabajar() {   // de seis en seis: casi 300 descargas a la vez pueden fallar en el móvil
+    while (i < pendientes.length) {
+      const a = pendientes[i++];
+      if (!(await guardarUno(cache, a))) fallidos.push(a);
+    }
+  }
+  await Promise.all([trabajar(), trabajar(), trabajar(), trabajar(), trabajar(), trabajar()]);
+  const graves = fallidos.filter(imprescindible);
+  if (graves.length) throw new Error('No se han podido guardar: ' + graves.join(', '));
+  return fallidos;
+}
+
 self.addEventListener('install', function (evento) {
   evento.waitUntil((async function () {
-    const cache = await caches.open(CACHE);
-    await cache.addAll(ARCHIVOS.map(function (a) { return new Request(a, { cache: 'reload' }); }));
+    const fallidos = await guardarEdicion();
     /* Una edición nueva NO se pone sola mientras Jaris está abierta (así no se mezclan las dos):
        espera a que la persona pulse «Abrir la edición nueva» (mensaje «activar»), o a que cierre
        Jaris y la vuelva a abrir. La primera vez que se instala se pone enseguida. */
     const ventanas = await self.clients.matchAll({ includeUncontrolled: true, type: 'window' });
-    ventanas.forEach(function (v) { v.postMessage({ tipo: 'guardada', version: VERSION }); });
+    ventanas.forEach(function (v) { v.postMessage({ tipo: 'guardada', version: VERSION, sinGuardar: fallidos.length }); });
   })());
 });
 
@@ -353,6 +388,12 @@ self.addEventListener('fetch', function (evento) {
       const inicio = await cache.match('./');
       if (inicio) return inicio;
     }
-    return fetch(evento.request);
+    const respuesta = await fetch(evento.request);
+    /* Sesión C12: un archivo de la edición que no se pudo guardar al instalarla se guarda ahora */
+    const rel = './' + decodeURIComponent(url.pathname.slice(new URL(self.registration.scope).pathname.length));
+    if (respuesta.ok && ARCHIVOS.indexOf(rel) >= 0) {
+      try { await cache.put(rel, respuesta.clone()); } catch (e) { /* sin sitio: se leerá con internet */ }
+    }
+    return respuesta;
   })());
 });
