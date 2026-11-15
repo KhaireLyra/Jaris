@@ -3,10 +3,10 @@
  "subtitulo": "Antología del helenismo",
  "autora": "Khaire Lyra",
  "edicion": "Segunda edición, 2026",
- "fecha": "2026-11-12",
- "fechaTexto": "12 de noviembre de 2026",
+ "fecha": "2026-11-15",
+ "fechaTexto": "15 de noviembre de 2026",
  "portada": {
-  "imagen": "img/file181.jpg",
+  "imagen": "img/file182.jpg",
   "descripcion": "Portada del libro «Jaris. Antología del helenismo», de Khaire Lyra: el título, en letras grandes de color terracota con un filo dorado y una greca griega debajo. Ilustración de un templo griego de columnas sobre un promontorio junto al mar, con un olivo delante. Al fondo, el sol sale sobre el mar en calma, bajo un cielo claro y despejado.",
   "ancho": 848,
   "alto": 1264,
@@ -54,10 +54,10 @@
  },
  "primero": "ch002",
  "indices": {
-  "oraciones": "ch059",
-  "himnos": "ch060",
-  "ritos": "ch061",
-  "general": "ch058"
+  "oraciones": "ch060",
+  "himnos": "ch061",
+  "ritos": "ch062",
+  "general": "ch059"
  },
  "arbol": [
   {
@@ -349,37 +349,42 @@
      "cap": "ch056",
      "titulo": "Apéndice A8. Cancionero",
      "hijos": []
+    },
+    {
+     "cap": "ch057",
+     "titulo": "Apéndice A9. Helenismo a tu manera",
+     "hijos": []
     }
    ]
   },
   {
-   "cap": "ch057",
+   "cap": "ch058",
    "titulo": "Índices",
    "hijos": [
     {
-     "cap": "ch058",
+     "cap": "ch059",
      "titulo": "Índice general",
      "hijos": []
     },
     {
-     "cap": "ch059",
+     "cap": "ch060",
      "titulo": "Índice de oraciones",
      "hijos": []
     },
     {
-     "cap": "ch060",
+     "cap": "ch061",
      "titulo": "Índice de himnos",
      "hijos": []
     },
     {
-     "cap": "ch061",
+     "cap": "ch062",
      "titulo": "Índice de ritos",
      "hijos": []
     }
    ]
   },
   {
-   "cap": "ch062",
+   "cap": "ch063",
    "titulo": "Sobre este libro",
    "hijos": []
   }
@@ -667,31 +672,36 @@
   },
   {
    "cap": "ch057",
+   "titulo": "Apéndice A9. Helenismo a tu manera",
+   "parte": "Apéndices"
+  },
+  {
+   "cap": "ch058",
    "titulo": "Índices",
    "parte": null
   },
   {
-   "cap": "ch058",
+   "cap": "ch059",
    "titulo": "Índice general",
    "parte": "Índices"
   },
   {
-   "cap": "ch059",
+   "cap": "ch060",
    "titulo": "Índice de oraciones",
    "parte": "Índices"
   },
   {
-   "cap": "ch060",
+   "cap": "ch061",
    "titulo": "Índice de himnos",
    "parte": "Índices"
   },
   {
-   "cap": "ch061",
+   "cap": "ch062",
    "titulo": "Índice de ritos",
    "parte": "Índices"
   },
   {
-   "cap": "ch062",
+   "cap": "ch063",
    "titulo": "Sobre este libro",
    "parte": null
   }
@@ -2214,7 +2224,7 @@
   },
   {
    "src": "img/oraculo-pitia.jpg",
-   "alt": "La Pitia, sacerdotisa de Delfos, sentada en lo alto de un trípode de bronce con una rama de laurel en una mano y un cuenco en la otra.\n\n\n\n========================================\nI) IMÁGENES NUEVAS DEL 11 DE NOVIEMBRE DE 2026 (4): HOMERO Y EL AÑO DEL CAMPO (SEGUNDA EDICIÓN)\n========================================\n\nPara las dos partes nuevas de la segunda edición que no tenían ninguna imagen: «Homero para rezar y para pensar» (capítulo 19) y «El año del campo» (capítulo 25). Son escenas de los textos antiguos, así que las personas llevan ropa griega antigua. Elegidas por la autora (sesión C11).\n\n71-telemaco-junto-al-mar.png\nCopia desde aquí:\n\"Ilustración digital con estilo de libro ilustrado, plana y cálida, inspirada en la pintura de la cerámica griega antigua pero moderna y amable. Colores: terracota, ocre, azul egeo, verde oliva, blanco marfil y negro suave. Líneas limpias, formas sencillas, buen contraste y luz suave. Escena: un joven griego de la Antigüedad, Telémaco, de unos veinte años, con túnica corta y manto, está solo en la orilla de una playa tranquila al atardecer. Está agachado junto al agua y se lava las manos en el mar, que es de color gris azulado y tiene olas pequeñas. Tiene la cara levantada hacia el cielo, porque está rezando. A lo lejos, por la playa, se acerca caminando un hombre mayor con barba y manto. Formato horizontal. Tiene que verse claramente: el joven solo junto al agua, sus manos mojándose en el mar, la cara levantada rezando y, pequeño y lejos, el hombre mayor que se acerca. No debe aparecer: barcos de guerra, armas, otras personas, la diosa Atenea con casco ni lechuzas, fuego. No pongas ningún texto, letra, número, firma ni marca de agua.\"\nHasta aquí.\nDescripción alternativa: Al atardecer, el joven Telémaco se lava las manos en el mar y reza con la cara levantada al cielo. A lo lejos, por la playa, se acerca un hombre mayor: es Atenea, con la figura de Méntor.\n\n72-hector-reza-por-su-hijo.png\nCopia desde aquí:\n\"Ilustración digital con estilo de libro ilustrado, plana y cálida, inspirada en la pintura de la cerámica griega antigua pero moderna y amable. Colores: terracota, ocre, azul egeo, verde oliva, blanco marfil y negro suave. Líneas limpias, formas sencillas, buen contraste y luz suave. Escena: junto a la muralla de una ciudad griega antigua, el guerrero Héctor, con coraza de bronce y sin casco, sostiene en brazos a su hijo, un bebé, y lo levanta con cariño mientras mira al cielo, rezando por él. El casco de bronce, con un penacho de crin de caballo, está en el suelo, a sus pies. A su lado, su esposa Andrómaca, con ropa griega antigua larga y un velo, los mira con una sonrisa tierna y un poco triste. Formato horizontal. Tiene que verse claramente: Héctor sin casco con el bebé en brazos, la cara levantada rezando, el casco con penacho en el suelo y Andrómaca sonriendo a su lado. No debe aparecer: sangre, heridos, batalla, lanzas en alto, espadas desenvainadas, fuego, otras personas. No pongas ningún texto, letra, número, firma ni marca de agua.\"\nHasta aquí.\nDescripción alternativa: Junto a la muralla de Troya, Héctor, sin casco, levanta a su hijo pequeño en brazos y reza por él mirando al cielo. Su casco está en el suelo y su esposa, Andrómaca, los mira sonriendo.\n\n73-oracion-de-la-siembra.png\nCopia desde aquí:\n\"Ilustración digital con estilo de libro ilustrado, plana y cálida, inspirada en la pintura de la cerámica griega antigua pero moderna y amable. Colores: terracota, ocre, azul egeo, verde oliva, blanco marfil y negro suave. Líneas limpias, formas sencillas, buen contraste y luz suave. Escena: un campesino griego de la Antigüedad, con túnica corta y sombrero de paja, en un campo de tierra marrón recién removida, a principios de otoño, por la mañana. Con una mano coge la punta del mango de un arado de madera sencillo, tirado por dos bueyes, y con la otra sostiene una vara larga y fina que toca suavemente el lomo de un buey. Antes de empezar a arar, tiene la cara levantada y los ojos cerrados: está rezando. Al borde del campo, un saco de semillas de trigo. Al fondo, colinas suaves y un olivo. Formato horizontal. Tiene que verse claramente: el campesino rezando, el arado de madera, los dos bueyes, la vara tocando el lomo del buey y el saco de semillas. No debe aparecer: tractores ni máquinas, látigos, animales heridos, estatuas, templos, fuego, otras personas. No pongas ningún texto, letra, número, firma ni marca de agua.\"\nHasta aquí.\nDescripción alternativa: Un campesino griego reza con los ojos cerrados antes de empezar a arar. Coge el arado de madera, tirado por dos bueyes, y toca el lomo de uno con una vara. Al borde del campo hay un saco de semillas.\n\n74-vendimia.png\nCopia desde aquí:\n\"Ilustración digital con estilo de libro ilustrado, plana y cálida, inspirada en la pintura de la cerámica griega antigua pero moderna y amable. Colores: terracota, ocre, azul egeo, verde oliva, blanco marfil y negro suave. Líneas limpias, formas sencillas, buen contraste y luz suave. Escena: la vendimia en una granja griega de la Antigüedad, al amanecer, con el cielo rosado. Una familia con ropa griega antigua sencilla (un hombre, una mujer y una niña) lleva cestos llenos de racimos de uva negra y los extiende con cuidado sobre unas esteras de juncos, al sol, para que se sequen. Junto a la pared de la casa hay unas tinajas grandes de barro. Al fondo, una viña con hojas de color otoñal. Formato horizontal. Tiene que verse claramente: los cestos con racimos, los racimos extendidos sobre las esteras al sol, las tinajas de barro y el cielo rosado del amanecer. No debe aparecer: personas borrachas, copas de vino, botellas, el dios Dioniso, máquinas modernas, fuego. No pongas ningún texto, letra, número, firma ni marca de agua.\"\nHasta aquí.\nDescripción alternativa: Al amanecer, una familia griega extiende al sol racimos de uva negra sobre esteras de juncos para que se sequen, como manda Hesíodo. Junto a la casa esperan unas tinajas de barro.",
+   "alt": "La Pitia, sacerdotisa de Delfos, sentada en lo alto de un trípode de bronce con una rama de laurel en una mano y un cuenco en la otra.\n\n\n\n========================================\nI) IMÁGENES NUEVAS DEL 11 DE NOVIEMBRE DE 2026 (4): HOMERO Y EL AÑO DEL CAMPO (SEGUNDA EDICIÓN)\n========================================\n\nPara las dos partes nuevas de la segunda edición que no tenían ninguna imagen: «Homero para rezar y para pensar» (capítulo 19) y «El año del campo» (capítulo 25). Son escenas de los textos antiguos, así que las personas llevan ropa griega antigua. Elegidas por la autora (sesión C11).\n\n71-telemaco-junto-al-mar.png\nCopia desde aquí:\n\"Ilustración digital con estilo de libro ilustrado, plana y cálida, inspirada en la pintura de la cerámica griega antigua pero moderna y amable. Colores: terracota, ocre, azul egeo, verde oliva, blanco marfil y negro suave. Líneas limpias, formas sencillas, buen contraste y luz suave. Escena: un joven griego de la Antigüedad, Telémaco, de unos veinte años, con túnica corta y manto, está solo en la orilla de una playa tranquila al atardecer. Está agachado junto al agua y se lava las manos en el mar, que es de color gris azulado y tiene olas pequeñas. Tiene la cara levantada hacia el cielo, porque está rezando. A lo lejos, por la playa, se acerca caminando un hombre mayor con barba y manto. Formato horizontal. Tiene que verse claramente: el joven solo junto al agua, sus manos mojándose en el mar, la cara levantada rezando y, pequeño y lejos, el hombre mayor que se acerca. No debe aparecer: barcos de guerra, armas, otras personas, la diosa Atenea con casco ni lechuzas, fuego. No pongas ningún texto, letra, número, firma ni marca de agua.\"\nHasta aquí.\nDescripción alternativa: Al atardecer, el joven Telémaco se lava las manos en el mar y reza con la cara levantada al cielo. A lo lejos, por la playa, se acerca un hombre mayor: es Atenea, con la figura de Méntor.\n\n72-hector-reza-por-su-hijo.png\nCopia desde aquí:\n\"Ilustración digital con estilo de libro ilustrado, plana y cálida, inspirada en la pintura de la cerámica griega antigua pero moderna y amable. Colores: terracota, ocre, azul egeo, verde oliva, blanco marfil y negro suave. Líneas limpias, formas sencillas, buen contraste y luz suave. Escena: junto a la muralla de una ciudad griega antigua, el guerrero Héctor, con coraza de bronce y sin casco, sostiene en brazos a su hijo, un bebé, y lo levanta con cariño mientras mira al cielo, rezando por él. El casco de bronce, con un penacho de crin de caballo, está en el suelo, a sus pies. A su lado, su esposa Andrómaca, con ropa griega antigua larga y un velo, los mira con una sonrisa tierna y un poco triste. Formato horizontal. Tiene que verse claramente: Héctor sin casco con el bebé en brazos, la cara levantada rezando, el casco con penacho en el suelo y Andrómaca sonriendo a su lado. No debe aparecer: sangre, heridos, batalla, lanzas en alto, espadas desenvainadas, fuego, otras personas. No pongas ningún texto, letra, número, firma ni marca de agua.\"\nHasta aquí.\nDescripción alternativa: Junto a la muralla de Troya, Héctor, sin casco, levanta a su hijo pequeño en brazos y reza por él mirando al cielo. Su casco está en el suelo y su esposa, Andrómaca, los mira sonriendo.\n\n73-oracion-de-la-siembra.png\nCopia desde aquí:\n\"Ilustración digital con estilo de libro ilustrado, plana y cálida, inspirada en la pintura de la cerámica griega antigua pero moderna y amable. Colores: terracota, ocre, azul egeo, verde oliva, blanco marfil y negro suave. Líneas limpias, formas sencillas, buen contraste y luz suave. Escena: un campesino griego de la Antigüedad, con túnica corta y sombrero de paja, en un campo de tierra marrón recién removida, a principios de otoño, por la mañana. Con una mano coge la punta del mango de un arado de madera sencillo, tirado por dos bueyes, y con la otra sostiene una vara larga y fina que toca suavemente el lomo de un buey. Antes de empezar a arar, tiene la cara levantada y los ojos cerrados: está rezando. Al borde del campo, un saco de semillas de trigo. Al fondo, colinas suaves y un olivo. Formato horizontal. Tiene que verse claramente: el campesino rezando, el arado de madera, los dos bueyes, la vara tocando el lomo del buey y el saco de semillas. No debe aparecer: tractores ni máquinas, látigos, animales heridos, estatuas, templos, fuego, otras personas. No pongas ningún texto, letra, número, firma ni marca de agua.\"\nHasta aquí.\nDescripción alternativa: Un campesino griego reza con los ojos cerrados antes de empezar a arar. Coge el arado de madera, tirado por dos bueyes, y toca el lomo de uno con una vara. Al borde del campo hay un saco de semillas.\n\n74-vendimia.png\nCopia desde aquí:\n\"Ilustración digital con estilo de libro ilustrado, plana y cálida, inspirada en la pintura de la cerámica griega antigua pero moderna y amable. Colores: terracota, ocre, azul egeo, verde oliva, blanco marfil y negro suave. Líneas limpias, formas sencillas, buen contraste y luz suave. Escena: la vendimia en una granja griega de la Antigüedad, al amanecer, con el cielo rosado. Una familia con ropa griega antigua sencilla (un hombre, una mujer y una niña) lleva cestos llenos de racimos de uva negra y los extiende con cuidado sobre unas esteras de juncos, al sol, para que se sequen. Junto a la pared de la casa hay unas tinajas grandes de barro. Al fondo, una viña con hojas de color otoñal. Formato horizontal. Tiene que verse claramente: los cestos con racimos, los racimos extendidos sobre las esteras al sol, las tinajas de barro y el cielo rosado del amanecer. No debe aparecer: personas borrachas, copas de vino, botellas, el dios Dioniso, máquinas modernas, fuego. No pongas ningún texto, letra, número, firma ni marca de agua.\"\nHasta aquí.\nDescripción alternativa: Al amanecer, una familia griega extiende al sol racimos de uva negra sobre esteras de juncos para que se sequen, como manda Hesíodo. Junto a la casa esperan unas tinajas de barro.\n\n\n========================================\nJ) IMAGEN NUEVA DEL 15 DE NOVIEMBRE DE 2026 (1): LAS TRES POSTURAS PARA REZAR\n========================================\n\nPara el capítulo 3, justo después de \"La postura\" (donde ya están explicadas con palabras: Ilíada 1.450, 1.351 y 9.568). Son formas antiguas de rezar, así que las personas llevan ropa griega antigua sencilla. Es una sola imagen con tres escenas, para que se vea la diferencia entre rezar hacia el cielo, hacia el mar y hacia la tierra. Si Gemini se equivoca con los brazos, se repite pidiendo solo el cambio (\"Cambio que pedir\"); por ejemplo: \"en la escena de la derecha, la persona tiene los brazos rectos hacia abajo y las palmas hacia el suelo, de pie, no de rodillas\".\n\n75-tres-posturas-para-rezar.png\nCopia desde aquí:\n\"Ilustración digital con estilo de libro ilustrado, plana y cálida, inspirada en la pintura de la cerámica griega antigua pero moderna y amable. Colores: terracota, ocre, azul egeo, verde oliva, blanco marfil y negro suave. Líneas limpias, formas sencillas, buen contraste y luz suave. Las personas son griegos de la Antigüedad, de distintas edades y aspectos, con ropa griega antigua sencilla (túnica o quitón y un manto ligero). No parece una foto ni la copia de una pieza antigua real: es una lámina ilustrada moderna. Escena: tres escenas una al lado de otra, del mismo tamaño y separadas por una línea vertical fina, que muestran tres formas antiguas de rezar. En cada escena aparece una sola persona, de pie y de cuerpo entero, con los dos brazos y las dos manos bien visibles. Escena de la izquierda (se reza a los dioses del cielo): una persona de pie, de frente, en un campo abierto bajo un cielo azul claro; sube los dos brazos por delante del cuerpo, un poco abiertos, hasta la altura de la cabeza, con los codos algo doblados, las palmas abiertas mirando hacia arriba, al cielo, y la cabeza un poco levantada. Escena del centro (se reza a los dioses del mar): una persona de pie, de perfil, en la orilla de una playa, mirando al mar; estira los dos brazos rectos hacia delante, a la altura de los hombros, con las palmas abiertas hacia el mar, que ocupa el fondo con olas pequeñas de color azul egeo. Escena de la derecha (se reza a los dioses del inframundo): una persona de pie, de frente, sobre tierra oscura y rojiza, con la cabeza algo inclinada; tiene los dos brazos estirados hacia abajo, un poco separados del cuerpo, con las palmas abiertas mirando hacia el suelo. Formato horizontal ancho. Tiene que verse claramente: una persona distinta en cada escena; los brazos levantados con las palmas hacia arriba (a la izquierda); los brazos estirados hacia el mar (en el centro); los brazos hacia abajo con las palmas hacia la tierra (a la derecha). No debe aparecer: manos juntas; personas arrodilladas o con las rodillas en el suelo; gestos de otras religiones; altares; estatuas; figuras divinas; flechas; rótulos; fuego; ropa actual. No pongas ningún texto, letra, número, firma ni marca de agua.\"\nHasta aquí.\nDescripción alternativa: Tres formas antiguas de rezar: de pie con los brazos levantados y las palmas hacia el cielo, para los dioses del cielo; con los brazos estirados hacia el mar, para los dioses del mar; y con las manos hacia la tierra, para los dioses del inframundo.",
    "pie": "La Pitia, la sacerdotisa que daba las respuestas de Apolo.",
    "ancho": 604,
    "alto": 900
@@ -2229,5 +2239,5 @@
   659.26
  ],
  "notasLira": [],
- "version": "97322e3f4a5f"
+ "version": "d8324f2c7634"
 }
