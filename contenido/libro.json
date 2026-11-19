@@ -3,8 +3,8 @@
  "subtitulo": "Antología del helenismo",
  "autora": "Khaire Lyra",
  "edicion": "Segunda edición, 2026",
- "fecha": "2026-11-15",
- "fechaTexto": "15 de noviembre de 2026",
+ "fecha": "2026-11-19",
+ "fechaTexto": "19 de noviembre de 2026",
  "portada": {
   "imagen": "img/file182.jpg",
   "descripcion": "Portada del libro «Jaris. Antología del helenismo», de Khaire Lyra: el título, en letras grandes de color terracota con un filo dorado y una greca griega debajo. Ilustración de un templo griego de columnas sobre un promontorio junto al mar, con un olivo delante. Al fondo, el sol sale sobre el mar en calma, bajo un cielo claro y despejado.",
@@ -863,6 +863,11 @@
    "a": "al-terminar-un-trabajo"
   },
   {
+   "t": "Al conseguir algo",
+   "cap": "ch010",
+   "a": "al-conseguir-algo"
+  },
+  {
    "t": "Con nervios",
    "cap": "ch010",
    "a": "con-nervios"
@@ -933,6 +938,11 @@
    "a": "antes-de-una-cita-médica-o-una-prueba"
   },
   {
+   "t": "Antes de una operación",
+   "cap": "ch010",
+   "a": "antes-de-una-operación"
+  },
+  {
    "t": "Antes de dormir, en la enfermedad",
    "cap": "ch010",
    "a": "antes-de-dormir-en-la-enfermedad"
@@ -941,6 +951,11 @@
    "t": "En la enfermedad",
    "cap": "ch010",
    "a": "en-la-enfermedad"
+  },
+  {
+   "t": "Cuando alguien se ha curado",
+   "cap": "ch010",
+   "a": "cuando-alguien-se-ha-curado"
   },
   {
    "t": "Himno a Higía, la salud (Arifrón)",
@@ -1003,6 +1018,11 @@
    "a": "cuando-dudo-de-mí"
   },
   {
+   "t": "Cuando no tengo ganas de nada",
+   "cap": "ch010",
+   "a": "cuando-no-tengo-ganas-de-nada"
+  },
+  {
    "t": "Ante una decisión difícil",
    "cap": "ch010",
    "a": "ante-una-decisión-difícil"
@@ -1041,6 +1061,11 @@
    "t": "Al recibir una buena noticia",
    "cap": "ch010",
    "a": "al-recibir-una-buena-noticia"
+  },
+  {
+   "t": "Cuando estoy feliz",
+   "cap": "ch010",
+   "a": "cuando-estoy-feliz"
   },
   {
    "t": "Cuando estoy triste",
@@ -1131,6 +1156,11 @@
    "t": "Por los animales y las mascotas",
    "cap": "ch010",
    "a": "por-los-animales-y-las-mascotas"
+  },
+  {
+   "t": "Por un animal querido, enfermo o en el veterinario",
+   "cap": "ch010",
+   "a": "por-un-animal-querido-enfermo-o-en-el-veterinario"
   },
   {
    "t": "Cuando muere un animal querido",
@@ -2087,6 +2117,17 @@
  ],
  "novedades": [
   {
+   "fecha": "2026-11-19",
+   "fechaTexto": "19 de noviembre de 2026",
+   "cambios": [
+    "Seis oraciones nuevas en el capítulo 6: «Al conseguir algo» (Oración 31b), «Antes de una operación» (45b), «Cuando alguien se ha curado» (47b), «Cuando no tengo ganas de nada» (59b), «Cuando estoy feliz» (67b) y «Por un animal querido, enfermo o en el veterinario» (85b). Todavía no tienen audio.",
+    "Sus versiones cortas, en el libro de bolsillo, en «Para cada momento».",
+    "Al principio del capítulo 6, las seis oraciones que conviene aprender primero, porque acompañan todo el día. Y en «Al empezar el día», una nota para saludar también al dios que sientes más cerca.",
+    "En el capítulo 6, «Génoito» explica ahora de dónde viene la palabra y qué otras formas hay de terminar una oración.",
+    "Corregido: Hipnos, el dios del sueño, es hijo de la Noche, no su hermano. Arreglado en «Antes de dormir», en «Cuando no puedo dormir» y en el salmo de antes de dormir. Los audios de esas dos oraciones todavía dicen «hermano»."
+   ]
+  },
+  {
    "fecha": "2026-11-15",
    "fechaTexto": "15 de noviembre de 2026",
    "cambios": [
@@ -2251,5 +2292,5 @@
   659.26
  ],
  "notasLira": [],
- "version": "73d3eb661c94"
+ "version": "e8ba4375b5bd"
 }

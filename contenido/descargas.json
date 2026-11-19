@@ -2,7 +2,7 @@
  {
   "titulo": "El libro entero, en EPUB",
   "texto": "Para el móvil, la tableta o un lector de libros electrónicos. Es el más cómodo con lector de pantalla.",
-  "bytes": 22427018,
+  "bytes": 22428979,
   "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-libro.epub",
   "nombre": "Jaris-libro.epub"
  },
@@ -23,7 +23,7 @@
  {
   "titulo": "El libro de bolsillo, en EPUB",
   "texto": "Las oraciones cortas y los ritos de cada día, con los 16 salmos del Cancionero al final.",
-  "bytes": 1112629,
+  "bytes": 1112632,
   "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-libro-de-bolsillo.epub",
   "nombre": "Jaris-libro-de-bolsillo.epub"
  },
@@ -44,7 +44,7 @@
  {
   "titulo": "Todos los libros juntos, en un ZIP",
   "texto": "Los seis libros de arriba en un solo archivo. En el iPhone se abre tocándolo en la app Archivos; en Android, con Files de Google.",
-  "bytes": 91728221,
+  "bytes": 91730185,
   "url": "https://github.com/KhaireLyra/Jaris/releases/download/libros/Jaris-todos-los-libros.zip",
   "nombre": "Jaris-todos-los-libros.zip"
  }
